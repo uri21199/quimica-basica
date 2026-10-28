@@ -18,10 +18,10 @@ window.EJERCITACION["gases"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Presión en atm: P = 750 mmHg / 760 mmHg/atm = 0,987 atm.", porque: "La constante R = 0,0821 L.atm/(mol.K) exige la presión en atm, y 760 mmHg equivalen a 1 atm." },
-          { paso: "Temperatura en K: T = 20,0 + 273,15 = 293,15 K.", porque: "La ecuación de estado PV = nRT necesita la temperatura absoluta; 0 °C corresponde a 273,15 K." },
-          { paso: "Moles: n = P.V / (R.T) = 0,987 atm x 5,00 L / (0,0821 L.atm/(mol.K) x 293,15 K) = 0,205 mol.", porque: "Se despeja n de la ecuación de estado de gas ideal, que relaciona presión, volumen, moles y temperatura." },
-          { paso: "Masa: m = n x M = 0,205 mol x 28,0 g/mol = 5,74 g.", porque: "La masa molar del N2 es 2 x 14,0 g/mol, y se pasa de moles a gramos multiplicando por ella." }
+          { paso: "Presión en atm: P = 750 mmHg / 760 mmHg/atm = 0,987 atm.", porque: "Se divide la presión por 760 para pasarla de mmHg a atm, porque la constante R = 0,0821 L.atm/(mol.K) sólo es coherente con presiones en atm. Conviene verificar que la unidad de P sea atm antes de usar la ecuación, ya que dejar mmHg haría salir los moles 760 veces mayores." },
+          { paso: "Temperatura en K: T = 20,0 + 273,15 = 293,15 K.", porque: "Se suma 273,15 a la temperatura en grados Celsius para expresarla en kelvin, que es la escala absoluta que usa PV = nRT. Los gases responden a la temperatura absoluta y no a la escala Celsius, por eso la conversión se hace antes de cualquier cálculo. Verificá que el valor final esté en K." },
+          { paso: "Moles: n = P.V / (R.T) = 0,987 atm x 5,00 L / (0,0821 L.atm/(mol.K) x 293,15 K) = 0,205 mol.", porque: "Se despeja n de PV = nRT dividiendo ambos lados por R.T, lo que da n = P.V / (R.T). Esta ecuación de gas ideal relaciona presión, volumen, moles y temperatura, y sirve para calcular la cantidad de gas en cualquier condición. Revisá que las unidades se cancelen (atm x L / (L.atm/(mol.K) x K)) y que el resultado quede en mol." },
+          { paso: "Masa: m = n x M = 0,205 mol x 28,0 g/mol = 5,74 g.", porque: "Se multiplica los moles por la masa molar para pasar de mol a gramos, porque la masa molar es la masa de un mol de sustancia. La masa molar del N2 sale de su fórmula real: dos átomos de N de 14,0 g/mol cada uno. Como control, la masa debe quedar en gramos y tener un orden de magnitud razonable para la cantidad de gas." }
         ],
         resultado: "m(N2) = 5,74 g"
       }
@@ -41,9 +41,9 @@ window.EJERCITACION["gases"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Temperaturas en K: T1 = 27,0 + 273,15 = 300,15 K; T2 = 80,0 + 273,15 = 353,15 K.", porque: "Las leyes de los gases sólo son proporcionales con temperatura absoluta; sumar 273,15 evita un cociente sin sentido." },
-          { paso: "Como n no cambia, se usa la ley combinada: P1.V1 / T1 = P2.V2 / T2, de donde P2 = P1 x V1 x T2 / (V2 x T1).", porque: "Combina Boyle (P y V inversamente proporcionales) y Gay-Lussac/Charles (P proporcional a T), ambas válidas con n constante." },
-          { paso: "P2 = 1,00 atm x 2,50 L x 353,15 K / (1,20 L x 300,15 K) = 2,45 atm.", porque: "Se reemplazan los valores con unidades consistentes: el volumen se divide, la temperatura se multiplica." }
+          { paso: "Temperaturas en K: T1 = 27,0 + 273,15 = 300,15 K; T2 = 80,0 + 273,15 = 353,15 K.", porque: "Se pasan ambas temperaturas a kelvin sumando 273,15, porque las leyes de los gases son proporcionales sólo con temperatura absoluta. Sin esa conversión, el cociente T2/T1 daría un valor sin sentido físico. Verificá que las dos temperaturas estén en K antes de dividirlas." },
+          { paso: "Como n no cambia, se usa la ley combinada: P1.V1 / T1 = P2.V2 / T2, de donde P2 = P1 x V1 x T2 / (V2 x T1).", porque: "Como la cantidad de gas no cambia, P.V/T se mantiene constante y se puede igualar el estado 1 con el estado 2. Esta ley combinada reúne a Boyle (P y V inversamente proporcionales) y a Gay-Lussac (P proporcional a T). Al despejar se obtiene P2 = P1 x V1 x T2 / (V2 x T1)." },
+          { paso: "P2 = 1,00 atm x 2,50 L x 353,15 K / (1,20 L x 300,15 K) = 2,45 atm.", porque: "Se reemplazan los valores en la expresión despejada, multiplicando por la relación de temperaturas y dividiendo por la de volúmenes. Como el volumen baja (compresión) y la temperatura sube, la presión final debe ser mayor que 1,00 atm, lo que sirve de control de coherencia." }
         ],
         resultado: "P2 = 2,45 atm"
       }
@@ -62,10 +62,10 @@ window.EJERCITACION["gases"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Masa molar: M(CO2) = 12,0 + 2 x 16,0 = 44,0 g/mol.", porque: "La masa molar es la suma de las masas atómicas de la fórmula, y es el puente entre gramos y moles." },
-          { paso: "Moles: n = m / M = 8,50 g / 44,0 g/mol = 0,193 mol.", porque: "n = m/M es la definición de cantidad de sustancia." },
-          { paso: "En CNPT (273,15 K y 1 atm), 1 mol de gas ideal ocupa 22,4 L.", porque: "Es el volumen molar que resulta de PV = nRT con P = 1 atm y T = 273,15 K, igual para cualquier gas ideal." },
-          { paso: "V = 0,193 mol x 22,4 L/mol = 4,33 L.", porque: "Como el volumen molar es igual para todos los gases ideales en CNPT, el volumen es proporcional a los moles." }
+          { paso: "Masa molar: M(CO2) = 12,0 + 2 x 16,0 = 44,0 g/mol.", porque: "La masa molar se calcula sumando las masas atómicas de C (12,0) y de dos O (16,0 cada uno) según la fórmula CO2. Ese valor, en g/mol, es el factor que convierte gramos en moles y funciona como puente entre masa y cantidad de sustancia. Conviene usar la fórmula molecular completa, respetando los subíndices." },
+          { paso: "Moles: n = m / M = 8,50 g / 44,0 g/mol = 0,193 mol.", porque: "Se divide los gramos dados por la masa molar para obtener los moles, porque esa relación define la cantidad de sustancia. El resultado, 0,193 mol, es el dato que después se usa para calcular el volumen. Verificá que la división sea gramos sobre g/mol, para que las unidades queden en mol." },
+          { paso: "En CNPT (273,15 K y 1 atm), 1 mol de gas ideal ocupa 22,4 L.", porque: "Se toma el volumen molar de un gas ideal en CNPT, que es 22,4 L por mol. Este valor sale de PV = nRT con P = 1 atm y T = 273,15 K, y es igual para todos los gases ideales. Conviene recordar que sólo vale en CNPT y no en otras condiciones." },
+          { paso: "V = 0,193 mol x 22,4 L/mol = 4,33 L.", porque: "Se multiplica los moles por el volumen molar para obtener el volumen del gas, porque en CNPT el volumen es proporcional a la cantidad de sustancia. Con 0,193 mol, el resultado 4,33 L es coherente, ya que un mol ocupa 22,4 L. Si se divide en lugar de multiplicar, el resultado queda incorrecto." }
         ],
         resultado: "V(CO2) = 4,33 L en CNPT"
       }
@@ -84,10 +84,10 @@ window.EJERCITACION["gases"] = [
       {
         parte: "",
         pasos: [
-          { paso: "La densidad es d = m/V = n.M/V, y como n/V = P/(R.T), resulta d = P.M/(R.T).", porque: "Se reemplaza n por P.V/(R.T) de la ecuación de estado, de modo que la densidad depende de P, T y M." },
-          { paso: "Se despeja M = d.R.T/P = 1,25 g/L x 0,0821 L.atm/(mol.K) x 273,15 K / 1,00 atm = 28,0 g/mol.", porque: "Las condiciones CNPT (1 atm y 273,15 K) son las del enunciado, y la densidad debe estar en g/L." },
-          { paso: "Se comparan masas molares: N2 y CO = 28,0 g/mol; O2 = 32,0 g/mol; CH4 = 16,0 g/mol.", porque: "La identificación se hace comparando la masa molar obtenida con las de cada fórmula." },
-          { paso: "Con sólo la densidad no se distingue N2 de CO, porque tienen la misma masa molar.", porque: "La densidad no depende de la estructura ni de la composición química, sólo de la masa molar en esas condiciones." }
+          { paso: "La densidad es d = m/V = n.M/V, y como n/V = P/(R.T), resulta d = P.M/(R.T).", porque: "La ecuación d = m/V = n.M/V, junto con n/V = P/(R.T), permite reemplazar n por una expresión que depende de P, T y M. Así la densidad queda d = P.M/(R.T), que relaciona densidad y masa molar en un gas ideal. Esta forma es la que permite despejar M a partir de la densidad medida." },
+          { paso: "Se despeja M = d.R.T/P = 1,25 g/L x 0,0821 L.atm/(mol.K) x 273,15 K / 1,00 atm = 28,0 g/mol.", porque: "Se despeja M de d = P.M/(R.T) multiplicando por R.T y dividiendo por P, y luego se reemplazan los valores. Las condiciones CNPT dan P = 1 atm y T = 273,15 K, y la densidad debe estar en g/L para que M salga en g/mol. Verificá que la temperatura esté en kelvin antes de calcular." },
+          { paso: "Se comparan masas molares: N2 y CO = 28,0 g/mol; O2 = 32,0 g/mol; CH4 = 16,0 g/mol.", porque: "Se compara la masa molar obtenida (28,0 g/mol) con las de la lista, buscando la que coincida dentro de la precisión de los datos. N2 y CO tienen M = 28,0 g/mol, mientras que el O2 (32,0) y el CH4 (16,0) quedan descartados. Esta comparación es la que deja dos posibles gases." },
+          { paso: "Con sólo la densidad no se distingue N2 de CO, porque tienen la misma masa molar.", porque: "La densidad de un gas en condiciones fijas depende sólo de su masa molar, así que dos gases con igual M tienen igual densidad. Por eso, sin otra información (análisis químico, espectros), no se puede distinguir N2 de CO. Conviene aclarar esta limitación en la respuesta." }
         ],
         resultado: "M = 28,0 g/mol; podría ser N2 o CO"
       }
@@ -106,10 +106,10 @@ window.EJERCITACION["gases"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Temperatura: T = 27,0 + 273,15 = 300,15 K. Moles totales: n = 0,40 + 1,60 = 2,00 mol.", porque: "La ecuación de estado se aplica a la mezcla completa, con temperatura absoluta y la suma de moles de todos los componentes." },
-          { paso: "Presión total: P = n.R.T / V = 2,00 x 0,0821 x 300,15 / 10,0 = 4,93 atm.", porque: "La mezcla ocupa todo el recipiente, así que el volumen es el de los 10,0 L para todos los componentes." },
-          { paso: "Fracción molar del O2: x(O2) = 0,40 / 2,00 = 0,20.", porque: "La fracción molar es la proporción de moles de ese gas sobre el total de moles." },
-          { paso: "Presión parcial: P(O2) = x(O2) x P total = 0,20 x 4,93 atm = 0,986 atm.", porque: "La ley de Dalton dice que la presión parcial de un componente es su fracción molar por la presión total." }
+          { paso: "Temperatura: T = 27,0 + 273,15 = 300,15 K. Moles totales: n = 0,40 + 1,60 = 2,00 mol.", porque: "Se suma 273,15 a la temperatura y se suman los moles de ambos gases, porque la ecuación de estado se aplica a la mezcla completa. Como los gases no reaccionan entre sí, el total es la suma de moles de cada componente. Verificá que la temperatura esté en kelvin y que el total incluya todos los gases." },
+          { paso: "Presión total: P = n.R.T / V = 2,00 x 0,0821 x 300,15 / 10,0 = 4,93 atm.", porque: "Se aplica P = nRT/V con los moles totales, el volumen del recipiente y T en kelvin, porque la presión de una mezcla de gases ideales depende de sus moles totales. Todos los gases ocupan el mismo volumen, así que V no se reparte entre ellos. El resultado 4,93 atm es la presión total del recipiente." },
+          { paso: "Fracción molar del O2: x(O2) = 0,40 / 2,00 = 0,20.", porque: "La fracción molar se obtiene dividiendo los moles de O2 por los moles totales, y expresa qué parte de la mezcla es ese gas. Es un número sin unidades cuyos valores suman 1 entre todos los componentes. Conviene verificar que el denominador sea el total y no sólo los moles de ese gas." },
+          { paso: "Presión parcial: P(O2) = x(O2) x P total = 0,20 x 4,93 atm = 0,986 atm.", porque: "Según la ley de Dalton, la presión parcial de cada gas es su fracción molar por la presión total, porque cada componente aporta a la presión en proporción a sus moles. Se multiplica 0,20 por 4,93 atm para obtener 0,986 atm. Como control, la suma de las presiones parciales debe dar la presión total." }
         ],
         resultado: "P total = 4,93 atm; P(O2) = 0,986 atm"
       }
@@ -128,17 +128,17 @@ window.EJERCITACION["gases"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Relación molar según la ecuación balanceada: 1 mol de Zn produce 1 mol de H2.", porque: "Por la estequiometría de Zn + 2 HCl -> ZnCl2 + H2, la relación entre Zn y H2 es 1:1." },
-          { paso: "n(Zn) = 5,00 g / 65,4 g/mol = 0,0765 mol, por lo tanto n(H2) = 0,0765 mol.", porque: "Se pasa de gramos a moles con la masa molar, y luego se aplica la relación 1:1." },
-          { paso: "T = 25,0 + 273,15 = 298,15 K. Presión: P = n.R.T / V = 0,0765 x 0,0821 x 298,15 / 2,00 = 0,936 atm.", porque: "Gas ideal en un recipiente de volumen fijo, con T en kelvin." }
+          { paso: "Relación molar según la ecuación balanceada: 1 mol de Zn produce 1 mol de H2.", porque: "La reacción Zn + 2 HCl -> ZnCl2 + H2 tiene coeficientes 1 para Zn y para H2, así que la relación molar es 1:1. Esa relación permite pasar directamente de los moles de Zn a los de H2 sin calcular la masa del gas. Conviene verificar siempre los coeficientes antes de aplicar una relación." },
+          { paso: "n(Zn) = 5,00 g / 65,4 g/mol = 0,0765 mol, por lo tanto n(H2) = 0,0765 mol.", porque: "Como la reacción es completa, todo el Zn se transforma y sus moles pasan íntegros al H2. Se divide los 5,00 g por la masa molar 65,4 g/mol para obtener los moles de Zn, y luego se aplica la relación 1:1. Verificá que la masa molar usada sea la del Zn." },
+          { paso: "T = 25,0 + 273,15 = 298,15 K. Presión: P = n.R.T / V = 0,0765 x 0,0821 x 298,15 / 2,00 = 0,936 atm.", porque: "Se despeja P = nRT/V de PV = nRT, porque el gas está en un recipiente de volumen fijo. La temperatura debe estar en kelvin, por eso 25,0 °C se convierte a 298,15 K. El resultado 0,936 atm corresponde a 0,0765 mol de H2 en 2,00 L." }
         ],
         resultado: "P(H2) = 0,936 atm"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Presión parcial del H2 en el gas húmedo: P(H2) = P total - P(H2O) = 1,00 atm - 23,8/760 atm = 0,969 atm.", porque: "El gas recogido sobre agua es una mezcla; por Dalton, el vapor de agua ocupa parte de la presión total." },
-          { paso: "Volumen: V = n(H2).R.T / P(H2) = 0,0765 x 0,0821 x 298,15 / 0,969 = 1,93 L.", porque: "El H2 tiene los mismos moles, pero la presión que cuenta para él es la parcial, no la total." }
+          { paso: "Presión parcial del H2 en el gas húmedo: P(H2) = P total - P(H2O) = 1,00 atm - 23,8/760 atm = 0,969 atm.", porque: "Como el gas se recoge sobre agua, la mezcla gaseosa contiene vapor de agua además del H2. Por Dalton, la presión total es la suma de la presión del H2 y la del vapor, así que se resta la presión de vapor a la total. Conviene pasar 23,8 mmHg a atm (0,0313 atm) para que la resta sea consistente." },
+          { paso: "Volumen: V = n(H2).R.T / P(H2) = 0,0765 x 0,0821 x 298,15 / 0,969 = 1,93 L.", porque: "Se despeja V = nRT/P usando los mismos moles de H2 y la presión parcial del H2. Los moles no cambian porque la reacción es la misma, pero el volumen que ocupa el gas sí cambia al recogerlo sobre agua. Usar la presión parcial y no la total es lo que corrige el volumen." }
         ],
         resultado: "V(mezcla) = 1,93 L (con P(H2) = 0,969 atm)"
       }
@@ -157,18 +157,18 @@ window.EJERCITACION["gases"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Moles totales: n = P.V / (R.T) = 1,50 x 4,00 / (0,0821 x 300,15) = 0,2435 mol.", porque: "La mezcla se trata como gas ideal, y el número total de moles es la suma de los dos gases." },
-          { paso: "Plantear dos ecuaciones: n(CH4) + n(C2H6) = 0,2435 mol y 16,0 n(CH4) + 30,1 n(C2H6) = 6,00 g.", porque: "Hay dos incógnitas. La primera es la conservación de moles y la segunda, la de masas, con las masas molares de cada gas." },
-          { paso: "Resolviendo: n(C2H6) = (6,00 - 16,0 x 0,2435) / (30,1 - 16,0) = 0,149 mol; n(CH4) = 0,2435 - 0,149 = 0,0942 mol.", porque: "Sustituir una ecuación en la otra es el método directo para un sistema lineal de dos incógnitas." },
-          { paso: "Fracción molar: x(CH4) = 0,0942 / 0,2435 = 0,387.", porque: "La fracción molar es la proporción de moles de CH4 sobre el total." }
+          { paso: "Moles totales: n = P.V / (R.T) = 1,50 x 4,00 / (0,0821 x 300,15) = 0,2435 mol.", porque: "Se usa PV = nRT para obtener los moles totales de la mezcla, porque se la trata como gas ideal en un volumen conocido. Los moles totales son la suma de los de CH4 y C2H6, y este valor es el punto de partida para el sistema de ecuaciones. Verificá que T esté en K (300,15 K)." },
+          { paso: "Plantear dos ecuaciones: n(CH4) + n(C2H6) = 0,2435 mol y 16,0 n(CH4) + 30,1 n(C2H6) = 6,00 g.", porque: "Se plantea un sistema de dos ecuaciones con dos incógnitas: una de moles (suma de ambos gases) y otra de masas (suma de n por M de cada gas). Hacen falta dos ecuaciones independientes porque hay dos componentes desconocidos. Las masas molares 16,0 y 30,1 g/mol corresponden a CH4 y C2H6." },
+          { paso: "Resolviendo: n(C2H6) = (6,00 - 16,0 x 0,2435) / (30,1 - 16,0) = 0,149 mol; n(CH4) = 0,2435 - 0,149 = 0,0942 mol.", porque: "Se despeja una incógnita de la ecuación de moles y se reemplaza en la de masas, que es el método de sustitución y sirve para un sistema lineal como éste. Así se obtiene el valor de un gas y después el del otro. Conviene reemplazar los resultados en la ecuación original para comprobar que la masa total da 6,00 g." },
+          { paso: "Fracción molar: x(CH4) = 0,0942 / 0,2435 = 0,387.", porque: "La fracción molar de CH4 se calcula dividiendo sus moles por los moles totales de la mezcla. Expresa la proporción del CH4 en la composición sin necesidad de usar masas. Su valor debe estar entre 0 y 1." }
         ],
         resultado: "n(CH4) = 0,0942 mol; n(C2H6) = 0,149 mol; x(CH4) = 0,387"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Moles de carbono: 1 x n(CH4) + 2 x n(C2H6) = 0,0942 + 2 x 0,149 = 0,393 mol de C.", porque: "Cada molécula de CH4 tiene 1 átomo de C y cada C2H6 tiene 2 átomos de C." },
-          { paso: "Átomos: 0,393 mol x 6,022 x 10^23 átomos/mol = 2,36 x 10^23 átomos de C.", porque: "El número de Avogadro convierte moles de átomos en cantidad de átomos." }
+          { paso: "Moles de carbono: 1 x n(CH4) + 2 x n(C2H6) = 0,0942 + 2 x 0,149 = 0,393 mol de C.", porque: "Se cuenta los átomos de carbono de cada componente multiplicando sus moles por la cantidad de C de su fórmula: el CH4 aporta 1 C y el C2H6 aporta 2. Por eso el total de moles de C es una suma ponderada y no el total de moles de gas. Verificá que se usen los moles de cada gas por separado." },
+          { paso: "Átomos: 0,393 mol x 6,022 x 10^23 átomos/mol = 2,36 x 10^23 átomos de C.", porque: "El número de Avogadro (6,022 x 10^23) convierte moles de átomos en cantidad de átomos, porque un mol contiene esa cantidad de partículas. Se multiplica los moles de C por el número de Avogadro para obtener los átomos. Verificá que la unidad final sea átomos y que el exponente tenga sentido." }
         ],
         resultado: "2,36 x 10^23 átomos de C"
       }
@@ -188,19 +188,19 @@ window.EJERCITACION["gases"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "n(Al) = 2,00 g / 26,98 g/mol = 0,0741 mol. n(HCl) = 0,100 L x 3,00 mol/L = 0,300 mol.", porque: "Se pasan ambos reactivos a moles para poder compararlos con la ecuación balanceada." },
-          { paso: "La ecuación pide 6 mol de HCl cada 2 mol de Al, es decir 3 mol de HCl por mol de Al. Para 0,0741 mol de Al hacen falta 0,222 mol de HCl.", porque: "La comparación se hace con la relación estequiométrica, no con las masas ni los volúmenes." },
-          { paso: "Como hay 0,300 mol de HCl disponibles y se necesitan 0,222 mol, el HCl está en exceso y el limitante es el Al.", porque: "El reactivo que se consume primero determina la cantidad máxima de producto." },
-          { paso: "n(H2) = (3/2) x n(Al) = 1,5 x 0,0741 = 0,111 mol.", porque: "Por la ecuación, 2 mol de Al producen 3 mol de H2, y se calcula a partir del reactivo limitante." }
+          { paso: "n(Al) = 2,00 g / 26,98 g/mol = 0,0741 mol. n(HCl) = 0,100 L x 3,00 mol/L = 0,300 mol.", porque: "Se pasa la masa de Al a moles con su masa molar y el volumen de HCl a moles con la molaridad, porque la comparación de reactivos se hace en moles. Así ambos datos quedan en la misma unidad. Conviene no comparar gramos con litros." },
+          { paso: "La ecuación pide 6 mol de HCl cada 2 mol de Al, es decir 3 mol de HCl por mol de Al. Para 0,0741 mol de Al hacen falta 0,222 mol de HCl.", porque: "Se usa la relación de la ecuación balanceada (6 mol de HCl por cada 2 mol de Al) para calcular cuánto HCl se necesita para consumir todo el Al. La estequiometría fija esas proporciones, y con este resultado se sabe si el HCl alcanza. Verificá la relación 6/2 = 3 mol de HCl por mol de Al." },
+          { paso: "Como hay 0,300 mol de HCl disponibles y se necesitan 0,222 mol, el HCl está en exceso y el limitante es el Al.", porque: "Se compara el HCl disponible con el que se necesita para consumir todo el Al. Si hay más HCl del necesario, el HCl sobra y el Al se agota primero, por lo que el Al es el limitante. El reactivo que se agota primero determina la cantidad máxima de producto." },
+          { paso: "n(H2) = (3/2) x n(Al) = 1,5 x 0,0741 = 0,111 mol.", porque: "Se aplica la relación de la ecuación balanceada entre H2 y Al (3 mol de H2 por cada 2 mol de Al) a partir del limitante. La cantidad de producto depende sólo del reactivo limitante. Verificá que se use la relación 3/2 y no otra." }
         ],
         resultado: "Limitante: Al; n(H2) = 0,111 mol"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "T = 20,0 + 273,15 = 293,15 K.", porque: "La ecuación de estado requiere la temperatura en kelvin." },
-          { paso: "Se usa V = 5,00 L, el volumen del recipiente, porque el H2 se distribuye en todo el recipiente.", porque: "El volumen que aparece en PV = nRT es el del gas, y aquí el gas ocupa el recipiente completo, no los 100 mL de solución." },
-          { paso: "P(H2) = n.R.T / V = 0,111 x 0,0821 x 293,15 / 5,00 = 0,535 atm.", porque: "Se aplica la ecuación de gas ideal al H2 con los moles obtenidos en a)." }
+          { paso: "T = 20,0 + 273,15 = 293,15 K.", porque: "Se pasa la temperatura a kelvin sumando 273,15, porque la ecuación de gas ideal la requiere en escala absoluta. Es el mismo criterio de los ejercicios anteriores y conviene hacerlo antes de cualquier cálculo. Verificá que el valor final sea 293,15 K." },
+          { paso: "Se usa V = 5,00 L, el volumen del recipiente, porque el H2 se distribuye en todo el recipiente.", porque: "El volumen que entra en PV = nRT es el del gas, y el H2 se distribuye en todo el recipiente de 5,00 L. El volumen de la solución de HCl no es el del gas, por eso no se usa 0,100 L. Este criterio se aplica siempre que el gas se recoge en un recipiente." },
+          { paso: "P(H2) = n.R.T / V = 0,111 x 0,0821 x 293,15 / 5,00 = 0,535 atm.", porque: "Se despeja P de PV = nRT usando los moles de H2 calculados en a), el volumen del recipiente y la temperatura en kelvin. Esto da la presión que ejercería el H2 en esas condiciones. Verificá que el resultado tenga un orden de magnitud razonable para 0,111 mol en 5 L." }
         ],
         resultado: "P(H2) = 0,535 atm"
       }
@@ -220,17 +220,17 @@ window.EJERCITACION["gases"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Temperaturas en K: T1 = 40,0 + 273,15 = 313,15 K; T2 = 273,15 K (CNPT). La presión final es P2 = 1,00 atm.", porque: "El CNPT tiene T = 273,15 K y P = 1 atm; la masa de gas no cambia, así que n es constante." },
-          { paso: "Ley combinada: V2 = P1.V1.T2 / (P2.T1) = 1,20 x 2,40 x 273,15 / (1,00 x 313,15) = 2,51 L.", porque: "Con n constante, P.V/T es constante; se despeja el volumen final." }
+          { paso: "Temperaturas en K: T1 = 40,0 + 273,15 = 313,15 K; T2 = 273,15 K (CNPT). La presión final es P2 = 1,00 atm.", porque: "Se pasan las temperaturas a kelvin: 313,15 K para el estado inicial y 273,15 K para CNPT. La presión final de CNPT es 1,00 atm, y la masa de gas no cambia, así que n es constante. Verificá que la temperatura inicial esté en K antes de usar la ley combinada." },
+          { paso: "Ley combinada: V2 = P1.V1.T2 / (P2.T1) = 1,20 x 2,40 x 273,15 / (1,00 x 313,15) = 2,51 L.", porque: "Con n constante, P.V/T es constante, así que se igualan los estados inicial y final y se despeja V2. Esta ley combina Boyle y Gay-Lussac, y en este caso tanto la presión como la temperatura bajan, por lo que hay que cuidar el orden de los cocientes. Conviene verificar que la ecuación esté bien ordenada antes de reemplazar." }
         ],
         resultado: "V(CNPT) = 2,51 L"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "A volumen constante, P es proporcional a T, así que P1/T1 = P2/T2 con T en kelvin.", porque: "La ley de Gay-Lussac vale a V y n constantes, y requiere temperatura absoluta." },
-          { paso: "T2 = T1 x P2 / P1 = 313,15 K x 2,00 atm / 1,20 atm = 522 K.", porque: "Se despeja T2 de la proporción; el resultado es aproximadamente 249 °C." },
-          { paso: "Verificación: 522 K - 273,15 = 249 °C, una temperatura mayor a la inicial, como corresponde a una presión que sube.", porque: "Si el resultado no tiene sentido físico (presión mayor con temperatura menor), hay un error de método." }
+          { paso: "A volumen constante, P es proporcional a T, así que P1/T1 = P2/T2 con T en kelvin.", porque: "A volumen constante, la presión es proporcional a la temperatura absoluta, así que cambia en la misma proporción que T. Esta relación es la ley de Gay-Lussac y sólo vale si V y n no varían. Verificá que la temperatura esté en kelvin para que la proporción sea válida." },
+          { paso: "T2 = T1 x P2 / P1 = 313,15 K x 2,00 atm / 1,20 atm = 522 K.", porque: "Se despeja T2 de la proporción P1/T1 = P2/T2, obteniendo T2 = T1 x P2/P1. Se multiplica la temperatura inicial en K por la relación de presiones 2,00/1,20. Si el enunciado pide °C, la conversión se hace sólo al final." },
+          { paso: "Verificación: 522 K - 273,15 = 249 °C, una temperatura mayor a la inicial, como corresponde a una presión que sube.", porque: "Se convierte el resultado a °C restando 273,15 para comprobar si tiene sentido físico. Como la presión sube y la temperatura también sube, la verificación de signos es correcta. Si la temperatura bajara al subir la presión, habría un error de método." }
         ],
         resultado: "T2 = 522 K (aprox. 249 °C)"
       }
@@ -249,17 +249,17 @@ window.EJERCITACION["gases"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Volumen molar ideal: V_ideal = R.T / P = 0,0821 x 300 / 200 = 0,1232 L/mol.", porque: "Es el volumen que tendría 1 mol si se comportara como gas ideal a esa P y T." },
-          { paso: "Z = V_real / V_ideal = 0,1100 / 0,1232 = 0,893.", porque: "Z es la relación entre el volumen real y el ideal, y vale 1 cuando el gas es ideal." }
+          { paso: "Volumen molar ideal: V_ideal = R.T / P = 0,0821 x 300 / 200 = 0,1232 L/mol.", porque: "Se calcula el volumen molar ideal despejando V de PV = nRT para n = 1 mol: V = RT/P. Es el volumen que tendría 1 mol de gas ideal a esa presión y temperatura, y sirve como referencia para comparar con el volumen real. Verificá que T esté en kelvin." },
+          { paso: "Z = V_real / V_ideal = 0,1100 / 0,1232 = 0,893.", porque: "El factor Z es el cociente entre el volumen real y el ideal, a igual P y T. Vale 1 para un gas ideal, así que su desvío indica cuánto se aparta el gas real del modelo. Se usa el volumen molar experimental que da el enunciado." }
         ],
         resultado: "Z = 0,893"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Z < 1 significa que el volumen real es menor que el ideal.", porque: "El gas ocupa menos espacio del que predice el modelo ideal." },
-          { paso: "Eso indica que dominan las fuerzas de atracción intermolecular, que acercan las moléculas.", porque: "Las atracciones reducen el volumen y la presión que se mediría con el modelo ideal; las repulsiones harían Z > 1." },
-          { paso: "A menor presión las moléculas están más separadas, las atracciones pierden peso y Z tiende a 1.", porque: "Las fuerzas intermoleculares decaen rápido con la distancia, así que el gas se parece cada vez más al ideal." }
+          { paso: "Z < 1 significa que el volumen real es menor que el ideal.", porque: "Un valor Z menor que 1 indica que el volumen real es menor que el ideal, es decir, el gas ocupa menos espacio del que predice el modelo. Es una lectura directa del cociente Z, que se interpreta por su signo respecto de 1. Conviene dejar explícito que se trata de una interpretación cualitativa." },
+          { paso: "Eso indica que dominan las fuerzas de atracción intermolecular, que acercan las moléculas.", porque: "Z < 1 se explica por fuerzas de atracción entre moléculas, que acercan las partículas y reducen el volumen. Las repulsiones, en cambio, harían Z > 1. Esta relación entre el signo de la desviación y el tipo de fuerza es la base de la interpretación." },
+          { paso: "A menor presión las moléculas están más separadas, las atracciones pierden peso y Z tiende a 1.", porque: "Al disminuir la presión, las moléculas se separan y su interacción se debilita, así que el gas se parece más al ideal. Las fuerzas intermoleculares dependen fuertemente de la distancia, y por eso Z tiende a 1 cuando la presión baja." }
         ],
         resultado: "Z < 1: predominan las atracciones; el gas se acerca al ideal al bajar la presión"
       }
@@ -278,24 +278,24 @@ window.EJERCITACION["gases"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Masa pura de KClO3: 0,85 x 1,20 g = 1,02 g. M(KClO3) = 39,1 + 35,5 + 3 x 16,0 = 122,6 g/mol; n(KClO3) = 1,02 / 122,6 = 8,32 x 10^-3 mol.", porque: "Sólo el KClO3 reacciona: la impureza no aporta O2, y la pureza se aplica antes de usar la masa molar." },
-          { paso: "Por la ecuación, 2 mol de KClO3 producen 3 mol de O2: n(O2) = 3/2 x 8,32 x 10^-3 = 1,25 x 10^-2 mol.", porque: "La relación 3:2 sale de los coeficientes balanceados; el 100 % de rendimiento es un supuesto del enunciado." }
+          { paso: "Masa pura de KClO3: 0,85 x 1,20 g = 1,02 g. M(KClO3) = 39,1 + 35,5 + 3 x 16,0 = 122,6 g/mol; n(KClO3) = 1,02 / 122,6 = 8,32 x 10^-3 mol.", porque: "La muestra es impura, así que sólo el 85 % de sus 1,20 g es KClO3 y es el único que produce O2. Se calcula la masa pura y luego los moles con la masa molar 122,6 g/mol, porque la relación estequiométrica trabaja en moles. Verificá que la masa pura sea menor que la masa total de la muestra." },
+          { paso: "Por la ecuación, 2 mol de KClO3 producen 3 mol de O2: n(O2) = 3/2 x 8,32 x 10^-3 = 1,25 x 10^-2 mol.", porque: "La relación 3:2 entre O2 y KClO3 sale de los coeficientes de la ecuación balanceada, y se aplica a los moles de KClO3 para obtener los de O2. Esto supone un rendimiento del 100 %, como indica el enunciado. Conviene verificar que los coeficientes se hayan leído bien." }
         ],
         resultado: "n(O2) = 1,25 x 10^-2 mol"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Presión parcial del O2: P(O2) = 745 mmHg - 23,8 mmHg = 721,2 mmHg = 0,949 atm.", porque: "El gas recogido sobre agua es húmedo: la presión total incluye el vapor de agua, que no es O2 (Dalton)." },
-          { paso: "V(O2) = n.R.T / P(O2) = 1,25 x 10^-2 x 0,0821 x 298,15 / 0,949 = 0,322 L.", porque: "Se aplica la ecuación de gas ideal al O2 con su presión parcial y T = 298,15 K." }
+          { paso: "Presión parcial del O2: P(O2) = 745 mmHg - 23,8 mmHg = 721,2 mmHg = 0,949 atm.", porque: "El gas se recoge sobre agua, así que la presión total de 745 mmHg incluye el vapor de agua. Por Dalton, la presión parcial del O2 es la total menos la presión de vapor a 25,0 °C. Esta corrección es la que da el volumen de O2 realmente recogido." },
+          { paso: "V(O2) = n.R.T / P(O2) = 1,25 x 10^-2 x 0,0821 x 298,15 / 0,949 = 0,322 L.", porque: "Se despeja V de PV = nRT usando la presión parcial del O2 (no la total) y T = 298,15 K. Los moles de O2 son los del paso a). Usar la presión parcial corrige el volumen, y es el valor que se pide." }
         ],
         resultado: "V(O2) = 0,322 L"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Si no se corrige, se usa P = 745 mmHg = 0,980 atm, y V = 1,25 x 10^-2 x 0,0821 x 298,15 / 0,980 = 0,312 L.", porque: "Ese cálculo incluye el vapor de agua como si fuera O2, lo que hace que la presión usada sea mayor que la real del O2." },
-          { paso: "Error: (0,312 - 0,322) / 0,322 = -3,2 %. El volumen sin corregir resulta un 3 % menor.", porque: "Como V es inversamente proporcional a P, una presión sobreestimada subestima el volumen." }
+          { paso: "Si no se corrige, se usa P = 745 mmHg = 0,980 atm, y V = 1,25 x 10^-2 x 0,0821 x 298,15 / 0,980 = 0,312 L.", porque: "Se calcula el volumen que resultaría si se usara la presión total de 745 mmHg, es decir, sin descontar el vapor de agua. Así se muestra qué error comete el cálculo sin corrección. Conviene comparar este valor con el de b)." },
+          { paso: "Error: (0,312 - 0,322) / 0,322 = -3,2 %. El volumen sin corregir resulta un 3 % menor.", porque: "Al usar una presión mayor que la real, el volumen calculado queda subestimado, porque V es inversamente proporcional a P. El error relativo se obtiene como (V sin corregir - V correcto) / V correcto. Verificá el signo para saber si el volumen sale menor o mayor." }
         ],
         resultado: "Sin corregir, el volumen sale 3 % menor (0,312 L en lugar de 0,322 L)"
       }
@@ -315,24 +315,24 @@ window.EJERCITACION["gases"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "T = 20,0 + 273,15 = 293,15 K. Moles iniciales: n1 = 120 x 50,0 / (0,0821 x 293,15) = 249,3 mol.", porque: "El cilindro tiene volumen fijo: los moles se obtienen con PV = nRT a las condiciones iniciales." },
-          { paso: "Moles finales: n2 = 20,0 x 50,0 / (0,0821 x 293,15) = 41,55 mol.", porque: "Con V y T constantes, la presión es proporcional a n, y el cilindro sigue siendo el mismo volumen." },
-          { paso: "Moles extraídos: 249,3 - 41,55 = 207,7 mol; masa = 207,7 mol x 32,0 g/mol = 6,65 x 10^3 g.", porque: "La diferencia de moles es lo que salió del cilindro, y luego se pasa a masa con la masa molar del O2." }
+          { paso: "T = 20,0 + 273,15 = 293,15 K. Moles iniciales: n1 = 120 x 50,0 / (0,0821 x 293,15) = 249,3 mol.", porque: "Se pasa 20,0 °C a 293,15 K y se calculan los moles iniciales con PV = nRT, porque el cilindro tiene volumen fijo y los moles se obtienen de sus condiciones iniciales. Se usan la presión de 120 atm y el volumen de 50,0 L. Verificá que la temperatura esté en kelvin." },
+          { paso: "Moles finales: n2 = 20,0 x 50,0 / (0,0821 x 293,15) = 41,55 mol.", porque: "Como V y T son constantes, la presión es proporcional a los moles: si la presión baja a 20,0 atm, los moles finales bajan en la misma proporción. Se calcula n2 con la misma ecuación de estado usando la presión final. El cilindro conserva su volumen en todo el proceso." },
+          { paso: "Moles extraídos: 249,3 - 41,55 = 207,7 mol; masa = 207,7 mol x 32,0 g/mol = 6,65 x 10^3 g.", porque: "La cantidad extraída es la diferencia entre los moles iniciales y finales, porque lo que sale del cilindro es lo que se resta. Luego se pasa a masa con la masa molar del O2 (32,0 g/mol). Conviene verificar que el resultado en gramos sea coherente con la cantidad de moles." }
         ],
         resultado: "m(O2) extraída = 6,65 x 10^3 g (6,65 kg)"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Volumen en CNPT: V = 207,7 mol x 22,4 L/mol = 4,65 x 10^3 L.", porque: "El volumen que se pide es el del gas extraído en CNPT, no el del cilindro, que sigue siendo 50,0 L." }
+          { paso: "Volumen en CNPT: V = 207,7 mol x 22,4 L/mol = 4,65 x 10^3 L.", porque: "El volumen pedido es el que ocuparían los moles extraídos en CNPT, no el volumen del cilindro. Se usa el volumen molar de 22,4 L/mol porque las condiciones normales son 273,15 K y 1 atm. El volumen del cilindro sigue siendo 50,0 L y no debe confundirse con este resultado." }
         ],
         resultado: "V(CNPT) = 4,65 x 10^3 L"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Estado de partida para c): el cilindro queda con 20,0 atm a 20,0 °C (293,15 K) después de la extracción, con V y n constantes.", porque: "La pregunta c) parte del cilindro ya vaciado a 20,0 atm, no de la presión inicial de 120 atm." },
-          { paso: "Ley de Gay-Lussac: P2 = P1 x T2 / T1 = 20,0 atm x 313,15 K / 293,15 K = 21,4 atm.", porque: "A volumen y cantidad de gas constantes, la presión es proporcional a la temperatura absoluta, así que sube al calentarse." }
+          { paso: "Estado de partida para c): el cilindro queda con 20,0 atm a 20,0 °C (293,15 K) después de la extracción, con V y n constantes.", porque: "Se toma como punto de partida el estado final de a), porque el cilindro ya fue vaciado hasta 20,0 atm. Los moles que quedan son los que intervienen en el calentamiento, no los iniciales. Usar los 120 atm en este paso daría un resultado incorrecto." },
+          { paso: "Ley de Gay-Lussac: P2 = P1 x T2 / T1 = 20,0 atm x 313,15 K / 293,15 K = 21,4 atm.", porque: "Como V y n son constantes, P es proporcional a T absoluta: se aplica la ley de Gay-Lussac para escalar la presión por la razón de temperaturas. Al subir la temperatura de 293,15 K a 313,15 K, la presión sube. Verificá que ambas temperaturas estén en kelvin." }
         ],
         resultado: "P2 = 21,4 atm (la presión sube al calentarse)"
       }
@@ -352,25 +352,25 @@ window.EJERCITACION["gases"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "T = 25,0 + 273,15 = 298,15 K. n(N2) = 2,50 x 2,00 / (0,0821 x 298,15) = 0,204 mol; n(He) = 1,00 x 3,00 / (0,0821 x 298,15) = 0,123 mol.", porque: "Cada gas se calcula en su recipiente de origen, con sus propios P y V, antes de la conexión." },
-          { paso: "Al conectar, el volumen total es 2,00 + 3,00 = 5,00 L y los moles totales son 0,204 + 0,123 = 0,327 mol.", porque: "Al abrir la válvula, los dos gases se reparten en el volumen conjunto; no se pierde materia." },
-          { paso: "P = n_total.R.T / V_total = 0,327 x 0,0821 x 298,15 / 5,00 = 1,60 atm.", porque: "Con T constante y n conservado, se aplica la ecuación de gas ideal al sistema completo." }
+          { paso: "T = 25,0 + 273,15 = 298,15 K. n(N2) = 2,50 x 2,00 / (0,0821 x 298,15) = 0,204 mol; n(He) = 1,00 x 3,00 / (0,0821 x 298,15) = 0,123 mol.", porque: "Se calcula los moles de cada gas en su recipiente de origen con la ecuación de gas ideal, usando sus propias presiones y volúmenes. Esto es necesario porque al conectar los recipientes cambia el volumen disponible, pero no la cantidad de gas. Los moles de cada gas se suman después." },
+          { paso: "Al conectar, el volumen total es 2,00 + 3,00 = 5,00 L y los moles totales son 0,204 + 0,123 = 0,327 mol.", porque: "Al abrir la válvula, los gases se reparten en el volumen conjunto de 5,00 L. Como no hay pérdida de materia, el número total de moles es la suma de los de cada gas. El volumen final es la suma de los dos recipientes." },
+          { paso: "P = n_total.R.T / V_total = 0,327 x 0,0821 x 298,15 / 5,00 = 1,60 atm.", porque: "Se aplica la ecuación de gas ideal al sistema completo con n total, V total y T constante, porque al final los dos gases ocupan el mismo volumen. La temperatura no cambia durante el proceso. El resultado 1,60 atm es la presión total final." }
         ],
         resultado: "P final = 1,60 atm"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Presión parcial del N2: P(N2) = n(N2).R.T / V_total = 0,204 x 0,0821 x 298,15 / 5,00 = 1,00 atm.", porque: "La presión parcial es la que tendría cada gas si ocupara solo el volumen total de 5,00 L." },
-          { paso: "Presión parcial del He: P(He) = 0,123 x 0,0821 x 298,15 / 5,00 = 0,600 atm. Verificación: 1,00 + 0,600 = 1,60 atm.", porque: "La suma de presiones parciales debe dar la presión total (ley de Dalton)." }
+          { paso: "Presión parcial del N2: P(N2) = n(N2).R.T / V_total = 0,204 x 0,0821 x 298,15 / 5,00 = 1,00 atm.", porque: "La presión parcial de cada gas es la que tendría si ocupara solo el volumen total. Se calcula con sus moles, el volumen total y la temperatura, como si el otro gas no estuviera presente. Este criterio es la base de la ley de Dalton." },
+          { paso: "Presión parcial del He: P(He) = 0,123 x 0,0821 x 298,15 / 5,00 = 0,600 atm. Verificación: 1,00 + 0,600 = 1,60 atm.", porque: "Por la ley de Dalton, la suma de las presiones parciales debe dar la presión total. Se verifica que 1,00 + 0,600 = 1,60 atm, lo que confirma la consistencia de los cálculos. Conviene hacer siempre esta comprobación." }
         ],
         resultado: "P(N2) = 1,00 atm; P(He) = 0,600 atm"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "No: la presión parcial del N2 pasa de 2,50 atm a 1,00 atm.", porque: "Al conectar los recipientes el N2 se reparte en 5,00 L, no en 2,00 L, y su presión baja en proporción." },
-          { paso: "Se verifica: 2,50 atm x 2,00 L / 5,00 L = 1,00 atm.", porque: "Con n y T constantes, P es inversamente proporcional al volumen en el que está el gas, como en Boyle." }
+          { paso: "No: la presión parcial del N2 pasa de 2,50 atm a 1,00 atm.", porque: "El N2 sí cambia su presión parcial, porque ahora se distribuye en 5,00 L en lugar de 2,00 L. Aunque la cantidad de N2 es la misma, el volumen disponible aumentó, y por eso la respuesta es negativa. La presión parcial depende del volumen en el que está el gas." },
+          { paso: "Se verifica: 2,50 atm x 2,00 L / 5,00 L = 1,00 atm.", porque: "Se verifica con la relación inversa al volumen, P1 x V1 = P2 x V2, con n y T constantes. Esto corresponde a la ley de Boyle y muestra que la presión baja en la misma proporción en que aumenta el volumen. El resultado 1,00 atm coincide con el cálculo de b)." }
         ],
         resultado: "No; la presión parcial del N2 baja a 1,00 atm"
       }
@@ -390,25 +390,25 @@ window.EJERCITACION["gases"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "P_ideal = n.R.T / V = 1,00 x 0,0821 x 300 / 1,00 = 24,6 atm.", porque: "El modelo ideal no tiene en cuenta el volumen propio ni las fuerzas entre moléculas." }
+          { paso: "P_ideal = n.R.T / V = 1,00 x 0,0821 x 300 / 1,00 = 24,6 atm.", porque: "Se calcula la presión con la ecuación de gas ideal, P = nRT/V, como referencia. Este modelo supone que las moléculas no tienen volumen propio ni interactúan entre sí. Es el valor con el que se compara la presión real de van der Waals." }
         ],
         resultado: "P_ideal = 24,6 atm"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Ecuación de van der Waals despejada: P = n.R.T / (V - n.b) - a.n^2 / V^2.", porque: "La corrección de volumen (n.b) reduce el espacio libre, y la de atracción (a.n^2/V^2) reduce la presión que se mide en las paredes." },
-          { paso: "Término de volumen: n.R.T / (V - n.b) = 1,00 x 0,0821 x 300 / (1,00 - 0,0427) = 25,73 atm.", porque: "Las moléculas tienen volumen propio, así que el volumen disponible es V - n.b y la presión sube." },
-          { paso: "Término de atracción: a.n^2 / V^2 = 3,59 x 1,00^2 / 1,00^2 = 3,59 atm.", porque: "Las atracciones entre moléculas disminuyen la presión frente a las paredes." },
-          { paso: "P = 25,73 - 3,59 = 22,1 atm.", porque: "Las dos correcciones tienen signos opuestos; el resultado neto baja respecto del ideal." }
+          { paso: "Ecuación de van der Waals despejada: P = n.R.T / (V - n.b) - a.n^2 / V^2.", porque: "Se escribe la ecuación de van der Waals despejada para P, que incorpora dos correcciones: una por volumen propio (V - n.b) y otra por atracción (a.n^2/V^2). Las correcciones modifican el modelo ideal, pero no reemplazan a R ni a T. Verificá que el signo de cada término sea el correcto." },
+          { paso: "Término de volumen: n.R.T / (V - n.b) = 1,00 x 0,0821 x 300 / (1,00 - 0,0427) = 25,73 atm.", porque: "El término V - n.b corrige el volumen disponible, porque las moléculas ocupan espacio propio y dejan menos lugar libre. Al disminuir el denominador, la presión resultante sube respecto de la ideal. Esta corrección actúa en sentido contrario a la de atracción." },
+          { paso: "Término de atracción: a.n^2 / V^2 = 3,59 x 1,00^2 / 1,00^2 = 3,59 atm.", porque: "Se calcula el término de atracción con los valores de a, n y V, porque mide la reducción de presión debida a las fuerzas intermoleculares. Con n = 1,00 y V = 1,00 L, el cociente vale 3,59 atm. Verificá que las unidades de a (L^2.atm/mol^2) den atm." },
+          { paso: "P = 25,73 - 3,59 = 22,1 atm.", porque: "Se resta el término de atracción del término de volumen para obtener la presión real. Las dos correcciones tienen signos opuestos, así que la presión neta queda por debajo de la ideal. Es el balance final que da la ecuación de van der Waals." }
         ],
         resultado: "P (van der Waals) = 22,1 atm"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Z = P.V / (R.T) = 22,1 atm x 1,00 L / (0,0821 x 300) = 0,899.", porque: "Z es la relación entre la presión real y la ideal a igual V y T." },
-          { paso: "Z < 1: el gas ocupa menos volumen del que predice el modelo ideal; la presión real es menor, así que dominan las atracciones.", porque: "En van der Waals, el término a.n^2/V^2 es el que refleja las atracciones; aquí supera la corrección por volumen propio." }
+          { paso: "Z = P.V / (R.T) = 22,1 atm x 1,00 L / (0,0821 x 300) = 0,899.", porque: "Z se calcula con la presión real de van der Waals, como P.V/(R.T), y compara esa presión con la ideal a igual V y T. Un valor de 0,899 cuantifica la desviación del gas respecto del modelo ideal. Conviene usar la presión de b) y no la de a)." },
+          { paso: "Z < 1: el gas ocupa menos volumen del que predice el modelo ideal; la presión real es menor, así que dominan las atracciones.", porque: "Como Z es menor que 1, la presión real es menor que la ideal, lo que indica que domina la atracción entre moléculas. El término a.n^2/V^2 es el que refleja esa atracción, y en este caso supera la corrección por volumen propio. La interpretación se basa en el signo de la desviación." }
         ],
         resultado: "Z = 0,899; predominan las atracciones intermoleculares"
       }
@@ -428,24 +428,24 @@ window.EJERCITACION["gases"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Para 0,200 mol de CH4 se necesitan 2 x 0,200 = 0,400 mol de O2; hay 0,800 mol, así que el O2 está en exceso y el limitante es el CH4.", porque: "El reactivo que se consume primero limita la cantidad de producto formado." },
-          { paso: "Gas final: O2 en exceso = 0,800 - 0,400 = 0,400 mol; CO2 formado = 0,200 mol. Total gaseoso = 0,600 mol.", porque: "El agua está en estado líquido, así que no forma parte de la fase gaseosa." }
+          { paso: "Para 0,200 mol de CH4 se necesitan 2 x 0,200 = 0,400 mol de O2; hay 0,800 mol, así que el O2 está en exceso y el limitante es el CH4.", porque: "Se compara la cantidad de O2 que se necesita para consumir todo el CH4 con la cantidad disponible, usando la relación 2:1 de la ecuación. El reactivo que se agota primero es el limitante. Verificá que la relación usada sea la de los coeficientes balanceados." },
+          { paso: "Gas final: O2 en exceso = 0,800 - 0,400 = 0,400 mol; CO2 formado = 0,200 mol. Total gaseoso = 0,600 mol.", porque: "En la fase gaseosa final se cuentan el O2 que sobra y el CO2 formado, porque el H2O es líquida y no aporta presión de gas. El total gaseoso es la suma de ambos. Ese total es el que se usa en la ecuación para la presión final." }
         ],
         resultado: "Limitante: CH4; gas final = 0,400 mol de O2 y 0,200 mol de CO2"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Supuesto: el volumen del líquido y la presión de vapor del agua se desprecian; sólo cuentan los gases.", porque: "Así se evita considerar equilibrio líquido-vapor en este cálculo; el efecto real del vapor se discute en c)." },
-          { paso: "P = n_gas.R.T / V = 0,600 x 0,0821 x 298,15 / 25,0 = 0,587 atm.", porque: "Gas ideal con T = 298,15 K y V = 25,0 L del recipiente." }
+          { paso: "Supuesto: el volumen del líquido y la presión de vapor del agua se desprecian; sólo cuentan los gases.", porque: "Se hace un supuesto para simplificar: el volumen del líquido y la presión de vapor del agua se desprecian, así que la presión sale sólo de los gases. Este supuesto corresponde a lo que pide el enunciado en b). El efecto real del vapor se analiza en c)." },
+          { paso: "P = n_gas.R.T / V = 0,600 x 0,0821 x 298,15 / 25,0 = 0,587 atm.", porque: "Se aplica PV = nRT con los moles de gas de a), T = 298,15 K y el volumen de 25,0 L del recipiente. El resultado 0,587 atm es la presión total sin contar el agua líquida. Conviene verificar que la temperatura esté en kelvin." }
         ],
         resultado: "P total = 0,587 atm"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Si el agua está como vapor, n_gas = 0,600 + 2 x 0,200 = 1,000 mol; T = 100,0 + 273,15 = 373,15 K.", porque: "El agua formada (0,400 mol) pasa a formar parte de la fase gaseosa cuando hay vapor." },
-          { paso: "P = 1,000 x 0,0821 x 373,15 / 25,0 = 1,23 atm.", porque: "Se aplica la ecuación de gas ideal al total de moles gaseosos a la nueva temperatura." }
+          { paso: "Si el agua está como vapor, n_gas = 0,600 + 2 x 0,200 = 1,000 mol; T = 100,0 + 273,15 = 373,15 K.", porque: "Si el agua está como vapor, sus moles se suman a los del gas, porque el vapor sí ejerce presión. Por eso se cuentan los 0,400 mol de agua junto con los 0,600 mol de gas, y la temperatura pasa a 373,15 K. Este cambio de estado es el que hace subir la presión." },
+          { paso: "P = 1,000 x 0,0821 x 373,15 / 25,0 = 1,23 atm.", porque: "Se aplica la ecuación de gas ideal con el total de moles gaseosos, la nueva temperatura y el mismo volumen. Como hay más moles y mayor temperatura, la presión sube de forma notable. Esta comparación explica la diferencia entre b) y c)." }
         ],
         resultado: "P total = 1,23 atm"
       }
@@ -465,33 +465,33 @@ window.EJERCITACION["gases"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "T = 27,0 + 273,15 = 300,15 K. Moles totales: n = 3,00 x 30,0 / (0,0821 x 300,15) = 3,65 mol.", porque: "La mezcla es un gas ideal en un volumen conocido; el total de moles se obtiene de la ecuación de estado." },
-          { paso: "n(CO2) = 0,250 x 3,65 = 0,913 mol, y n(N2) = 3,65 - 0,913 = 2,74 mol.", porque: "La fracción molar da la proporción de cada gas sobre el total de moles." },
-          { paso: "Masas: m(CO2) = 0,913 mol x 44,0 g/mol = 40,2 g; m(N2) = 2,74 mol x 28,0 g/mol = 76,7 g.", porque: "Cada masa se obtiene con la masa molar del componente correspondiente." }
+          { paso: "T = 27,0 + 273,15 = 300,15 K. Moles totales: n = 3,00 x 30,0 / (0,0821 x 300,15) = 3,65 mol.", porque: "Se usa PV = nRT con los datos del cilindro para obtener los moles totales, porque la mezcla se trata como gas ideal en un volumen conocido. La temperatura debe estar en kelvin. Con este total se reparte la cantidad entre los dos gases." },
+          { paso: "n(CO2) = 0,250 x 3,65 = 0,913 mol, y n(N2) = 3,65 - 0,913 = 2,74 mol.", porque: "Se usa la fracción molar de CO2 para separar el total en CO2 y N2, porque esa fracción indica la proporción de moles de cada gas. El N2 es el complemento hasta el total. Conviene verificar que la suma de ambos dé el total de moles." },
+          { paso: "Masas: m(CO2) = 0,913 mol x 44,0 g/mol = 40,2 g; m(N2) = 2,74 mol x 28,0 g/mol = 76,7 g.", porque: "Se multiplica la cantidad de cada gas por su masa molar para obtener su masa, porque la masa molar convierte moles en gramos. Se usan 44,0 g/mol para el CO2 y 28,0 g/mol para el N2. Verificá que la suma de ambas masas coincida con la masa total de la mezcla." }
         ],
         resultado: "n total = 3,65 mol; m(CO2) = 40,2 g; m(N2) = 76,7 g"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Moles finales para P = 2,00 atm: n_final = 2,00 x 30,0 / (0,0821 x 300,15) = 2,43 mol.", porque: "Con V y T constantes, la presión es proporcional a los moles totales." },
-          { paso: "Moles extraídos: 3,65 - 2,43 = 1,22 mol. La masa molar media de la mezcla es 0,250 x 44,0 + 0,750 x 28,0 = 32,0 g/mol.", porque: "Como la composición se mantiene, la masa molar media permite pasar de moles a gramos sin separar componentes." },
-          { paso: "m extraída = 1,22 mol x 32,0 g/mol = 39,0 g.", porque: "Se multiplica los moles extraídos por la masa molar media de la mezcla." }
+          { paso: "Moles finales para P = 2,00 atm: n_final = 2,00 x 30,0 / (0,0821 x 300,15) = 2,43 mol.", porque: "Con V y T constantes, la presión es proporcional a los moles totales, así que el dato de 2,00 atm fija cuántos moles deben quedar en el cilindro. Se despeja n_final de PV = nRT con el volumen y la temperatura del recipiente. Esto permite saber cuánto gas hay que extraer." },
+          { paso: "Moles extraídos: 3,65 - 2,43 = 1,22 mol. La masa molar media de la mezcla es 0,250 x 44,0 + 0,750 x 28,0 = 32,0 g/mol.", porque: "Como la composición se mantiene, la masa molar media de la mezcla permite pasar de moles a gramos sin separar los componentes. Se pondera las masas molares por las fracciones molares: 0,250 x 44,0 + 0,750 x 28,0. Esto evita calcular por separado la masa de cada gas." },
+          { paso: "m extraída = 1,22 mol x 32,0 g/mol = 39,0 g.", porque: "Se multiplica los moles extraídos por la masa molar media para obtener la masa que sale del cilindro. Es válido porque el gas que sale tiene la misma composición que el que queda. Conviene verificar que la masa obtenida sea menor que la masa total de la mezcla." }
         ],
         resultado: "m extraída = 39,0 g"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "T2 = 127,0 + 273,15 = 400,15 K. Con V y n constantes, P2 = P1 x T2 / T1 = 3,00 atm x 400,15 / 300,15 = 4,00 atm.", porque: "A volumen y moles constantes, la presión es proporcional a la temperatura absoluta (Gay-Lussac)." }
+          { paso: "T2 = 127,0 + 273,15 = 400,15 K. Con V y n constantes, P2 = P1 x T2 / T1 = 3,00 atm x 400,15 / 300,15 = 4,00 atm.", porque: "Con V y n constantes, la presión es proporcional a la temperatura absoluta, así que se aplica la ley de Gay-Lussac. Como no hay fugas, los moles no cambian, y la relación entre las temperaturas en kelvin da la nueva presión. Verificá que se usen las temperaturas en K y no en °C." }
         ],
         resultado: "P final = 4,00 atm"
       },
       {
         parte: "d)",
         pasos: [
-          { paso: "No cambia: P(CO2) = n(CO2).R.T / V, y n(CO2), T y V no cambian al agregar N2.", porque: "La presión parcial de un gas sólo depende de sus propios moles, del volumen y de la temperatura, no de los otros gases." },
-          { paso: "Lo que aumenta es la presión total, por la suma de presiones parciales (Dalton).", porque: "Al agregar N2, la presión total sube porque sumamos una nueva contribución, pero la del CO2 queda igual." }
+          { paso: "No cambia: P(CO2) = n(CO2).R.T / V, y n(CO2), T y V no cambian al agregar N2.", porque: "La presión parcial de un gas depende sólo de sus moles, del volumen y de la temperatura, porque es lo que tendría ese gas si ocupara solo el recipiente. Al agregar N2, los moles de CO2 no cambian, así que su presión parcial queda igual. Conviene distinguirla de la fracción molar, que sí baja." },
+          { paso: "Lo que aumenta es la presión total, por la suma de presiones parciales (Dalton).", porque: "Al agregar N2, la presión total sube, porque la presión total es la suma de las presiones parciales de todos los componentes. Esto muestra que la presión total depende de toda la mezcla y no sólo del CO2. Conviene separar ambos conceptos al responder." }
         ],
         resultado: "La presión parcial del CO2 no cambia; sube la presión total"
       }
@@ -514,10 +514,10 @@ window.EJERCITACION["liquidos"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Presión de vapor en atm: 44,6 / 760 = 0,0587 atm. Temperatura: T = 20,0 + 273,15 = 293,15 K.", porque: "R = 0,0821 L.atm/(mol.K) exige presión en atm y temperatura en kelvin." },
-          { paso: "Como queda líquido en el recipiente, el vapor está saturado: su presión es la presión de vapor a 20,0 °C.", porque: "En equilibrio líquido-vapor, la presión de vapor depende sólo de la temperatura y no de la cantidad de líquido." },
-          { paso: "Moles de vapor: n = P.V / (R.T) = 0,0587 x 2,00 / (0,0821 x 293,15) = 4,88 x 10^-3 mol.", porque: "Es la cantidad de etanol que cabe como vapor a esa presión en el volumen de 2,00 L." },
-          { paso: "Masa de vapor: 4,88 x 10^-3 mol x 46,1 g/mol = 0,225 g; masa líquida = 1,00 - 0,225 = 0,775 g.", porque: "Por conservación de masa, lo que no está en vapor queda líquido." }
+          { paso: "Presión de vapor en atm: 44,6 / 760 = 0,0587 atm. Temperatura: T = 20,0 + 273,15 = 293,15 K.", porque: "Se pasa la presión de vapor de mmHg a atm dividiendo por 760, y la temperatura a kelvin sumando 273,15. La constante R = 0,0821 L.atm/(mol.K) sólo es coherente con presiones en atm y temperaturas absolutas. Conviene hacer ambas conversiones antes de aplicar la ecuación de gas ideal." },
+          { paso: "Como queda líquido en el recipiente, el vapor está saturado: su presión es la presión de vapor a 20,0 °C.", porque: "Como queda líquido en el recipiente, el vapor está saturado y su presión es la presión de vapor a 20,0 °C. Esa presión depende sólo de la temperatura, por eso no hace falta conocer cuánto líquido hay. Este es el punto clave: mientras haya líquido, el vapor no supera ese valor." },
+          { paso: "Moles de vapor: n = P.V / (R.T) = 0,0587 x 2,00 / (0,0821 x 293,15) = 4,88 x 10^-3 mol.", porque: "Se despeja n de PV = nRT dividiendo por R.T, con P = 0,0587 atm, V = 2,00 L y T = 293,15 K, para saber cuántos moles de etanol caben como vapor. Es la misma ecuación de gas ideal, aplicada ahora al vapor en equilibrio. Verificá que el resultado quede en mol." },
+          { paso: "Masa de vapor: 4,88 x 10^-3 mol x 46,1 g/mol = 0,225 g; masa líquida = 1,00 - 0,225 = 0,775 g.", porque: "Se aplica conservación de masa: el etanol total son 1,00 g y la parte que no está en vapor queda líquida. Pasar los moles de vapor a gramos requiere multiplicar por la masa molar 46,1 g/mol. Conviene comprobar que la suma de vapor y líquido dé 1,00 g." }
         ],
         resultado: "Vapor: 0,225 g; líquido: 0,775 g"
       }
@@ -537,10 +537,10 @@ window.EJERCITACION["liquidos"] = [
       {
         parte: "",
         pasos: [
-          { paso: "HF: el H está unido a F, que es muy electronegativo y tiene pares libres. Predomina el puente de hidrógeno.", porque: "El puente de hidrógeno ocurre cuando un H unido a F, O o N interactúa con un par libre de otro F, O o N." },
-          { paso: "Butano: molécula apolar, sin H unido a F, O o N ni pares libres. Sólo hay fuerzas de London.", porque: "Las fuerzas de London existen en todas las moléculas y son las únicas cuando no hay polaridad ni puentes de H." },
-          { paso: "NaBr en agua: los iones Na+ y Br- interactúan con el dipolo del agua. Predominan las fuerzas ion-dipolo.", porque: "Un compuesto iónico disuelto en un solvente polar se rodea de moléculas polares que lo estabilizan con interacciones ion-dipolo." },
-          { paso: "Metanol: tiene O-H, así que forma puente de hidrógeno; además tiene London.", porque: "El grupo OH permite puentes de hidrógeno, que son las fuerzas intermoleculares predominantes en alcoholes." }
+          { paso: "HF: el H está unido a F, que es muy electronegativo y tiene pares libres. Predomina el puente de hidrógeno.", porque: "El puente de hidrógeno ocurre cuando un H unido a F, O o N interactúa con un par libre de otro F, O o N. En el HF el H está unido a un átomo muy electronegativo, y eso permite esta interacción. Verificá que el H esté unido a F, O o N antes de hablar de puentes." },
+          { paso: "Butano: molécula apolar, sin H unido a F, O o N ni pares libres. Sólo hay fuerzas de London.", porque: "Las fuerzas de London dependen del tamaño y de la superficie de la molécula, y son las únicas en moléculas apolares como el butano. Como no hay polaridad ni puentes de H, la conclusión se apoya sólo en esa interacción. Recordá que un enlace C-H es prácticamente apolar." },
+          { paso: "NaBr en agua: los iones Na+ y Br- interactúan con el dipolo del agua. Predominan las fuerzas ion-dipolo.", porque: "Un compuesto iónico disuelto en agua se separa en iones, que son atraídos por los extremos del dipolo del agua. Esa interacción entre una carga y un dipolo es ion-dipolo, y es más intensa que una dipolo-dipolo. Conviene identificar el solvente polar como responsable de esta interacción." },
+          { paso: "Metanol: tiene O-H, así que forma puente de hidrógeno; además tiene London.", porque: "El grupo OH del metanol permite puentes de hidrógeno, que son las fuerzas predominantes en alcoholes de cadena corta. Como toda molécula tiene fuerzas de London, la respuesta completa también las menciona. Verificá que el H del OH esté unido al O." }
         ],
         resultado: "a) puente de hidrógeno; b) London; c) ion-dipolo; d) puente de hidrógeno"
       }
@@ -560,8 +560,8 @@ window.EJERCITACION["liquidos"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Moles de agua: n = 50,0 g / 18,0 g/mol = 2,78 mol.", porque: "El calor de vaporización está expresado por mol, así que hay que pasar la masa a moles." },
-          { paso: "Calor absorbido: Q = n x Delta H_vap = 2,78 mol x 40,7 kJ/mol = 113 kJ.", porque: "A temperatura y presión constantes, el calor del cambio de fase líquido a vapor es la entalpía de vaporización por mol." }
+          { paso: "Moles de agua: n = 50,0 g / 18,0 g/mol = 2,78 mol.", porque: "Como el calor de vaporización está dado por mol, la masa de agua se pasa a moles dividiendo por 18,0 g/mol. Sin este paso no se puede usar el valor de 40,7 kJ/mol. Conviene verificar que 50,0 / 18,0 dé aproximadamente 2,78 mol." },
+          { paso: "Calor absorbido: Q = n x Delta H_vap = 2,78 mol x 40,7 kJ/mol = 113 kJ.", porque: "A temperatura y presión constantes, el calor absorbido en el cambio de fase es la entalpía de vaporización por mol. Como el agua se vaporiza sin cambiar de temperatura, no corresponde usar el calor específico. Se multiplica los moles por 40,7 kJ/mol para obtener el calor total." }
         ],
         resultado: "Q = 113 kJ (energía absorbida)"
       }
@@ -581,9 +581,9 @@ window.EJERCITACION["liquidos"] = [
       {
         parte: "",
         pasos: [
-          { paso: "1 dina = 10^-5 N y 1 cm = 10^-2 m. Entonces 1 dina/cm = 10^-5 N / 10^-2 m = 10^-3 N/m.", porque: "La tensión superficial es fuerza por unidad de longitud, y hay que convertir cada unidad por separado." },
-          { paso: "Benceno: 28,9 dinas/cm = 28,9 x 10^-3 N/m = 0,0289 N/m (28,9 mN/m).", porque: "Se aplica el factor 10^-3 N/m por cada dina/cm." },
-          { paso: "Agua: 72,75 dinas/cm = 0,07275 N/m. La tensión del agua es aproximadamente 2,5 veces mayor que la del benceno.", porque: "Ambas magnitudes están ya en la misma unidad, así que la comparación es directa." }
+          { paso: "1 dina = 10^-5 N y 1 cm = 10^-2 m. Entonces 1 dina/cm = 10^-5 N / 10^-2 m = 10^-3 N/m.", porque: "Se usa la definición de tensión superficial, que es fuerza por unidad de longitud, y por eso cada unidad se convierte por separado: la fuerza en dinas y la longitud en cm. Un error habitual es confundir cm con m, que difieren en un factor 100. Revisá cada unidad antes de combinarlas." },
+          { paso: "Benceno: 28,9 dinas/cm = 28,9 x 10^-3 N/m = 0,0289 N/m (28,9 mN/m).", porque: "El factor 10^-5 N por dina y el factor 10^-2 m por cm se combinan para dar 10^-3 N/m por cada dina/cm. Así, 28,9 dinas/cm equivalen a 28,9 x 10^-3 N/m. Conviene escribir el factor de conversión y cancelar unidades para no equivocar el exponente." },
+          { paso: "Agua: 72,75 dinas/cm = 0,07275 N/m. La tensión del agua es aproximadamente 2,5 veces mayor que la del benceno.", porque: "Como ambas tensiones ya están en N/m, se pueden comparar de forma directa: el cociente 0,07275 / 0,0289 da aproximadamente 2,5. La diferencia se explica por los puentes de hidrógeno del agua, que son interacciones más intensas. Verificá que la conclusión coincida con el sentido de la comparación." }
         ],
         resultado: "Benceno: 0,0289 N/m; agua: 0,07275 N/m (la del agua es mayor)"
       }
@@ -603,9 +603,9 @@ window.EJERCITACION["liquidos"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Como hay agua líquida, el vapor de agua está saturado: P(H2O) = 23,8 mmHg = 0,0313 atm.", porque: "En presencia de líquido, la presión parcial del vapor es igual a la presión de vapor a esa temperatura." },
-          { paso: "Por Dalton: P(aire seco) = P total - P(H2O) = 1,00 atm - 0,0313 atm = 0,969 atm (736 mmHg).", porque: "La presión total es la suma de las presiones parciales de todos los componentes." },
-          { paso: "Fracción molar del agua: x(H2O) = P(H2O) / P total = 0,0313 / 1,00 = 0,0313.", porque: "Para una mezcla gaseosa, la fracción molar de un componente es su presión parcial sobre la presión total." }
+          { paso: "Como hay agua líquida, el vapor de agua está saturado: P(H2O) = 23,8 mmHg = 0,0313 atm.", porque: "Como hay agua líquida, el vapor de agua está saturado y su presión parcial es la presión de vapor a 25 °C. Se convierte 23,8 mmHg a atm porque el cálculo que sigue usa atm. Este valor es el que se resta de la presión total para obtener la del aire seco." },
+          { paso: "Por Dalton: P(aire seco) = P total - P(H2O) = 1,00 atm - 0,0313 atm = 0,969 atm (736 mmHg).", porque: "Por Dalton, la presión total es la suma de las presiones parciales, así que la del aire seco es la total menos la del vapor de agua. Esto separa la contribución del agua de la de los demás gases. Verificá que ambas presiones estén en la misma unidad antes de restar." },
+          { paso: "Fracción molar del agua: x(H2O) = P(H2O) / P total = 0,0313 / 1,00 = 0,0313.", porque: "La fracción molar de un componente en una mezcla gaseosa es su presión parcial dividida por la presión total, porque la presión parcial es proporcional a los moles. Así se expresa la composición del aire húmedo en términos de moles. Conviene verificar que el resultado sea un número sin unidades menor que 1." }
         ],
         resultado: "P(aire seco) = 0,969 atm (736 mmHg); x(H2O) = 0,0313"
       }
@@ -625,19 +625,19 @@ window.EJERCITACION["liquidos"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Presión de vapor en atm: 23,8 / 760 = 0,0313 atm. T = 25,0 + 273,15 = 298,15 K.", porque: "Hay que usar atm y kelvin para la ecuación de gas ideal." },
-          { paso: "Moles máximos de vapor: n = 0,0313 x 5,00 / (0,0821 x 298,15) = 6,40 x 10^-3 mol.", porque: "Si hay líquido, el vapor llega a la presión de vapor, y esa presión define cuántos moles caben en 5,00 L." },
-          { paso: "Verificación: el agua total es 0,500 g / 18,0 g/mol = 0,0278 mol, más que 6,40 x 10^-3 mol, así que sí queda líquido.", porque: "La saturación sólo se da si el líquido es suficiente para llenar el vapor hasta esa presión." },
-          { paso: "Masa de vapor: 6,40 x 10^-3 mol x 18,0 g/mol = 0,115 g; masa líquida: 0,500 - 0,115 = 0,385 g.", porque: "Conservación de masa: el resto del agua está en el líquido." }
+          { paso: "Presión de vapor en atm: 23,8 / 760 = 0,0313 atm. T = 25,0 + 273,15 = 298,15 K.", porque: "Se usan atm y kelvin para aplicar la ecuación de gas ideal al vapor, porque R = 0,0821 L.atm/(mol.K) exige esas unidades. La presión de vapor a 25 °C se pasa de mmHg a atm dividiendo por 760. Verificá que la temperatura quede en K (298,15 K)." },
+          { paso: "Moles máximos de vapor: n = 0,0313 x 5,00 / (0,0821 x 298,15) = 6,40 x 10^-3 mol.", porque: "Si el vapor llega a la presión de vapor, esa presión define cuántos moles caben en 5,00 L a 25 °C. Es el máximo de vapor posible en el recipiente, sin importar cuánto líquido haya. Esta idea es la base del concepto de saturación." },
+          { paso: "Verificación: el agua total es 0,500 g / 18,0 g/mol = 0,0278 mol, más que 6,40 x 10^-3 mol, así que sí queda líquido.", porque: "La saturación sólo se da si hay líquido suficiente para llenar el vapor hasta esa presión. Por eso se compara la masa total de agua con el máximo de vapor. Si la masa total es mayor, queda líquido y la presión de vapor se mantiene." },
+          { paso: "Masa de vapor: 6,40 x 10^-3 mol x 18,0 g/mol = 0,115 g; masa líquida: 0,500 - 0,115 = 0,385 g.", porque: "Por conservación de masa, el agua que no está en vapor queda en fase líquida. Se multiplica los moles de vapor por 18,0 g/mol para pasar a gramos y se resta del total. Conviene verificar que la suma de vapor y líquido dé 0,500 g." }
         ],
         resultado: "Vapor: 0,115 g; líquido: 0,385 g"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Al comprimir a 25,0 °C, el vapor en exceso condensa; mientras haya líquido, la presión total queda en 23,8 mmHg.", porque: "La presión de vapor depende sólo de la temperatura: el volumen no la cambia mientras coexisten líquido y vapor." },
-          { paso: "Moles de vapor en 1,00 L: n = 0,0313 x 1,00 / (0,0821 x 298,15) = 1,28 x 10^-3 mol; masa = 1,28 x 10^-3 x 18,0 = 0,0230 g.", porque: "Con el nuevo volumen, la cantidad de vapor que cabe a la misma presión de vapor es menor." },
-          { paso: "La masa líquida restante es 0,500 - 0,0230 = 0,477 g, y la presión total es 23,8 mmHg (0,0313 atm).", porque: "Se confirma que el sistema sigue con líquido, así que el resultado de saturación es válido." }
+          { paso: "Al comprimir a 25,0 °C, el vapor en exceso condensa; mientras haya líquido, la presión total queda en 23,8 mmHg.", porque: "Al comprimir a 25 °C, el vapor en exceso condensa, pero mientras haya líquido la presión total queda igual a la presión de vapor. La presión de vapor depende sólo de la temperatura, y el volumen sólo cambia la cantidad de vapor. Esta es la clave de la compresión con líquido presente." },
+          { paso: "Moles de vapor en 1,00 L: n = 0,0313 x 1,00 / (0,0821 x 298,15) = 1,28 x 10^-3 mol; masa = 1,28 x 10^-3 x 18,0 = 0,0230 g.", porque: "Con el nuevo volumen de 1,00 L, la cantidad de vapor que cabe a la misma presión de vapor es menor. Se calcula con PV = nRT y luego se pasa a gramos con la masa molar del agua. Verificá que la presión esté en atm y la temperatura en K." },
+          { paso: "La masa líquida restante es 0,500 - 0,0230 = 0,477 g, y la presión total es 23,8 mmHg (0,0313 atm).", porque: "La masa líquida restante se obtiene restando el vapor del total, por conservación de masa. Se confirma que el sistema sigue con líquido, porque la masa de agua supera el máximo de vapor. Esto valida que la presión final es la presión de vapor." }
         ],
         resultado: "P total = 23,8 mmHg (0,0313 atm); vapor = 0,0230 g"
       }
@@ -657,16 +657,16 @@ window.EJERCITACION["liquidos"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Cambio de área: Delta A = 2 caras x 4,00 cm x 5,00 cm = 40,0 cm^2 = 4,00 x 10^-3 m^2.", porque: "La película tiene dos superficies, así que se cuentan las dos caras; además la unidad de la tensión es N/m, y hay que pasar el área a m^2." },
-          { paso: "Energía: E = sigma x Delta A = 0,07275 N/m x 4,00 x 10^-3 m^2 = 2,91 x 10^-4 J.", porque: "La tensión superficial es energía por unidad de área (J/m^2 = N/m), así que la energía es sigma por el área creada." }
+          { paso: "Cambio de área: Delta A = 2 caras x 4,00 cm x 5,00 cm = 40,0 cm^2 = 4,00 x 10^-3 m^2.", porque: "Se calcula el área de la película: como tiene dos caras, el área creada es el doble del producto de largo por desplazamiento. Además, la tensión está en N/m, así que el área debe expresarse en m^2. Verificá la conversión de cm^2 a m^2." },
+          { paso: "Energía: E = sigma x Delta A = 0,07275 N/m x 4,00 x 10^-3 m^2 = 2,91 x 10^-4 J.", porque: "La tensión superficial es energía por unidad de área (J/m^2, igual a N/m), por eso la energía es sigma multiplicado por el área creada. Este producto da el trabajo necesario para estirar la película. Conviene revisar que el resultado quede en J." }
         ],
         resultado: "E = 2,91 x 10^-4 J"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "E = 0,0450 N/m x 4,00 x 10^-3 m^2 = 1,80 x 10^-4 J.", porque: "Se usa la misma área, con la nueva tensión superficial." },
-          { paso: "La energía baja un 38 %, porque el detergente reduce las fuerzas no compensadas en la superficie.", porque: "Menos tensión significa menos energía para crear la misma área superficial." }
+          { paso: "E = 0,0450 N/m x 4,00 x 10^-3 m^2 = 1,80 x 10^-4 J.", porque: "Se usa la misma área que en a), pero con la nueva tensión superficial del agua con detergente. Como el área no cambia, la diferencia en la energía proviene sólo de la tensión. Verificá que el valor de sigma esté en N/m." },
+          { paso: "La energía baja un 38 %, porque el detergente reduce las fuerzas no compensadas en la superficie.", porque: "Como la energía es proporcional a la tensión, una tensión menor implica menos energía para crear la misma área. El detergente reduce las fuerzas no compensadas en la superficie, y por eso baja la energía. Conviene verificar que la reducción relativa sea coherente con el cociente de tensiones." }
         ],
         resultado: "E = 1,80 x 10^-4 J"
       }
@@ -686,17 +686,17 @@ window.EJERCITACION["liquidos"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Suponga que todo el agua está como vapor a 40,0 °C: n = 0,100 g / 18,0 g/mol = 5,56 x 10^-3 mol. T = 313,15 K.", porque: "Para saber si hay líquido, primero se calcula la presión que tendría toda el agua en fase vapor." },
-          { paso: "P = n.R.T / V = 5,56 x 10^-3 x 0,0821 x 313,15 / 4,00 = 0,0357 atm = 27,1 mmHg.", porque: "Si la presión calculada es menor que la de vapor, el vapor no está saturado y no puede haber líquido en equilibrio." },
-          { paso: "Como 27,1 mmHg < 55,3 mmHg, no hay condensación: toda el agua está como vapor a 40,0 °C.", porque: "El líquido sólo se mantiene si la presión del vapor llega a la presión de vapor a esa temperatura." }
+          { paso: "Suponga que todo el agua está como vapor a 40,0 °C: n = 0,100 g / 18,0 g/mol = 5,56 x 10^-3 mol. T = 313,15 K.", porque: "Se supone que toda el agua está como vapor a 40 °C para ver si queda líquido: n = 0,100 g / 18,0 g/mol. Esta suposición da un punto de comparación, y la temperatura debe ir en kelvin (313,15 K). Verificá la masa molar del agua antes de dividir." },
+          { paso: "P = n.R.T / V = 5,56 x 10^-3 x 0,0821 x 313,15 / 4,00 = 0,0357 atm = 27,1 mmHg.", porque: "Se calcula la presión que tendría ese vapor en 4,00 L con PV = nRT, porque el resultado se compara con la presión de vapor a 40 °C. Es una prueba de saturación. Conviene pasar el resultado a mmHg para compararlo con 55,3 mmHg." },
+          { paso: "Como 27,1 mmHg < 55,3 mmHg, no hay condensación: toda el agua está como vapor a 40,0 °C.", porque: "Si la presión que tendría todo el vapor es menor que la presión de vapor, el vapor no se satura y no puede haber líquido. Así se decide si queda agua líquida a 40 °C. Este criterio es el mismo que se usa en todo el tema." }
         ],
         resultado: "Todo el agua está en vapor a 40,0 °C (P = 27,1 mmHg)"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Máximo vapor a 25,0 °C: n_max = (23,8 / 760) x 4,00 / (0,0821 x 298,15) = 5,12 x 10^-3 mol, es decir 5,12 x 10^-3 x 18,0 = 0,0922 g.", porque: "Al enfriar, la presión de vapor baja, y sólo puede quedar en vapor la cantidad que corresponde a 23,8 mmHg en 4,00 L." },
-          { paso: "Masa líquida: 0,100 - 0,0922 = 7,8 x 10^-3 g (7,8 mg) de agua líquida.", porque: "El exceso sobre el máximo de vapor condensa y queda como líquido." }
+          { paso: "Máximo vapor a 25,0 °C: n_max = (23,8 / 760) x 4,00 / (0,0821 x 298,15) = 5,12 x 10^-3 mol, es decir 5,12 x 10^-3 x 18,0 = 0,0922 g.", porque: "Al enfriar, la presión de vapor baja a 23,8 mmHg, así que sólo puede quedar en vapor la cantidad que corresponde a ese valor en 4,00 L. Se calcula ese máximo con PV = nRT y luego se pasa a gramos con la masa molar. Verificá que la presión esté en atm." },
+          { paso: "Masa líquida: 0,100 - 0,0922 = 7,8 x 10^-3 g (7,8 mg) de agua líquida.", porque: "El agua que supera el máximo de vapor condensa y queda como líquido. Por conservación de masa, la masa líquida es el total menos el vapor máximo. Conviene verificar que el resultado sea coherente con los 0,100 g iniciales." }
         ],
         resultado: "Líquido a 25,0 °C: 7,8 x 10^-3 g"
       }
@@ -716,17 +716,17 @@ window.EJERCITACION["liquidos"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "1-propanol: tiene un H unido a O, con pares libres en el O. Predomina el puente de hidrógeno, además de London.", porque: "El O-H permite puentes de hidrógeno, que son fuerzas intermoleculares muy intensas." },
-          { paso: "Etil metil éter: el O está unido a dos carbonos y no tiene H unido a él. Predominan dipolo-dipolo (el enlace C-O-C es polar) y London.", porque: "Sin H unido a O, no hay puente de hidrógeno; la molécula es polar, pero con fuerzas dipolo-dipolo más débiles." }
+          { paso: "1-propanol: tiene un H unido a O, con pares libres en el O. Predomina el puente de hidrógeno, además de London.", porque: "En el 1-propanol aparece un H unido a O, lo que permite puentes de hidrógeno. El O tiene pares libres, y eso se tiene en cuenta al describir la interacción. Por eso el puente de hidrógeno es la fuerza predominante, además de London." },
+          { paso: "Etil metil éter: el O está unido a dos carbonos y no tiene H unido a él. Predominan dipolo-dipolo (el enlace C-O-C es polar) y London.", porque: "En el éter el O está unido sólo a carbonos, así que no hay puente de hidrógeno. La molécula es polar porque el enlace C-O-C tiene polaridad, por lo que aparecen dipolo-dipolo además de London. Esta distinción es la base de la comparación de las dos sustancias." }
         ],
         resultado: "1-propanol: puente de hidrógeno + London; éter: dipolo-dipolo + London"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Ambos tienen la misma masa molar (C3H8O), así que la diferencia viene sólo de las fuerzas intermoleculares.", porque: "Cuando se comparan isómeros, la masa molar no sirve para diferenciarlos; hay que mirar las fuerzas." },
-          { paso: "El éter tiene fuerzas más débiles, así que tiene mayor presión de vapor y es más volátil.", porque: "A menor fuerza intermolecular, las moléculas escapan más fácil a la fase vapor." },
-          { paso: "El 1-propanol tiene puentes de hidrógeno: mayor viscosidad y mayor tensión superficial.", porque: "Las fuerzas intermoleculares intensas aumentan la resistencia a fluir y la energía de la superficie." }
+          { paso: "Ambos tienen la misma masa molar (C3H8O), así que la diferencia viene sólo de las fuerzas intermoleculares.", porque: "Como las dos sustancias son isómeros, tienen la misma masa molar y la masa no sirve para explicar la diferencia. Las diferencias de comportamiento vienen de las fuerzas intermoleculares. Conviene comparar siempre las fuerzas y no la masa." },
+          { paso: "El éter tiene fuerzas más débiles, así que tiene mayor presión de vapor y es más volátil.", porque: "A menor fuerza intermolecular, las moléculas escapan con más facilidad a la fase vapor. Como el éter tiene fuerzas más débiles, tiene mayor presión de vapor y es más volátil. La relación es inversa: más fuerza implica menor presión de vapor." },
+          { paso: "El 1-propanol tiene puentes de hidrógeno: mayor viscosidad y mayor tensión superficial.", porque: "Las fuerzas intensas, como los puentes de hidrógeno, aumentan la resistencia a fluir (viscosidad) y la energía de la superficie (tensión superficial). Por eso el 1-propanol tiene valores más altos de ambas propiedades. Verificá que la comparación se haga entre sustancias de la misma masa molar." }
         ],
         resultado: "Mayor presión de vapor: éter; mayor viscosidad y tensión superficial: 1-propanol"
       }
@@ -746,16 +746,16 @@ window.EJERCITACION["liquidos"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "P(H2O) = HR x P_vap = 0,60 x 23,8 mmHg = 14,3 mmHg = 0,0188 atm.", porque: "Por definición, la humedad relativa es la fracción de la presión de vapor que tiene el agua en el aire." },
-          { paso: "Por Dalton, P(aire seco) = 1,00 atm - 0,0188 atm = 0,981 atm.", porque: "La presión total se reparte entre el vapor de agua y el resto de los gases." }
+          { paso: "P(H2O) = HR x P_vap = 0,60 x 23,8 mmHg = 14,3 mmHg = 0,0188 atm.", porque: "La humedad relativa se define como el cociente entre la presión parcial del agua y la presión de vapor a esa temperatura. Multiplicar 0,60 por 23,8 mmHg da la presión parcial real del agua. Conviene verificar que el resultado sea menor que la presión de vapor." },
+          { paso: "Por Dalton, P(aire seco) = 1,00 atm - 0,0188 atm = 0,981 atm.", porque: "Por Dalton, la presión total del aire es la suma de la del vapor de agua y la del aire seco. Como la presión total es 1,00 atm, se resta la presión del vapor para obtener la del aire seco. Verificá que todas las presiones estén en atm." }
         ],
         resultado: "P(H2O) = 14,3 mmHg (0,0188 atm)"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "T = 25,0 + 273,15 = 298,15 K. Moles de agua: n = P.V / (R.T) = 0,0188 x 10,0 / (0,0821 x 298,15) = 7,68 x 10^-3 mol.", porque: "El vapor de agua se comporta como gas ideal en esas condiciones, así que se usa su presión parcial, no la total." },
-          { paso: "Masa de agua: 7,68 x 10^-3 mol x 18,0 g/mol = 0,138 g.", porque: "Se pasa de moles a gramos con la masa molar del agua." }
+          { paso: "T = 25,0 + 273,15 = 298,15 K. Moles de agua: n = P.V / (R.T) = 0,0188 x 10,0 / (0,0821 x 298,15) = 7,68 x 10^-3 mol.", porque: "Se pasa la temperatura a kelvin para la ecuación de gas ideal, porque es la escala absoluta que requiere R = 0,0821. Además se usa la presión parcial del agua y no la total, porque sólo el vapor de agua aporta moles de agua. Verificá que la presión esté en atm." },
+          { paso: "Masa de agua: 7,68 x 10^-3 mol x 18,0 g/mol = 0,138 g.", porque: "Se pasan los moles a gramos con la masa molar del agua, porque la masa molar convierte moles en gramos. El resultado es la masa de agua que está en forma de vapor en el recipiente. Conviene comprobar que la masa sea pequeña, como corresponde a un vapor a 25 °C." }
         ],
         resultado: "m(H2O vapor) = 0,138 g"
       }
@@ -775,24 +775,24 @@ window.EJERCITACION["liquidos"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Presión de vapor en atm: 23,8 / 760 = 0,0313 atm. T = 298,15 K.", porque: "Hay que usar atm y kelvin para aplicar la ecuación de gas ideal al vapor." },
-          { paso: "Como hay líquido, el vapor está saturado: n_max = 0,0313 x 5,00 / (0,0821 x 298,15) = 6,40 x 10^-3 mol, es decir 0,115 g.", porque: "La presión de vapor define el máximo de vapor que cabe en el volumen, sin importar la presencia del N2." },
-          { paso: "Masa líquida: 2,00 - 0,115 = 1,88 g.", porque: "Por conservación de masa, el agua que no está en vapor queda líquida." }
+          { paso: "Presión de vapor en atm: 23,8 / 760 = 0,0313 atm. T = 298,15 K.", porque: "Se pasa la presión de vapor a atm y la temperatura a 298,15 K, para usar la ecuación de gas ideal con unidades coherentes. La presión de vapor es el dato clave del vapor saturado. Verificá que la división por 760 se haya hecho correctamente." },
+          { paso: "Como hay líquido, el vapor está saturado: n_max = 0,0313 x 5,00 / (0,0821 x 298,15) = 6,40 x 10^-3 mol, es decir 0,115 g.", porque: "Como hay líquido en equilibrio, el vapor está saturado y la presión de vapor define el máximo de vapor que cabe en el volumen. Ese máximo se calcula con PV = nRT y luego se pasa a gramos. La presencia del N2 no modifica este valor." },
+          { paso: "Masa líquida: 2,00 - 0,115 = 1,88 g.", porque: "Por conservación de masa, el agua que no está en vapor queda líquida. Se resta la masa de vapor de los 2,00 g totales. Conviene verificar que la suma de vapor y líquido dé 2,00 g." }
         ],
         resultado: "Vapor: 0,115 g; líquido: 1,88 g"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Por Dalton: P total = P(N2) + P(H2O vapor) = 760 mmHg + 23,8 mmHg = 784 mmHg (1,03 atm).", porque: "El vapor de agua aporta su presión parcial, que se suma a la del N2." }
+          { paso: "Por Dalton: P total = P(N2) + P(H2O vapor) = 760 mmHg + 23,8 mmHg = 784 mmHg (1,03 atm).", porque: "Por Dalton, la presión total es la suma de las presiones parciales del N2 y del vapor de agua. El vapor aporta su presión de vapor, que se suma a los 760 mmHg del nitrógeno. Conviene expresar todas las presiones en la misma unidad." }
         ],
         resultado: "P total = 784 mmHg (1,03 atm)"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "P(N2) = n(N2).R.T / V: n(N2), T y V no cambian (el N2 no se disuelve), así que P(N2) sigue en 760 mmHg.", porque: "La presión parcial de un gas depende de sus propios moles, del volumen y de la temperatura, no de los otros componentes." },
-          { paso: "Lo que cambió es la presión total, por la contribución del vapor de agua.", porque: "La presión total aumenta porque se suma la presión parcial del vapor, que antes no existía." }
+          { paso: "P(N2) = n(N2).R.T / V: n(N2), T y V no cambian (el N2 no se disuelve), así que P(N2) sigue en 760 mmHg.", porque: "La presión parcial de un gas depende sólo de sus propios moles, del volumen y de la temperatura. Como el N2 no se disuelve ni cambia su cantidad, su presión parcial no varía. Esa independencia de los otros componentes es la base de la ley de Dalton." },
+          { paso: "Lo que cambió es la presión total, por la contribución del vapor de agua.", porque: "Lo que cambia es la presión total, porque al sumarse el vapor de agua aparece una nueva contribución. Esto es la ley de Dalton aplicada a la mezcla. Conviene aclarar que la presión parcial del N2 se mantiene." }
         ],
         resultado: "No cambió: la presión parcial del N2 sigue en 760 mmHg"
       }
@@ -812,23 +812,23 @@ window.EJERCITACION["liquidos"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "q = m.c.Delta T = 100,0 g x 4,18 J/(g.°C) x (100,0 - 20,0) °C = 3,34 x 10^4 J = 33,4 kJ.", porque: "Mientras no hay cambio de fase, la energía que se absorbe es la que sube la temperatura, según el calor específico." }
+          { paso: "q = m.c.Delta T = 100,0 g x 4,18 J/(g.°C) x (100,0 - 20,0) °C = 3,34 x 10^4 J = 33,4 kJ.", porque: "Se calcula el calor para elevar la temperatura de 20 °C a 100 °C con m.c.Delta T, porque mientras no hay cambio de fase la energía sube la temperatura. El calor específico 4,18 J/(g.°C) indica cuánta energía necesita cada gramo para subir 1 °C. Verificá que la variación de temperatura sea 80 °C." }
         ],
         resultado: "q(calentamiento) = 33,4 kJ"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "n = 100,0 g / 18,0 g/mol = 5,56 mol.", porque: "La entalpía de vaporización está dada por mol, así que hay que pasar la masa a moles." },
-          { paso: "q(vaporización) = n x Delta H_vap = 5,56 mol x 40,7 kJ/mol = 226 kJ.", porque: "Durante el cambio de fase a 100 °C la temperatura no cambia, y el calor es la entalpía de vaporización." }
+          { paso: "n = 100,0 g / 18,0 g/mol = 5,56 mol.", porque: "Se pasa la masa a moles con la masa molar del agua, porque la entalpía de vaporización está dada por mol. Así el valor de 40,7 kJ/mol se puede aplicar a los 100,0 g. Verificá que 100,0 / 18,0 dé 5,56 mol." },
+          { paso: "q(vaporización) = n x Delta H_vap = 5,56 mol x 40,7 kJ/mol = 226 kJ.", porque: "Durante el cambio de fase a 100 °C la temperatura no cambia, y el calor es n x Delta H_vap. Es un proceso a T constante, por eso no se usa el calor específico. Conviene verificar que el resultado esté en kJ." }
         ],
         resultado: "q(vaporización) = 226 kJ"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Q total = 33,4 kJ + 226 kJ = 2,60 x 10^2 kJ.", porque: "Los dos tramos son sucesivos, así que el calor total es la suma." },
-          { paso: "Por mol, calentar 80 °C cuesta 18,0 g/mol x 4,18 J/(g.°C) x 80 °C = 6,0 kJ, y vaporizar cuesta 40,7 kJ: unas 6,8 veces más.", porque: "Vaporizar exige vencer las fuerzas intermoleculares del agua (puentes de hidrógeno), mientras que calentar sólo aumenta la energía cinética." }
+          { paso: "Q total = 33,4 kJ + 226 kJ = 2,60 x 10^2 kJ.", porque: "Como los dos tramos ocurren uno después del otro, el calor total es la suma de calentamiento y vaporización. Se suman 33,4 kJ y 226 kJ para obtener el total. Verificá que ambos valores estén en kJ antes de sumar." },
+          { paso: "Por mol, calentar 80 °C cuesta 18,0 g/mol x 4,18 J/(g.°C) x 80 °C = 6,0 kJ, y vaporizar cuesta 40,7 kJ: unas 6,8 veces más.", porque: "Se compara el calor de calentar 80 °C con el de vaporizar un mol para ver qué proceso exige más energía. Vaporizar debe vencer las fuerzas intermoleculares, mientras que calentar sólo aumenta la energía cinética. Por eso la vaporización domina el consumo total de energía." }
         ],
         resultado: "Q total = 2,60 x 10^2 kJ; la vaporización domina por romper las FI"
       }
@@ -848,23 +848,23 @@ window.EJERCITACION["liquidos"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Despejar cos(theta) = (gamma_sv - gamma_sl) / gamma_lv = (0,0700 - 0,0300) / 0,0728 = 0,549.", porque: "La ecuación de Young relaciona las tres tensiones con el coseno del ángulo de contacto." },
-          { paso: "theta = arccos(0,549) = 56,7°.", porque: "El ángulo se obtiene de la función inversa del coseno." }
+          { paso: "Despejar cos(theta) = (gamma_sv - gamma_sl) / gamma_lv = (0,0700 - 0,0300) / 0,0728 = 0,549.", porque: "Se despeja cos(theta) de la ecuación de Young: la diferencia entre gamma_sv y gamma_sl se divide por gamma_lv. Así se aísla el coseno, que es el único término con el ángulo. Verificá que las tres tensiones estén en N/m antes de dividir." },
+          { paso: "theta = arccos(0,549) = 56,7°.", porque: "El ángulo se obtiene aplicando la función inversa del coseno al valor calculado. El resultado se expresa en grados, como pide el enunciado. Conviene revisar que la calculadora esté en modo grados." }
         ],
         resultado: "theta = 56,7°"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Como theta < 90°, cos(theta) > 0 y gamma_sv > gamma_sl: el líquido moja parcialmente la superficie.", porque: "Un ángulo menor a 90° indica que la adhesión líquido-sólido supera a la cohesión del líquido, y el líquido se extiende en parte." }
+          { paso: "Como theta < 90°, cos(theta) > 0 y gamma_sv > gamma_sl: el líquido moja parcialmente la superficie.", porque: "Como theta es menor que 90°, el coseno es positivo y gamma_sv es mayor que gamma_sl. Un ángulo menor a 90° indica que la adhesión líquido-sólido supera a la cohesión del líquido. Por eso el líquido moja parcialmente la superficie." }
         ],
         resultado: "Sí moja parcialmente (theta < 90°)"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "cos(theta) = (0,0700 - 0,0300) / 0,0350 = 0,0400 / 0,0350 = 1,14.", porque: "Se aplica la misma ecuación con la nueva tensión líquido-vapor." },
-          { paso: "Un coseno no puede ser mayor que 1, así que no existe ángulo de equilibrio. La condición gamma_sv > gamma_sl + gamma_lv se cumple y el líquido se extiende hasta mojar completamente la superficie (theta = 0).", porque: "Cuando la energía de la superficie sólida es mayor que la suma de las otras dos, el líquido se esparce sin formar gota." }
+          { paso: "cos(theta) = (0,0700 - 0,0300) / 0,0350 = 0,0400 / 0,0350 = 1,14.", porque: "Se aplica nuevamente la ecuación de Young, esta vez con gamma_lv = 0,0350 N/m. Al disminuir gamma_lv, el denominador se achica y el coseno crece. Verificá que el numerador siga siendo 0,0400 N/m." },
+          { paso: "Un coseno no puede ser mayor que 1, así que no existe ángulo de equilibrio. La condición gamma_sv > gamma_sl + gamma_lv se cumple y el líquido se extiende hasta mojar completamente la superficie (theta = 0).", porque: "El coseno resulta mayor que 1, lo que indica que no existe un ángulo de equilibrio. Eso significa que la gota se extiende y moja completamente la superficie. Es la situación de mojado total, con theta = 0." }
         ],
         resultado: "No hay ángulo de equilibrio: mojado total (theta = 0)"
       }
@@ -884,24 +884,24 @@ window.EJERCITACION["liquidos"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Hay líquido: el vapor está saturado y P = 23,8 mmHg = 0,0313 atm.", porque: "Mientras coexisten líquido y vapor, la presión es la presión de vapor a esa temperatura." },
-          { paso: "n(vapor) = 0,0313 x 3,00 / (0,0821 x 298,15) = 3,84 x 10^-3 mol; masa = 3,84 x 10^-3 x 18,0 = 0,0691 g; líquido = 1,00 - 0,0691 = 0,931 g.", porque: "La cantidad de vapor se obtiene con la presión de vapor, y el resto queda líquido por conservación de masa." }
+          { paso: "Hay líquido: el vapor está saturado y P = 23,8 mmHg = 0,0313 atm.", porque: "Como hay líquido, el vapor está saturado y la presión es la presión de vapor a esa temperatura. Ese valor es el que fija la presión del sistema mientras coexistan líquido y vapor. Verificá que se use la presión de vapor correspondiente a 20 °C." },
+          { paso: "n(vapor) = 0,0313 x 3,00 / (0,0821 x 298,15) = 3,84 x 10^-3 mol; masa = 3,84 x 10^-3 x 18,0 = 0,0691 g; líquido = 1,00 - 0,0691 = 0,931 g.", porque: "Se calcula el vapor que cabe en 3,00 L a la presión de vapor, y luego su masa. El resto del agua líquida es el que queda por conservación de masa. Conviene verificar que la temperatura esté en kelvin." }
         ],
         resultado: "Vapor: 0,0691 g; P = 23,8 mmHg; líquido: 0,931 g"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "T = 60,0 + 273,15 = 333,15 K. P_vap = 149,4 mmHg = 0,197 atm.", porque: "A 60 °C la presión de vapor es mayor, y la ecuación de gas se usa con kelvin y atm." },
-          { paso: "n_max = 0,197 x 3,00 / (0,0821 x 333,15) = 0,0216 mol = 0,388 g. Como 0,388 g < 1,00 g, sigue habiendo líquido.", porque: "Hay que verificar la saturación con la masa disponible; aquí queda líquido, así que P = 149,4 mmHg." }
+          { paso: "T = 60,0 + 273,15 = 333,15 K. P_vap = 149,4 mmHg = 0,197 atm.", porque: "Se pasa 60,0 °C a kelvin y la presión de vapor a atm para usar la ecuación de gas ideal con coherencia. A mayor temperatura la presión de vapor es mayor, por eso el valor cambia. Verificá que las unidades sean consistentes." },
+          { paso: "n_max = 0,197 x 3,00 / (0,0821 x 333,15) = 0,0216 mol = 0,388 g. Como 0,388 g < 1,00 g, sigue habiendo líquido.", porque: "Se calcula el máximo de vapor a 60 °C y se compara con la masa de agua disponible. Como esa masa es mayor que el máximo, sigue habiendo líquido en el recipiente. Esa comparación confirma que la presión queda fijada en la presión de vapor." }
         ],
         resultado: "Vapor: 0,388 g; P = 149,4 mmHg (0,197 atm)"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Con V constante y líquido presente, la presión total es la presión de vapor a cada temperatura. La presión sube de 23,8 a 149,4 mmHg porque la presión de vapor crece con T.", porque: "La presión de vapor depende sólo de la temperatura (y de las fuerzas intermoleculares), no del volumen." },
-          { paso: "La cantidad de agua (1,00 g) no cambia la presión final, mientras quede líquido; sólo cambia la masa de vapor.", porque: "El líquido en exceso se reacomoda para mantener la presión de vapor, así que sólo fija la presión de equilibrio." }
+          { paso: "Con V constante y líquido presente, la presión total es la presión de vapor a cada temperatura. La presión sube de 23,8 a 149,4 mmHg porque la presión de vapor crece con T.", porque: "Con volumen constante y líquido presente, la presión total es la presión de vapor a la temperatura del sistema. La presión sube porque la presión de vapor aumenta con la temperatura, por el aumento de la energía de las moléculas. El volumen no interviene en este valor." },
+          { paso: "La cantidad de agua (1,00 g) no cambia la presión final, mientras quede líquido; sólo cambia la masa de vapor.", porque: "La cantidad de agua no cambia la presión mientras haya líquido, porque el sistema se reacomoda para mantener la presión de vapor. Sólo se modifica la masa que queda en fase vapor. Esto explica por qué la presión no depende de la cantidad de líquido." }
         ],
         resultado: "La presión depende de T, no del volumen ni de la cantidad de líquido (mientras haya líquido)"
       }
@@ -921,26 +921,26 @@ window.EJERCITACION["liquidos"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Hexano: n = 0,500 / 86,2 = 5,80 x 10^-3 mol. Si todo fuera vapor a 293,15 K: P = 5,80 x 10^-3 x 0,0821 x 293,15 / 1,00 = 0,140 atm = 106 mmHg.", porque: "Primero se calcula la presión que tendría el hexano si se evaporara todo, para ver si se alcanza la presión de vapor." },
-          { paso: "Como 106 mmHg < 120 mmHg, no se alcanza la saturación: no queda líquido y la presión final es 106 mmHg.", porque: "El vapor sólo condensa (y queda líquido) si la presión llegaría a la presión de vapor." },
-          { paso: "Agua: n = 0,500 / 18,0 = 0,0278 mol. Si todo fuera vapor: P = 0,0278 x 0,0821 x 293,15 / 1,00 = 0,669 atm = 508 mmHg, mayor que 17,5 mmHg.", porque: "Como la presión que tendría todo el vapor supera la presión de vapor, sí queda líquido." },
-          { paso: "Agua: la presión final es la presión de vapor, 17,5 mmHg (0,0230 atm).", porque: "Con líquido presente, la presión queda fijada en la presión de vapor a esa temperatura." }
+          { paso: "Hexano: n = 0,500 / 86,2 = 5,80 x 10^-3 mol. Si todo fuera vapor a 293,15 K: P = 5,80 x 10^-3 x 0,0821 x 293,15 / 1,00 = 0,140 atm = 106 mmHg.", porque: "Se calcula el número de moles de hexano y la presión que tendría si todo estuviera como vapor a 20 °C. Esta comparación indica si se alcanza la presión de vapor. Verificá que la temperatura esté en kelvin." },
+          { paso: "Como 106 mmHg < 120 mmHg, no se alcanza la saturación: no queda líquido y la presión final es 106 mmHg.", porque: "Como la presión que tendría todo el vapor es menor que la presión de vapor, no se llega a la saturación. Por lo tanto no hay líquido y el hexano queda completamente en fase gaseosa. Este razonamiento aplica el criterio de saturación." },
+          { paso: "Agua: n = 0,500 / 18,0 = 0,0278 mol. Si todo fuera vapor: P = 0,0278 x 0,0821 x 293,15 / 1,00 = 0,669 atm = 508 mmHg, mayor que 17,5 mmHg.", porque: "Se hace el mismo cálculo para el agua: primero se supone que todo el líquido se evapora. Como esa presión supera la presión de vapor, el exceso debe condensar. Verificá que la comparación se haga a la misma temperatura." },
+          { paso: "Agua: la presión final es la presión de vapor, 17,5 mmHg (0,0230 atm).", porque: "Con líquido presente, la presión final queda fijada en la presión de vapor a esa temperatura. Por eso la presión del agua es 17,5 mmHg, sin importar la cantidad total. Conviene expresar el resultado en las unidades del enunciado." }
         ],
         resultado: "Hexano: sin líquido, P = 106 mmHg; agua: con líquido, P = 17,5 mmHg"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Vapor de agua: n = (17,5 / 760) x 1,00 / (0,0821 x 293,15) = 9,57 x 10^-4 mol = 0,0172 g.", porque: "Con la presión de vapor se obtiene el máximo de vapor en 1,00 L." },
-          { paso: "Líquido: 0,500 - 0,0172 = 0,483 g.", porque: "Por conservación de masa, el resto queda líquido." }
+          { paso: "Vapor de agua: n = (17,5 / 760) x 1,00 / (0,0821 x 293,15) = 9,57 x 10^-4 mol = 0,0172 g.", porque: "Se calcula el vapor máximo que cabe en 1,00 L a la presión de vapor, usando la ecuación de gas ideal. Este paso determina cuánta agua puede estar en fase gaseosa. Verificá que la presión esté en atm y la temperatura en kelvin." },
+          { paso: "Líquido: 0,500 - 0,0172 = 0,483 g.", porque: "Por conservación de masa, la masa que no está en vapor queda líquida. Esta resta da la masa de líquido en el recipiente de agua. Conviene comprobar que la suma de vapor y líquido sea 0,500 g." }
         ],
         resultado: "Líquido = 0,483 g"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "El hexano tiene presión de vapor mucho mayor, es decir, sus moléculas escapan más fácilmente: sus fuerzas intermoleculares son más débiles (sólo London).", porque: "Mayor presión de vapor implica menores fuerzas intermoleculares." },
-          { paso: "El agua forma puentes de hidrógeno, que son mucho más intensos, y por eso tiene la presión de vapor más baja.", porque: "Los puentes de hidrógeno son las fuerzas intermoleculares más intensas entre las consideradas." }
+          { paso: "El hexano tiene presión de vapor mucho mayor, es decir, sus moléculas escapan más fácilmente: sus fuerzas intermoleculares son más débiles (sólo London).", porque: "El hexano tiene una presión de vapor mucho mayor que la del agua, lo que indica que sus moléculas escapan con más facilidad. Eso implica fuerzas intermoleculares más débiles, en este caso sólo London. Esta relación inversa es la base de la comparación." },
+          { paso: "El agua forma puentes de hidrógeno, que son mucho más intensos, y por eso tiene la presión de vapor más baja.", porque: "El agua forma puentes de hidrógeno, que son las interacciones más intensas entre las consideradas. Esa fuerza explica su presión de vapor más baja. Verificá que el H del agua esté unido a O." }
         ],
         resultado: "El agua tiene fuerzas intermoleculares más intensas"
       }
@@ -960,32 +960,32 @@ window.EJERCITACION["liquidos"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "T = 298,15 K. Presión de vapor en atm: 59,0 / 760 = 0,0776 atm. Como hay líquido, el vapor está saturado.", porque: "Con líquido presente, la presión del vapor es la presión de vapor a 25 °C." },
-          { paso: "n(vapor) = 0,0776 x 10,0 / (0,0821 x 298,15) = 3,17 x 10^-2 mol; masa = 3,17 x 10^-2 mol x 46,1 g/mol = 1,46 g.", porque: "La cantidad de vapor que cabe en 10,0 L a esa presión define la masa de vapor." },
-          { paso: "Masa líquida: 5,00 - 1,46 = 3,54 g.", porque: "Por conservación de masa, lo que no está en vapor queda líquido." }
+          { paso: "T = 298,15 K. Presión de vapor en atm: 59,0 / 760 = 0,0776 atm. Como hay líquido, el vapor está saturado.", porque: "Como hay líquido en equilibrio, el vapor está saturado y su presión es la presión de vapor del etanol a 25 °C. Se pasa 59,0 mmHg a atm y la temperatura a 298,15 K para usar PV = nRT. Este valor fija la presión mientras haya líquido." },
+          { paso: "n(vapor) = 0,0776 x 10,0 / (0,0821 x 298,15) = 3,17 x 10^-2 mol; masa = 3,17 x 10^-2 mol x 46,1 g/mol = 1,46 g.", porque: "Se usa PV = nRT con la presión de vapor en atm y el volumen de 10,0 L para obtener los moles de vapor, y luego se pasa a gramos con la masa molar 46,1 g/mol. Es la cantidad máxima de vapor que cabe en el recipiente a esa temperatura." },
+          { paso: "Masa líquida: 5,00 - 1,46 = 3,54 g.", porque: "Por conservación de masa, la masa que no está en vapor queda como líquido. Se resta la masa de vapor de los 5,00 g totales. Conviene verificar que el resultado sea positivo." }
         ],
         resultado: "Vapor: 1,46 g; líquido: 3,54 g"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "La presión total es la presión de vapor del etanol a 25 °C: 59,0 mmHg (0,0776 atm).", porque: "Mientras haya líquido en equilibrio con el vapor, la presión no depende de la cantidad de líquido ni del volumen." }
+          { paso: "La presión total es la presión de vapor del etanol a 25 °C: 59,0 mmHg (0,0776 atm).", porque: "La presión total es la presión de vapor del etanol a 25 °C, porque líquido y vapor están en equilibrio. Esa presión no depende de la cantidad de líquido ni del volumen, mientras haya líquido. Verificá que el valor esté en la unidad pedida." }
         ],
         resultado: "P total = 59,0 mmHg (0,0776 atm)"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Al comprimir a 5,00 L, a T constante, el vapor en exceso condensa. Como sigue habiendo líquido, P sigue en 59,0 mmHg.", porque: "El volumen cambia la cantidad de vapor, pero no la presión de equilibrio, que sólo depende de T." },
-          { paso: "Masa de vapor a 5,00 L: 1,46 / 2 = 0,731 g; líquido: 5,00 - 0,731 = 4,27 g.", porque: "Como la presión es la misma y el volumen se reduce a la mitad, la cantidad de vapor que cabe también se reduce a la mitad." }
+          { paso: "Al comprimir a 5,00 L, a T constante, el vapor en exceso condensa. Como sigue habiendo líquido, P sigue en 59,0 mmHg.", porque: "Al comprimir el recipiente, parte del vapor condensa, pero el sistema sigue saturado. Por eso la presión no cambia y sigue siendo la presión de vapor. El volumen modifica la cantidad de vapor, no la presión de equilibrio." },
+          { paso: "Masa de vapor a 5,00 L: 1,46 / 2 = 0,731 g; líquido: 5,00 - 0,731 = 4,27 g.", porque: "Como el volumen se reduce a la mitad, la cantidad de vapor que cabe a la misma presión también se reduce a la mitad. Se toma el vapor de a) y se divide por dos. La masa líquida se obtiene por conservación de masa." }
         ],
         resultado: "Vapor: 0,731 g; P total = 59,0 mmHg"
       },
       {
         parte: "d)",
         pasos: [
-          { paso: "Con 1,00 g: n = 1,00 / 46,1 = 0,0217 mol. Si todo se evaporara en 10,0 L: P = 0,0217 x 0,0821 x 298,15 / 10,0 = 0,0531 atm = 40,4 mmHg.", porque: "Se verifica si se alcanza la presión de vapor con esa cantidad de etanol." },
-          { paso: "Como 40,4 mmHg < 59,0 mmHg, no hay líquido: todo el etanol está como vapor y la presión final es 40,4 mmHg.", porque: "Sin líquido, la presión depende de los moles de etanol y del volumen, y nunca llega a la presión de vapor." }
+          { paso: "Con 1,00 g: n = 1,00 / 46,1 = 0,0217 mol. Si todo se evaporara en 10,0 L: P = 0,0217 x 0,0821 x 298,15 / 10,0 = 0,0531 atm = 40,4 mmHg.", porque: "Se calcula el número de moles de etanol y la presión que tendría si todo se evaporara en 10,0 L. Esta comparación permite verificar si se alcanza la presión de vapor. Verificá que los moles se calculen con la masa molar del etanol." },
+          { paso: "Como 40,4 mmHg < 59,0 mmHg, no hay líquido: todo el etanol está como vapor y la presión final es 40,4 mmHg.", porque: "Como la presión de todo el vapor (40,4 mmHg) es menor que la presión de vapor, no hay líquido. Por eso la presión final se calcula con los moles y el volumen, y no con la presión de vapor. Este es el criterio que decide si hay líquido." }
         ],
         resultado: "P final = 40,4 mmHg (0,0531 atm), sin líquido"
       }

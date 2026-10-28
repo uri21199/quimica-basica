@@ -19,49 +19,49 @@ window.PARCIALES.push({
         {
           parte: "a)",
           pasos: [
-            { paso: "Reduccion: Cr2O7(2-) + 14 H+ + 6 e- -> 2 Cr(3+) + 7 H2O (cada Cr pasa de +6 a +3, 3 e- por Cr, 6 e- por dicromato).", porque: "En medio acido el ion electron usa H+ y H2O para balancear O e H; el cromo baja de +6 a +3 (gana 3 e- por cada Cr), y como hay 2 Cr se ganan 6 e-." },
-            { paso: "Oxidacion: 2 Cl- -> Cl2 + 2 e-. Para igualar electrones se multiplica por 3: 6 Cl- -> 3 Cl2 + 6 e-.", porque: "Los electrones cedidos deben ser iguales a los ganados: el Cl- pierde 2 e- por molecula de Cl2, y para sumar 6 e- hacen falta 3 Cl2." },
-            { paso: "Suma: Cr2O7(2-) + 14 H+ + 6 Cl- -> 2 Cr(3+) + 3 Cl2 + 7 H2O. Se agregan los iones K+ y Cl- que faltan: K2Cr2O7 + 14 HCl -> 2 CrCl3 + 3 Cl2 + 2 KCl + 7 H2O.", porque: "Al sumar las semirreacciones los electrones se cancelan; los iones K+ y Cl- que faltan se agregan para pasar a la forma molecular de la ecuacion dada." },
-            { paso: "Verificacion: Cl 14 = 14, H 14 = 14, O 7 = 7, K 2 = 2, Cr 2 = 2.", porque: "Una ecuacion esta balanceada si cada elemento tiene la misma cantidad de atomos a ambos lados (conservacion de la masa), y eso es lo que se verifica aca." }
+            { paso: "Reduccion: Cr2O7(2-) + 14 H+ + 6 e- -> 2 Cr(3+) + 7 H2O (cada Cr pasa de +6 a +3, 3 e- por Cr, 6 e- por dicromato).", porque: "Como la reaccion es en medio acido, primero se balancean los O agregando H2O y despues los H con H+ (el dicromato tiene 7 O, por eso aparecen 7 H2O). Los electrones salen de los numeros de oxidacion: el Cr pasa de +6 a +3, o sea gana 3 e- por cada Cr y 6 e- en total. Al final conviene verificar que la carga neta de ambos lados coincida, contando esos 6 e-." },
+            { paso: "Oxidacion: 2 Cl- -> Cl2 + 2 e-. Para igualar electrones se multiplica por 3: 6 Cl- -> 3 Cl2 + 6 e-.", porque: "La semirreaccion de oxidacion tiene al Cl- como reactivo: dos Cl- forman un Cl2 y ceden 2 e-. Como la reduccion gano 6 e-, la oxidacion tiene que ceder la misma cantidad, por eso se multiplica por 3 y aparecen 6 Cl- y 3 Cl2. Error comun: multiplicar por 2 y dejar 4 e- contra 6 e-." },
+            { paso: "Suma: Cr2O7(2-) + 14 H+ + 6 Cl- -> 2 Cr(3+) + 3 Cl2 + 7 H2O. Se agregan los iones K+ y Cl- que faltan: K2Cr2O7 + 14 HCl -> 2 CrCl3 + 3 Cl2 + 2 KCl + 7 H2O.", porque: "Al sumar las dos semirreacciones los 6 e- aparecen a ambos lados y se cancelan. Para volver a la forma molecular se agregan los K+ del dicromato y los Cl- que no se oxidaron (los que forman CrCl3 y KCl, 8 en total). Conviene comparar el resultado con la ecuacion del enunciado, sin introducir coeficientes nuevos." },
+            { paso: "Verificacion: Cl 14 = 14, H 14 = 14, O 7 = 7, K 2 = 2, Cr 2 = 2.", porque: "Esta es la comprobacion final: se cuenta cada elemento a ambos lados y los totales tienen que coincidir, porque en una reaccion quimica los atomos se conservan (ley de conservacion de la masa). Si algun elemento no coincide, conviene revisar los coeficientes antes de hacer cualquier calculo estequiometrico con esa ecuacion." }
           ],
           resultado: "Correcto: la ecuacion esta balanceada."
         },
         {
           parte: "b)",
           pasos: [
-            { paso: "M(CrCl3) = 52,00 + 3 x 35,45 = 158,35 g/mol. n(CrCl3) = 20 g / 158,35 g/mol = 0,1263 mol.", porque: "Para pasar de masa a moles se divide por la masa molar (n = m/M), y la masa molar se calcula con los pesos atomicos de la tabla." },
-            { paso: "Por estequiometria, 1 K2Cr2O7 da 2 CrCl3: n(K2Cr2O7) teorico = 0,1263/2 = 0,06315 mol.", porque: "Los coeficientes de la ecuacion balanceada (1 K2Cr2O7 : 2 CrCl3) fijan la relacion molar entre el dicromato y el producto." },
-            { paso: "M(K2Cr2O7) = 294,2 g/mol. m teorica = 0,06315 x 294,2 = 18,58 g.", porque: "Con los moles de dicromato y su masa molar se obtiene la masa teorica (m = n x M)." },
-            { paso: "Rendimiento 80%: m necesaria pura = 18,58 / 0,80 = 23,23 g. Pureza 75%: m de droga impura = 23,23 / 0,75 = 30,97 g.", porque: "El rendimiento de 80 % significa que solo se obtiene ese porcentaje de lo teorico, y la pureza de 75 % que solo ese porcentaje de la droga es dicromato; por eso ambos factores van dividiendo." },
-            { paso: "Supuesto: los 20 g son la cantidad de CrCl3 realmente obtenida.", porque: "El enunciado no aclara si los 20 g son teoricos o reales; se toma como producto real para que el rendimiento se aplique a la masa de dicromato, que es lo que se pide." }
+            { paso: "M(CrCl3) = 52,00 + 3 x 35,45 = 158,35 g/mol. n(CrCl3) = 20 g / 158,35 g/mol = 0,1263 mol.", porque: "Para convertir los 20 g de CrCl3 en moles se usa n = m/M, donde M es la suma de los pesos atomicos (1 Cr y 3 Cl). Es el primer paso porque la estequiometria trabaja en moles y no directamente en gramos. Error comun: sumar mal la masa molar, por ejemplo no multiplicar el Cl por 3." },
+            { paso: "Por estequiometria, 1 K2Cr2O7 da 2 CrCl3: n(K2Cr2O7) teorico = 0,1263/2 = 0,06315 mol.", porque: "Se usa la relacion 1 K2Cr2O7 : 2 CrCl3 de la ecuacion balanceada para pasar de moles de producto a moles de reactivo: se necesita la mitad de moles de dicromato que de CrCl3, por eso se divide por 2. Esto vale porque los coeficientes indican proporciones molares y no masicas. Error comun: usar la relacion 1:1 o multiplicar por 2 en vez de dividir." },
+            { paso: "M(K2Cr2O7) = 294,2 g/mol. m teorica = 0,06315 x 294,2 = 18,58 g.", porque: "Se multiplican los moles de K2Cr2O7 por su masa molar (2 x 39,10 + 2 x 52,00 + 7 x 16,00 = 294,2 g/mol) para pasar a gramos. Es la masa teorica, o sea la que se necesitaria con rendimiento del 100 % y reactivo puro. Verificar que la masa molar tenga los 7 O del dicromato." },
+            { paso: "Rendimiento 80%: m necesaria pura = 18,58 / 0,80 = 23,23 g. Pureza 75%: m de droga impura = 23,23 / 0,75 = 30,97 g.", porque: "Rendimiento y pureza son porcentajes que reducen la cantidad util: con 80 % de rendimiento se aprovecha 0,80 de lo calculado, y con 75 % de pureza solo 0,75 de la droga es dicromato. Para saber cuanta droga hace falta hay que hacer la cuenta inversa, dividiendo la masa teorica por cada factor. Error tipico: multiplicar por 0,80 y 0,75, lo que daria una masa menor que la teorica." },
+            { paso: "Supuesto: los 20 g son la cantidad de CrCl3 realmente obtenida.", porque: "El enunciado no dice si los 20 g de CrCl3 son la cantidad teorica o la real, asi que hay que adoptar un supuesto explicito. Tomarlos como real significa que el rendimiento del 80 % se aplica al dicromato, que es lo que se pide calcular. Conviene escribir el supuesto en la respuesta, porque cambia el resultado final." }
           ],
           resultado: "Aprox. 31,0 g de droga impura (23,2 g de K2Cr2O7 puro)."
         },
         {
           parte: "c)",
           pasos: [
-            { paso: "Relacion 2 CrCl3 : 2 KCl, luego n(KCl) = n(CrCl3) = 0,1263 mol.", porque: "En la ecuacion balanceada 2 CrCl3 producen 2 KCl, o sea la relacion molar es 1:1." },
-            { paso: "M(KCl) = 39,10 + 35,45 = 74,55 g/mol. m(KCl) = 0,1263 x 74,55 = 9,42 g.", porque: "La masa se calcula como n x M, con la masa molar sumando los pesos atomicos de K y Cl." },
-            { paso: "Supuesto: se parte de los 20 g de CrCl3 obtenidos (el rendimiento ya esta contemplado).", porque: "Si los 20 g de CrCl3 son el producto real, el KCl que se forma en la misma reaccion corresponde a esos mismos moles; el rendimiento ya esta incluido en esa cantidad real." }
+            { paso: "Relacion 2 CrCl3 : 2 KCl, luego n(KCl) = n(CrCl3) = 0,1263 mol.", porque: "En la ecuacion balanceada, 2 CrCl3 producen 2 KCl: los coeficientes se simplifican y la relacion molar es 1:1. Por eso los moles de KCl son iguales a los de CrCl3, sin conversion adicional. Error comun: usar la relacion del K2Cr2O7 (1:2 con el CrCl3) en vez de la del producto pedido." },
+            { paso: "M(KCl) = 39,10 + 35,45 = 74,55 g/mol. m(KCl) = 0,1263 x 74,55 = 9,42 g.", porque: "Con los moles de KCl se calcula la masa multiplicando por su masa molar, que es la suma del peso atomico del K (39,10) y del Cl (35,45). Es el mismo criterio m = n x M usado antes, aplicado a la sustancia pedida. Verificar que se use la masa molar del KCl y no la del CrCl3." },
+            { paso: "Supuesto: se parte de los 20 g de CrCl3 obtenidos (el rendimiento ya esta contemplado).", porque: "El KCl se forma en la misma reaccion que el CrCl3, asi que su cantidad sale de los mismos moles de reaccion. Si los 20 g son el producto real, el rendimiento ya quedo incorporado y no hace falta volver a aplicar el 80 %. Aplicarlo de nuevo seria contar dos veces la perdida." }
           ],
           resultado: "Aprox. 9,42 g de KCl."
         },
         {
           parte: "d)",
           pasos: [
-            { paso: "Gas: Cl2. Relacion 3 Cl2 : 2 CrCl3, luego n(Cl2) = (3/2) x 0,1263 = 0,1895 mol.", porque: "Los coeficientes de la ecuacion (3 Cl2 por cada 2 CrCl3) fijan la relacion molar entre el gas y el producto que se usa de base." },
-            { paso: "Condiciones normales: T = 273,15 K, P = 1 atm. V = nRT/P = 0,1895 x 0,0821 x 273,15 / 1 = 4,25 L.", porque: "En condiciones normales (0 C = 273,15 K y 1 atm) un gas ideal cumple PV = nRT, y por eso se despeja V con esa ecuacion." },
-            { paso: "Con V molar 22,4 L/mol se obtiene 4,24 L (diferencia por redondeo).", porque: "En CN un mol de gas ideal ocupa 22,4 L, por eso sirve como control independiente del calculo con R." }
+            { paso: "Gas: Cl2. Relacion 3 Cl2 : 2 CrCl3, luego n(Cl2) = (3/2) x 0,1263 = 0,1895 mol.", porque: "Se usa la relacion 3 Cl2 : 2 CrCl3 para pasar de los moles de CrCl3 a los de Cl2: por cada 2 mol de CrCl3 se forman 3 mol de Cl2, o sea n(Cl2) = (3/2) x n(CrCl3). Los coeficientes dan proporciones molares, por eso el factor es 3/2 y no 1. Error tipico: tomar la relacion 1:1 y olvidar este factor." },
+            { paso: "Condiciones normales: T = 273,15 K, P = 1 atm. V = nRT/P = 0,1895 x 0,0821 x 273,15 / 1 = 4,25 L.", porque: "En condiciones normales (273,15 K y 1 atm) se aplica la ecuacion de gas ideal PV = nRT, despejando V = nRT/P con R = 0,0821 L atm/(mol K). La temperatura tiene que estar en kelvin, porque la ley de gases usa escala absoluta. Verificar que las unidades sean coherentes: P en atm y V en litros." },
+            { paso: "Con V molar 22,4 L/mol se obtiene 4,24 L (diferencia por redondeo).", porque: "El volumen molar de 22,4 L/mol sale de PV = nRT en CN (0,0821 x 273,15 = 22,4), por eso sirve como control: V = n x 22,4 debe dar casi lo mismo que el calculo con R. La pequena diferencia (4,25 contra 4,24 L) viene solo del redondeo de los valores intermedios." }
           ],
           resultado: "Aprox. 4,25 L de Cl2 en CN."
         },
         {
           parte: "e)",
           pasos: [
-            { paso: "CrCl3 y KCl: solidos ionicos. La fuerza dominante es la atraccion ion-ion (electrostatica). Se asume que el CrCl3 se trata como ionico, como en la materia.", porque: "Un metal combinado con un no metal forma una red de iones unidos por atraccion electrostatica (ion-ion), que es la fuerza dominante en los solidos ionicos." },
-            { paso: "Cl2: a condiciones normales es gas. Como molecula apolar, su solido (si se enfria) tendria fuerzas de London (dispersion).", porque: "Una molecula diatomica formada por dos atomos iguales es apolar, y sus unicas fuerzas intermoleculares son las de London, que crecen con la masa molar." },
-            { paso: "H2O: solido molecular (hielo), fuerza dominante: puentes de hidrogeno.", porque: "El H esta unido a O, un elemento muy electronegativo, y eso permite puentes de hidrogeno, la fuerza intermolecular mas intensa entre moleculas." },
-            { paso: "Analisis de puntos de fusion: CrCl3 (aprox. 1150 C) > KCl (aprox. 770 C) > H2O (0 C) > Cl2 (aprox. -101 C). El Cr(3+) tiene mayor carga y menor radio que el K(+), por lo que la energia reticular del CrCl3 es mayor. Entre los moleculares, el puente de hidrogeno del agua es mas fuerte que las fuerzas de London del Cl2.", porque: "Mayor carga y menor radio del ion dan mayor energia de red, y los puentes de hidrogeno son mas fuertes que las fuerzas de London; por eso el punto de fusion sigue ese orden." }
+            { paso: "CrCl3 y KCl: solidos ionicos. La fuerza dominante es la atraccion ion-ion (electrostatica). Se asume que el CrCl3 se trata como ionico, como en la materia.", porque: "Para clasificar el solido se mira la naturaleza de los elementos: el Cr y el K son metales y el Cl es no metal, asi que CrCl3 y KCl forman redes de iones. Esa red se mantiene por atraccion electrostatica entre cargas opuestas, que es la fuerza mas intensa en estos solidos. Error comun: tomar el CrCl3 como molecular por su formula sencilla." },
+            { paso: "Cl2: a condiciones normales es gas. Como molecula apolar, su solido (si se enfria) tendria fuerzas de London (dispersion).", porque: "Para el Cl2 se analiza la molecula: como los dos atomos son iguales no hay diferencia de electronegatividad, asi que es apolar. Por eso solo actuan las fuerzas de London (dispersion), que son mas intensas cuanto mayor es la nube electronica. Verificar que no se confundan con puentes de hidrogeno o dipolo-dipolo." },
+            { paso: "H2O: solido molecular (hielo), fuerza dominante: puentes de hidrogeno.", porque: "En el agua el H esta unido directamente a O, muy electronegativo, y eso deja al H con una carga parcial positiva marcada. Esa carga atrae al par libre del O de otra molecula y forma un puente de hidrogeno, la fuerza intermolecular mas intensa entre moleculas neutras. El puente exige H unido a F, O o N." },
+            { paso: "Analisis de puntos de fusion: CrCl3 (aprox. 1150 C) > KCl (aprox. 770 C) > H2O (0 C) > Cl2 (aprox. -101 C). El Cr(3+) tiene mayor carga y menor radio que el K(+), por lo que la energia reticular del CrCl3 es mayor. Entre los moleculares, el puente de hidrogeno del agua es mas fuerte que las fuerzas de London del Cl2.", porque: "Para ordenar los puntos de fusion se comparan dos casos: en los ionicos, la energia de red crece con la carga de los iones y disminuye con su radio (el Cr3+ tiene mas carga y menor radio que el K+); en los moleculares, el puente de hidrogeno es mas fuerte que las fuerzas de London. Por eso CrCl3 > KCl, y H2O > Cl2 aunque el Cl2 tenga mayor masa molar." }
           ],
           resultado: "Solidos ionicos: CrCl3 y KCl (ion-ion; CrCl3 con mayor punto de fusion). Solidos moleculares: H2O (puentes de hidrogeno) y Cl2 (London), con Cl2 el de menor punto de fusion."
         }
@@ -89,32 +89,32 @@ window.PARCIALES.push({
         {
           parte: "a)",
           pasos: [
-            { paso: "Supuesto: la combustion es completa y el agua formada es liquida (es el estado que corresponde a los DeltaH dados).", porque: "Se toma el agua liquida porque es el estado que corresponde a los DeltaH de combustion tabulados, y la combustion completa produce CO2 y H2O." },
-            { paso: "Propano: C3H8(g) + 5 O2(g) -> 3 CO2(g) + 4 H2O(l), DeltaH = -2220 kJ.", porque: "Se ajusta por conservacion de atomos: 3 C dan 3 CO2, 8 H dan 4 H2O, y los 10 O se reparten en 5 O2; el DeltaH dado es el de 1 mol de propano." },
-            { paso: "Butano: C4H10(g) + 13/2 O2(g) -> 4 CO2(g) + 5 H2O(l), DeltaH = -2879,6 kJ. (Doblando coeficientes: 2 C4H10 + 13 O2 -> 8 CO2 + 10 H2O.)", porque: "Se usa 13/2 O2 para que la ecuacion sea de 1 mol de butano y coincida con el DeltaH por mol; doblar todos los coeficientes da la misma reaccion con el DeltaH doble." }
+            { paso: "Supuesto: la combustion es completa y el agua formada es liquida (es el estado que corresponde a los DeltaH dados).", porque: "Antes de escribir las ecuaciones hay que fijar el estado de los productos: la combustion completa produce CO2(g) y agua, y los DeltaH tabulados (-2220 y -2879,6 kJ/mol) corresponden a agua liquida. Si el agua fuera vapor, el DeltaH seria menos negativo, porque la vaporizacion absorbe calor. Conviene escribir este supuesto, porque cambia el valor de la entalpia." },
+            { paso: "Propano: C3H8(g) + 5 O2(g) -> 3 CO2(g) + 4 H2O(l), DeltaH = -2220 kJ.", porque: "La ecuacion se ajusta por conservacion de atomos, en este orden: primero los C (3 CO2), despues los H (8 H dan 4 H2O) y al final los O (6 de los CO2 mas 4 de los H2O suman 10, o sea 5 O2). El DeltaH dado corresponde a 1 mol de propano, por eso la ecuacion debe tener 1 mol de C3H8. Error tipico: ajustar los O antes que los C y H." },
+            { paso: "Butano: C4H10(g) + 13/2 O2(g) -> 4 CO2(g) + 5 H2O(l), DeltaH = -2879,6 kJ. (Doblando coeficientes: 2 C4H10 + 13 O2 -> 8 CO2 + 10 H2O.)", porque: "Como el DeltaH dado es por mol de butano, el coeficiente del O2 tiene que ser 13/2 (6,5) para que la ecuacion tenga 1 mol de C4H10: 4 C dan 4 CO2, 10 H dan 5 H2O, y los 13 O de los productos se reparten en 6,5 O2. Si se multiplica toda la ecuacion por 2 se obtiene la misma reaccion, pero el DeltaH se duplica a -5759,2 kJ." }
           ],
           resultado: "C3H8(g) + 5 O2(g) -> 3 CO2(g) + 4 H2O(l) DeltaH = -2220 kJ/mol; C4H10(g) + 6,5 O2(g) -> 4 CO2(g) + 5 H2O(l) DeltaH = -2879,6 kJ/mol."
         },
         {
           parte: "b)",
           pasos: [
-            { paso: "Propano: Q1 = 700 mol x 2220 kJ/mol = 1 554 000 kJ.", porque: "El calor liberado es proporcional a los moles quemados: Q = n x |DeltaH| por mol de combustible." },
-            { paso: "Butano: Q2 = 300 mol x 2879,6 kJ/mol = 863 880 kJ.", porque: "Misma relacion Q = n x |DeltaH| aplicada al butano, con su propio DeltaH de combustion." },
-            { paso: "Calor total = 2 417 880 kJ. Calor transferido al agua (90%) = 0,90 x 2 417 880 = 2 176 092 kJ.", porque: "La energia se conserva: el calor total es la suma de lo que libera cada combustible, y segun el enunciado solo el 90 % pasa al agua." }
+            { paso: "Propano: Q1 = 700 mol x 2220 kJ/mol = 1 554 000 kJ.", porque: "Como el DeltaH es por mol de combustible, el calor total es la cantidad de moles quemados por el calor de cada mol. Se usa el valor absoluto porque el signo negativo solo indica que el calor sale del sistema. Verificar que se usen 700 mol de propano y no otra unidad." },
+            { paso: "Butano: Q2 = 300 mol x 2879,6 kJ/mol = 863 880 kJ.", porque: "Se repite el mismo calculo para el butano con sus 300 mol y su DeltaH propio (-2879,6 kJ/mol), porque cada combustible tiene su calor de combustion. Es un error frecuente usar el DeltaH del propano para el butano." },
+            { paso: "Calor total = 2 417 880 kJ. Calor transferido al agua (90%) = 0,90 x 2 417 880 = 2 176 092 kJ.", porque: "El calor total es la suma de los dos aportes, porque ambos combustibles se queman en el mismo proceso. Como el enunciado dice que solo el 90 % del calor pasa al agua, lo que interesa para el resto del problema es 0,90 veces ese total. Error tipico: aplicar el 90 % a un solo combustible o olvidarlo." }
           ],
           resultado: "Calor total generado: 2,42 x 10^6 kJ. Calor transferido al agua: 2,18 x 10^6 kJ."
         },
         {
           parte: "c)",
           pasos: [
-            { paso: "n(agua) = 900 000 g / 18,02 g/mol = 49 945 mol.", porque: "Para usar el calor por mol hay que pasar la masa de agua a moles (n = m/M)." },
-            { paso: "Calentar hielo de -5 a 0 C: Q1 = 49 945 x 33,60 x 5 = 8,39 x 10^3 kJ.", porque: "El hielo debe llevarse de -5 a 0 C antes de fundir; ese calor sensible es n x Cp x DeltaT, con el Cp del solido." },
-            { paso: "Fundir a 0 C: Q2 = 49 945 x 6,03 = 301 168 kJ.", porque: "Durante el cambio de fase la temperatura no cambia y el calor es n x DeltaH de fusion, que esta dado por mol." },
-            { paso: "Calentar liquido de 0 a 100 C: Q3 = 49 945 x 75,23 x 100 = 375 736 kJ.", porque: "Una vez fundido, el agua liquida se calienta hasta 100 C a 1 atm (punto de ebullicion), con el Cp del liquido." },
-            { paso: "Suma de los pasos anteriores = 685 295 kJ. Queda disponible: 2 176 092 - 685 295 = 1 490 797 kJ.", porque: "Los tramos de calentamiento y fusion se producen en orden y consumen calor; lo que sobra del calor disponible es el que puede usarse para vaporizar." },
-            { paso: "Vaporizar todo el agua requiere 49 945 x 40,7 = 2 032 762 kJ, asi que no alcanza para vaporizar todo.", porque: "Vaporizar a 100 C y 1 atm consume el DeltaH de vaporizacion por mol; se usa 40,7 kJ/mol porque el dato de la foto esta ilegible (valor de tabla)." },
-            { paso: "Fraccion vaporizada = 1 490 797 / 2 032 762 = 0,7334. Vapor = 0,7334 x 49 945 = 36 630 mol (aprox. 660 kg). Liquido = 13 315 mol (aprox. 240 kg).", porque: "Como la energia sobrante solo alcanza para una fraccion del agua, esa fraccion se evapora y el resto queda liquido a la misma temperatura; m = n x M pasa los moles a kg." },
-            { paso: "Como la temperatura queda en 100 C con coexistencia de fases, no hace falta Cp del vapor.", porque: "Mientras haya liquido y vapor juntos la temperatura queda fija en el punto de ebullicion, y como el vapor no llega a calentarse, su Cp no interviene." }
+            { paso: "n(agua) = 900 000 g / 18,02 g/mol = 49 945 mol.", porque: "Los datos de la parte c estan por mol de agua (Cp y DeltaH), entonces primero se convierte la masa de agua a moles con n = m/M. Hay que pasar 900 kg a 900 000 g antes de dividir por 18,02 g/mol. Verificar la conversion de kg a g, que es un error frecuente." },
+            { paso: "Calentar hielo de -5 a 0 C: Q1 = 49 945 x 33,60 x 5 = 8,39 x 10^3 kJ.", porque: "Se calcula el calor que el hielo necesita para subir de -5 a 0 C sin cambiar de fase, con Q = n x Cp x DeltaT y el Cp del solido (33,60 J/(mol K)). La diferencia de temperatura es 5 K, y como el Cp esta en J el resultado se pasa a kJ. Es el primer tramo obligatorio, porque el agua no puede fundir antes de llegar a 0 C." },
+            { paso: "Fundir a 0 C: Q2 = 49 945 x 6,03 = 301 168 kJ.", porque: "En la fusion la temperatura se mantiene en 0 C mientras el hielo pasa a liquido, asi que este calor no sube la temperatura sino que rompe la red cristalina. Se usa Q = n x DeltaHfusion, porque el dato esta dado por mol. Error comun: tratar este calor como calor sensible (n x Cp x DeltaT)." },
+            { paso: "Calentar liquido de 0 a 100 C: Q3 = 49 945 x 75,23 x 100 = 375 736 kJ.", porque: "Una vez que todo es liquido a 0 C, se calienta hasta el punto de ebullicion a 1 atm (100 C) con Q = n x Cp(liquido) x DeltaT, con DeltaT = 100 K. Corresponde el Cp del liquido (75,23 J/(mol K)), no el del solido ni el del vapor. Verificar que la temperatura final sea 100 C, que es el limite antes de vaporizar." },
+            { paso: "Suma de los pasos anteriores = 685 295 kJ. Queda disponible: 2 176 092 - 685 295 = 1 490 797 kJ.", porque: "Se suman los tres tramos previos (calentar el hielo, fundir y calentar el liquido) porque ocurren en orden y todos consumen calor del total disponible. Luego se resta esa suma de los 2 176 092 kJ transferidos al agua, y el saldo es la energia que queda para vaporizar. Error tipico: comparar el calor total directamente con el de vaporizacion sin descontar antes estos tramos." },
+            { paso: "Vaporizar todo el agua requiere 49 945 x 40,7 = 2 032 762 kJ, asi que no alcanza para vaporizar todo.", porque: "Para vaporizar se multiplican los moles de agua por el DeltaH de vaporizacion por mol (Q = n x DeltaHvap), a 100 C y 1 atm. Como el dato del enunciado no se lee bien, se usa 40,7 kJ/mol (valor de tabla del agua), y conviene dejar escrita esa suposicion. El calculo tiene que usar todos los moles de agua, para saber si la energia alcanza o no para vaporizarla completa." },
+            { paso: "Fraccion vaporizada = 1 490 797 / 2 032 762 = 0,7334. Vapor = 0,7334 x 49 945 = 36 630 mol (aprox. 660 kg). Liquido = 13 315 mol (aprox. 240 kg).", porque: "Como la energia sobrante (1 490 797 kJ) es menor que la necesaria para vaporizar todo, la fraccion vaporizada es el cociente entre ambas cantidades (0,7334). Esa fraccion se evapora y el resto queda liquido a 100 C, porque el calor sobrante se usa solo para el cambio de fase y no para subir la temperatura. Por ultimo, m = n x M con M = 18,02 g/mol pasa los moles de vapor y de liquido a kg." },
+            { paso: "Como la temperatura queda en 100 C con coexistencia de fases, no hace falta Cp del vapor.", porque: "Como todavia hay liquido y vapor coexistiendo, la temperatura queda fija en 100 C y el vapor no se calienta por encima de ese valor. Por eso el Cp del vapor (36,28 J/(mol K)) no se usa en ningun calculo. Es un dato de distraccion que conviene reconocer para no sumarlo por error." }
           ],
           resultado: "Final a 100 C y 1 atm con dos fases: liquido (aprox. 240 kg) y vapor (aprox. 660 kg). Curva: tramo de calentamiento del hielo, meseta de fusion, calentamiento del liquido, meseta de vaporizacion (incompleta)."
         }
@@ -142,21 +142,21 @@ window.PARCIALES.push({
         {
           parte: "a)",
           pasos: [
-            { paso: "Reaccion: 2 HCl(ac) + Ba(OH)2(ac) -> BaCl2(ac) + 2 H2O(l). Neta: H+ + OH- -> H2O.", porque: "Es una neutralizacion acido fuerte base fuerte: el H+ y el OH- se combinan en agua, y la ecuacion balanceada tiene 2 H, 2 Cl y 1 Ba a cada lado." },
-            { paso: "n(H+) = 9 L x 0,9 mol/L = 8,1 mol. n(OH-) = 12 L x 0,3 mol/L x 2 = 7,2 mol (cada Ba(OH)2 aporta 2 OH-).", porque: "HCl y Ba(OH)2 son electrolitos fuertes que se disocian por completo, asi que los moles de iones son M x V; el Ba(OH)2 aporta 2 OH- por mol." },
-            { paso: "Sobra H+: 8,1 - 7,2 = 0,9 mol. Volumen final = 21 L (aditivos).", porque: "En la neutralizacion H+ y OH- reaccionan 1:1, asi que lo que queda en exceso es la diferencia de moles; el volumen total es la suma de volumenes, como dice el enunciado." },
-            { paso: "[H+] = 0,9 / 21 = 0,0429 mol/L. pH = -log(0,0429) = 1,37.", porque: "El pH se define como -log[H+], y la concentracion es el exceso de moles dividido el volumen final de la solucion." }
+            { paso: "Reaccion: 2 HCl(ac) + Ba(OH)2(ac) -> BaCl2(ac) + 2 H2O(l). Neta: H+ + OH- -> H2O.", porque: "Se identifica una neutralizacion de acido fuerte (HCl) con base fuerte (Ba(OH)2), que da sal y agua. Al balancear hacen falta 2 HCl por cada Ba(OH)2, para que haya 2 H+ por cada 2 OH- y 2 Cl- por cada Ba2+. La ecuacion neta H+ + OH- -> H2O es la que explica el pH. Error tipico: dejar el HCl sin el coeficiente 2." },
+            { paso: "n(H+) = 9 L x 0,9 mol/L = 8,1 mol. n(OH-) = 12 L x 0,3 mol/L x 2 = 7,2 mol (cada Ba(OH)2 aporta 2 OH-).", porque: "Como HCl y Ba(OH)2 son electrolitos fuertes, se disocian por completo: cada HCl aporta 1 H+ y cada Ba(OH)2 aporta 2 OH-. Los moles de cada ion salen de n = M x V (con V en litros), o sea 9 L y 12 L. Error comun: olvidar el factor 2 del hidroxido de bario." },
+            { paso: "Sobra H+: 8,1 - 7,2 = 0,9 mol. Volumen final = 21 L (aditivos).", porque: "H+ y OH- reaccionan 1 a 1, asi que si hay mas H+ que OH- queda H+ sin neutralizar, y ese exceso es 8,1 - 7,2 = 0,9 mol. Para la concentracion se usa el volumen total, sumando 9 L y 12 L, como indica el enunciado. Verificar cual ion esta en exceso antes de restar." },
+            { paso: "[H+] = 0,9 / 21 = 0,0429 mol/L. pH = -log(0,0429) = 1,37.", porque: "Con el exceso de H+ (0,9 mol) y el volumen final de 21 L se obtiene [H+] = 0,9 / 21 = 0,0429 M. Luego el pH es -log[H+] = 1,37, un valor acido, como corresponde a un exceso de acido. Error comun: usar el volumen parcial de 9 L." }
           ],
           resultado: "pH = 1,37 (medio acido)."
         },
         {
           parte: "b)",
           pasos: [
-            { paso: "HClO(ac) <-> H+ + ClO-. Base conjugada: ClO- (ion hipoclorito).", porque: "Segun Bronsted-Lowry, el acido cede H+ y lo que queda es su base conjugada; el HClO queda como ClO-." },
-            { paso: "HF(ac) <-> H+ + F-. Base conjugada: F- (ion fluoruro).", porque: "Mismo criterio: al perder H+ el HF queda como F-, su base conjugada." },
-            { paso: "HCN(ac) <-> H+ + CN-. Base conjugada: CN- (ion cianuro).", porque: "Mismo criterio: al perder H+ el HCN queda como CN-, su base conjugada." },
-            { paso: "Kb = Kw / Ka: Kb(CN-) = 10^-5; Kb(ClO-) = 10^-7; Kb(F-) = 10^-11.", porque: "Ka y Kb de un par conjugado se relacionan por Ka x Kb = Kw = 10^-14 a 25 C, asi que Kb = Kw/Ka." },
-            { paso: "Orden de basicidad: CN- > ClO- > F-. Cuanto mas fuerte es el acido, mas debil es su base conjugada (HF es el acido mas fuerte y F- la base mas debil).", porque: "Cuanto mas debil es el acido, mas fuerte es su base conjugada (Kb = Kw/Ka es inversa a Ka); el orden de basicidad sale de los Kb calculados." }
+            { paso: "HClO(ac) <-> H+ + ClO-. Base conjugada: ClO- (ion hipoclorito).", porque: "Segun Bronsted-Lowry un acido es dador de H+, y su base conjugada es la especie que queda al perderlo. Al ceder H+, el HClO queda como ClO-. Escribir la disociacion ayuda a ver la carga de la base conjugada, que es -1." },
+            { paso: "HF(ac) <-> H+ + F-. Base conjugada: F- (ion fluoruro).", porque: "Se aplica el mismo criterio de Bronsted-Lowry: el HF pierde su H+ y la especie resultante es el F- (ion fluoruro). Se verifica que la carga coincida: el acido es neutro y la base queda con carga -1." },
+            { paso: "HCN(ac) <-> H+ + CN-. Base conjugada: CN- (ion cianuro).", porque: "Se aplica el mismo criterio: el HCN pierde su H+ y queda CN- (ion cianuro), con carga -1 porque el acido era neutro. Asi se identifican las tres bases conjugadas antes de ordenarlas." },
+            { paso: "Kb = Kw / Ka: Kb(CN-) = 10^-5; Kb(ClO-) = 10^-7; Kb(F-) = 10^-11.", porque: "Para comparar la basicidad se usa Kb, que se obtiene de Ka con Ka x Kb = Kw = 10^-14 a 25 C, es decir Kb = Kw/Ka. Esa relacion sale del equilibrio del acido con el agua. Error comun: usar Ka en lugar de Kb para las bases." },
+            { paso: "Orden de basicidad: CN- > ClO- > F-. Cuanto mas fuerte es el acido, mas debil es su base conjugada (HF es el acido mas fuerte y F- la base mas debil).", porque: "Como Kb = Kw/Ka es inversa a Ka, un acido mas debil (Ka chica) tiene una base conjugada mas fuerte (Kb grande). Con los Kb calculados (10^-5, 10^-7 y 10^-11) el orden de mayor a menor basicidad queda sin ambiguedad. Verificar el sentido: HF es el acido mas fuerte, y F- la base mas debil." }
           ],
           resultado: "Mayor a menor basicidad: CN- (cianuro) > ClO- (hipoclorito) > F- (fluoruro)."
         }
@@ -196,28 +196,28 @@ window.PARCIALES.push({
         {
           parte: "a)",
           pasos: [
-            { paso: "Celdas: cubica simple = 1 particula por celda; cubica centrada en el cuerpo (BCC) = 2; cubica centrada en caras (FCC) = 4.", porque: "En la celda unitaria, un atomo de vertice aporta 1/8 y uno de cara aporta 1/2: cubica simple 8/8 = 1; BCC 8/8 + 1 = 2; FCC 8/8 + 6/2 = 4." },
-            { paso: "BCC = 2 = el doble de la simple (no el triple).", porque: "Comparando las cantidades de particulas por celda se verifica si la BCC tiene el triple que la cubica simple: 2 no es 3 veces 1." },
-            { paso: "Un tercio de FCC = 4/3 = 1,33, que tampoco es 2.", porque: "Para verificar la segunda parte de la sentencia se compara la BCC (2) con un tercio de la FCC (4/3)." }
+            { paso: "Celdas: cubica simple = 1 particula por celda; cubica centrada en el cuerpo (BCC) = 2; cubica centrada en caras (FCC) = 4.", porque: "Se cuentan los atomos que pertenecen a la celda: cada atomo de vertice es compartido por 8 celdas y aporta 1/8, cada atomo de cara es compartido por 2 y aporta 1/2, y el atomo del centro aporta 1 completo. Asi, la cubica simple tiene 1, la BCC 2 y la FCC 4. Error comun: contar todos los atomos que se ven sin dividir por los compartidos." },
+            { paso: "BCC = 2 = el doble de la simple (no el triple).", porque: "Para la primera parte se hace el cociente BCC / cubica simple = 2 / 1 = 2, no 3. Por eso la afirmacion del triple es falsa, aunque la BCC tenga mas particulas. Verificar siempre el cociente y no solo si una cantidad es mayor que la otra." },
+            { paso: "Un tercio de FCC = 4/3 = 1,33, que tampoco es 2.", porque: "Esta comparacion es la verificacion de la segunda parte: se pone la BCC (2) frente a un tercio de la FCC (4/3) y se ve si coinciden. Si no coinciden, la sentencia es falsa, aunque la primera parte se cumpla. Conviene chequear cada parte de una afirmacion por separado." }
           ],
           resultado: "Falsa: la BCC tiene el doble de particulas que la cubica simple, no el triple, y 2 no es un tercio de 4."
         },
         {
           parte: "b)",
           pasos: [
-            { paso: "Lewis: CH4: C central con 4 enlaces simples a H. H2O: O con 2 enlaces O-H y 2 pares libres. HCl: H-Cl simple, Cl con 3 pares libres.", porque: "La estructura de Lewis muestra los pares de enlace y libres; de ahi salen la geometria y la polaridad, que se necesitan para identificar la fuerza intermolecular dominante." },
-            { paso: "Fuerza dominante: CH4 = London (dispersion). HCl = dipolo-dipolo (y London). H2O = puentes de hidrogeno.", porque: "El CH4 es apolar y solo tiene London; el HCl es polar pero sin H unido a F, O o N, asi que es dipolo-dipolo; el H2O tiene H unido a O, asi que forma puentes de hidrogeno." },
-            { paso: "Orden creciente de intensidad: CH4 < HCl < H2O.", porque: "Puente de hidrogeno > dipolo-dipolo > London en intensidad, y el orden creciente se arma con el tipo de fuerza dominante de cada sustancia." },
-            { paso: "Punto de ebullicion normal: temperatura a la que la presion de vapor del liquido iguala 1 atm. Presion de vapor: presion del vapor en equilibrio con el liquido a una temperatura dada.", porque: "Son las definiciones de las propiedades pedidas: el punto de ebullicion normal es la T donde la presion de vapor iguala 1 atm, y la presion de vapor es la del vapor en equilibrio con el liquido." },
-            { paso: "Mayor punto de ebullicion: H2O (puentes de hidrogeno, aprox. 100 C frente a -85 C del HCl y -162 C del CH4). Mayor presion de vapor a igual temperatura: CH4, por tener las fuerzas intermoleculares mas debiles.", porque: "Cuanto mas intensas son las fuerzas intermoleculares, mas energia hace falta para pasar al gas: el agua tiene el mayor punto de ebullicion, y el metano, con las fuerzas mas debiles, tiene la mayor presion de vapor a igual temperatura." }
+            { paso: "Lewis: CH4: C central con 4 enlaces simples a H. H2O: O con 2 enlaces O-H y 2 pares libres. HCl: H-Cl simple, Cl con 3 pares libres.", porque: "Se dibuja la estructura de Lewis contando electrones de valencia: CH4 con 4 enlaces simples, H2O con 2 enlaces y 2 pares libres en el O, y HCl con un enlace y 3 pares libres en el Cl. Con los pares libres y los enlaces se deduce la geometria y si la molecula es polar, datos necesarios para la fuerza intermolecular. Verificar que cada atomo cumpla el octeto (o el dueto en H)." },
+            { paso: "Fuerza dominante: CH4 = London (dispersion). HCl = dipolo-dipolo (y London). H2O = puentes de hidrogeno.", porque: "El CH4 es apolar (geometria tetraedrica simetrica), por lo que solo presenta fuerzas de London. El HCl es polar, pero su H esta unido a Cl, que no es F, O ni N, asi que la fuerza dominante es dipolo-dipolo. El H2O tiene H unido a O y forma puentes de hidrogeno, la mas intensa de las tres." },
+            { paso: "Orden creciente de intensidad: CH4 < HCl < H2O.", porque: "Por intensidad: puente de hidrogeno > dipolo-dipolo > London. Leido de menor a mayor, el orden es CH4 (London), HCl (dipolo-dipolo) y H2O (puente de hidrogeno). El criterio es el tipo de fuerza dominante, no la masa molar." },
+            { paso: "Punto de ebullicion normal: temperatura a la que la presion de vapor del liquido iguala 1 atm. Presion de vapor: presion del vapor en equilibrio con el liquido a una temperatura dada.", porque: "El punto de ebullicion normal es la temperatura a la que la presion de vapor del liquido iguala 1 atm, y la presion de vapor es la que ejerce el vapor en equilibrio con su liquido a una temperatura dada. La presion de vapor depende de la temperatura, por eso siempre se compara a igual T." },
+            { paso: "Mayor punto de ebullicion: H2O (puentes de hidrogeno, aprox. 100 C frente a -85 C del HCl y -162 C del CH4). Mayor presion de vapor a igual temperatura: CH4, por tener las fuerzas intermoleculares mas debiles.", porque: "Cuanto mas intensas son las fuerzas intermoleculares, mas energia se necesita para separar las moleculas y pasarlas al gas: por eso el agua, con puentes de hidrogeno, tiene el punto de ebullicion mas alto. Con fuerzas mas debiles, como las de London del CH4, las moleculas escapan mas facilmente y la presion de vapor a igual temperatura es mayor. Error comun: invertir la relacion entre fuerza y presion de vapor." }
           ],
           resultado: "Dominantes: CH4 London; HCl dipolo-dipolo; H2O puentes de hidrogeno. Orden creciente: CH4 < HCl < H2O. Mayor punto de ebullicion: H2O. Mayor presion de vapor: CH4."
         },
         {
           parte: "c)",
           pasos: [
-            { paso: "La sublimacion ocurre a presiones por debajo de la del punto triple. Por encima, el solido funde o pasa a liquido antes de sublimar.", porque: "El punto triple es la unica combinacion de P y T donde coexisten solido, liquido y vapor; por debajo de esa presion no hay liquido estable, asi que el solido pasa directo a vapor." },
-            { paso: "En el diagrama de fases, la sublimacion ocurre en la rama solido-vapor, que termina en el punto triple.", porque: "La curva solido-vapor es la frontera de sublimacion y termina en el punto triple, por eso la presion maxima de sublimacion es la de ese punto." }
+            { paso: "La sublimacion ocurre a presiones por debajo de la del punto triple. Por encima, el solido funde o pasa a liquido antes de sublimar.", porque: "El punto triple es la unica combinacion de P y T donde coexisten solido, liquido y vapor. Si la presion esta por debajo de la del punto triple, el liquido no puede existir a ninguna temperatura y el solido pasa directo a vapor: eso es la sublimacion. Por eso la sublimacion se analiza a presiones menores que la del punto triple." },
+            { paso: "En el diagrama de fases, la sublimacion ocurre en la rama solido-vapor, que termina en el punto triple.", porque: "En el diagrama de fases, la curva solido-vapor marca las condiciones de sublimacion y llega hasta el punto triple, donde se une con las otras dos curvas. Como la curva termina ahi, la presion mas alta a la que el solido puede sublimar es la del punto triple. Conviene verificarlo mirando el extremo de la curva en el diagrama." }
           ],
           resultado: "La presion maxima de sublimacion es la presion del punto triple."
         }
@@ -245,29 +245,29 @@ window.PARCIALES.push({
         {
           parte: "a)",
           pasos: [
-            { paso: "Calor liberado por mol de H2: 8232 kJ / 200 mol = 41,16 kJ/mol. Como el calor sale del sistema, DeltaH < 0.", porque: "Por convencion, si el sistema libera calor el DeltaH es negativo (exotermico), y el valor se refiere a 1 mol de H2 formado." },
-            { paso: "Ecuacion: CO(g) + H2O(g) -> CO2(g) + H2(g), DeltaH = -41,16 kJ (por mol de H2 formado).", porque: "Los coeficientes son de 1 mol de cada especie en la reaccion, asi que el DeltaH de la ecuacion es el de 1 mol de H2." },
-            { paso: "Control: DeltaH = DeltaHf(CO2) - DeltaHf(CO) - DeltaHf(H2O) da DeltaHf(CO) = -110,53 kJ/mol, valor coherente con la tabla.", porque: "La ley de Hess permite calcular el DeltaH como sumatoria de DeltaHf de productos menos reactivos; se usa para comprobar que el dato es coherente con la tabla." }
+            { paso: "Calor liberado por mol de H2: 8232 kJ / 200 mol = 41,16 kJ/mol. Como el calor sale del sistema, DeltaH < 0.", porque: "Si el sistema libera calor, el DeltaH de la reaccion es negativo (proceso exotermico) por convencion. El dato corresponde a 200 mol de H2, asi que se divide para obtener el calor por mol: 8232 / 200 = 41,16 kJ/mol, con signo negativo. Error tipico: dejar el signo positivo al pasar el calor liberado." },
+            { paso: "Ecuacion: CO(g) + H2O(g) -> CO2(g) + H2(g), DeltaH = -41,16 kJ (por mol de H2 formado).", porque: "Como los coeficientes son 1 para todas las especies, el DeltaH de la ecuacion escrita corresponde a formar 1 mol de H2 y 1 mol de CO2. Por eso el valor -41,16 kJ de la etapa anterior se usa directamente. Verificar que no haya coeficientes que cambien ese DeltaH." },
+            { paso: "Control: DeltaH = DeltaHf(CO2) - DeltaHf(CO) - DeltaHf(H2O) da DeltaHf(CO) = -110,53 kJ/mol, valor coherente con la tabla.", porque: "Se usa la forma de Hess con entalpias de formacion: DeltaH = suma de DeltaHf de productos menos suma de DeltaHf de reactivos. Aqui sirve de control: despejando DeltaHf(CO) se obtiene -110,53 kJ/mol, que coincide con la tabla. Error comun: invertir la resta." }
           ],
           resultado: "CO(g) + H2O(g) -> CO2(g) + H2(g)  DeltaH = -41,16 kJ."
         },
         {
           parte: "b)",
           pasos: [
-            { paso: "Reaccion de combustion: CO(g) + 1/2 O2(g) -> CO2(g).", porque: "La combustion es la reaccion con O2 que da CO2 (combustion completa); por definicion de entalpia de combustion estandar la ecuacion es para 1 mol de CO." },
-            { paso: "Hess: (CO + H2O -> CO2 + H2, DeltaH = -41,16) + (H2 + 1/2 O2 -> H2O(g), DeltaH = -241,82) = CO + 1/2 O2 -> CO2, DeltaH = -282,98 kJ.", porque: "La ley de Hess dice que el DeltaH global es la suma de los DeltaH de las etapas; al sumar las dos ecuaciones se cancelan H2 y H2O(g)." },
-            { paso: "Control: DeltaHc = DeltaHf(CO2) - DeltaHf(CO) = -393,51 - (-110,53) = -282,98 kJ/mol.", porque: "La entalpia de combustion estandar es DeltaHf(CO2) menos DeltaHf(CO), porque el O2 tiene DeltaHf = 0; sirve para verificar el resultado anterior." }
+            { paso: "Reaccion de combustion: CO(g) + 1/2 O2(g) -> CO2(g).", porque: "La combustion es la reaccion del compuesto con O2 para dar CO2. La entalpia de combustion estandar se define para 1 mol del combustible, por eso se escribe CO + 1/2 O2 -> CO2, con media mol de O2 para balancear el oxigeno. Verificar que el coeficiente del O2 sea fraccionario y no se multiplique la ecuacion." },
+            { paso: "Hess: (CO + H2O -> CO2 + H2, DeltaH = -41,16) + (H2 + 1/2 O2 -> H2O(g), DeltaH = -241,82) = CO + 1/2 O2 -> CO2, DeltaH = -282,98 kJ.", porque: "La ley de Hess dice que, si una reaccion se puede obtener sumando otras, su DeltaH es la suma de los DeltaH de esas etapas. Aqui se suma la reaccion del punto a) con la formacion del agua, y al hacerlo se cancelan H2 y H2O(g). Para que esto funcione, las ecuaciones deben sumarse exactamente." },
+            { paso: "Control: DeltaHc = DeltaHf(CO2) - DeltaHf(CO) = -393,51 - (-110,53) = -282,98 kJ/mol.", porque: "Como el O2 tiene DeltaHf = 0 (es un elemento en su forma estable), la combustion se calcula solo con DeltaHf(CO2) menos DeltaHf(CO). Con -393,51 y -110,53 se obtiene -282,98 kJ/mol, el mismo valor que por Hess, lo que confirma el resultado. Error comun: incluir el O2 en la cuenta o invertir la resta." }
           ],
           resultado: "CO(g) + 1/2 O2(g) -> CO2(g)  DeltaHc = -282,98 kJ/mol (aprox. -283,0 kJ/mol)."
         },
         {
           parte: "c)",
           pasos: [
-            { paso: "Calor transferido: Q = 0,70 x 8232 kJ = 5762,4 kJ.", porque: "Solo el 70 % del calor de la reaccion se transfiere al etanol, segun el enunciado." },
-            { paso: "Por mol de etanol: calentar de 25 a 78 C: 0,112 kJ/(mol.C) x 53 C = 5,936 kJ/mol. Vaporizar a 78 C: 43,5 kJ/mol. Total: 49,436 kJ/mol.", porque: "El etanol liquido se calienta de 25 a 78 C (calor sensible con su Cp) y despues se vaporiza a su punto de ebullicion normal (calor latente con DeltaHvap); son dos etapas." },
-            { paso: "n(etanol) = 5762,4 / 49,436 = 116,56 mol.", porque: "Con el calor total y el calor por mol se obtienen los moles que se pueden llevar a vapor (n = Q / q por mol)." },
-            { paso: "M(C2H6O) = 46,07 g/mol. m = 116,56 x 46,07 = 5370 g.", porque: "Para pasar de moles a masa se multiplica por la masa molar (m = n x M)." },
-            { paso: "Supuesto: el calor de la reaccion del enunciado es 8232 kJ (el dato de 200 mol de H2).", porque: "El enunciado da el calor solo para 200 mol de H2, asi que se toma ese calor como el total disponible de la reaccion." }
+            { paso: "Calor transferido: Q = 0,70 x 8232 kJ = 5762,4 kJ.", porque: "El enunciado indica que solo el 70 % del calor de la reaccion pasa al etanol, asi que se multiplica el calor total de 8232 kJ por 0,70. Es el calor realmente disponible para calentar y vaporizar el etanol. Verificar el porcentaje antes de seguir, porque es facil olvidarlo." },
+            { paso: "Por mol de etanol: calentar de 25 a 78 C: 0,112 kJ/(mol.C) x 53 C = 5,936 kJ/mol. Vaporizar a 78 C: 43,5 kJ/mol. Total: 49,436 kJ/mol.", porque: "Para llevar cada mol de etanol de 25 C a vapor a 78 C se suman dos etapas: calentar el liquido con Q = n x Cp x DeltaT (Cp = 0,112 kJ/(mol C), DeltaT = 53 C) y luego vaporizar con DeltaHvap = 43,5 kJ/mol. La vaporizacion ocurre a 78 C, que es el punto de ebullicion normal, asi que no hace falta otra etapa. Error comun: omitir el calentamiento." },
+            { paso: "n(etanol) = 5762,4 / 49,436 = 116,56 mol.", porque: "Dividir el calor disponible entre el calor necesario por mol da cuantos moles de etanol se pueden calentar y vaporizar con esa energia (n = Q / q). Es una division porque a mayor calor por mol, menos moles. Verificar que las unidades den mol: kJ entre kJ/mol." },
+            { paso: "M(C2H6O) = 46,07 g/mol. m = 116,56 x 46,07 = 5370 g.", porque: "Con los moles de etanol se calcula la masa multiplicando por la masa molar del C2H6O (46,07 g/mol, suma de 2 C, 6 H y 1 O). Al final se divide por 1000 para pasar de g a kg. Verificar que la masa molar corresponda al etanol." },
+            { paso: "Supuesto: el calor de la reaccion del enunciado es 8232 kJ (el dato de 200 mol de H2).", porque: "El enunciado da 8232 kJ para la formacion de 200 mol de H2 y no da otra cantidad, por eso se toma ese calor como el total disponible. Es un supuesto de lectura del problema y conviene escribirlo, porque cambiaria si la reaccion se hiciera a otra escala. Verificar que el dato usado coincida con el del enunciado." }
           ],
           resultado: "Aprox. 5,37 kg de vapor de etanol a 78 C y 1 atm."
         }
@@ -295,42 +295,42 @@ window.PARCIALES.push({
         {
           parte: "a)",
           pasos: [
-            { paso: "Reaccion: CH3COOH(ac) + NaOH(ac) -> CH3COONa(ac) + H2O(l).", porque: "Un acido debil con una base fuerte da la sal del acido y agua; la relacion es 1:1 porque el acido tiene 1 H ionizable y el NaOH aporta 1 OH-." },
-            { paso: "Reactivos: acido acetico (acido etanoico) e hidroxido de sodio. Productos: acetato de sodio (etanoato de sodio) y agua.", porque: "Son los nombres de las sustancias que pide el enunciado: el acido etanoico (acetico) y el etanoato (acetato) de sodio." },
-            { paso: "Fenolftaleina: incolora antes del punto de equivalencia (medio acido) y rosa despues (medio basico, pH mayor a aprox. 8,2).", porque: "La fenolftaleina vira en el rango de pH aprox. 8,2 a 10; antes del punto de equivalencia el pH esta por debajo de ese rango, por eso es incolora." }
+            { paso: "Reaccion: CH3COOH(ac) + NaOH(ac) -> CH3COONa(ac) + H2O(l).", porque: "Se identifica el tipo de reaccion: un acido debil (CH3COOH) con una base fuerte (NaOH) da la sal del acido y agua. La relacion es 1:1 porque el acido tiene un solo H ionizable y el NaOH aporta un OH-. Error comun: tratar el acido acetico como si fuera fuerte." },
+            { paso: "Reactivos: acido acetico (acido etanoico) e hidroxido de sodio. Productos: acetato de sodio (etanoato de sodio) y agua.", porque: "Se nombran todos los reactivos y productos porque el enunciado lo pide. Los nombres sistematicos son acido etanoico y etanoato de sodio, y los usuales acido acetico y acetato de sodio. Conviene escribir ambos para que la respuesta quede completa." },
+            { paso: "Fenolftaleina: incolora antes del punto de equivalencia (medio acido) y rosa despues (medio basico, pH mayor a aprox. 8,2).", porque: "La fenolftaleina es un indicador que cambia de color en un rango de pH (aprox. 8,2 a 10). Antes del punto de equivalencia la solucion es acida, por debajo de ese rango, asi que queda incolora; despues del PE hay exceso de base y el pH supera 8,2, y entonces se vuelve rosa." }
           ],
           resultado: "CH3COOH + NaOH -> CH3COONa + H2O. Fenolftaleina: incolora antes del PE, rosa despues."
         },
         {
           parte: "b)",
           pasos: [
-            { paso: "n(NaOH) = 0,1250 mol/L x 0,01785 L = 2,231 x 10^-3 mol. Relacion 1:1, luego n(acido) = 2,231 x 10^-3 mol en 3 mL.", porque: "En la titulacion 1:1 los moles de NaOH gastados son los del acido en la muestra (n = M x V)." },
-            { paso: "[acido] = 2,231 x 10^-3 / 0,003 L = 0,744 mol/L.", porque: "La concentracion molar es moles sobre litros de la muestra analizada, que son 3 mL = 0,003 L." },
-            { paso: "% m/V: 0,744 x 60,05 g/L = 44,7 g/L = 4,47 % m/V.", porque: "Para comparar con la etiqueta (% m/V = g cada 100 mL) se pasa la molaridad a g/L con la masa molar y luego a %." },
-            { paso: "Comparacion: la etiqueta declara 5% m/V, el valor medido es 4,47 % m/V (aprox. 10% menos). No cumple con lo declarado.", porque: "El criterio de calidad que se usa es el valor declarado en la etiqueta (5 % m/V); el valor medido es menor." },
-            { paso: "Nota: si el criterio fuera el minimo legal de 4 % m/V (a verificar en el Codigo Alimentario Argentino), cumpliria.", porque: "El enunciado no fija un minimo legal, asi que se muestra que el resultado depende del criterio; el valor de referencia debe confirmarse en la norma." }
+            { paso: "n(NaOH) = 0,1250 mol/L x 0,01785 L = 2,231 x 10^-3 mol. Relacion 1:1, luego n(acido) = 2,231 x 10^-3 mol en 3 mL.", porque: "Como la reaccion es 1:1, los moles de NaOH gastados hasta el viraje son exactamente los moles de acido que habia en la muestra. Se calculan con n = M x V usando 0,01785 L de titulante. Error comun: usar los mL sin pasarlos a litros." },
+            { paso: "[acido] = 2,231 x 10^-3 / 0,003 L = 0,744 mol/L.", porque: "La concentracion del vinagre es moles de acido dividido el volumen de la muestra analizada, que son 3 mL = 0,003 L. Hay que usar el volumen de muestra y no el del titulante, que son distintos. Error comun: dividir por los 17,85 mL." },
+            { paso: "% m/V: 0,744 x 60,05 g/L = 44,7 g/L = 4,47 % m/V.", porque: "La etiqueta usa % m/V (gramos de soluto cada 100 mL), por eso la molaridad se pasa a gramos por litro: 0,744 mol/L x 60,05 g/mol = 44,7 g/L. Como 44,7 g/L equivale a 4,47 g cada 100 mL, el resultado es 4,47 % m/V. Verificar la conversion de L a mL." },
+            { paso: "Comparacion: la etiqueta declara 5% m/V, el valor medido es 4,47 % m/V (aprox. 10% menos). No cumple con lo declarado.", porque: "Para decidir si el vinagre cumple, se compara el valor medido con el declarado en la etiqueta, 5 % m/V. El valor medido (4,47 %) es menor, por eso no cumple con lo declarado. Esa es la conclusion que pide la parte b)." },
+            { paso: "Nota: si el criterio fuera el minimo legal de 4 % m/V (a verificar en el Codigo Alimentario Argentino), cumpliria.", porque: "El enunciado no define un minimo legal, asi que la conclusion depende del criterio elegido: contra la etiqueta no cumple, y contra un minimo de 4 % m/V cumpliria. Este punto conviene confirmarlo en el Codigo Alimentario Argentino antes de dar una conclusion definitiva." }
           ],
           resultado: "4,47 % m/V (0,744 M). No cumple con el 5% declarado en la etiqueta."
         },
         {
           parte: "c)",
           pasos: [
-            { paso: "Reaccion: 2 CH3COOH(ac) + Ca(OH)2(ac) -> (CH3COO)2Ca(ac) + 2 H2O(l).", porque: "El Ca(OH)2 aporta 2 OH- por mol, asi que necesita 2 mol de acido por mol de base." },
-            { paso: "n(acido) en 5 mL = 0,744 mol/L x 0,005 L = 3,719 x 10^-3 mol.", porque: "Con la concentracion del punto b) y el volumen de 5 mL se calculan los moles de acido a titular (n = M x V)." },
-            { paso: "n(Ca(OH)2) = n(acido)/2 = 1,859 x 10^-3 mol (el Ca(OH)2 aporta 2 OH-).", porque: "Por la relacion 2:1 del acido con el Ca(OH)2 se pasa de moles de acido a moles de base." },
-            { paso: "V = 1,859 x 10^-3 mol / 0,1250 mol/L = 0,01487 L = 14,9 mL.", porque: "El volumen de titulante es moles de base divididos su concentracion (V = n/M)." },
-            { paso: "Control: con NaOH serian 29,75 mL; con Ca(OH)2 de igual molaridad se gasta la mitad.", porque: "Con NaOH la relacion es 1:1; como el Ca(OH)2 aporta el doble de OH- con la misma molaridad, se necesita la mitad de volumen." }
+            { paso: "Reaccion: 2 CH3COOH(ac) + Ca(OH)2(ac) -> (CH3COO)2Ca(ac) + 2 H2O(l).", porque: "El Ca(OH)2 se disocia en Ca2+ y 2 OH-, por eso cada mol de base neutraliza 2 mol de acido. La ecuacion balanceada refleja esa relacion 2:1 con el acido acetico. Error comun: usar la relacion 1:1 que corresponde al NaOH." },
+            { paso: "n(acido) en 5 mL = 0,744 mol/L x 0,005 L = 3,719 x 10^-3 mol.", porque: "Se usa la concentracion de b) (0,744 M) y el volumen de muestra de 5 mL para obtener los moles de acido: n = M x V = 0,744 x 0,005 = 3,719 x 10^-3 mol. Verificar que el volumen este en litros." },
+            { paso: "n(Ca(OH)2) = n(acido)/2 = 1,859 x 10^-3 mol (el Ca(OH)2 aporta 2 OH-).", porque: "Con la relacion 2:1 del acido respecto del Ca(OH)2, los moles de base son la mitad de los de acido: 3,719 x 10^-3 / 2 = 1,859 x 10^-3 mol. Es el paso que transforma la cantidad de acido en la de base necesaria." },
+            { paso: "V = 1,859 x 10^-3 mol / 0,1250 mol/L = 0,01487 L = 14,9 mL.", porque: "El volumen de titulante se despeja de n = M x V como V = n / M: 1,859 x 10^-3 / 0,1250 = 0,01487 L, o sea 14,9 mL. Este resultado debe ser la mitad de los 29,75 mL que se gastarian con NaOH, lo que sirve como control." },
+            { paso: "Control: con NaOH serian 29,75 mL; con Ca(OH)2 de igual molaridad se gasta la mitad.", porque: "Este control compara con la titulacion con NaOH de la misma molaridad: el NaOH reacciona 1:1 y el Ca(OH)2 aporta el doble de OH-, asi que el volumen de Ca(OH)2 debe ser la mitad (29,75 / 2 = 14,9 mL). Sirve para detectar errores de factor 2 antes de entregar el resultado." }
           ],
           resultado: "Aprox. 14,9 mL de Ca(OH)2 0,1250 M."
         },
         {
           parte: "d)",
           pasos: [
-            { paso: "Equilibrio: CH3COOH <-> H+ + CH3COO-. Ka = [H+][CH3COO-]/[CH3COOH] = 1,8 x 10^-5.", porque: "El acido acetico es debil y se disocia parcialmente; la Ka expresa el equilibrio con las concentraciones de cada especie." },
-            { paso: "Balance de carga: [H+] = [CH3COO-] + [OH-]. Balance de masa: C = [CH3COOH] + [CH3COO-], con C = 0,744 M.", porque: "La solucion es electroneutra (cargas positivas iguales a negativas), y la masa del acido total C se conserva entre la forma sin disociar y la disociada." },
-            { paso: "Suposiciones: [OH-] despreciable (medio acido); [H+] = [CH3COO-] = x; ionizacion pequena, asi que [CH3COOH] = C - x = C.", porque: "En una solucion acida el [OH-] es muy chico frente al [H+], y como el acido se ioniza poco, la concentracion sin disociar es aprox. C." },
-            { paso: "x = sqrt(Ka x C) = sqrt(1,8 x 10^-5 x 0,744) = 3,66 x 10^-3 M. Verificacion: x/C = 0,49% < 5%, la aproximacion es valida. (Resolviendo la cuadratica se obtiene pH 2,44 tambien.)", porque: "Para un acido debil con [H+] = x, Ka = x^2/(C - x), que se simplifica a x = sqrt(Ka x C) si x es chico frente a C; el 5 % es el criterio para validar la aproximacion." },
-            { paso: "pH = -log(3,66 x 10^-3) = 2,44. Si se usara 5% m/V (0,833 M) el pH seria aprox. 2,41.", porque: "El pH es -log[H+] con el valor calculado; el 5 % m/V de la etiqueta da otra concentracion, y el resultado se compara como referencia." }
+            { paso: "Equilibrio: CH3COOH <-> H+ + CH3COO-. Ka = [H+][CH3COO-]/[CH3COOH] = 1,8 x 10^-5.", porque: "Se escribe el equilibrio de disociacion del acido acetico, CH3COOH <-> H+ + CH3COO-, y su Ka. Como el acido es debil, solo una parte se ioniza, por eso [H+] no es igual a C. La Ka es la herramienta para calcular esa fraccion." },
+            { paso: "Balance de carga: [H+] = [CH3COO-] + [OH-]. Balance de masa: C = [CH3COOH] + [CH3COO-], con C = 0,744 M.", porque: "El balance de carga expresa que la solucion es neutra: la suma de cargas positivas iguala a la de negativas (H+ = CH3COO- + OH-). El balance de masa indica que el acido total C se reparte entre la forma sin disociar y la disociada. Ambos balances son necesarios para plantear el sistema de ecuaciones." },
+            { paso: "Suposiciones: [OH-] despreciable (medio acido); [H+] = [CH3COO-] = x; ionizacion pequena, asi que [CH3COOH] = C - x = C.", porque: "Se hacen dos suposiciones: el [OH-] es despreciable porque la solucion es acida, y la ionizacion es chica, asi que [CH3COOH] = C - x es aprox. C. Estas simplificaciones permiten despejar x directamente. La validez se comprueba al final con x/C menor a 5 %." },
+            { paso: "x = sqrt(Ka x C) = sqrt(1,8 x 10^-5 x 0,744) = 3,66 x 10^-3 M. Verificacion: x/C = 0,49% < 5%, la aproximacion es valida. (Resolviendo la cuadratica se obtiene pH 2,44 tambien.)", porque: "Con [H+] = x, la Ka queda x^2/(C - x), que con x chico frente a C se simplifica a x = sqrt(Ka x C). El criterio de validacion es que x/C sea menor a 5 %, que aqui da 0,49 %. Verificar esa comprobacion, porque sin ella la aproximacion no esta justificada." },
+            { paso: "pH = -log(3,66 x 10^-3) = 2,44. Si se usara 5% m/V (0,833 M) el pH seria aprox. 2,41.", porque: "El pH se obtiene como -log[H+] con x = 3,66 x 10^-3 M, dando 2,44. La comparacion con el 5 % m/V (0,833 M) sirve solo como referencia, porque la pregunta es el pH de la solucion tal como esta. Error comun: usar la concentracion de la etiqueta sin verificar cual se pide." }
           ],
           resultado: "pH inicial aprox. 2,44."
         }
@@ -371,30 +371,30 @@ window.PARCIALES.push({
         {
           parte: "a)",
           pasos: [
-            { paso: "Supuesto: 10 mol de agua es el producto real. Moles de H2SO4 que reaccionan = 10 / 2 = 5 mol.", porque: "Por la ecuacion, 1 mol de H2SO4 da 2 mol de H2O: 10 mol de agua corresponden a 5 mol de acido; se supone que esos 10 mol son el producto real." },
-            { paso: "Con rendimiento 85%: n(H2SO4) necesarios = 5 / 0,85 = 5,882 mol.", porque: "El rendimiento de 85 % indica que solo ese porcentaje de lo teorico se obtiene, asi que para tener 5 mol reales hay que dividir por 0,85." },
-            { paso: "M(H2SO4) = 98,08 g/mol. m = 5,882 x 98,08 = 576,9 g de H2SO4 puro.", porque: "Se pasa de moles a masa de acido puro con la masa molar (m = n x M)." },
-            { paso: "Solucion al 98% m/m: m(solucion) = 576,9 / 0,98 = 588,7 g.", porque: "Como la solucion es 98 % m/m, el acido puro es el 98 % de la masa de solucion: m(solucion) = m(puro) / 0,98." },
-            { paso: "V = 588,7 g / 1,83 g/mL = 321,7 mL.", porque: "La densidad relaciona masa y volumen de la solucion (V = m/d)." }
+            { paso: "Supuesto: 10 mol de agua es el producto real. Moles de H2SO4 que reaccionan = 10 / 2 = 5 mol.", porque: "Por la ecuacion, 1 mol de H2SO4 produce 2 mol de H2O, asi que 10 mol de agua corresponden a 10 / 2 = 5 mol de acido. Se toma el agua como producto real, y el rendimiento se aplica en el paso siguiente. Escribir este supuesto es importante porque cambia la cantidad de acido a usar." },
+            { paso: "Con rendimiento 85%: n(H2SO4) necesarios = 5 / 0,85 = 5,882 mol.", porque: "Con rendimiento de 85 % solo se aprovecha ese porcentaje de lo que se consume, asi que para obtener 5 mol reales hay que partir de mas acido: 5 / 0,85 = 5,882 mol. Es la misma logica de dividir por el rendimiento. Error comun: multiplicar por 0,85, lo que daria menos acido del necesario." },
+            { paso: "M(H2SO4) = 98,08 g/mol. m = 5,882 x 98,08 = 576,9 g de H2SO4 puro.", porque: "Se multiplican los moles de H2SO4 por su masa molar (2 x 1,008 + 32,07 + 4 x 16,00 = 98,08 g/mol) para pasar a gramos de acido puro. Es el paso que convierte la cantidad de sustancia en una masa que se puede pesar. Verificar la masa molar del H2SO4." },
+            { paso: "Solucion al 98% m/m: m(solucion) = 576,9 / 0,98 = 588,7 g.", porque: "Como la concentracion es 98 % m/m, el acido puro es el 98 % de la masa de la solucion, asi que la masa de solucion es la del acido dividida 0,98. Es el mismo criterio que el de rendimiento: si lo util es una fraccion, se divide para obtener el total. Error tipico: multiplicar por 0,98, lo que daria una masa menor." },
+            { paso: "V = 588,7 g / 1,83 g/mL = 321,7 mL.", porque: "Se usa la densidad de la solucion (1,83 g/mL) para pasar de masa a volumen con V = m/d, ya que el acido se toma como solucion y se mide en volumen. Verificar que el resultado quede en mL, porque la densidad esta en g/mL." }
           ],
           resultado: "Aprox. 322 mL (0,322 L) de solucion de H2SO4 98% m/m."
         },
         {
           parte: "b)",
           pasos: [
-            { paso: "Relacion: 1 H2SO4 : 2 HBr. Para 5,882 mol de H2SO4 se necesitan 11,76 mol de HBr.", porque: "Los coeficientes (1 H2SO4 : 2 HBr) dan la proporcion en que reaccionan; 5,882 mol de acido necesitan 11,76 mol de HBr." },
-            { paso: "Hay 15 mol de HBr, por lo tanto el HBr esta en exceso.", porque: "Si el reactivo disponible supera lo necesario segun la relacion estequiometrica, ese reactivo queda en exceso." },
-            { paso: "Control por cociente n/coef: H2SO4 = 5,882 / 1 = 5,88; HBr = 15 / 2 = 7,5. El minimo es el H2SO4.", porque: "El reactivo limitante es el de menor cociente n/coeficiente, criterio que compensa los coeficientes distintos." },
-            { paso: "Exceso de HBr = 15 - 11,76 = 3,24 mol.", porque: "El exceso es lo disponible menos lo que reacciona, ambos en moles de HBr." }
+            { paso: "Relacion: 1 H2SO4 : 2 HBr. Para 5,882 mol de H2SO4 se necesitan 11,76 mol de HBr.", porque: "Con la relacion 1 H2SO4 : 2 HBr se calcula cuanto HBr se necesita para reaccionar con todo el acido disponible: 5,882 x 2 = 11,76 mol. Ese valor se compara con los 15 mol disponibles para ver cual reactivo se agota primero. Error comun: usar la relacion 1:1." },
+            { paso: "Hay 15 mol de HBr, por lo tanto el HBr esta en exceso.", porque: "Como hay 15 mol de HBr y solo se necesitan 11,76 mol, sobra HBr y queda en exceso. Eso significa que el H2SO4 se agota primero y limita la reaccion. Verificar esta conclusion con el criterio de cociente del paso siguiente." },
+            { paso: "Control por cociente n/coef: H2SO4 = 5,882 / 1 = 5,88; HBr = 15 / 2 = 7,5. El minimo es el H2SO4.", porque: "Para identificar el limitante se divide cada cantidad disponible por su coeficiente y se elige el menor valor: H2SO4 = 5,88 y HBr = 7,5. Es necesario porque los coeficientes son distintos y comparar moles absolutos no alcanza. Error comun: decidir por la cantidad absoluta." },
+            { paso: "Exceso de HBr = 15 - 11,76 = 3,24 mol.", porque: "El exceso se calcula restando a los moles de HBr disponibles los que reaccionan: 15 - 11,76 = 3,24 mol. Se usan moles de la misma sustancia para restar. Verificar que el resultado sea positivo, lo que confirma que el HBr es el que sobra." }
           ],
           resultado: "Reactivo limitante: H2SO4. Exceso: HBr, 3,24 mol."
         },
         {
           parte: "c)",
           pasos: [
-            { paso: "SO2: S central con dos enlaces con O en resonancia (S=O y S-O, orden de enlace 1,5 en cada uno), 1 par libre en S. Geometria angular, molecula polar.", porque: "Con 18 electrones de valencia el S tiene un par libre y los enlaces se reparten en resonancia; la geometria angular que deja ese par hace que la molecula sea polar." },
-            { paso: "Br2: Br-Br con un enlace simple; cada Br tiene 3 pares libres. Molecula apolar.", porque: "Cada Br tiene 7 electrones de valencia: con un enlace simple completa el octeto con 3 pares libres. Como los dos atomos son iguales, la molecula es apolar." },
-            { paso: "Supuesto: la misma temperatura es 25 C. SO2 tiene punto de ebullicion de -10 C, asi que es gas. Br2 tiene 70 electrones y fuerzas de London fuertes, punto de ebullicion 58,8 C, asi que es liquido.", porque: "El enunciado no da la temperatura, por eso se asume 25 C; el estado depende de si esa temperatura supera el punto de ebullicion de cada sustancia (SO2 -10 C, Br2 58,8 C)." }
+            { paso: "SO2: S central con dos enlaces con O en resonancia (S=O y S-O, orden de enlace 1,5 en cada uno), 1 par libre en S. Geometria angular, molecula polar.", porque: "Se cuentan los 18 electrones de valencia del SO2 para armar Lewis: el S queda con un par libre y los dos enlaces S-O se reparten en resonancia (orden 1,5). El par libre da geometria angular y, como los enlaces no se cancelan, la molecula es polar. Error tipico: dibujar el SO2 lineal." },
+            { paso: "Br2: Br-Br con un enlace simple; cada Br tiene 3 pares libres. Molecula apolar.", porque: "Cada Br tiene 7 electrones de valencia: comparte uno en el enlace simple y completa el octeto con 3 pares libres. Como los dos atomos son identicos no hay diferencia de electronegatividad, asi que la molecula es apolar. Verificar que cada atomo cumpla el octeto." },
+            { paso: "Supuesto: la misma temperatura es 25 C. SO2 tiene punto de ebullicion de -10 C, asi que es gas. Br2 tiene 70 electrones y fuerzas de London fuertes, punto de ebullicion 58,8 C, asi que es liquido.", porque: "Como el enunciado no informa la temperatura, se supone 25 C. El estado de cada sustancia depende de si esa temperatura supera su punto de ebullicion: SO2 (-10 C) queda gas y Br2 (58,8 C) queda liquido. Conviene aclarar el supuesto en la respuesta." }
           ],
           resultado: "SO2 gas y Br2 liquido a 25 C, por la intensidad de las fuerzas intermoleculares (London en Br2 frente a dipolo-dipolo y masa menor en SO2)."
         }
@@ -422,30 +422,30 @@ window.PARCIALES.push({
         {
           parte: "a)",
           pasos: [
-            { paso: "Propano: C3H8(g) + 5 O2(g) -> 3 CO2(g) + 4 H2O(l). DeltaHc = [3(-393,5) + 4(-286,0)] - (-103,85) = -2220,65 kJ/mol.", porque: "La DeltaH de reaccion se calcula como sumatoria de DeltaHf de productos menos reactivos (Hess); el agua se toma liquida porque es el estado de la tabla y de la combustion completa." },
-            { paso: "Carbon: C(s) + O2(g) -> CO2(g). DeltaHc = -393,5 kJ/mol.", porque: "Es la combustion de C(s) a CO2, con 1 mol de carbono por mol de combustible; el DeltaHf del CO2 es la combustion del C porque C(s) y O2 tienen DeltaHf = 0." },
-            { paso: "Por mol de combustible con igual costo: el propano libera 2220,65 / 393,5 = 5,6 veces mas calor que el carbon por mol.", porque: "Con igual costo por mol, conviene el combustible que libera mas calor por mol; la comparacion es por mol de combustible, como pide el enunciado." },
-            { paso: "Tambien se puede comparar por mol de carbono: el propano tiene 3 C por mol, pero el criterio pedido es por mol de combustible.", porque: "Es solo una comprobacion: por mol de carbono el propano sigue dando mas calor (2220,65 / 3 = 740 kJ frente a 393,5 kJ), aunque el enunciado pide por mol de combustible." }
+            { paso: "Propano: C3H8(g) + 5 O2(g) -> 3 CO2(g) + 4 H2O(l). DeltaHc = [3(-393,5) + 4(-286,0)] - (-103,85) = -2220,65 kJ/mol.", porque: "Se aplica DeltaH = suma de DeltaHf de productos menos suma de DeltaHf de reactivos: 3(-393,5) + 4(-286,0) - (-103,85) = -2220,65 kJ/mol. El O2 no aporta porque su DeltaHf es cero. El agua se toma liquida porque es el estado de la tabla. Error comun: olvidar el coeficiente 4 del agua." },
+            { paso: "Carbon: C(s) + O2(g) -> CO2(g). DeltaHc = -393,5 kJ/mol.", porque: "Para el carbon la combustion es C(s) + O2 -> CO2, con un mol de C por mol de combustible. Como C(s) y O2 son elementos en su forma estable, su DeltaHf es cero, y por eso el DeltaHf del CO2 da directamente el DeltaH de combustion. Verificar que el valor sea negativo." },
+            { paso: "Por mol de combustible con igual costo: el propano libera 2220,65 / 393,5 = 5,6 veces mas calor que el carbon por mol.", porque: "Como el costo es el mismo por mol, el criterio es el calor liberado por mol: 2220,65 / 393,5 = 5,6, o sea el propano libera casi 6 veces mas calor. Conviene comparar en la misma base (por mol de combustible), tal como pide el enunciado. Error comun: comparar en bases distintas sin aclararlo." },
+            { paso: "Tambien se puede comparar por mol de carbono: el propano tiene 3 C por mol, pero el criterio pedido es por mol de combustible.", porque: "Es una comprobacion extra: por mol de carbono el propano tiene 3 C, y 2220,65 / 3 = 740 kJ por mol de C frente a 393,5 kJ del carbon. La conclusion favorable al propano se mantiene, pero la respuesta pedida es por mol de combustible. Sirve para ver que el resultado no depende de la base elegida." }
           ],
           resultado: "Propano: -2220,7 kJ/mol. Carbon: -393,5 kJ/mol. Mas conveniente: propano."
         },
         {
           parte: "b)",
           pasos: [
-            { paso: "Gases en la reaccion: reactivos 1 + 5 = 6 mol; productos 3 mol (CO2). El H2O es liquida y no cuenta.", porque: "El cambio de volumen a presion constante depende solo del numero de moles de gas; los liquidos tienen un volumen despreciable frente a los gases." },
-            { paso: "Delta n(gas) = 3 - 6 = -3 mol. A P constante, al bajar el numero de moles gaseosos baja el volumen (dV < 0).", porque: "A P y T constantes el volumen es proporcional a n, asi que menos moles de gas implican menos volumen." },
-            { paso: "W = -P DeltaV > 0: el entorno realiza trabajo sobre el sistema (compresion).", porque: "Con la convencion usual (W = -P DeltaV), si el sistema se comprime el trabajo es positivo, o sea que lo hace el entorno sobre el sistema." }
+            { paso: "Gases en la reaccion: reactivos 1 + 5 = 6 mol; productos 3 mol (CO2). El H2O es liquida y no cuenta.", porque: "Para saber si el volumen cambia a presion constante se cuentan solo los moles de gas: reactivos 1 + 5 = 6 mol y productos 3 mol de CO2. El agua es liquida y su volumen es despreciable frente al de los gases, por eso no entra en el balance. Error comun: contarla como gas." },
+            { paso: "Delta n(gas) = 3 - 6 = -3 mol. A P constante, al bajar el numero de moles gaseosos baja el volumen (dV < 0).", porque: "A presion y temperatura constantes, V es proporcional a n (gas ideal), asi que la disminucion de 6 a 3 mol de gas reduce el volumen: DeltaV < 0. Verificar el signo del cambio, porque define el sentido del trabajo." },
+            { paso: "W = -P DeltaV > 0: el entorno realiza trabajo sobre el sistema (compresion).", porque: "Con W = -P DeltaV, una compresion (DeltaV negativo) da W positivo, lo que significa que el entorno hace trabajo sobre el sistema. Es un asunto de signo, no de magnitud. Error tipico: invertir el signo y decir que el sistema trabaja sobre el entorno." }
           ],
           resultado: "El entorno realiza trabajo sobre el sistema (DeltaV < 0)."
         },
         {
           parte: "c)",
           pasos: [
-            { paso: "Masa de agua: 0,70 x 800 kg = 560 kg = 560 000 g. n(H2O) = 560 000 / 18,02 = 31 077 mol.", porque: "El 70 % de la masa de las nueces es agua; luego, los moles de agua salen de m/M." },
-            { paso: "Por mol de agua: calentar de 25 a 100 C: 75,29 J/(K.mol) x 75 K = 5,647 kJ/mol. Vaporizar: 40,88 kJ/mol. Total = 46,527 kJ/mol.", porque: "Cada mol de agua debe calentarse de 25 a 100 C (calor sensible con su Cp) y luego vaporizarse a 100 C (calor latente con DeltaHvap)." },
-            { paso: "Calor necesario: Q = 31 077 x 46,527 = 1,446 x 10^6 kJ.", porque: "El calor total es el calor por mol multiplicado por los moles de agua, porque cada mol necesita la misma energia." },
-            { paso: "n(propano) = Q / 2220,65 kJ/mol = 651 mol.", porque: "El calor de combustion por mol de propano es 2220,65 kJ; dividir el calor necesario por ese valor da los moles a quemar." },
-            { paso: "Supuestos: 100% del calor de combustion va al agua, toda el agua se evapora a 100 C y 1 atm, y no se considera calentar la materia seca.", porque: "El enunciado no da perdidas ni la capacidad calorifica de la materia seca, por eso se toman estos supuestos ideales y el calculo es una estimacion." }
+            { paso: "Masa de agua: 0,70 x 800 kg = 560 kg = 560 000 g. n(H2O) = 560 000 / 18,02 = 31 077 mol.", porque: "Primero se calcula la masa de agua como el 70 % de las 800 kg de nueces, dando 560 kg. Luego se pasa a gramos y a moles dividiendo por 18,02 g/mol, porque el calor del paso siguiente es por mol. Verificar la conversion de kg a g." },
+            { paso: "Por mol de agua: calentar de 25 a 100 C: 75,29 J/(K.mol) x 75 K = 5,647 kJ/mol. Vaporizar: 40,88 kJ/mol. Total = 46,527 kJ/mol.", porque: "Cada mol de agua debe llevarse de 25 a 100 C (calor sensible con Cp = 75,29 J/(mol K) y DeltaT = 75 K) y despues vaporizarse a 100 C (calor latente con DeltaHvap = 40,88 kJ/mol). La suma da 46,527 kJ/mol. Conviene pasar el Cp de J a kJ antes de sumar." },
+            { paso: "Calor necesario: Q = 31 077 x 46,527 = 1,446 x 10^6 kJ.", porque: "Como cada mol de agua necesita la misma energia (46,527 kJ/mol), el calor total es esa cantidad por el numero de moles de agua: Q = n x q. Es un calculo de proporcionalidad. Error comun: usar la masa en kg en lugar de los moles." },
+            { paso: "n(propano) = Q / 2220,65 kJ/mol = 651 mol.", porque: "Se divide el calor necesario entre el calor liberado por mol de propano (2220,65 kJ/mol) para obtener cuantos moles hay que quemar: n = Q / |DeltaHc|. Redondear solo al final evita errores acumulados. El resultado, 651 mol, es coherente con el calor involucrado." },
+            { paso: "Supuestos: 100% del calor de combustion va al agua, toda el agua se evapora a 100 C y 1 atm, y no se considera calentar la materia seca.", porque: "Se asume que todo el calor de combustion se usa en calentar y evaporar el agua, sin perdidas al ambiente ni calentamiento de la materia seca, porque el enunciado no da esos datos. Con estos supuestos el resultado es una estimacion ideal; en la practica haria falta mas combustible." }
           ],
           resultado: "Aprox. 651 mol de propano."
         }
@@ -473,29 +473,29 @@ window.PARCIALES.push({
         {
           parte: "a)",
           pasos: [
-            { paso: "C = 50 g/L / 60,05 g/mol = 0,8326 mol/L.", porque: "5 % m/V son 5 g por cada 100 mL, o sea 50 g/L; se pasa a molaridad dividiendo por la masa molar del acido acetico." },
-            { paso: "Equilibrio: CH3COOH <-> H+ + CH3COO-. Ka = [H+][CH3COO-]/[CH3COOH].", porque: "El acido acetico es debil y se disocia parcialmente; la Ka describe ese equilibrio a partir de las concentraciones." },
-            { paso: "Balance de carga: [H+] = [CH3COO-] + [OH-]. Balance de masa: C = [CH3COOH] + [CH3COO-].", porque: "La electroneutralidad exige que cargas positivas y negativas se compensen, y la masa del acido se conserva entre la forma sin disociar y la disociada." },
-            { paso: "Suposiciones: [OH-] despreciable; [H+] = [CH3COO-] = x; x << C. Entonces x = sqrt(Ka x C) = sqrt(1,75 x 10^-5 x 0,8326) = 3,82 x 10^-3 M.", porque: "Con un acido debil y [OH-] despreciable, la ionizacion da [H+] = [A-] = x y el acido sin disociar queda aprox. C; se simplifica Ka = x^2/C." },
-            { paso: "Verificacion: x/C = 0,46%, valida. (Cuadratica exacta: x = 3,81 x 10^-3 M, pH igual.) pH = -log(3,81 x 10^-3) = 2,42.", porque: "La aproximacion x << C se acepta si x/C es menor a 5 %; el pH es -log[H+] con la concentracion de H+ calculada." }
+            { paso: "C = 50 g/L / 60,05 g/mol = 0,8326 mol/L.", porque: "Un 5 % m/V significa 5 g de acido cada 100 mL, o sea 50 g/L. Para pasar a molaridad se divide por la masa molar del acido acetico (60,05 g/mol), que convierte gramos en moles por litro. Error comun: tomar el 5 % como 5 M." },
+            { paso: "Equilibrio: CH3COOH <-> H+ + CH3COO-. Ka = [H+][CH3COO-]/[CH3COOH].", porque: "Se escribe el equilibrio de disociacion del acido acetico y su Ka, que relaciona las concentraciones de H+, acetato y acido sin disociar. Como es un acido debil, el equilibrio esta muy desplazado hacia el acido sin disociar, y esa expresion es la que permite despejar el pH." },
+            { paso: "Balance de carga: [H+] = [CH3COO-] + [OH-]. Balance de masa: C = [CH3COOH] + [CH3COO-].", porque: "El balance de carga expresa la electroneutralidad: las cargas positivas (H+) compensan a las negativas (acetato y OH-). El balance de masa indica que el acido total C se reparte entre la forma sin disociar y la disociada. Con ambos balances se puede plantear el sistema de ecuaciones." },
+            { paso: "Suposiciones: [OH-] despreciable; [H+] = [CH3COO-] = x; x << C. Entonces x = sqrt(Ka x C) = sqrt(1,75 x 10^-5 x 0,8326) = 3,82 x 10^-3 M.", porque: "Se hacen dos suposiciones: el [OH-] es despreciable en medio acido, y [H+] = [acetato] = x. Con eso la Ka se simplifica a x^2/C, y despejando x = sqrt(Ka x C) = 3,82 x 10^-3 M. Error comun: aceptar este valor sin verificar la aproximacion, que se comprueba en el paso siguiente." },
+            { paso: "Verificacion: x/C = 0,46%, valida. (Cuadratica exacta: x = 3,81 x 10^-3 M, pH igual.) pH = -log(3,81 x 10^-3) = 2,42.", porque: "La aproximacion x << C se acepta si x/C es menor a 5 %; aqui x/C = 0,46 %, asi que es valida. Con esa concentracion el pH es -log[H+] = 2,42. La cuadratica exacta da el mismo pH, lo que confirma que la aproximacion no cambia el resultado." }
           ],
           resultado: "pH del vinagre aprox. 2,42."
         },
         {
           parte: "b)",
           pasos: [
-            { paso: "alfa = [H+]/C = 3,81 x 10^-3 / 0,8326 = 4,6 x 10^-3.", porque: "El grado de ionizacion alfa es la fraccion disociada: [H+] (lo disociado) sobre C (el total)." },
-            { paso: "Control: alfa = sqrt(Ka/C) = sqrt(1,75 x 10^-5 / 0,8326) = 4,58 x 10^-3.", porque: "Para un acido debil con x << C, alfa = sqrt(Ka/C); sirve como control independiente del calculo de x." }
+            { paso: "alfa = [H+]/C = 3,81 x 10^-3 / 0,8326 = 4,6 x 10^-3.", porque: "El grado de ionizacion alfa es la fraccion del acido que se disocia: [H+] (lo disociado) dividido C (el total). Asi alfa = 3,81 x 10^-3 / 0,8326 = 0,46 %, que cuantifica cuanto del acido se ioniza." },
+            { paso: "Control: alfa = sqrt(Ka/C) = sqrt(1,75 x 10^-5 / 0,8326) = 4,58 x 10^-3.", porque: "Para un acido debil con x << C, alfa = sqrt(Ka/C) se deduce de la misma aproximacion, y sirve como control independiente de x. El resultado (4,58 x 10^-3) coincide con el de [H+]/C, lo que valida el calculo." }
           ],
           resultado: "alfa aprox. 0,46 %."
         },
         {
           parte: "c)",
           pasos: [
-            { paso: "Volumen final = 5 + 95 = 100 mL. Factor de dilucion 5/100 = 1/20.", porque: "Al mezclar se suman los volumenes (dato del enunciado), y el factor de dilucion es el volumen de vinagre sobre el volumen total." },
-            { paso: "C' = 0,8326 x 0,05 = 0,04163 mol/L.", porque: "En una dilucion se conservan los moles (C x V): C' = C x V inicial / V final." },
-            { paso: "x = sqrt(Ka x C') = sqrt(1,75 x 10^-5 x 0,04163) = 8,54 x 10^-4 M. Verificacion: x/C' = 2%, aproximacion valida. (Incluyendo el agua, pH 3,07 igual.)", porque: "Se usa la misma aproximacion de acido debil; el 2 % es menor que el 5 % de criterio, por lo que es valida. El agua aporta 10^-7 M, despreciable." },
-            { paso: "pH = -log(8,54 x 10^-4) = 3,07.", porque: "Es la definicion de pH con la [H+] calculada." }
+            { paso: "Volumen final = 5 + 95 = 100 mL. Factor de dilucion 5/100 = 1/20.", porque: "Al mezclar 5 mL de vinagre con 95 mL de agua se suman los volumenes, como dice el enunciado: V final = 100 mL. El factor de dilucion es el volumen de vinagre sobre el volumen total (5/100 = 1/20). Error comun: usar 5/95 o no contar el agua." },
+            { paso: "C' = 0,8326 x 0,05 = 0,04163 mol/L.", porque: "En una dilucion se conservan los moles de acido (C x V), no la concentracion: C' = C x V inicial / V final = 0,8326 x 5/100 = 0,04163 mol/L. Es el paso que transforma la concentracion del vinagre en la de la solucion diluida." },
+            { paso: "x = sqrt(Ka x C') = sqrt(1,75 x 10^-5 x 0,04163) = 8,54 x 10^-4 M. Verificacion: x/C' = 2%, aproximacion valida. (Incluyendo el agua, pH 3,07 igual.)", porque: "Se usa la misma aproximacion de acido debil con la nueva concentracion, y se verifica que x/C' = 2 %, menor que 5 %, asi que es valida. El agua aporta 10^-7 M de H+, despreciable frente a 8,54 x 10^-4 M. Error comun: no volver a verificar la aproximacion con la concentracion diluida." },
+            { paso: "pH = -log(8,54 x 10^-4) = 3,07.", porque: "El pH es -log[H+] aplicado a la concentracion calculada: pH = -log(8,54 x 10^-4) = 3,07. Es un valor mayor que el del vinagre puro, lo que es coherente con la dilucion." }
           ],
           resultado: "pH aprox. 3,07."
         }
@@ -536,28 +536,28 @@ window.PARCIALES.push({
         {
           parte: "a)",
           pasos: [
-            { paso: "Teorico: n(H2O) = 0,044 x 3/2 = 0,066 mol.", porque: "La relacion 2 NH3 : 3 H2O de la ecuacion balanceada da los moles de agua teoricos por cada mol de NH3." },
-            { paso: "Con rendimiento 90%: n(H2O) = 0,066 x 0,90 = 0,0594 mol.", porque: "El rendimiento de 90 % indica que solo se obtiene ese porcentaje del producto teorico, por eso se multiplica por 0,90." },
-            { paso: "T = 125 + 273,15 = 398,15 K. V = nRT/P = 0,0594 x 0,0821 x 398,15 / 1 = 1,94 L.", porque: "Los gases se miden con PV = nRT, con T en kelvin (escala absoluta) y R = 0,0821 L atm/(mol K)." },
-            { paso: "Control: el teorico seria 2,16 L.", porque: "Comparar con el volumen teorico muestra el efecto del rendimiento: el teorico es mayor, como corresponde." }
+            { paso: "Teorico: n(H2O) = 0,044 x 3/2 = 0,066 mol.", porque: "Se usa la relacion 2 NH3 : 3 H2O de la ecuacion, o sea 3/2 mol de H2O por cada mol de NH3, para pasar de 0,044 mol de NH3 a moles de agua teoricos: 0,044 x 3/2 = 0,066 mol. Es el paso estequiometrico basico. Error tipico: invertir la relacion a 2:3." },
+            { paso: "Con rendimiento 90%: n(H2O) = 0,066 x 0,90 = 0,0594 mol.", porque: "Con rendimiento de 90 % se obtiene solo el 90 % del producto teorico, asi que el agua real es 0,066 x 0,90 = 0,0594 mol. Aqui el rendimiento reduce el producto, y por eso se multiplica. Verificar que el resultado sea menor que el teorico." },
+            { paso: "T = 125 + 273,15 = 398,15 K. V = nRT/P = 0,0594 x 0,0821 x 398,15 / 1 = 1,94 L.", porque: "El vapor de agua es un gas, asi que su volumen se calcula con PV = nRT, despejando V = nRT/P. La temperatura de 125 C se pasa a kelvin (398,15 K) porque la ecuacion usa escala absoluta. Con R = 0,0821 L atm/(mol K) y P = 1 atm, el volumen sale en litros." },
+            { paso: "Control: el teorico seria 2,16 L.", porque: "Calcular el volumen teorico (sin aplicar el 90 %) sirve como control: el volumen real debe ser menor, en proporcion 0,90 (2,16 x 0,90 = 1,94 L). Si el resultado fuera mayor, habria un error en el calculo o en el rendimiento." }
           ],
           resultado: "Aprox. 1,94 L de vapor de agua a 125 C y 1 atm."
         },
         {
           parte: "b)",
           pasos: [
-            { paso: "Relacion 2 NH3 : 4 O2, luego n(O2) = 2 x 0,044 = 0,088 mol.", porque: "Los coeficientes de la ecuacion dan la proporcion molar: por cada 2 mol de NH3 se necesitan 4 mol de O2." },
-            { paso: "El rendimiento no cambia cuanto reacciona: los 0,044 mol de NH3 que reaccionan necesitan 0,088 mol de O2.", porque: "La cantidad de O2 depende de cuanto NH3 reacciona, y el rendimiento afecta el producto obtenido, no la cantidad de reactivo consumido." },
-            { paso: "Supuesto: no se ajusta el O2 por rendimiento. Si se interpretara que hay que ajustarlo, serian 0,098 mol.", porque: "El enunciado dice que 0,044 mol de NH3 reaccionan, asi que esa es la base; el valor 0,098 supondria ajustar el O2 por rendimiento." }
+            { paso: "Relacion 2 NH3 : 4 O2, luego n(O2) = 2 x 0,044 = 0,088 mol.", porque: "Se usa la relacion 2 NH3 : 4 O2 para pasar de moles de NH3 a moles de O2: 0,044 x 4/2 = 0,088 mol. Es el mismo criterio de proporcion molar que en los otros ejercicios. Error comun: usar la relacion del agua (3/2) en vez de la del oxigeno." },
+            { paso: "El rendimiento no cambia cuanto reacciona: los 0,044 mol de NH3 que reaccionan necesitan 0,088 mol de O2.", porque: "El rendimiento afecta cuanto producto se obtiene, pero no cuanto reactivo reacciona. Por eso el oxigeno se calcula con los 0,044 mol de NH3 que efectivamente reaccionan, como lo indica el enunciado. Verificar que el rendimiento no se aplique dos veces en la misma respuesta." },
+            { paso: "Supuesto: no se ajusta el O2 por rendimiento. Si se interpretara que hay que ajustarlo, serian 0,098 mol.", porque: "Se toma como base que 0,044 mol de NH3 reaccionan, como indica el enunciado, y el O2 se obtiene directamente de esa cantidad. Si se ajustara por rendimiento se llegaria a 0,098 mol, pero eso supone que el oxigeno tambien pierde eficiencia, un supuesto que el enunciado no hace. Conviene aclararlo en la respuesta." }
           ],
           resultado: "0,088 mol de O2 (si se ajusta por rendimiento, 0,098 mol)."
         },
         {
           parte: "c)",
           pasos: [
-            { paso: "NH3: N central con 3 enlaces simples a H y 1 par libre. Geometria piramidal trigonal, molecula polar. Puede formar puentes de hidrogeno (H unido a N y par libre del N).", porque: "El N tiene 5 electrones de valencia: 3 se usan para enlazar H y 2 forman un par libre, lo que da geometria piramidal (polar); el H unido a N con el par libre permite puentes de hidrogeno." },
-            { paso: "NO: 11 electrones de valencia, impar. Es un radical: N=O con un electron desapareado. Molecula polar, con fuerzas dipolo-dipolo debiles y London. No tiene H unido a F, O o N.", porque: "Con un numero impar de electrones no se puede cumplir el octeto en todos los atomos, por eso queda un electron desapareado; y como no hay H unido a F, O o N, no hay puentes de hidrogeno." },
-            { paso: "Punto de ebullicion: NH3 aprox. -33 C, NO aprox. -152 C. NH3 tiene mayor punto de ebullicion por los puentes de hidrogeno, pese a tener menor masa molar que el NO.", porque: "El punto de ebullicion depende sobre todo de la intensidad de las fuerzas intermoleculares, que pesan mas que la masa molar; los puentes de hidrogeno superan a las fuerzas dipolo-dipolo y London del NO." }
+            { paso: "NH3: N central con 3 enlaces simples a H y 1 par libre. Geometria piramidal trigonal, molecula polar. Puede formar puentes de hidrogeno (H unido a N y par libre del N).", porque: "Se cuentan los electrones de valencia (N: 5; H: 1 cada uno) para armar Lewis: 3 enlaces N-H y 1 par libre en el N. Ese par libre da geometria piramidal y hace que la molecula sea polar. Como el H esta unido a N, el NH3 puede formar puentes de hidrogeno a traves de su par libre." },
+            { paso: "NO: 11 electrones de valencia, impar. Es un radical: N=O con un electron desapareado. Molecula polar, con fuerzas dipolo-dipolo debiles y London. No tiene H unido a F, O o N.", porque: "El NO tiene 11 electrones de valencia (numero impar), por lo que no puede cumplir el octeto en todos los atomos y queda un electron desapareado: es un radical. Como no tiene H unido a F, O o N, no forma puentes de hidrogeno, y sus fuerzas son dipolo-dipolo y London. Error comun: asumir que toda molecula polar forma puentes de hidrogeno." },
+            { paso: "Punto de ebullicion: NH3 aprox. -33 C, NO aprox. -152 C. NH3 tiene mayor punto de ebullicion por los puentes de hidrogeno, pese a tener menor masa molar que el NO.", porque: "Para comparar puntos de ebullicion se mira primero la intensidad de las fuerzas intermoleculares, que pesa mas que la masa molar. Los puentes de hidrogeno del NH3 son mas intensos que las fuerzas dipolo-dipolo y London del NO, aunque el NO tenga mayor masa molar. Por eso el NH3 hierve a mayor temperatura." }
           ],
           resultado: "Mayor punto de ebullicion: NH3 (puentes de hidrogeno)."
         }
@@ -585,29 +585,29 @@ window.PARCIALES.push({
         {
           parte: "a)",
           pasos: [
-            { paso: "Etano: C2H6(g) + 7/2 O2(g) -> 2 CO2(g) + 3 H2O(l). DeltaHc = [2(-393,5) + 3(-286,0)] - (-84,7) = -1560,3 kJ/mol.", porque: "Se ajusta por conservacion de atomos: 2 C dan 2 CO2, 6 H dan 3 H2O y 7 O se reparten en 7/2 O2; la DeltaH se calcula por Hess con las DeltaHf de la tabla." },
-            { paso: "Carbon: C(s) + O2(g) -> CO2(g). DeltaHc = -393,5 kJ/mol.", porque: "Es la combustion del C a CO2; el DeltaHf del CO2 coincide con la combustion del C porque C(s) y O2 tienen DeltaHf = 0." },
-            { paso: "Por mol de combustible con igual costo: el etano libera 1560,3 / 393,5 = 4,0 veces mas calor que el carbon por mol.", porque: "Con igual costo por mol, conviene el combustible que da mas calor por mol; el cociente 1560,3 / 393,5 = 3,97 se redondea a 4,0." }
+            { paso: "Etano: C2H6(g) + 7/2 O2(g) -> 2 CO2(g) + 3 H2O(l). DeltaHc = [2(-393,5) + 3(-286,0)] - (-84,7) = -1560,3 kJ/mol.", porque: "Primero se ajusta la combustion por conservacion de atomos: 2 C dan 2 CO2, 6 H dan 3 H2O, y los 7 O (4 de los CO2 mas 3 de los H2O) requieren 7/2 O2. Luego el DeltaH se obtiene por Hess: 2(-393,5) + 3(-286,0) - (-84,7) = -1560,3 kJ/mol. Error tipico: escribir el agua como gas, lo que cambia el DeltaH." },
+            { paso: "Carbon: C(s) + O2(g) -> CO2(g). DeltaHc = -393,5 kJ/mol.", porque: "La combustion del carbon es C(s) + O2 -> CO2, con 1 mol de C por mol de combustible. Como C(s) y O2 son elementos en su forma estable, tienen DeltaHf = 0, y el DeltaH de combustion coincide con el DeltaHf del CO2. Verificar que el valor sea negativo, ya que es un proceso exotermico." },
+            { paso: "Por mol de combustible con igual costo: el etano libera 1560,3 / 393,5 = 4,0 veces mas calor que el carbon por mol.", porque: "Con igual costo por mol, se compara el calor liberado por mol: el etano libera 1560,3 / 393,5 = 3,97 veces mas que el carbon, por eso conviene el etano. El redondeo a 4,0 es solo para presentar; en calculos siguientes conviene usar el valor sin redondear. Error comun: invertir el cociente." }
           ],
           resultado: "Etano: -1560,3 kJ/mol. Carbon: -393,5 kJ/mol. Mas conveniente: etano."
         },
         {
           parte: "b)",
           pasos: [
-            { paso: "Gases: reactivos 1 + 3,5 = 4,5 mol; productos 2 mol (CO2). El H2O es liquida y no cuenta.", porque: "Para el cambio de volumen a presion constante solo cuentan los gases; el H2O liquida tiene volumen despreciable." },
-            { paso: "Delta n(gas) = 2 - 4,5 = -2,5 mol. A P constante, el volumen disminuye (DeltaV < 0).", porque: "A P y T constantes el volumen es proporcional a n, asi que una disminucion de moles de gas reduce el volumen." },
-            { paso: "W = -P DeltaV > 0: el entorno realiza trabajo sobre el sistema.", porque: "Con la convencion usual (W = -P DeltaV), la compresion da W positivo: el entorno realiza trabajo sobre el sistema." }
+            { paso: "Gases: reactivos 1 + 3,5 = 4,5 mol; productos 2 mol (CO2). El H2O es liquida y no cuenta.", porque: "Para ver si el volumen cambia a presion constante se cuentan solo los moles de gas: reactivos 1 + 3,5 = 4,5 mol, productos 2 mol de CO2. El H2O es liquida y su volumen se desprecia frente al de los gases, por eso no entra en el balance." },
+            { paso: "Delta n(gas) = 2 - 4,5 = -2,5 mol. A P constante, el volumen disminuye (DeltaV < 0).", porque: "A P y T constantes, el volumen es proporcional al numero de moles de gas (PV = nRT). Como pasa de 4,5 a 2 mol, el volumen disminuye: DeltaV < 0. Verificar el signo, porque determina si el entorno comprime al sistema." },
+            { paso: "W = -P DeltaV > 0: el entorno realiza trabajo sobre el sistema.", porque: "Con W = -P DeltaV, una compresion (DeltaV negativo) da trabajo positivo, es decir que el entorno realiza trabajo sobre el sistema. Es un asunto de signo, no de magnitud. Error tipico: confundir el signo del trabajo con su valor." }
           ],
           resultado: "El entorno realiza trabajo sobre el sistema (compresion)."
         },
         {
           parte: "c)",
           pasos: [
-            { paso: "Calor de combustion: Q = 1000 mol x 1560,3 kJ/mol = 1,560 x 10^6 kJ.", porque: "Los 1000 mol de etano del enunciado se multiplican por el calor de combustion por mol para obtener el calor total disponible." },
-            { paso: "Por mol de agua: calentar de 25 a 100 C: 75,29 x 75 = 5,647 kJ/mol. Vaporizar: 40,88 kJ/mol. Total = 46,527 kJ/mol.", porque: "Cada mol de agua de las hojas debe calentarse a 100 C (calor sensible) y vaporizarse (calor latente); la Cp esta en J, por eso se pasa a kJ." },
-            { paso: "n(H2O) = 1,560 x 10^6 / 46,527 = 33 535 mol. m(H2O) = 33 535 x 18,02 = 604,3 kg.", porque: "El calor disponible se reparte entre los moles de agua que se pueden evaporar (n = Q / kJ por mol), y m = n x M pasa a kg." },
-            { paso: "Masa de hojas: el agua es el 70% de la masa de hojas, m = 604,3 / 0,70 = 863 kg.", porque: "Si el agua es el 70 % de la masa de las hojas, la masa total de hojas es la del agua dividida 0,70." },
-            { paso: "Supuestos: 100% del calor va al agua; toda el agua se evapora a 100 C y 1 atm; no se calienta la materia seca.", porque: "El enunciado no da perdidas ni la masa seca de la hoja, por eso se toman estos supuestos ideales." }
+            { paso: "Calor de combustion: Q = 1000 mol x 1560,3 kJ/mol = 1,560 x 10^6 kJ.", porque: "Como el etano se da en moles, el calor total liberado es 1000 mol por 1560,3 kJ/mol, dando 1,560 x 10^6 kJ. Ese es el calor disponible para evaporar el agua de las hojas. Verificar que se use el calor de combustion del etano y no el del carbon." },
+            { paso: "Por mol de agua: calentar de 25 a 100 C: 75,29 x 75 = 5,647 kJ/mol. Vaporizar: 40,88 kJ/mol. Total = 46,527 kJ/mol.", porque: "Para cada mol de agua se suman el calor sensible de 25 a 100 C (75,29 J/(mol K) x 75 K = 5,647 kJ/mol) y el calor latente de vaporizacion (40,88 kJ/mol), dando 46,527 kJ/mol. Como el Cp esta en J, hay que pasarlo a kJ antes de sumar. Error comun: sumar J con kJ sin convertir." },
+            { paso: "n(H2O) = 1,560 x 10^6 / 46,527 = 33 535 mol. m(H2O) = 33 535 x 18,02 = 604,3 kg.", porque: "Dividir el calor disponible entre el calor por mol da cuantos moles de agua se pueden evaporar: n = 1,560 x 10^6 / 46,527 = 33 535 mol. Luego m = n x M, con M = 18,02 g/mol, da unos 604 kg de agua. Es el paso que liga la energia con la masa de agua." },
+            { paso: "Masa de hojas: el agua es el 70% de la masa de hojas, m = 604,3 / 0,70 = 863 kg.", porque: "El agua es el 70 % de la masa de las hojas, asi que la masa total de hojas es la masa de agua dividida 0,70: 604,3 / 0,70 = 863 kg. Es la misma logica de dividir por una fraccion que se usa en otros ejercicios. Verificar que el resultado sea mayor que la masa de agua." },
+            { paso: "Supuestos: 100% del calor va al agua; toda el agua se evapora a 100 C y 1 atm; no se calienta la materia seca.", porque: "Se supone que el 100 % del calor de la combustion llega al agua, que toda el agua se evapora a 100 C y 1 atm, y que la materia seca no se calienta, porque el enunciado no da datos de perdidas ni de masa seca. Con estos supuestos el resultado es una estimacion ideal; en la practica haria falta mas combustible." }
           ],
           resultado: "Aprox. 863 kg de hojas de yerba mate (con unos 604 kg de agua evaporada)."
         }
@@ -635,29 +635,29 @@ window.PARCIALES.push({
         {
           parte: "a)",
           pasos: [
-            { paso: "Ka = 10^-pKa = 10^-6,5 = 3,16 x 10^-7.", porque: "pKa = -log Ka, por lo tanto Ka = 10^-pKa." },
-            { paso: "Equilibrio: C6H5COOH <-> H+ + C6H5COO-. Ka = [H+][A-]/[HA].", porque: "El acido benzoico es debil y se disocia parcialmente; la Ka expresa ese equilibrio con las concentraciones de cada especie." },
-            { paso: "Balance de carga: [H+] = [A-] + [OH-]. Balance de masa: C = [HA] + [A-].", porque: "La solucion es electroneutra y el acido total analitico C se reparte entre HA y A-." },
-            { paso: "Suposiciones: [OH-] despreciable (pH 4); [A-] = [H+] = 1,0 x 10^-4 M (pH = 4,0). Entonces [HA] = C - 1,0 x 10^-4.", porque: "A pH 4 el [OH-] es del orden de 10^-10 y es despreciable; se supone que la [H+] es la del pH limite, 10^-4." },
-            { paso: "Ka = (10^-4)^2 / (C - 10^-4) -> C = 10^-4 + 10^-8 / 3,16 x 10^-7 = 10^-4 + 0,0316 = 0,0317 M.", porque: "Se despeja C de la expresion de Ka: C - [H+] = [H+]^2 / Ka, por lo tanto C = [H+] + [H+]^2 / Ka." },
-            { paso: "Como el pH debe ser igual o menor a 4,0, la minima concentracion es la que da pH = 4,0.", porque: "Un acido mas concentrado da pH menor; el enunciado pide pH igual o menor a 4,0, por lo que el minimo de C corresponde al pH exacto de 4." }
+            { paso: "Ka = 10^-pKa = 10^-6,5 = 3,16 x 10^-7.", porque: "Como el dato viene como pKa, se convierte a Ka con la definicion pKa = -log Ka, o sea Ka = 10^-pKa = 10^-6,5 = 3,16 x 10^-7. Trabajar con Ka es necesario para usar las expresiones de equilibrio. Error comun: escribir 10^6,5 en lugar de 10^-6,5." },
+            { paso: "Equilibrio: C6H5COOH <-> H+ + C6H5COO-. Ka = [H+][A-]/[HA].", porque: "Se escribe la disociacion del acido benzoico, HA <-> H+ + A-, y su constante Ka = [H+][A-]/[HA]. Como el acido es debil, el equilibrio esta desplazado hacia el acido sin disociar, y la mayor parte queda como HA. Esta expresion es la que luego permite despejar la concentracion." },
+            { paso: "Balance de carga: [H+] = [A-] + [OH-]. Balance de masa: C = [HA] + [A-].", porque: "El balance de carga expresa la electroneutralidad: la suma de cargas positivas (H+) iguala a las negativas (A- y OH-). El balance de masa dice que el acido total C se reparte entre la forma sin disociar y la disociada. Ambos balances permiten plantear las ecuaciones sin conocer cada concentracion." },
+            { paso: "Suposiciones: [OH-] despreciable (pH 4); [A-] = [H+] = 1,0 x 10^-4 M (pH = 4,0). Entonces [HA] = C - 1,0 x 10^-4.", porque: "Se fija la concentracion de H+ al valor del pH limite: pH 4 corresponde a [H+] = 10^-4 M. A ese pH el [OH-] es del orden de 10^-10 M, despreciable, y se asume [A-] = [H+] porque es el ion que forma la disociacion. Estas suposiciones simplifican el balance sin cambiar el resultado de forma apreciable." },
+            { paso: "Ka = (10^-4)^2 / (C - 10^-4) -> C = 10^-4 + 10^-8 / 3,16 x 10^-7 = 10^-4 + 0,0316 = 0,0317 M.", porque: "Como Ka = [H+]^2 / (C - [H+]), se despeja C pasando [H+] al otro lado: C - [H+] = [H+]^2 / Ka, asi que C = [H+] + [H+]^2 / Ka. Con [H+] = 10^-4 y Ka = 3,16 x 10^-7 se obtiene C = 0,0317 M. Verificar la cuenta, porque el segundo termino es el que domina." },
+            { paso: "Como el pH debe ser igual o menor a 4,0, la minima concentracion es la que da pH = 4,0.", porque: "Un acido mas concentrado produce mas H+ y un pH mas bajo, asi que la condicion de pH igual o menor a 4,0 se cumple con cualquier C mayor o igual al valor calculado. Por eso la concentracion minima es la que da pH exactamente 4,0. Error comun: tomar el maximo en lugar del minimo." }
           ],
           resultado: "C minima aprox. 0,032 M (3,2 x 10^-2 mol/L)."
         },
         {
           parte: "b)",
           pasos: [
-            { paso: "Usando C = 0,0317 M (de a): alfa = [H+]/C = 1,0 x 10^-4 / 0,0317 = 3,15 x 10^-3.", porque: "Alfa es la fraccion disociada: [H+] sobre la concentracion total del acido, y se usa la C minima de a)." },
-            { paso: "Control: alfa = sqrt(Ka/C) = sqrt(3,16 x 10^-7 / 0,0317) = 3,16 x 10^-3.", porque: "Con la aproximacion de acido debil, alfa = sqrt(Ka/C), que sirve de control independiente." }
+            { paso: "Usando C = 0,0317 M (de a): alfa = [H+]/C = 1,0 x 10^-4 / 0,0317 = 3,15 x 10^-3.", porque: "El grado de ionizacion alfa es la fraccion del acido que se disocia: [H+] (lo disociado) dividido la concentracion total C. Se usa C = 0,0317 M de a), que es la concentracion del acido en esa solucion. Expresado en porcentaje, 3,15 x 10^-3 equivale a 0,32 %." },
+            { paso: "Control: alfa = sqrt(Ka/C) = sqrt(3,16 x 10^-7 / 0,0317) = 3,16 x 10^-3.", porque: "Para un acido debil, alfa = sqrt(Ka/C) sale de la misma aproximacion usada antes, y sirve como control independiente del valor de [H+]. Los dos resultados (3,15 y 3,16 x 10^-3) deben coincidir, lo que confirma el calculo." }
           ],
           resultado: "alfa aprox. 0,32 %."
         },
         {
           parte: "c)",
           pasos: [
-            { paso: "El HCl es un acido fuerte: se disocia totalmente, HCl -> H+ + Cl-. [H+] = C_HCl.", porque: "El HCl es un acido fuerte y se disocia por completo, asi que su [H+] es igual a su concentracion." },
-            { paso: "Para pH 4,0: [H+] = 1,0 x 10^-4 M. El aporte del agua (10^-7 M) es despreciable.", porque: "El pH 4,0 fija [H+] = 10^-4; el agua aporta 10^-7 M de H+, que es 0,1 % del total, por eso se desprecia." },
-            { paso: "Por lo tanto C_HCl = 1,0 x 10^-4 M. Es unas 300 veces menos concentrado que el acido benzoico, porque el benzoico se ioniza muy poco.", porque: "El HCl produce 1 H+ por mol, asi que su concentracion iguala la [H+] objetivo; el benzoico, que se ioniza poco, necesita una concentracion unas 300 veces mayor (0,0317 / 10^-4 = 317) para llegar al mismo pH." }
+            { paso: "El HCl es un acido fuerte: se disocia totalmente, HCl -> H+ + Cl-. [H+] = C_HCl.", porque: "El HCl es un acido fuerte, asi que se disocia 100 % en H+ y Cl-, y la concentracion de H+ es igual a la concentracion inicial de HCl. Por eso no hace falta plantear equilibrio. Error comun: aplicar la formula de acido debil a un acido fuerte." },
+            { paso: "Para pH 4,0: [H+] = 1,0 x 10^-4 M. El aporte del agua (10^-7 M) es despreciable.", porque: "Con pH 4,0 la [H+] objetivo es 10^-4 M. El agua aporta 10^-7 M de H+ por autoionizacion, que es solo 0,1 % del total, por lo que se puede despreciar. Verificar que este aporte sea chico frente a 10^-4 antes de despreciarlo." },
+            { paso: "Por lo tanto C_HCl = 1,0 x 10^-4 M. Es unas 300 veces menos concentrado que el acido benzoico, porque el benzoico se ioniza muy poco.", porque: "Como el HCl aporta 1 H+ por mol, su concentracion debe ser igual a la [H+] objetivo de 10^-4 M. El acido benzoico, que se ioniza poco, necesita una concentracion unas 317 veces mayor (0,0317 / 10^-4) para llegar al mismo pH. Esto muestra la diferencia entre un acido fuerte y uno debil." }
           ],
           resultado: "C_HCl = 1,0 x 10^-4 mol/L."
         }

@@ -333,7 +333,7 @@ button.toggle:hover { background: #2f5488; color: #fff; }
 }
 
 .resolucion-parte ol { padding-left: 20px; }
-.resolucion-parte li { margin: 3px 0; }
+.resolucion-parte li { margin: 16px 0 4px; }
 
 .resultado {
   display: inline-block;
@@ -371,12 +371,13 @@ button.toggle:hover { background: #2f5488; color: #fff; }
 .nivel-avanzado { background: #fde3e0; color: #9b2c22; }
 .nivel-parcial { background: #1f3a5f; color: #fff; }
 
+/* Ecuaciones centradas dentro de un paso de la resolución */
+.formula-bloque { margin: 10px 0; overflow-x: auto; text-align: center; }
+
 /* Justificación de cada paso de la resolución */
 .porque {
-  color: #5b6577;
-  font-size: 0.9rem;
-  font-style: italic;
-  border-left: 2px solid #c9d4e5;
-  padding-left: 8px;
-  margin-top: 2px;
+  color: #2b3445;
+  font-size: 0.97rem;
+  line-height: 1.6;
+  margin-top: 6px;
 }

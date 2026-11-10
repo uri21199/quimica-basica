@@ -13,8 +13,8 @@ window.EJERCITACION["atomo"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Z = 17: el atomo tiene 17 protones. Como es neutro, tiene 17 electrones.", porque: "Usamos que Z es el numero de protones, y que en un atomo neutro los electrones igualan a los protones para que la carga total sea 0. Como Z = 17, el atomo tiene 17 protones y, por ser neutro, tambien 17 electrones. Entonces el dato de Z alcanza para obtener protones y electrones a la vez. Por eso no hay que confundirlo con A = 37, que es la suma de protones y neutrones." },
-          { paso: "N = A - Z = 37 - 17 = 20 neutrones.", porque: "Usamos la relacion A = Z + N, que despejada da N = A - Z. Reemplazamos con A = 37 y Z = 17: N = 37 - 17 = 20 neutrones. Como control, Z + N = 17 + 20 da de nuevo el numero masico 37, lo que confirma el resultado." }
+          { paso: "$Z = 17$: el atomo tiene 17 protones. Como es neutro, tiene 17 electrones.", porque: "Usamos que $Z$ es el numero de protones, y que en un atomo neutro los electrones igualan a los protones para que la carga total sea $0$. Como $Z = 17$, el atomo tiene 17 protones y, por ser neutro, tambien 17 electrones. Entonces el dato de $Z$ alcanza para obtener protones y electrones a la vez. Por eso no hay que confundirlo con $A = 37$, que es la suma de protones y neutrones." },
+          { paso: "$$N = A - Z = 37 - 17 = 20$$ neutrones.", porque: "Usamos la relacion $A = Z + N$, que despejada da $N = A - Z$. Reemplazamos con $A = 37$ y $Z = 17$: $N = 37 - 17 = 20$ neutrones. Como control, $Z + N = 17 + 20$ da de nuevo el numero masico $37$, lo que confirma el resultado." }
         ],
         resultado: "17 protones, 20 neutrones y 17 electrones"
       }
@@ -33,11 +33,11 @@ window.EJERCITACION["atomo"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Z = 16 corresponde al azufre, simbolo S.", porque: "Usamos la tabla periodica, donde cada elemento se identifica por su numero atomico Z, que es la cantidad de protones. Como Z = 16, buscamos el elemento con 16 protones, que es el azufre, de simbolo S. Por eso el simbolo S vale para cualquier especie con 16 protones, sea neutra o ionizada." },
-          { paso: "A = Z + N = 16 + 18 = 34.", porque: "Usamos A = Z + N, la relacion entre el numero masico, los protones y los neutrones. Reemplazamos con Z = 16 y N = 18: A = 16 + 18 = 34. Entonces, conociendo Z y N, se obtiene A, que es el numero que va arriba a la izquierda del simbolo." },
-          { paso: "Carga = protones - electrones = 16 - 18 = -2, es decir S^2-. Es un anion.", porque: "Usamos que la carga del ion es protones menos electrones. Reemplazamos con 16 protones y 18 electrones: 16 - 18 = -2. Como el resultado es negativo, el ion tiene mas electrones que protones, asi que es un anion con carga 2-, que se escribe como superindice. Por eso el simbolo final es 34S^2-." }
+          { paso: "$Z = 16$ corresponde al azufre, simbolo $\\text{S}$.", porque: "Usamos la tabla periodica, donde cada elemento se identifica por su numero atomico $Z$, que es la cantidad de protones. Como $Z = 16$, buscamos el elemento con 16 protones, que es el azufre, de simbolo $\\text{S}$. Por eso el simbolo $\\text{S}$ vale para cualquier especie con 16 protones, sea neutra o ionizada." },
+          { paso: "$$A = Z + N = 16 + 18 = 34$$", porque: "Usamos $A = Z + N$, la relacion entre el numero masico, los protones y los neutrones. Reemplazamos con $Z = 16$ y $N = 18$: $A = 16 + 18 = 34$. Entonces, conociendo $Z$ y $N$, se obtiene $A$, que es el numero que va arriba a la izquierda del simbolo." },
+          { paso: "$$\\text{Carga} = \\text{protones} - \\text{electrones} = 16 - 18 = -2$$, es decir $\\text{S}^{2-}$. Es un anion.", porque: "Usamos que la carga del ion es protones menos electrones. Reemplazamos con $16$ protones y $18$ electrones: $16 - 18 = -2$. Como el resultado es negativo, el ion tiene mas electrones que protones, asi que es un anion con carga $2^{-}$, que se escribe como superindice. Por eso el simbolo final es ${}^{34}\\text{S}^{2-}$." }
         ],
-        resultado: "34S^2- (anion, con 18 electrones)"
+        resultado: "${}^{34}\\text{S}^{2-}$ (anion, con 18 electrones)"
       }
     ],
     errores_tipicos: [
@@ -54,11 +54,11 @@ window.EJERCITACION["atomo"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Configuracion: 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^5 (suma 25 electrones).", porque: "Usamos el diagrama de Moeller para llenar los subniveles de menor a mayor energia, con maximos de 2 electrones en s, 6 en p y 10 en d. Repartimos los 25 electrones del manganeso: 2 + 2 + 6 + 2 + 6 + 2 + 5 = 25. Entonces la suma coincide con Z, y conviene recordar que 4s se llena antes que 3d aunque aparezca despues en la escritura." },
-          { paso: "Periodo = 4, porque el nivel mas externo es n = 4.", porque: "Usamos que el periodo coincide con el numero cuantico principal n del nivel mas externo de la configuracion. En la configuracion obtenida, el nivel mas alto es n = 4, asi que reemplazamos y el periodo es 4. Por eso los electrones de 3d, que pertenecen a un nivel anterior, no cambian el periodo." },
-          { paso: "Grupo = 2 (de 4s) + 5 (de 3d) = 7.", porque: "Usamos la regla para elementos de bloque d: el grupo es la suma de los electrones de los subniveles s y d de la capa externa. Reemplazamos con 2 electrones de 4s y 5 de 3d: 2 + 5 = 7. Entonces el manganeso queda en el grupo 7, y esta regla vale para los grupos 3 a 12." }
+          { paso: "Configuracion: $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,4\\text{s}^{2}\\,3\\text{d}^{5}$ (suma 25 electrones).", porque: "Usamos el diagrama de Moeller para llenar los subniveles de menor a mayor energia, con maximos de 2 electrones en s, 6 en p y 10 en d. Repartimos los 25 electrones del manganeso: $2 + 2 + 6 + 2 + 6 + 2 + 5 = 25$. Entonces la suma coincide con $Z$, y conviene recordar que $4\\text{s}$ se llena antes que $3\\text{d}$ aunque aparezca despues en la escritura." },
+          { paso: "Periodo $= 4$, porque el nivel mas externo es $n = 4$.", porque: "Usamos que el periodo coincide con el numero cuantico principal $n$ del nivel mas externo de la configuracion. En la configuracion obtenida, el nivel mas alto es $n = 4$, asi que reemplazamos y el periodo es $4$. Por eso los electrones de $3\\text{d}$, que pertenecen a un nivel anterior, no cambian el periodo." },
+          { paso: "$$\\text{Grupo} = 2\\ (\\text{de } 4\\text{s}) + 5\\ (\\text{de } 3\\text{d}) = 7$$", porque: "Usamos la regla para elementos de bloque d: el grupo es la suma de los electrones de los subniveles s y d de la capa externa. Reemplazamos con $2$ electrones de $4\\text{s}$ y $5$ de $3\\text{d}$: $2 + 5 = 7$. Entonces el manganeso queda en el grupo $7$, y esta regla vale para los grupos $3$ a $12$." }
         ],
-        resultado: "1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^5; grupo 7, periodo 4"
+        resultado: "$1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,4\\text{s}^{2}\\,3\\text{d}^{5}$; grupo 7, periodo 4"
       }
     ],
     errores_tipicos: [
@@ -75,11 +75,11 @@ window.EJERCITACION["atomo"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Configuracion completa: 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^5 (suma 35). La CEE es 4s^2 4p^5.", porque: "Usamos el orden de llenado de los subniveles hasta completar los 35 electrones del bromo, lo que da 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^10 4p^5. Como la CEE es la parte correspondiente al nivel mas alto, tomamos 4s^2 4p^5 del total. Por eso esa capa externa es la que interviene en las uniones quimicas y se escribe aparte." },
-          { paso: "Periodo 4 (n = 4). Grupo = 10 + 7 = 17.", porque: "Usamos la regla de bloque p: el grupo es 10 mas la cantidad de electrones de la CEE, contando s y p. Reemplazamos con 10 + 7 = 17, ya que la CEE 4s^2 4p^5 tiene 7 electrones. Entonces el bromo queda en el grupo 17, que corresponde a los halogenos, y el periodo 4 coincide con el nivel externo." },
-          { paso: "Desapareados: 4p^5 tiene 3 orbitales; se ocupan con un electron cada uno (3 desapareados) y luego se aparean 2, queda 1 desapareado.", porque: "Usamos la regla de Hund: al llenar un subnivel, cada electron ocupa primero un orbital vacio, y recien despues se aparea. Con 5 electrones en los 3 orbitales de 4p, quedan 3 solos y los 2 restantes forman un par con dos de ellos. Por eso queda 1 desapareado y no el total de electrones del subnivel." }
+          { paso: "Configuracion completa: $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,4\\text{s}^{2}\\,3\\text{d}^{10}\\,4\\text{p}^{5}$ (suma 35). La CEE es $4\\text{s}^{2}\\,4\\text{p}^{5}$.", porque: "Usamos el orden de llenado de los subniveles hasta completar los 35 electrones del bromo, lo que da $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,4\\text{s}^{2}\\,3\\text{d}^{10}\\,4\\text{p}^{5}$. Como la CEE es la parte correspondiente al nivel mas alto, tomamos $4\\text{s}^{2}\\,4\\text{p}^{5}$ del total. Por eso esa capa externa es la que interviene en las uniones quimicas y se escribe aparte." },
+          { paso: "Periodo $4$ ($n = 4$). $$\\text{Grupo} = 10 + 7 = 17$$", porque: "Usamos la regla de bloque p: el grupo es $10$ mas la cantidad de electrones de la CEE, contando s y p. Reemplazamos con $10 + 7 = 17$, ya que la CEE $4\\text{s}^{2}\\,4\\text{p}^{5}$ tiene $7$ electrones. Entonces el bromo queda en el grupo $17$, que corresponde a los halogenos, y el periodo $4$ coincide con el nivel externo." },
+          { paso: "Desapareados: $4\\text{p}^{5}$ tiene 3 orbitales; se ocupan con un electron cada uno (3 desapareados) y luego se aparean 2, queda 1 desapareado.", porque: "Usamos la regla de Hund: al llenar un subnivel, cada electron ocupa primero un orbital vacio, y recien despues se aparea. Con $5$ electrones en los $3$ orbitales de $4\\text{p}$, quedan $3$ solos y los $2$ restantes forman un par con dos de ellos. Por eso queda $1$ desapareado y no el total de electrones del subnivel." }
         ],
-        resultado: "CEE 4s^2 4p^5; grupo 17, periodo 4; 1 electron desapareado"
+        resultado: "CEE $4\\text{s}^{2}\\,4\\text{p}^{5}$; grupo 17, periodo 4; 1 electron desapareado"
       }
     ],
     errores_tipicos: [
@@ -96,11 +96,11 @@ window.EJERCITACION["atomo"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Masa promedio = 0,199 x 10,013 u + 0,801 x 11,009 u = 10,81 u.", porque: "Usamos la masa atomica promedio como suma ponderada, donde cada masa isotopica se multiplica por su abundancia en fraccion. Reemplazamos con 0,199 x 10,013 u + 0,801 x 11,009 u, que da 10,81 u. Entonces el resultado queda entre las dos masas y mas cerca de 11,009 u, porque el 11B es el isotopo mas abundante." },
-          { paso: "Control: 19,9 % + 80,1 % = 100,0 %.", porque: "Usamos el control de que la suma de las abundancias de los isotopos debe dar 100 %. Reemplazamos con 19,9 % + 80,1 %, que da 100,0 %, asi que los datos cierran. Por eso se puede avanzar con el promedio sin arrastrar un dato mal." },
-          { paso: "Masa en g = 10,81 u x 1,661 x 10^-24 g/u = 1,80 x 10^-23 g.", porque: "Usamos el factor 1 u = 1,661 x 10^-24 g para pasar la masa de un atomo promedio de u a gramos. Reemplazamos con 10,81 u x 1,661 x 10^-24 g/u, que da 1,80 x 10^-23 g. Entonces el resultado es la masa de un solo atomo, y no la masa molar, que se expresaria en g/mol." }
+          { paso: "$$\\text{Masa promedio} = 0{,}199 \\times 10{,}013\\ \\text{u} + 0{,}801 \\times 11{,}009\\ \\text{u} = 10{,}81\\ \\text{u}$$", porque: "Usamos la masa atomica promedio como suma ponderada, donde cada masa isotopica se multiplica por su abundancia en fraccion. Reemplazamos con $0{,}199 \\times 10{,}013\\ \\text{u} + 0{,}801 \\times 11{,}009\\ \\text{u}$, que da $10{,}81\\ \\text{u}$. Entonces el resultado queda entre las dos masas y mas cerca de $11{,}009\\ \\text{u}$, porque el ${}^{11}\\text{B}$ es el isotopo mas abundante." },
+          { paso: "Control: $19{,}9\\ \\% + 80{,}1\\ \\% = 100{,}0\\ \\%$.", porque: "Usamos el control de que la suma de las abundancias de los isotopos debe dar $100\\ \\%$. Reemplazamos con $19{,}9\\ \\% + 80{,}1\\ \\%$, que da $100{,}0\\ \\%$, asi que los datos cierran. Por eso se puede avanzar con el promedio sin arrastrar un dato mal." },
+          { paso: "$$\\text{Masa en g} = 10{,}81\\ \\text{u} \\times 1{,}661 \\times 10^{-24}\\ \\text{g/u} = 1{,}80 \\times 10^{-23}\\ \\text{g}$$", porque: "Usamos el factor $1\\ \\text{u} = 1{,}661 \\times 10^{-24}\\ \\text{g}$ para pasar la masa de un atomo promedio de u a gramos. Reemplazamos con $10{,}81\\ \\text{u} \\times 1{,}661 \\times 10^{-24}\\ \\text{g/u}$, que da $1{,}80 \\times 10^{-23}\\ \\text{g}$. Entonces el resultado es la masa de un solo atomo, y no la masa molar, que se expresaria en $\\text{g/mol}$." }
         ],
-        resultado: "Masa atomica promedio = 10,81 u; un atomo promedio pesa 1,80 x 10^-23 g"
+        resultado: "Masa atomica promedio = $10{,}81\\ \\text{u}$; un atomo promedio pesa $1{,}80 \\times 10^{-23}\\ \\text{g}$"
       }
     ],
     errores_tipicos: [
@@ -117,19 +117,19 @@ window.EJERCITACION["atomo"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Fracciones: 0,601 para 69Ga y 0,399 para 71Ga.", porque: "Usamos fracciones para ponderar, dividiendo los porcentajes por 100 para que cada abundancia funcione como un peso. Reemplazamos 60,1 % por 0,601 y 39,9 % por 0,399, de modo que ambas fracciones suman 1. Entonces el promedio no sale multiplicado por 100 y queda en la escala correcta." },
-          { paso: "Masa promedio = 0,601 x 68,93 u + 0,399 x 70,92 u = 69,72 u.", porque: "Usamos el promedio ponderado: cada masa isotopica se multiplica por su fraccion y luego se suman los productos. Reemplazamos con 0,601 x 68,93 u + 0,399 x 70,92 u, que da 69,72 u. Como los pesos suman 1, el resultado queda en u y es comparable con el valor de la tabla periodica del galio." },
-          { paso: "Control: 69,72 u queda entre 68,93 u y 70,92 u, mas cerca de 69Ga, que es el mas abundante.", porque: "Usamos la propiedad de que un promedio ponderado siempre queda entre las masas que promedia. Reemplazamos con 68,93 u y 70,92 u, y 69,72 u cae dentro de ese rango, mas cerca de 68,93 u. Como el 69Ga es el mas abundante, el valor debe quedar cerca de su masa; si no, hay un error en las cuentas." }
+          { paso: "Fracciones: $0{,}601$ para ${}^{69}\\text{Ga}$ y $0{,}399$ para ${}^{71}\\text{Ga}$.", porque: "Usamos fracciones para ponderar, dividiendo los porcentajes por 100 para que cada abundancia funcione como un peso. Reemplazamos $60{,}1\\ \\%$ por $0{,}601$ y $39{,}9\\ \\%$ por $0{,}399$, de modo que ambas fracciones suman $1$. Entonces el promedio no sale multiplicado por $100$ y queda en la escala correcta." },
+          { paso: "$$\\text{Masa promedio} = 0{,}601 \\times 68{,}93\\ \\text{u} + 0{,}399 \\times 70{,}92\\ \\text{u} = 69{,}72\\ \\text{u}$$", porque: "Usamos el promedio ponderado: cada masa isotopica se multiplica por su fraccion y luego se suman los productos. Reemplazamos con $0{,}601 \\times 68{,}93\\ \\text{u} + 0{,}399 \\times 70{,}92\\ \\text{u}$, que da $69{,}72\\ \\text{u}$. Como los pesos suman $1$, el resultado queda en u y es comparable con el valor de la tabla periodica del galio." },
+          { paso: "Control: $69{,}72\\ \\text{u}$ queda entre $68{,}93\\ \\text{u}$ y $70{,}92\\ \\text{u}$, mas cerca de ${}^{69}\\text{Ga}$, que es el mas abundante.", porque: "Usamos la propiedad de que un promedio ponderado siempre queda entre las masas que promedia. Reemplazamos con $68{,}93\\ \\text{u}$ y $70{,}92\\ \\text{u}$, y $69{,}72\\ \\text{u}$ cae dentro de ese rango, mas cerca de $68{,}93\\ \\text{u}$. Como el ${}^{69}\\text{Ga}$ es el mas abundante, el valor debe quedar cerca de su masa; si no, hay un error en las cuentas." }
         ],
-        resultado: "Masa atomica promedio = 69,72 u"
+        resultado: "Masa atomica promedio = $69{,}72\\ \\text{u}$"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Protones = Z = 31. Neutrones = A - Z = 71 - 31 = 40. Electrones = 31 - 3 = 28.", porque: "Usamos que Z identifica al elemento y que en un ion los protones no cambian. Con A = 71 y Z = 31, calculamos N = 71 - 31 = 40 neutrones. Como la carga es +3, el ion perdio 3 electrones respecto del neutro, asi que 31 - 3 = 28 electrones." },
-          { paso: "Configuracion del Ga^3+: 1s^2 2s^2 2p^6 3s^2 3p^6 3d^10 (suma 28).", porque: "Usamos la configuracion del atomo neutro y quitamos electrones desde el nivel mas externo. Al perder 3 electrones se van el 4p^1 y el 4s^2, y el 3d^10 queda completo. Por eso la suma de los superindices debe dar 28, que es la cantidad de electrones del ion." }
+          { paso: "$\\text{Protones} = Z = 31$. $\\text{Neutrones} = A - Z = 71 - 31 = 40$. $\\text{Electrones} = 31 - 3 = 28$.", porque: "Usamos que $Z$ identifica al elemento y que en un ion los protones no cambian. Con $A = 71$ y $Z = 31$, calculamos $N = 71 - 31 = 40$ neutrones. Como la carga es $+3$, el ion perdio $3$ electrones respecto del neutro, asi que $31 - 3 = 28$ electrones." },
+          { paso: "Configuracion del $\\text{Ga}^{3+}$: $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,3\\text{d}^{10}$ (suma 28).", porque: "Usamos la configuracion del atomo neutro y quitamos electrones desde el nivel mas externo. Al perder $3$ electrones se van el $4\\text{p}^{1}$ y el $4\\text{s}^{2}$, y el $3\\text{d}^{10}$ queda completo. Por eso la suma de los superindices debe dar $28$, que es la cantidad de electrones del ion." }
         ],
-        resultado: "31 protones, 40 neutrones, 28 electrones; Ga^3+: 1s^2 2s^2 2p^6 3s^2 3p^6 3d^10"
+        resultado: "31 protones, 40 neutrones, 28 electrones; $\\text{Ga}^{3+}$: $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,3\\text{d}^{10}$"
       }
     ],
     errores_tipicos: [
@@ -146,19 +146,19 @@ window.EJERCITACION["atomo"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "A es neutro con 18 electrones, entonces Z = 18 (argon, Ar) y N = 40 - 18 = 22 neutrones.", porque: "Usamos que en un atomo neutro los electrones igualan a Z, asi que 18 electrones dan Z = 18, que corresponde al argon. Con A = 40 calculamos N = 40 - 18 = 22 neutrones. Entonces la composicion de A queda definida por Z y N." },
-          { paso: "B: Z = A - N = 40 - 20 = 20, que corresponde al calcio (Ca).", porque: "Usamos Z = A - N, que sale de A = Z + N. Reemplazamos con A = 40 y N = 20: Z = 40 - 20 = 20, y ese valor corresponde al calcio en la tabla periodica. Por eso el nucleido B es 40Ca y no un isotopo del argon." },
-          { paso: "Composicion: A = 18 p, 22 n, 18 e; B = 20 p, 20 n, 20 e (atomo neutro).", porque: "Usamos que en un atomo neutro protones y electrones son iguales, y que la suma de protones y neutrones da el numero masico. Para A tenemos 18 p y 22 n, que suman 40; para B tenemos 20 p y 20 n, que tambien suman 40. Entonces la composicion de cada especie queda completa y coincide con lo pedido." }
+          { paso: "A es neutro con 18 electrones, entonces $Z = 18$ (argon, $\\text{Ar}$) y $N = 40 - 18 = 22$ neutrones.", porque: "Usamos que en un atomo neutro los electrones igualan a $Z$, asi que $18$ electrones dan $Z = 18$, que corresponde al argon. Con $A = 40$ calculamos $N = 40 - 18 = 22$ neutrones. Entonces la composicion de A queda definida por $Z$ y $N$." },
+          { paso: "B: $$Z = A - N = 40 - 20 = 20$$, que corresponde al calcio ($\\text{Ca}$).", porque: "Usamos $Z = A - N$, que sale de $A = Z + N$. Reemplazamos con $A = 40$ y $N = 20$: $Z = 40 - 20 = 20$, y ese valor corresponde al calcio en la tabla periodica. Por eso el nucleido B es ${}^{40}\\text{Ca}$ y no un isotopo del argon." },
+          { paso: "Composicion: $\\text{A} = 18\\ \\text{p}, \\ 22\\ \\text{n}, \\ 18\\ \\text{e}$; $\\text{B} = 20\\ \\text{p}, \\ 20\\ \\text{n}, \\ 20\\ \\text{e}$ (atomo neutro).", porque: "Usamos que en un atomo neutro protones y electrones son iguales, y que la suma de protones y neutrones da el numero masico. Para A tenemos 18 p y 22 n, que suman 40; para B tenemos 20 p y 20 n, que tambien suman 40. Entonces la composicion de cada especie queda completa y coincide con lo pedido." }
         ],
-        resultado: "A = 40Ar (18 p, 22 n, 18 e); B = 40Ca (20 p, 20 n, 20 e)"
+        resultado: "A = ${}^{40}\\text{Ar}$ (18 p, 22 n, 18 e); B = ${}^{40}\\text{Ca}$ (20 p, 20 n, 20 e)"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Ca^2+ tiene 20 - 2 = 18 electrones.", porque: "Usamos que un cation de carga 2+ pierde 2 electrones respecto del atomo neutro. Como el Ca tiene 20 electrones, reemplazamos: 20 - 2 = 18 electrones. Por eso el elemento sigue siendo calcio, pero el ion tiene menos electrones que el atomo." },
-          { paso: "Como el Ar tambien tiene 18 electrones, Ca^2+ es isoelectronico con A (Ar).", porque: "Usamos la definicion de especies isoelectronicas: tienen la misma cantidad de electrones y la misma configuracion. Comparamos Ca^2+, con 18 electrones, con el Ar, que tambien tiene 18. Entonces ambas especies son isoelectronicas, aunque tengan distinto numero de protones." }
+          { paso: "$\\text{Ca}^{2+}$ tiene $20 - 2 = 18$ electrones.", porque: "Usamos que un cation de carga $2+$ pierde $2$ electrones respecto del atomo neutro. Como el Ca tiene $20$ electrones, reemplazamos: $20 - 2 = 18$ electrones. Por eso el elemento sigue siendo calcio, pero el ion tiene menos electrones que el atomo." },
+          { paso: "Como el Ar tambien tiene $18$ electrones, $\\text{Ca}^{2+}$ es isoelectronico con A (Ar).", porque: "Usamos la definicion de especies isoelectronicas: tienen la misma cantidad de electrones y la misma configuracion. Comparamos $\\text{Ca}^{2+}$, con $18$ electrones, con el Ar, que tambien tiene $18$. Entonces ambas especies son isoelectronicas, aunque tengan distinto numero de protones." }
         ],
-        resultado: "Ca^2+ tiene 18 electrones; es isoelectronico con el Ar (atomo A)"
+        resultado: "$\\text{Ca}^{2+}$ tiene 18 electrones; es isoelectronico con el Ar (atomo A)"
       }
     ],
     errores_tipicos: [
@@ -175,19 +175,19 @@ window.EJERCITACION["atomo"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Electrones del cation: 2 + 2 + 6 + 2 + 6 + 5 = 23.", porque: "Usamos la configuracion dada y sumamos los electrones de cada subnivel: 2 + 2 + 6 + 2 + 6 + 5. Reemplazando, el total es 23 electrones para el cation X^3+. Ese valor es el punto de partida, porque despues se corrige por la carga para llegar al atomo neutro." },
-          { paso: "Atomo neutro: 23 + 3 = 26 electrones, entonces Z = 26 y X = Fe (hierro).", porque: "Usamos que el cation +3 tiene 3 electrones menos que el atomo neutro, asi que se suman 3 a los 23 del cation. Reemplazamos: 23 + 3 = 26 electrones. Entonces en el neutro electrones = Z, y Z = 26 identifica al hierro. Conviene no restar 3 en lugar de sumarlos." },
-          { paso: "Configuracion neutra: 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6. El cation perdio 2 electrones de 4s y 1 de 3d.", porque: "Usamos la configuracion del atomo neutro y quitamos electrones para escribir el cation. Del 4s^2 salen 2 electrones, y del 3d^6 sale 1, lo que da 3d^5. Por eso la suma de los electrones quitados, 2 + 1 = 3, coincide con la carga del ion." }
+          { paso: "Electrones del cation: $$2 + 2 + 6 + 2 + 6 + 5 = 23$$.", porque: "Usamos la configuracion dada y sumamos los electrones de cada subnivel: $2 + 2 + 6 + 2 + 6 + 5$. Reemplazando, el total es $23$ electrones para el cation $\\text{X}^{3+}$. Ese valor es el punto de partida, porque despues se corrige por la carga para llegar al atomo neutro." },
+          { paso: "Atomo neutro: $$23 + 3 = 26$$ electrones, entonces $Z = 26$ y $\\text{X} = \\text{Fe}$ (hierro).", porque: "Usamos que el cation $+3$ tiene $3$ electrones menos que el atomo neutro, asi que se suman $3$ a los $23$ del cation. Reemplazamos: $23 + 3 = 26$ electrones. Entonces en el neutro electrones $= Z$, y $Z = 26$ identifica al hierro. Conviene no restar $3$ en lugar de sumarlos." },
+          { paso: "Configuracion neutra: $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,4\\text{s}^{2}\\,3\\text{d}^{6}$. El cation perdio 2 electrones de $4\\text{s}$ y 1 de $3\\text{d}$.", porque: "Usamos la configuracion del atomo neutro y quitamos electrones para escribir el cation. Del $4\\text{s}^{2}$ salen $2$ electrones, y del $3\\text{d}^{6}$ sale $1$, lo que da $3\\text{d}^{5}$. Por eso la suma de los electrones quitados, $2 + 1 = 3$, coincide con la carga del ion." }
         ],
-        resultado: "Z = 26, X = Fe; Fe: 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^6"
+        resultado: "$Z = 26$, $\\text{X} = \\text{Fe}$; $\\text{Fe}$: $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,4\\text{s}^{2}\\,3\\text{d}^{6}$"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Grupo 8 (2 de 4s + 6 de 3d del atomo neutro), periodo 4.", porque: "Usamos que el grupo y el periodo se asignan con el atomo neutro, porque el ion no cambia la posicion del elemento en la tabla. Con la CEE del Fe neutro, 4s^2 3d^6, el periodo es 4 y el grupo es 2 + 6 = 8. Entonces X se ubica en el grupo 8 y en el periodo 4." },
-          { paso: "En 3d^5 hay 5 electrones en 5 orbitales: cada uno ocupa un orbital, asi que hay 5 desapareados.", porque: "Usamos la regla de Hund: cada electron de un subnivel ocupa primero un orbital vacio, y solo despues se aparea. Como 3d^5 tiene 5 electrones en 5 orbitales, cada uno queda solo y no hay apareamiento posible. Por eso el cation X^3+ tiene 5 electrones desapareados, y ese numero explica su comportamiento magnetico." }
+          { paso: "Grupo $8$ ($2$ de $4\\text{s}$ + $6$ de $3\\text{d}$ del atomo neutro), periodo $4$.", porque: "Usamos que el grupo y el periodo se asignan con el atomo neutro, porque el ion no cambia la posicion del elemento en la tabla. Con la CEE del Fe neutro, $4\\text{s}^{2}\\,3\\text{d}^{6}$, el periodo es $4$ y el grupo es $2 + 6 = 8$. Entonces X se ubica en el grupo $8$ y en el periodo $4$." },
+          { paso: "En $3\\text{d}^{5}$ hay 5 electrones en 5 orbitales: cada uno ocupa un orbital, asi que hay 5 desapareados.", porque: "Usamos la regla de Hund: cada electron de un subnivel ocupa primero un orbital vacio, y solo despues se aparea. Como $3\\text{d}^{5}$ tiene $5$ electrones en $5$ orbitales, cada uno queda solo y no hay apareamiento posible. Por eso el cation $\\text{X}^{3+}$ tiene $5$ electrones desapareados, y ese numero explica su comportamiento magnetico." }
         ],
-        resultado: "Grupo 8, periodo 4; el cation X^3+ tiene 5 electrones desapareados"
+        resultado: "Grupo $8$, periodo $4$; el cation $\\text{X}^{3+}$ tiene $5$ electrones desapareados"
       }
     ],
     errores_tipicos: [
@@ -204,16 +204,16 @@ window.EJERCITACION["atomo"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "X (Z = 15, fosforo): 1s^2 2s^2 2p^6 3s^2 3p^3; CEE = 3s^2 3p^3. Y (Z = 17, cloro): CEE = 3s^2 3p^5.", porque: "Usamos el orden de llenado de los subniveles hasta completar Z electrones, con Z = 15 para X y Z = 17 para Y. De esa configuracion tomamos solo los electrones del nivel mas externo, que son los que intervienen en el enlace. Entonces la CEE de X es 3s^2 3p^3 y la de Y es 3s^2 3p^5." },
-          { paso: "Periodo 3 para ambos. Grupo de X = 10 + 5 = 15; grupo de Y = 10 + 7 = 17.", porque: "Usamos que el periodo coincide con el nivel externo, que es el 3 para ambos elementos. Para el grupo en bloque p calculamos 10 + 5 = 15 para X y 10 + 7 = 17 para Y. Por eso X queda en el grupo 15 con 5 electrones externos e Y en el grupo 17 con 7." }
+          { paso: "X ($Z = 15$, fosforo): $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{3}$; CEE = $3\\text{s}^{2}\\,3\\text{p}^{3}$. Y ($Z = 17$, cloro): CEE = $3\\text{s}^{2}\\,3\\text{p}^{5}$.", porque: "Usamos el orden de llenado de los subniveles hasta completar $Z$ electrones, con $Z = 15$ para X y $Z = 17$ para Y. De esa configuracion tomamos solo los electrones del nivel mas externo, que son los que intervienen en el enlace. Entonces la CEE de X es $3\\text{s}^{2}\\,3\\text{p}^{3}$ y la de Y es $3\\text{s}^{2}\\,3\\text{p}^{5}$." },
+          { paso: "Periodo $3$ para ambos. $$\\text{Grupo de X} = 10 + 5 = 15$$; grupo de Y = $10 + 7 = 17$.", porque: "Usamos que el periodo coincide con el nivel externo, que es el $3$ para ambos elementos. Para el grupo en bloque p calculamos $10 + 5 = 15$ para X y $10 + 7 = 17$ para Y. Por eso X queda en el grupo $15$ con $5$ electrones externos e Y en el grupo $17$ con $7$." }
         ],
-        resultado: "X: 3s^2 3p^3, grupo 15, periodo 3; Y: 3s^2 3p^5, grupo 17, periodo 3"
+        resultado: "X: $3\\text{s}^{2}\\,3\\text{p}^{3}$, grupo 15, periodo 3; Y: $3\\text{s}^{2}\\,3\\text{p}^{5}$, grupo 17, periodo 3"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Mayor electronegatividad: Y (Cl), porque esta mas a la derecha en el periodo.", porque: "Usamos que en un mismo periodo la carga nuclear aumenta de izquierda a derecha, y los electrones de valencia quedan mas fuertemente atraidos. Como Y (Cl) esta mas a la derecha que X (P) en el periodo 3, la atraccion sobre sus electrones es mayor. Entonces Y es el elemento mas electronegativo de los dos." },
-          { paso: "Mayor radio atomico: X (P), porque el radio disminuye al avanzar en el periodo.", porque: "Usamos que en un periodo el radio atomico disminuye al avanzar hacia la derecha, porque aumenta Z dentro del mismo nivel de energia. Como X (P) esta a la izquierda de Y (Cl), su nube electronica es mas grande. Por eso X (P) tiene el mayor radio atomico, y la comparacion solo vale dentro del mismo periodo." }
+          { paso: "Mayor electronegatividad: Y (Cl), porque esta mas a la derecha en el periodo.", porque: "Usamos que en un mismo periodo la carga nuclear aumenta de izquierda a derecha, y los electrones de valencia quedan mas fuertemente atraidos. Como Y (Cl) esta mas a la derecha que X (P) en el periodo $3$, la atraccion sobre sus electrones es mayor. Entonces Y es el elemento mas electronegativo de los dos." },
+          { paso: "Mayor radio atomico: X (P), porque el radio disminuye al avanzar en el periodo.", porque: "Usamos que en un periodo el radio atomico disminuye al avanzar hacia la derecha, porque aumenta $Z$ dentro del mismo nivel de energia. Como X (P) esta a la izquierda de Y (Cl), su nube electronica es mas grande. Por eso X (P) tiene el mayor radio atomico, y la comparacion solo vale dentro del mismo periodo." }
         ],
         resultado: "Mayor electronegatividad: Y (Cl); mayor radio atomico: X (P)"
       }
@@ -232,20 +232,20 @@ window.EJERCITACION["atomo"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Ar tiene 18 electrones; por ser isoelectronico, Y^2+ tambien tiene 18.", porque: "Usamos que el Ar tiene 18 electrones, y que un ion isoelectronico con el argon tiene la misma cantidad. Reemplazamos: Y^2+ tiene 18 electrones. Por eso podemos obtener los electrones de Y^2+ sin escribir su configuracion desde cero." },
-          { paso: "Atomo neutro Y: 18 + 2 = 20 electrones, entonces Z = 20 y Y = Ca (calcio).", porque: "Usamos que para pasar del ion al atomo neutro hay que sumar la carga a los electrones. Reemplazamos con 18 + 2 = 20 electrones. Como en el atomo neutro electrones = Z, se obtiene Z = 20, que corresponde al calcio." },
-          { paso: "Configuracion de Ca^2+: 1s^2 2s^2 2p^6 3s^2 3p^6 (se pierden los 4s^2).", porque: "Usamos la configuracion del Ca neutro, cuyo nivel mas externo es 4s^2. Al formar Ca^2+ se quitan esos dos electrones, y queda 1s^2 2s^2 2p^6 3s^2 3p^6. Entonces la configuracion coincide con la del argon, lo que confirma que Ca^2+ es isoelectronico con Ar." }
+          { paso: "Ar tiene $18$ electrones; por ser isoelectronico, $\\text{Y}^{2+}$ tambien tiene $18$.", porque: "Usamos que el Ar tiene $18$ electrones, y que un ion isoelectronico con el argon tiene la misma cantidad. Reemplazamos: $\\text{Y}^{2+}$ tiene $18$ electrones. Por eso podemos obtener los electrones de $\\text{Y}^{2+}$ sin escribir su configuracion desde cero." },
+          { paso: "Atomo neutro $\\text{Y}$: $$18 + 2 = 20$$ electrones, entonces $Z = 20$ y $\\text{Y} = \\text{Ca}$ (calcio).", porque: "Usamos que para pasar del ion al atomo neutro hay que sumar la carga a los electrones. Reemplazamos con $18 + 2 = 20$ electrones. Como en el atomo neutro electrones $= Z$, se obtiene $Z = 20$, que corresponde al calcio." },
+          { paso: "Configuracion de $\\text{Ca}^{2+}$: $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}$ (se pierden los $4\\text{s}^{2}$).", porque: "Usamos la configuracion del Ca neutro, cuyo nivel mas externo es $4\\text{s}^{2}$. Al formar $\\text{Ca}^{2+}$ se quitan esos dos electrones, y queda $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}$. Entonces la configuracion coincide con la del argon, lo que confirma que $\\text{Ca}^{2+}$ es isoelectronico con Ar." }
         ],
-        resultado: "Y = Ca; Ca^2+: 1s^2 2s^2 2p^6 3s^2 3p^6"
+        resultado: "$\\text{Y} = \\text{Ca}$; $\\text{Ca}^{2+}$: $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}$"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "R(Ca^2+) < R(Ca): el cation perdio su nivel 4 externo y tiene menos repulsion electronica.", porque: "Usamos que un cation pierde electrones, y al disminuir la repulsion entre ellos la nube electronica se contrae. Como el Ca^2+ pierde los 2 electrones de su nivel mas externo, el nivel 4 desaparece. Por eso el radio del cation es menor que el del atomo neutro del que proviene." },
-          { paso: "R(Ca^2+) < R(Ar): ambos tienen 18 electrones, pero Ca^2+ tiene Z = 20, con mas carga nuclear que atrae mas a la misma nube electronica.", porque: "Usamos que en especies isoelectronicas la nube tiene la misma cantidad de electrones, pero el nucleo con mas protones la atrae mas. Reemplazamos: Ca^2+ tiene Z = 20 y el Ar tiene Z = 18, con 18 electrones en ambos. Entonces el Ca^2+ queda mas chico, porque su nucleo atrae con mas fuerza a la misma nube." },
-          { paso: "Ademas R(Ar) < R(Ca) porque Ca esta en el periodo 4 y Ar en el 3.", porque: "Usamos que el radio aumenta al pasar a un periodo mayor, porque aparece un nivel de energia adicional. Como el Ca esta en el periodo 4 y el Ar en el 3, el Ca neutro tiene un nivel mas. Por eso el Ca neutro es mas grande que el Ar, y esta comparacion se hace entre atomos neutros." }
+          { paso: "$R(\\text{Ca}^{2+}) < R(\\text{Ca})$: el cation perdio su nivel $4$ externo y tiene menos repulsion electronica.", porque: "Usamos que un cation pierde electrones, y al disminuir la repulsion entre ellos la nube electronica se contrae. Como el $\\text{Ca}^{2+}$ pierde los $2$ electrones de su nivel mas externo, el nivel $4$ desaparece. Por eso el radio del cation es menor que el del atomo neutro del que proviene." },
+          { paso: "$R(\\text{Ca}^{2+}) < R(\\text{Ar})$: ambos tienen $18$ electrones, pero $\\text{Ca}^{2+}$ tiene $Z = 20$, con mas carga nuclear que atrae mas a la misma nube electronica.", porque: "Usamos que en especies isoelectronicas la nube tiene la misma cantidad de electrones, pero el nucleo con mas protones la atrae mas. Reemplazamos: $\\text{Ca}^{2+}$ tiene $Z = 20$ y el Ar tiene $Z = 18$, con $18$ electrones en ambos. Entonces el $\\text{Ca}^{2+}$ queda mas chico, porque su nucleo atrae con mas fuerza a la misma nube." },
+          { paso: "Ademas $R(\\text{Ar}) < R(\\text{Ca})$ porque Ca esta en el periodo $4$ y Ar en el $3$.", porque: "Usamos que el radio aumenta al pasar a un periodo mayor, porque aparece un nivel de energia adicional. Como el Ca esta en el periodo $4$ y el Ar en el $3$, el Ca neutro tiene un nivel mas. Por eso el Ca neutro es mas grande que el Ar, y esta comparacion se hace entre atomos neutros." }
         ],
-        resultado: "R(Ca^2+) < R(Ar) < R(Ca)"
+        resultado: "$R(\\text{Ca}^{2+}) < R(\\text{Ar}) < R(\\text{Ca})$"
       }
     ],
     errores_tipicos: [
@@ -262,21 +262,21 @@ window.EJERCITACION["atomo"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "(a) no es valido: con n = 2, l puede valer 0 o 1, pero no 2.", porque: "Usamos los rangos de cada numero cuantico: l va de 0 a n - 1, m de -l a +l, y s solo puede valer +1/2 o -1/2. Con n = 2, los valores permitidos de l son 0 y 1, asi que l = 2 no entra. Por eso la combinacion (a) no es valida, aunque los demas numeros sean correctos." },
-          { paso: "(b) es valido: n = 3, l = 1 (subnivel 3p), m = -1 esta entre -1 y +1, s = -1/2.", porque: "Usamos el rango de m para l = 1, que permite -1, 0 y +1. Con n = 3 y l = 1 el subnivel es 3p, y m = -1 cae dentro de ese rango. Como s = -1/2 tambien es valido, los cuatro numeros cumplen sus restricciones a la vez." },
-          { paso: "(c) no es valido: con l = 0, m solo puede valer 0, y m = +1 no esta permitido.", porque: "Usamos que con l = 0 (subnivel s) el unico valor permitido para m es 0. Reemplazamos: como m = +1 es distinto de 0, la combinacion (c) no existe para ese subnivel. Por eso se descarta, aunque +1 este dentro del rango de un l mayor." },
-          { paso: "(d) es valido: n = 3, l = 2 (subnivel 3d), m = -2 es uno de los 5 valores (-2 a +2).", porque: "Usamos que con l = 2 el subnivel es 3d y m toma los cinco valores -2, -1, 0, +1 y +2. Como m = -2 aparece en esa lista, la combinacion (d) es valida. Entonces cada subnivel tiene 2l + 1 orbitales, en este caso 5." },
-          { paso: "(e) no es valido: s = 0 no existe.", porque: "Usamos que el numero de espin s es una propiedad del electron que solo admite +1/2 o -1/2. Reemplazamos con s = 0, valor que no corresponde a ningun electron. Por eso el cuarteto (e) no es valido, y conviene revisar este numero al final porque es el que mas se olvida." }
+          { paso: "(a) no es valido: con $n = 2$, $l$ puede valer $0$ o $1$, pero no $2$.", porque: "Usamos los rangos de cada numero cuantico: $l$ va de $0$ a $n - 1$, $m$ de $-l$ a $+l$, y $s$ solo puede valer $+\\frac{1}{2}$ o $-\\frac{1}{2}$. Con $n = 2$, los valores permitidos de $l$ son $0$ y $1$, asi que $l = 2$ no entra. Por eso la combinacion (a) no es valida, aunque los demas numeros sean correctos." },
+          { paso: "(b) es valido: $n = 3$, $l = 1$ (subnivel $3\\text{p}$), $m = -1$ esta entre $-1$ y $+1$, $s = -\\frac{1}{2}$.", porque: "Usamos el rango de $m$ para $l = 1$, que permite $-1$, $0$ y $+1$. Con $n = 3$ y $l = 1$ el subnivel es $3\\text{p}$, y $m = -1$ cae dentro de ese rango. Como $s = -\\frac{1}{2}$ tambien es valido, los cuatro numeros cumplen sus restricciones a la vez." },
+          { paso: "(c) no es valido: con $l = 0$, $m$ solo puede valer $0$, y $m = +1$ no esta permitido.", porque: "Usamos que con $l = 0$ (subnivel $\\text{s}$) el unico valor permitido para $m$ es $0$. Reemplazamos: como $m = +1$ es distinto de $0$, la combinacion (c) no existe para ese subnivel. Por eso se descarta, aunque $+1$ este dentro del rango de un $l$ mayor." },
+          { paso: "(d) es valido: $n = 3$, $l = 2$ (subnivel $3\\text{d}$), $m = -2$ es uno de los $5$ valores ($-2$ a $+2$).", porque: "Usamos que con $l = 2$ el subnivel es $3\\text{d}$ y $m$ toma los cinco valores $-2$, $-1$, $0$, $+1$ y $+2$. Como $m = -2$ aparece en esa lista, la combinacion (d) es valida. Entonces cada subnivel tiene $2l + 1$ orbitales, en este caso $5$." },
+          { paso: "(e) no es valido: $s = 0$ no existe.", porque: "Usamos que el numero de espin $s$ es una propiedad del electron que solo admite $+\\frac{1}{2}$ o $-\\frac{1}{2}$. Reemplazamos con $s = 0$, valor que no corresponde a ningun electron. Por eso el cuarteto (e) no es valido, y conviene revisar este numero al final porque es el que mas se olvida." }
         ],
         resultado: "Validos: (b) y (d)"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "(b) subnivel 3p: 3 orbitales x 2 electrones = maximo 6 electrones.", porque: "Usamos que cada orbital admite como maximo 2 electrones con espines opuestos, por el principio de exclusion de Pauli. Con l = 1 el subnivel 3p tiene 2l + 1 = 3 orbitales, asi que reemplazamos: 3 x 2 = 6 electrones. Entonces el maximo para (b) es 6 electrones." },
-          { paso: "(d) subnivel 3d: 5 orbitales x 2 electrones = maximo 10 electrones.", porque: "Usamos que el subnivel d tiene 2l + 1 orbitales, y con l = 2 da 5 orbitales. Como cada orbital admite 2 electrones, reemplazamos: 5 x 2 = 10 electrones. Entonces el subnivel 3d de (d) admite un maximo de 10 electrones, con el mismo razonamiento que en el caso anterior." }
+          { paso: "(b) subnivel $3\\text{p}$: 3 orbitales $\\times$ 2 electrones = maximo $6$ electrones.", porque: "Usamos que cada orbital admite como maximo $2$ electrones con espines opuestos, por el principio de exclusion de Pauli. Con $l = 1$ el subnivel $3\\text{p}$ tiene $2l + 1 = 3$ orbitales, asi que reemplazamos: $3 \\times 2 = 6$ electrones. Entonces el maximo para (b) es $6$ electrones." },
+          { paso: "(d) subnivel $3\\text{d}$: 5 orbitales $\\times$ 2 electrones = maximo $10$ electrones.", porque: "Usamos que el subnivel d tiene $2l + 1$ orbitales, y con $l = 2$ da $5$ orbitales. Como cada orbital admite $2$ electrones, reemplazamos: $5 \\times 2 = 10$ electrones. Entonces el subnivel $3\\text{d}$ de (d) admite un maximo de $10$ electrones, con el mismo razonamiento que en el caso anterior." }
         ],
-        resultado: "(b): subnivel 3p, maximo 6 electrones; (d): subnivel 3d, maximo 10 electrones"
+        resultado: "(b): subnivel $3\\text{p}$, maximo $6$ electrones; (d): subnivel $3\\text{d}$, maximo $10$ electrones"
       }
     ],
     errores_tipicos: [
@@ -293,25 +293,25 @@ window.EJERCITACION["atomo"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "S^2-: 16 + 2 = 18 electrones; Cl^-: 17 + 1 = 18; K^+: 19 - 1 = 18; Ca^2+: 20 - 2 = 18.", porque: "Usamos que para un anion se suma a Z el valor absoluto de la carga, y para un cation se resta la carga a Z. Reemplazamos: S^2- con 16 + 2 = 18, Cl^- con 17 + 1 = 18, K^+ con 19 - 1 = 18 y Ca^2+ con 20 - 2 = 18. Entonces los cuatro iones tienen 18 electrones." },
-          { paso: "Los cuatro tienen 18 electrones y la misma configuracion 1s^2 2s^2 2p^6 3s^2 3p^6: son isoelectronicos.", porque: "Usamos la definicion de isoelectronicos: deben tener el mismo numero de electrones y la misma configuracion. Comprobamos que los cuatro tienen 18 electrones y la configuracion 1s^2 2s^2 2p^6 3s^2 3p^6. Por eso son isoelectronicos, y podemos aplicar la regla de radios." }
+          { paso: "$\\text{S}^{2-}$: $16 + 2 = 18$ electrones; $\\text{Cl}^{-}$: $17 + 1 = 18$; $\\text{K}^{+}$: $19 - 1 = 18$; $\\text{Ca}^{2+}$: $20 - 2 = 18$.", porque: "Usamos que para un anion se suma a $Z$ el valor absoluto de la carga, y para un cation se resta la carga a $Z$. Reemplazamos: $\\text{S}^{2-}$ con $16 + 2 = 18$, $\\text{Cl}^{-}$ con $17 + 1 = 18$, $\\text{K}^{+}$ con $19 - 1 = 18$ y $\\text{Ca}^{2+}$ con $20 - 2 = 18$. Entonces los cuatro iones tienen $18$ electrones." },
+          { paso: "Los cuatro tienen $18$ electrones y la misma configuracion $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}$: son isoelectronicos.", porque: "Usamos la definicion de isoelectronicos: deben tener el mismo numero de electrones y la misma configuracion. Comprobamos que los cuatro tienen $18$ electrones y la configuracion $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}$. Por eso son isoelectronicos, y podemos aplicar la regla de radios." }
         ],
         resultado: "18 electrones en cada ion; son isoelectronicos"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Z: S = 16 < Cl = 17 < K = 19 < Ca = 20.", porque: "Usamos que, con el mismo numero de electrones, la diferencia de tamano depende de la carga nuclear, es decir de Z. Ordenamos los Z de menor a mayor: S = 16 < Cl = 17 < K = 19 < Ca = 20. Entonces el radio se ordena en sentido inverso, y conviene usar Z y no la carga del ion." },
-          { paso: "Mayor Z, menor radio: S^2- > Cl^- > K^+ > Ca^2+.", porque: "Usamos la regla de que, entre isoelectronicos, a mayor Z mayor atraccion del nucleo sobre la nube electronica, que queda mas contraida. Reemplazamos: S^2- tiene Z = 16 y Ca^2+ tiene Z = 20. Por eso el S^2- es el de mayor radio y el Ca^2+ el de menor." }
+          { paso: "$Z$: $\\text{S} = 16 < \\text{Cl} = 17 < \\text{K} = 19 < \\text{Ca} = 20$.", porque: "Usamos que, con el mismo numero de electrones, la diferencia de tamano depende de la carga nuclear, es decir de $Z$. Ordenamos los $Z$ de menor a mayor: $\\text{S} = 16 < \\text{Cl} = 17 < \\text{K} = 19 < \\text{Ca} = 20$. Entonces el radio se ordena en sentido inverso, y conviene usar $Z$ y no la carga del ion." },
+          { paso: "Mayor $Z$, menor radio: $\\text{S}^{2-} > \\text{Cl}^{-} > \\text{K}^{+} > \\text{Ca}^{2+}$.", porque: "Usamos la regla de que, entre isoelectronicos, a mayor $Z$ mayor atraccion del nucleo sobre la nube electronica, que queda mas contraida. Reemplazamos: $\\text{S}^{2-}$ tiene $Z = 16$ y $\\text{Ca}^{2+}$ tiene $Z = 20$. Por eso el $\\text{S}^{2-}$ es el de mayor radio y el $\\text{Ca}^{2+}$ el de menor." }
         ],
-        resultado: "S^2- > Cl^- > K^+ > Ca^2+"
+        resultado: "$\\text{S}^{2-} > \\text{Cl}^{-} > \\text{K}^{+} > \\text{Ca}^{2+}$"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "m = 33,97 u x 1,661 x 10^-24 g/u = 5,64 x 10^-23 g.", porque: "Usamos el factor 1 u = 1,661 x 10^-24 g para pasar la masa de un atomo de u a gramos. Reemplazamos con 33,97 u x 1,661 x 10^-24 g/u, que da 5,64 x 10^-23 g. Entonces el resultado es la masa de un solo atomo, porque la masa molar daria la de un mol entero." }
+          { paso: "$$m = 33{,}97\\ \\text{u} \\times 1{,}661 \\times 10^{-24}\\ \\text{g/u} = 5{,}64 \\times 10^{-23}\\ \\text{g}$$", porque: "Usamos el factor $1\\ \\text{u} = 1{,}661 \\times 10^{-24}\\ \\text{g}$ para pasar la masa de un atomo de u a gramos. Reemplazamos con $33{,}97\\ \\text{u} \\times 1{,}661 \\times 10^{-24}\\ \\text{g/u}$, que da $5{,}64 \\times 10^{-23}\\ \\text{g}$. Entonces el resultado es la masa de un solo atomo, porque la masa molar daria la de un mol entero." }
         ],
-        resultado: "5,64 x 10^-23 g"
+        resultado: "$5{,}64 \\times 10^{-23}\\ \\text{g}$"
       }
     ],
     errores_tipicos: [
@@ -329,26 +329,26 @@ window.EJERCITACION["atomo"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Llamo x a la fraccion de 85Rb; la de 87Rb es (1 - x), porque las abundancias suman 1.", porque: "Usamos que las abundancias suman 1, por lo que si x es la fraccion del 85Rb, la del 87Rb es 1 - x. Como hay dos incognitas pero una sola restriccion, el problema se reduce a una ecuacion con una variable. Entonces basta con despejar x para obtener ambas abundancias." },
-          { paso: "84,91 x + 86,91 (1 - x) = 85,47, es decir 86,91 - 2,00 x = 85,47, y x = 0,720.", porque: "Usamos el promedio ponderado: cada masa isotopica se multiplica por su fraccion y la suma se iguala a 85,47 u. Reemplazamos con 84,91 x + 86,91 (1 - x) = 85,47, que se reduce a 86,91 - 2,00 x = 85,47. Entonces x = 0,720, y el signo del termino (1 - x) no debe olvidarse al distribuir." },
-          { paso: "Abundancias: 85Rb = 72,0 %; 87Rb = 28,0 %.", porque: "Usamos que el porcentaje es la fraccion multiplicada por 100. Reemplazamos con 0,720 x 100 = 72,0 % para el 85Rb, y el 87Rb queda con 28,0 %. Entonces la suma de ambos da 100 %, lo que confirma que el despeje es correcto." }
+          { paso: "Llamo $x$ a la fraccion de ${}^{85}\\text{Rb}$; la de ${}^{87}\\text{Rb}$ es $(1 - x)$, porque las abundancias suman $1$.", porque: "Usamos que las abundancias suman $1$, por lo que si $x$ es la fraccion del ${}^{85}\\text{Rb}$, la del ${}^{87}\\text{Rb}$ es $1 - x$. Como hay dos incognitas pero una sola restriccion, el problema se reduce a una ecuacion con una variable. Entonces basta con despejar $x$ para obtener ambas abundancias." },
+          { paso: "$$84{,}91\\,x + 86{,}91\\,(1 - x) = 85{,}47$$, es decir $86{,}91 - 2{,}00\\,x = 85{,}47$, y $x = 0{,}720$.", porque: "Usamos el promedio ponderado: cada masa isotopica se multiplica por su fraccion y la suma se iguala a $85{,}47\\ \\text{u}$. Reemplazamos con $84{,}91\\,x + 86{,}91\\,(1 - x) = 85{,}47$, que se reduce a $86{,}91 - 2{,}00\\,x = 85{,}47$. Entonces $x = 0{,}720$, y el signo del termino $(1 - x)$ no debe olvidarse al distribuir." },
+          { paso: "Abundancias: ${}^{85}\\text{Rb} = 72{,}0\\ \\%$; ${}^{87}\\text{Rb} = 28{,}0\\ \\%$.", porque: "Usamos que el porcentaje es la fraccion multiplicada por $100$. Reemplazamos con $0{,}720 \\times 100 = 72{,}0\\ \\%$ para el ${}^{85}\\text{Rb}$, y el ${}^{87}\\text{Rb}$ queda con $28{,}0\\ \\%$. Entonces la suma de ambos da $100\\ \\%$, lo que confirma que el despeje es correcto." }
         ],
-        resultado: "85Rb: 72,0 %; 87Rb: 28,0 %"
+        resultado: "${}^{85}\\text{Rb}$: $72{,}0\\ \\%$; ${}^{87}\\text{Rb}$: $28{,}0\\ \\%$"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "N(87Rb) = 87 - 37 = 50 neutrones.", porque: "Usamos N = A - Z, con Z el numero atomico del rubidio, que es el mismo para todos sus isotopos. Reemplazamos con A = 87 y Z = 37: N = 87 - 37 = 50 neutrones. Por eso el 87Rb tiene 50 neutrones, y el valor de Z se toma de la tabla periodica." },
-          { paso: "Rb^+ tiene 37 - 1 = 36 electrones.", porque: "Usamos que un cation de carga +1 pierde un electron respecto del atomo neutro. Reemplazamos con los 37 electrones del neutro: 37 - 1 = 36 electrones. Entonces el ion Rb^+ tiene 36 electrones, mientras que sus protones siguen siendo 37." }
+          { paso: "$$N({}^{87}\\text{Rb}) = 87 - 37 = 50$$ neutrones.", porque: "Usamos $N = A - Z$, con $Z$ el numero atomico del rubidio, que es el mismo para todos sus isotopos. Reemplazamos con $A = 87$ y $Z = 37$: $N = 87 - 37 = 50$ neutrones. Por eso el ${}^{87}\\text{Rb}$ tiene $50$ neutrones, y el valor de $Z$ se toma de la tabla periodica." },
+          { paso: "$\\text{Rb}^{+}$ tiene $37 - 1 = 36$ electrones.", porque: "Usamos que un cation de carga $+1$ pierde un electron respecto del atomo neutro. Reemplazamos con los $37$ electrones del neutro: $37 - 1 = 36$ electrones. Entonces el ion $\\text{Rb}^{+}$ tiene $36$ electrones, mientras que sus protones siguen siendo $37$." }
         ],
-        resultado: "87Rb: 50 neutrones; Rb^+: 36 electrones"
+        resultado: "${}^{87}\\text{Rb}$: 50 neutrones; $\\text{Rb}^{+}$: 36 electrones"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "m(87Rb) = 86,91 u x 1,661 x 10^-24 g/u = 1,44 x 10^-22 g.", porque: "Usamos la masa isotopica de 86,91 u, porque el enunciado pide un isotopo puntual y no el elemento natural. Reemplazamos con 86,91 u x 1,661 x 10^-24 g/u, que da 1,44 x 10^-22 g. Entonces la masa del 87Rb se obtiene con el mismo factor de conversion." }
+          { paso: "$$m({}^{87}\\text{Rb}) = 86{,}91\\ \\text{u} \\times 1{,}661 \\times 10^{-24}\\ \\text{g/u} = 1{,}44 \\times 10^{-22}\\ \\text{g}$$", porque: "Usamos la masa isotopica de $86{,}91\\ \\text{u}$, porque el enunciado pide un isotopo puntual y no el elemento natural. Reemplazamos con $86{,}91\\ \\text{u} \\times 1{,}661 \\times 10^{-24}\\ \\text{g/u}$, que da $1{,}44 \\times 10^{-22}\\ \\text{g}$. Entonces la masa del ${}^{87}\\text{Rb}$ se obtiene con el mismo factor de conversion." }
         ],
-        resultado: "1,44 x 10^-22 g"
+        resultado: "$1{,}44 \\times 10^{-22}\\ \\text{g}$"
       }
     ],
     errores_tipicos: [
@@ -366,19 +366,19 @@ window.EJERCITACION["atomo"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Co neutro: 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^7 (suma 27).", porque: "Usamos el orden de llenado para escribir la configuracion del neutro, y sumamos los superindices hasta llegar a 27, que es Z del cobalto. Con 1s^2 2s^2 2p^6 3s^2 3p^6 4s^2 3d^7 la suma da 27 electrones. Por eso la configuracion es correcta y podemos seguir con los desapareados." },
-          { paso: "Co^2+ (25 electrones): se quitan los 2 electrones de 4s: 1s^2 2s^2 2p^6 3s^2 3p^6 3d^7.", porque: "Usamos que al ionizar un metal de transicion los electrones salen primero del nivel mas externo, es decir del 4s. Reemplazamos: Co^2+ tiene 27 - 2 = 25 electrones, al quitar los 2 de 4s. Entonces el 3d^7 se mantiene y la configuracion del ion es 1s^2 2s^2 2p^6 3s^2 3p^6 3d^7." },
-          { paso: "En 3d^7 (5 orbitales): los 5 orbitales reciben un electron cada uno y los 2 restantes forman 2 pares, asi que hay 3 desapareados, tanto en Co como en Co^2+.", porque: "Usamos la regla de Hund: cada orbital d recibe un electron antes de aparearse. Con 7 electrones en 5 orbitales, primero quedan 5 solos y los 2 restantes se aparean con 2 de ellos, lo que deja 3 desapareados. Por eso el resultado es 3 tanto en Co como en Co^2+, porque ambos tienen 3d^7." }
+          { paso: "Co neutro: $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,4\\text{s}^{2}\\,3\\text{d}^{7}$ (suma 27).", porque: "Usamos el orden de llenado para escribir la configuracion del neutro, y sumamos los superindices hasta llegar a $27$, que es $Z$ del cobalto. Con $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,4\\text{s}^{2}\\,3\\text{d}^{7}$ la suma da $27$ electrones. Por eso la configuracion es correcta y podemos seguir con los desapareados." },
+          { paso: "$\\text{Co}^{2+}$ (25 electrones): se quitan los 2 electrones de $4\\text{s}$: $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,3\\text{d}^{7}$.", porque: "Usamos que al ionizar un metal de transicion los electrones salen primero del nivel mas externo, es decir del $4\\text{s}$. Reemplazamos: $\\text{Co}^{2+}$ tiene $27 - 2 = 25$ electrones, al quitar los $2$ de $4\\text{s}$. Entonces el $3\\text{d}^{7}$ se mantiene y la configuracion del ion es $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,3\\text{d}^{7}$." },
+          { paso: "En $3\\text{d}^{7}$ (5 orbitales): los 5 orbitales reciben un electron cada uno y los 2 restantes forman 2 pares, asi que hay 3 desapareados, tanto en Co como en $\\text{Co}^{2+}$.", porque: "Usamos la regla de Hund: cada orbital d recibe un electron antes de aparearse. Con $7$ electrones en $5$ orbitales, primero quedan $5$ solos y los $2$ restantes se aparean con $2$ de ellos, lo que deja $3$ desapareados. Por eso el resultado es $3$ tanto en Co como en $\\text{Co}^{2+}$, porque ambos tienen $3\\text{d}^{7}$." }
         ],
-        resultado: "Co: 3d^7 4s^2, 3 desapareados; Co^2+: 3d^7, 3 desapareados"
+        resultado: "Co: $3\\text{d}^{7}\\,4\\text{s}^{2}$, 3 desapareados; $\\text{Co}^{2+}$: $3\\text{d}^{7}$, 3 desapareados"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Co^3+: 27 - 3 = 24 electrones, configuracion 1s^2 2s^2 2p^6 3s^2 3p^6 3d^6 (se quitan los 2 de 4s y 1 de 3d).", porque: "Usamos que Co^3+ pierde 3 electrones respecto del neutro: primero los 2 de 4s y luego 1 de 3d. Reemplazamos: 27 - 3 = 24 electrones, que coincide con la configuracion 3d^6. Por eso el 24 sirve como control para no equivocarse al escribir el ion." },
-          { paso: "En 3d^6: 4 orbitales con un electron cada uno y 1 con par; quedan 4 desapareados.", porque: "Usamos la regla de Hund: los electrones del 3d se reparten primero uno por orbital, y recien despues se aparean. Con 6 electrones en 5 orbitales, uno de los orbitales recibe dos y los otros cuatro quedan con un electron cada uno. Entonces hay 4 desapareados, porque el par reduce en 1 el total de electrones solos." }
+          { paso: "$\\text{Co}^{3+}$: $27 - 3 = 24$ electrones, configuracion $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,3\\text{d}^{6}$ (se quitan los 2 de $4\\text{s}$ y 1 de $3\\text{d}$).", porque: "Usamos que $\\text{Co}^{3+}$ pierde $3$ electrones respecto del neutro: primero los $2$ de $4\\text{s}$ y luego $1$ de $3\\text{d}$. Reemplazamos: $27 - 3 = 24$ electrones, que coincide con la configuracion $3\\text{d}^{6}$. Por eso el $24$ sirve como control para no equivocarse al escribir el ion." },
+          { paso: "En $3\\text{d}^{6}$: 4 orbitales con un electron cada uno y 1 con par; quedan 4 desapareados.", porque: "Usamos la regla de Hund: los electrones del $3\\text{d}$ se reparten primero uno por orbital, y recien despues se aparean. Con $6$ electrones en $5$ orbitales, uno de los orbitales recibe dos y los otros cuatro quedan con un electron cada uno. Entonces hay $4$ desapareados, porque el par reduce en $1$ el total de electrones solos." }
         ],
-        resultado: "Co^3+: 1s^2 2s^2 2p^6 3s^2 3p^6 3d^6, con 4 desapareados"
+        resultado: "$\\text{Co}^{3+}$: $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,3\\text{d}^{6}$, con 4 desapareados"
       }
     ],
     errores_tipicos: [
@@ -395,25 +395,25 @@ window.EJERCITACION["atomo"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Suma de abundancias: 90,48 + 0,27 + 9,25 = 100,00 %.", porque: "Usamos que los tres isotopos cubren todo el neon natural, por lo que sus abundancias deben sumar 100 %. Reemplazamos: 90,48 + 0,27 + 9,25 = 100,00 %. Entonces los datos son consistentes y podemos promediar sin arrastrar un error." },
-          { paso: "Masa promedio = 0,9048 x 19,992 + 0,0027 x 20,994 + 0,0925 x 21,991 = 20,18 u.", porque: "Usamos la masa promedio como suma ponderada, pasando cada porcentaje a fraccion dividiendo por 100. Reemplazamos: 0,9048 x 19,992 + 0,0027 x 20,994 + 0,0925 x 21,991 = 20,18 u. Por eso el resultado coincide con el valor de la tabla, 20,18 u, lo que verifica el calculo." }
+          { paso: "Suma de abundancias: $$90{,}48 + 0{,}27 + 9{,}25 = 100{,}00\\ \\%$$.", porque: "Usamos que los tres isotopos cubren todo el neon natural, por lo que sus abundancias deben sumar $100\\ \\%$. Reemplazamos: $90{,}48 + 0{,}27 + 9{,}25 = 100{,}00\\ \\%$. Entonces los datos son consistentes y podemos promediar sin arrastrar un error." },
+          { paso: "Masa promedio $= 0{,}9048 \\times 19{,}992 + 0{,}0027 \\times 20{,}994 + 0{,}0925 \\times 21{,}991 = 20{,}18$ u.", porque: "Usamos la masa promedio como suma ponderada, pasando cada porcentaje a fraccion dividiendo por $100$. Reemplazamos: $0{,}9048 \\times 19{,}992 + 0{,}0027 \\times 20{,}994 + 0{,}0925 \\times 21{,}991 = 20{,}18\\ \\text{u}$. Por eso el resultado coincide con el valor de la tabla, $20{,}18\\ \\text{u}$, lo que verifica el calculo." }
         ],
-        resultado: "Masa atomica promedio = 20,18 u (verificada)"
+        resultado: "Masa atomica promedio = $20{,}18\\ \\text{u}$ (verificada)"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "m = 20,18 u x 1,661 x 10^-24 g/u = 3,35 x 10^-23 g.", porque: "Usamos el factor 1 u = 1,661 x 10^-24 g para pasar la masa promedio de u a gramos. Reemplazamos con 20,18 u x 1,661 x 10^-24 g/u, que da 3,35 x 10^-23 g. Entonces el resultado es la masa de un solo atomo promedio, y no la de un mol." }
+          { paso: "$$m = 20{,}18\\ \\text{u} \\times 1{,}661 \\times 10^{-24}\\ \\text{g/u} = 3{,}35 \\times 10^{-23}\\ \\text{g}$$", porque: "Usamos el factor $1\\ \\text{u} = 1{,}661 \\times 10^{-24}\\ \\text{g}$ para pasar la masa promedio de u a gramos. Reemplazamos con $20{,}18\\ \\text{u} \\times 1{,}661 \\times 10^{-24}\\ \\text{g/u}$, que da $3{,}35 \\times 10^{-23}\\ \\text{g}$. Entonces el resultado es la masa de un solo atomo promedio, y no la de un mol." }
         ],
-        resultado: "3,35 x 10^-23 g"
+        resultado: "$3{,}35 \\times 10^{-23}\\ \\text{g}$"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "21Ne: N = 21 - 10 = 11 neutrones.", porque: "Usamos N = A - Z, con Z = 10 tomado de la tabla periodica para el neon. Reemplazamos con A = 21: N = 21 - 10 = 11 neutrones. Por eso el 21Ne tiene 11 neutrones, un dato distinto del de los otros isotopos del mismo elemento." },
-          { paso: "Ne^2+: 10 - 2 = 8 electrones.", porque: "Usamos que un cation con carga +2 pierde 2 electrones respecto del atomo neutro. Reemplazamos con los 10 electrones del Ne: 10 - 2 = 8 electrones. Entonces el ion Ne^2+ tiene 8 electrones." }
+          { paso: "${}^{21}\\text{Ne}$: $$N = 21 - 10 = 11$$ neutrones.", porque: "Usamos $N = A - Z$, con $Z = 10$ tomado de la tabla periodica para el neon. Reemplazamos con $A = 21$: $N = 21 - 10 = 11$ neutrones. Por eso el ${}^{21}\\text{Ne}$ tiene $11$ neutrones, un dato distinto del de los otros isotopos del mismo elemento." },
+          { paso: "$\\text{Ne}^{2+}$: $10 - 2 = 8$ electrones.", porque: "Usamos que un cation con carga $+2$ pierde $2$ electrones respecto del atomo neutro. Reemplazamos con los $10$ electrones del Ne: $10 - 2 = 8$ electrones. Entonces el ion $\\text{Ne}^{2+}$ tiene $8$ electrones." }
         ],
-        resultado: "21Ne: 11 neutrones; Ne^2+: 8 electrones"
+        resultado: "${}^{21}\\text{Ne}$: 11 neutrones; $\\text{Ne}^{2+}$: 8 electrones"
       }
     ],
     errores_tipicos: [
@@ -431,37 +431,37 @@ window.EJERCITACION["atomo"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Electrones de M^3+: 2 + 2 + 6 + 2 + 6 + 3 = 21.", porque: "Usamos la configuracion dada del M^3+ y sumamos los superindices: 2 + 2 + 6 + 2 + 6 + 3. Reemplazamos y obtenemos 21 electrones en el cation. Ese valor es el punto de partida, porque el paso siguiente lo corrige con la carga para llegar al atomo neutro y a su Z." },
-          { paso: "Atomo neutro: 21 + 3 = 24 electrones, entonces Z = 24 y M = Cr (cromo).", porque: "Usamos que el cation +3 tiene 3 electrones menos que el atomo neutro, asi que se suman 3 a los 21 del cation. Reemplazamos: 21 + 3 = 24 electrones. Entonces Z = 24 identifica al cromo, y conviene no restar la carga en lugar de sumarla." },
-          { paso: "Cr: periodo 4 y grupo 6 (1 electron de 4s + 5 de 3d).", porque: "Usamos que el periodo lo da el n mas alto de la configuracion externa, que en este caso es 4. Para el bloque d el grupo es la suma de los electrones de 4s y 3d, con 1 + 5 = 6. Por eso el cromo queda en el grupo 6 y el periodo 4." }
+          { paso: "Electrones de $\\text{M}^{3+}$: $$2 + 2 + 6 + 2 + 6 + 3 = 21$$.", porque: "Usamos la configuracion dada del $\\text{M}^{3+}$ y sumamos los superindices: $2 + 2 + 6 + 2 + 6 + 3$. Reemplazamos y obtenemos $21$ electrones en el cation. Ese valor es el punto de partida, porque el paso siguiente lo corrige con la carga para llegar al atomo neutro y a su $Z$." },
+          { paso: "Atomo neutro: $$21 + 3 = 24$$ electrones, entonces $Z = 24$ y $\\text{M} = \\text{Cr}$ (cromo).", porque: "Usamos que el cation $+3$ tiene $3$ electrones menos que el atomo neutro, asi que se suman $3$ a los $21$ del cation. Reemplazamos: $21 + 3 = 24$ electrones. Entonces $Z = 24$ identifica al cromo, y conviene no restar la carga en lugar de sumarla." },
+          { paso: "$\\text{Cr}$: periodo $4$ y grupo $6$ (1 electron de $4\\text{s}$ + 5 de $3\\text{d}$).", porque: "Usamos que el periodo lo da el $n$ mas alto de la configuracion externa, que en este caso es $4$. Para el bloque d el grupo es la suma de los electrones de $4\\text{s}$ y $3\\text{d}$, con $1 + 5 = 6$. Por eso el cromo queda en el grupo $6$ y el periodo $4$." }
         ],
-        resultado: "M = Cr, Z = 24, grupo 6, periodo 4"
+        resultado: "$\\text{M} = \\text{Cr}$, $Z = 24$, grupo 6, periodo 4"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Configuracion real del Cr: 1s^2 2s^2 2p^6 3s^2 3p^6 4s^1 3d^5. La esperada por orden de llenado seria 4s^2 3d^4.", porque: "Usamos la excepcion del cromo al orden de llenado: un 3d semilleno tiene menor energia que el 3d^4 con 4s^2. Reemplazamos con 1s^2 2s^2 2p^6 3s^2 3p^6 4s^1 3d^5, que suma 24 electrones. Por eso el atomo toma un electron de 4s para ocupar el 3d^5, y el total de electrones se mantiene en 24." },
-          { paso: "Desapareados: 3d^5 tiene 5 electrones en 5 orbitales, y el 4s^1 aporta 1 mas: 6 desapareados.", porque: "Usamos la regla de Hund: los 5 electrones del 3d ocupan un orbital distinto cada uno, y el electron de 4s queda solo. Reemplazamos: 5 + 1 electrones desapareados, lo que da 6. Entonces el cromo tiene 6 electrones desapareados." }
+          { paso: "Configuracion real del Cr: $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,4\\text{s}^{1}\\,3\\text{d}^{5}$. La esperada por orden de llenado seria $4\\text{s}^{2}\\,3\\text{d}^{4}$.", porque: "Usamos la excepcion del cromo al orden de llenado: un $3\\text{d}$ semilleno tiene menor energia que el $3\\text{d}^{4}$ con $4\\text{s}^{2}$. Reemplazamos con $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,4\\text{s}^{1}\\,3\\text{d}^{5}$, que suma $24$ electrones. Por eso el atomo toma un electron de $4\\text{s}$ para ocupar el $3\\text{d}^{5}$, y el total de electrones se mantiene en $24$." },
+          { paso: "Desapareados: $3\\text{d}^{5}$ tiene 5 electrones en 5 orbitales, y el $4\\text{s}^{1}$ aporta 1 mas: $6$ desapareados.", porque: "Usamos la regla de Hund: los 5 electrones del $3\\text{d}$ ocupan un orbital distinto cada uno, y el electron de $4\\text{s}$ queda solo. Reemplazamos: $5 + 1$ electrones desapareados, lo que da $6$. Entonces el cromo tiene $6$ electrones desapareados." }
         ],
-        resultado: "Cr: 1s^2 2s^2 2p^6 3s^2 3p^6 4s^1 3d^5; 6 electrones desapareados"
+        resultado: "Cr: $1\\text{s}^{2}\\,2\\text{s}^{2}\\,2\\text{p}^{6}\\,3\\text{s}^{2}\\,3\\text{p}^{6}\\,4\\text{s}^{1}\\,3\\text{d}^{5}$; 6 electrones desapareados"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Sea x la fraccion de 35Cl: 34,97 x + 36,97 (1 - x) = 35,45.", porque: "Usamos el promedio ponderado con x como fraccion del 35Cl, y 1 - x como fraccion del 37Cl. Reemplazamos con 34,97 x + 36,97 (1 - x) = 35,45, la misma tecnica del caso del rubidio. Entonces queda una sola ecuacion con una sola incognita, que se resuelve despejando x." },
-          { paso: "36,97 - 2,00 x = 35,45, de donde x = 0,760.", porque: "Usamos la propiedad distributiva: 36,97 (1 - x) = 36,97 - 36,97 x, y luego agrupamos los terminos con x. Reemplazamos: 36,97 - 2,00 x = 35,45, de donde x = 0,760. Por eso x queda entre 0 y 1, lo que confirma que es una fraccion valida." },
-          { paso: "Abundancias: 35Cl = 76,0 %; 37Cl = 24,0 %.", porque: "Usamos que el porcentaje es la fraccion multiplicada por 100. Reemplazamos con 0,760 x 100 = 76,0 % para el 35Cl, y el 37Cl queda con 24,0 %. Entonces la suma de ambos da 100 %, lo que confirma el resultado." }
+          { paso: "Sea $x$ la fraccion de ${}^{35}\\text{Cl}$: $$34{,}97\\,x + 36{,}97\\,(1 - x) = 35{,}45$$.", porque: "Usamos el promedio ponderado con $x$ como fraccion del ${}^{35}\\text{Cl}$, y $1 - x$ como fraccion del ${}^{37}\\text{Cl}$. Reemplazamos con $34{,}97\\,x + 36{,}97\\,(1 - x) = 35{,}45$, la misma tecnica del caso del rubidio. Entonces queda una sola ecuacion con una sola incognita, que se resuelve despejando $x$." },
+          { paso: "$36{,}97 - 2{,}00\\,x = 35{,}45$, de donde $x = 0{,}760$.", porque: "Usamos la propiedad distributiva: $36{,}97\\,(1 - x) = 36{,}97 - 36{,}97\\,x$, y luego agrupamos los terminos con $x$. Reemplazamos: $36{,}97 - 2{,}00\\,x = 35{,}45$, de donde $x = 0{,}760$. Por eso $x$ queda entre $0$ y $1$, lo que confirma que es una fraccion valida." },
+          { paso: "Abundancias: ${}^{35}\\text{Cl} = 76{,}0\\ \\%$; ${}^{37}\\text{Cl} = 24{,}0\\ \\%$.", porque: "Usamos que el porcentaje es la fraccion multiplicada por $100$. Reemplazamos con $0{,}760 \\times 100 = 76{,}0\\ \\%$ para el ${}^{35}\\text{Cl}$, y el ${}^{37}\\text{Cl}$ queda con $24{,}0\\ \\%$. Entonces la suma de ambos da $100\\ \\%$, lo que confirma el resultado." }
         ],
-        resultado: "35Cl: 76,0 %; 37Cl: 24,0 %"
+        resultado: "${}^{35}\\text{Cl}$: $76{,}0\\ \\%$; ${}^{37}\\text{Cl}$: $24{,}0\\ \\%$"
       },
       {
         parte: "d)",
         pasos: [
-          { paso: "Cr^3+ conserva Z = 24 pero tiene 3 electrones menos que el Cr neutro: la misma carga nuclear atrae a menos electrones y el radio se achica.", porque: "Usamos que un cation es mas chico que su atomo neutro porque pierde electrones, y la repulsion entre ellos disminuye. Como el Cr^3+ conserva Z = 24, la carga nuclear atrae ahora a menos electrones. Por eso la nube electronica se contrae y el radio del Cr^3+ es menor que el del Cr neutro." },
-          { paso: "Cr^3+ (+3) necesita 3 iones Cl^- (-1 cada uno) para que la carga total sea cero: 1 Cr por cada 3 Cl.", porque: "Usamos que, para que el compuesto sea neutro, la carga positiva total debe igualar a la negativa total. Reemplazamos: la carga +3 del Cr^3+ se iguala con 3 x -1 de los Cl^-. Entonces hacen falta 3 Cl^- por cada Cr^3+, y no uno solo por cada Cr." },
-          { paso: "Formula: CrCl3 (cloruro de cromo(III)).", porque: "Usamos la relacion 1 : 3 que ya iguala las cargas, y la ponemos como subindices de la formula. Reemplazamos: 1 Cr y 3 Cl dan CrCl3. El (III) del nombre indica la carga +3 del cromo y sirve para distinguirlo de otros cloruros de cromo." }
+          { paso: "$\\text{Cr}^{3+}$ conserva $Z = 24$ pero tiene 3 electrones menos que el Cr neutro: la misma carga nuclear atrae a menos electrones y el radio se achica.", porque: "Usamos que un cation es mas chico que su atomo neutro porque pierde electrones, y la repulsion entre ellos disminuye. Como el $\\text{Cr}^{3+}$ conserva $Z = 24$, la carga nuclear atrae ahora a menos electrones. Por eso la nube electronica se contrae y el radio del $\\text{Cr}^{3+}$ es menor que el del Cr neutro." },
+          { paso: "$\\text{Cr}^{3+}$ ($+3$) necesita 3 iones $\\text{Cl}^{-}$ ($-1$ cada uno) para que la carga total sea cero: 1 Cr por cada 3 Cl.", porque: "Usamos que, para que el compuesto sea neutro, la carga positiva total debe igualar a la negativa total. Reemplazamos: la carga $+3$ del $\\text{Cr}^{3+}$ se iguala con $3 \\times (-1)$ de los $\\text{Cl}^{-}$. Entonces hacen falta $3$ $\\text{Cl}^{-}$ por cada $\\text{Cr}^{3+}$, y no uno solo por cada Cr." },
+          { paso: "Formula: $\\text{CrCl}_3$ (cloruro de cromo(III)).", porque: "Usamos la relacion $1 : 3$ que ya iguala las cargas, y la ponemos como subindices de la formula. Reemplazamos: 1 Cr y 3 Cl dan $\\text{CrCl}_3$. El (III) del nombre indica la carga $+3$ del cromo y sirve para distinguirlo de otros cloruros de cromo." }
         ],
-        resultado: "R(Cr^3+) < R(Cr); formula CrCl3"
+        resultado: "$R(\\text{Cr}^{3+}) < R(\\text{Cr})$; formula $\\text{CrCl}_3$"
       }
     ],
     errores_tipicos: [
@@ -482,10 +482,10 @@ window.EJERCITACION["magnitudes"] = [
       {
         parte: "",
         pasos: [
-          { paso: "n = m / M = 10,0 g / 65,38 g/mol = 0,153 mol.", porque: "Usamos n = m/M, que relaciona la masa en gramos con la cantidad de sustancia en mol. Reemplazamos con 10,0 g / 65,38 g/mol, que da 0,153 mol. Entonces, como la masa molar esta en g/mol, el resultado sale en mol sin cambios de unidad." },
-          { paso: "N = n x N_A = 0,153 mol x 6,022 x 10^23 mol^-1 = 9,21 x 10^22 atomos.", porque: "Usamos N = n x N_A, porque un mol contiene N_A unidades elementales. Reemplazamos con 0,153 mol x 6,022 x 10^23 mol^-1, lo que da 9,21 x 10^22 atomos. Por eso, como el Zn es monoatomico, cada unidad es un atomo y ese es el resultado pedido." }
+          { paso: "$$n = \\frac{m}{M} = \\frac{10{,}0\\ \\text{g}}{65{,}38\\ \\text{g/mol}} = 0{,}153\\ \\text{mol}$$", porque: "Usamos $n = \\frac{m}{M}$, que relaciona la masa en gramos con la cantidad de sustancia en mol. Reemplazamos con $\\frac{10{,}0\\ \\text{g}}{65{,}38\\ \\text{g/mol}}$, que da $0{,}153\\ \\text{mol}$. Entonces, como la masa molar esta en $\\text{g/mol}$, el resultado sale en mol sin cambios de unidad." },
+          { paso: "$N = n \\times N_{A} = 0{,}153\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1} = 9{,}21 \\times 10^{22}$ atomos.", porque: "Usamos $N = n \\times N_{A}$, porque un mol contiene $N_{A}$ unidades elementales. Reemplazamos con $0{,}153\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}$, lo que da $9{,}21 \\times 10^{22}$ atomos. Por eso, como el Zn es monoatomico, cada unidad es un atomo y ese es el resultado pedido." }
         ],
-        resultado: "0,153 mol de Zn y 9,21 x 10^22 atomos"
+        resultado: "$0{,}153\\ \\text{mol}$ de Zn y $9{,}21 \\times 10^{22}$ atomos"
       }
     ],
     errores_tipicos: [
@@ -502,10 +502,10 @@ window.EJERCITACION["magnitudes"] = [
       {
         parte: "",
         pasos: [
-          { paso: "m = 40,08 u x 1,661 x 10^-24 g/u = 6,66 x 10^-23 g.", porque: "Usamos la conversion 1 u = 1,661 x 10^-24 g para pasar la masa atomica de u a gramos. Reemplazamos con 40,08 u x 1,661 x 10^-24 g/u, que da 6,66 x 10^-23 g. Entonces el resultado es la masa de un solo atomo de calcio, del orden de 10^-23 g." },
-          { paso: "Control: M / N_A = 40,08 g/mol / 6,022 x 10^23 mol^-1 = 6,66 x 10^-23 g.", porque: "Usamos que un atomo pesa M/N_A gramos, porque un mol pesa M y contiene N_A atomos. Reemplazamos con 40,08 g/mol / 6,022 x 10^23 mol^-1, que da 6,66 x 10^-23 g. Por eso el resultado coincide con la conversion desde u, lo que confirma el factor 1 u = 1,661 x 10^-24 g." }
+          { paso: "$$m = 40{,}08\\ \\text{u} \\times 1{,}661 \\times 10^{-24}\\ \\text{g/u} = 6{,}66 \\times 10^{-23}\\ \\text{g}$$", porque: "Usamos la conversion $1\\ \\text{u} = 1{,}661 \\times 10^{-24}\\ \\text{g}$ para pasar la masa atomica de u a gramos. Reemplazamos con $40{,}08\\ \\text{u} \\times 1{,}661 \\times 10^{-24}\\ \\text{g/u}$, que da $6{,}66 \\times 10^{-23}\\ \\text{g}$. Entonces el resultado es la masa de un solo atomo de calcio, del orden de $10^{-23}\\ \\text{g}$." },
+          { paso: "Control: $\\frac{M}{N_{A}} = \\frac{40{,}08\\ \\text{g/mol}}{6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}} = 6{,}66 \\times 10^{-23}\\ \\text{g}$.", porque: "Usamos que un atomo pesa $\\frac{M}{N_{A}}$ gramos, porque un mol pesa $M$ y contiene $N_{A}$ atomos. Reemplazamos con $\\frac{40{,}08\\ \\text{g/mol}}{6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}}$, que da $6{,}66 \\times 10^{-23}\\ \\text{g}$. Por eso el resultado coincide con la conversion desde u, lo que confirma el factor $1\\ \\text{u} = 1{,}661 \\times 10^{-24}\\ \\text{g}$." }
         ],
-        resultado: "6,66 x 10^-23 g por atomo de Ca"
+        resultado: "$6{,}66 \\times 10^{-23}\\ \\text{g}$ por atomo de Ca"
       }
     ],
     errores_tipicos: [
@@ -522,10 +522,10 @@ window.EJERCITACION["magnitudes"] = [
       {
         parte: "",
         pasos: [
-          { paso: "M(H2SO4) = 2 x 1,01 + 32,07 + 4 x 16,00 = 98,09 (u, y g/mol).", porque: "Usamos que la masa molar se obtiene sumando cada masa atomica tantas veces como indica su subindice. Reemplazamos con 2 x 1,01 para el H, 32,07 para el S y 4 x 16,00 para el O, que suman 98,09. Entonces el valor es el mismo en u y en g/mol, aunque cambie la unidad." },
-          { paso: "m = n x M = 0,250 mol x 98,09 g/mol = 24,5 g.", porque: "Usamos m = n x M, que convierte mol en gramos, porque la masa molar da gramos por cada mol. Reemplazamos con 0,250 mol x 98,09 g/mol, que da 24,5 g. Entonces el producto queda en gramos, como pide el enunciado." }
+          { paso: "$$M(\\text{H}_2\\text{SO}_4) = 2 \\times 1{,}01 + 32{,}07 + 4 \\times 16{,}00 = 98{,}09$$ (u, y g/mol).", porque: "Usamos que la masa molar se obtiene sumando cada masa atomica tantas veces como indica su subindice. Reemplazamos con $2 \\times 1{,}01$ para el H, $32{,}07$ para el S y $4 \\times 16{,}00$ para el O, que suman $98{,}09$. Entonces el valor es el mismo en u y en $\\text{g/mol}$, aunque cambie la unidad." },
+          { paso: "$m = n \\times M = 0{,}250\\ \\text{mol} \\times 98{,}09\\ \\text{g/mol} = 24{,}5\\ \\text{g}$", porque: "Usamos $m = n \\times M$, que convierte mol en gramos, porque la masa molar da gramos por cada mol. Reemplazamos con $0{,}250\\ \\text{mol} \\times 98{,}09\\ \\text{g/mol}$, que da $24{,}5\\ \\text{g}$. Entonces el producto queda en gramos, como pide el enunciado." }
         ],
-        resultado: "M = 98,09 u (98,09 g/mol); 0,250 mol pesan 24,5 g"
+        resultado: "$M = 98{,}09\\ \\text{u}$ ($98{,}09\\ \\text{g/mol}$); $0{,}250\\ \\text{mol}$ pesan $24{,}5\\ \\text{g}$"
       }
     ],
     errores_tipicos: [
@@ -542,10 +542,10 @@ window.EJERCITACION["magnitudes"] = [
       {
         parte: "",
         pasos: [
-          { paso: "n = m / M = 5,00 g / 44,01 g/mol = 0,114 mol.", porque: "Usamos n = m/M, que relaciona la masa de la muestra con la cantidad de sustancia. Reemplazamos con 5,00 g / 44,01 g/mol, que da 0,114 mol. Por eso dividir la masa dada por la masa molar da los mol presentes en esa muestra." },
-          { paso: "N = n x N_A = 0,114 mol x 6,022 x 10^23 mol^-1 = 6,84 x 10^22 moleculas.", porque: "Usamos N = n x N_A, porque cada mol contiene N_A unidades. Reemplazamos con 0,114 mol x 6,022 x 10^23 mol^-1, que da 6,84 x 10^22 moleculas. Como el enunciado pide moleculas y la sustancia es molecular, la unidad elemental es la molecula y no se multiplica por la atomicidad." }
+          { paso: "$$n = \\frac{m}{M} = \\frac{5{,}00\\ \\text{g}}{44{,}01\\ \\text{g/mol}} = 0{,}114\\ \\text{mol}$$", porque: "Usamos $n = \\frac{m}{M}$, que relaciona la masa de la muestra con la cantidad de sustancia. Reemplazamos con $\\frac{5{,}00\\ \\text{g}}{44{,}01\\ \\text{g/mol}}$, que da $0{,}114\\ \\text{mol}$. Por eso dividir la masa dada por la masa molar da los mol presentes en esa muestra." },
+          { paso: "$N = n \\times N_{A} = 0{,}114\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1} = 6{,}84 \\times 10^{22}$ moleculas.", porque: "Usamos $N = n \\times N_{A}$, porque cada mol contiene $N_{A}$ unidades. Reemplazamos con $0{,}114\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}$, que da $6{,}84 \\times 10^{22}$ moleculas. Como el enunciado pide moleculas y la sustancia es molecular, la unidad elemental es la molecula y no se multiplica por la atomicidad." }
         ],
-        resultado: "0,114 mol y 6,84 x 10^22 moleculas de CO2"
+        resultado: "$0{,}114\\ \\text{mol}$ y $6{,}84 \\times 10^{22}$ moleculas de $\\text{CO}_2$"
       }
     ],
     errores_tipicos: [
@@ -562,10 +562,10 @@ window.EJERCITACION["magnitudes"] = [
       {
         parte: "",
         pasos: [
-          { paso: "V_m = M / d = 46,07 g/mol / 0,789 g/cm^3 = 58,4 cm^3/mol.", porque: "Usamos que el volumen molar de un liquido es el volumen que ocupa un mol, y se obtiene dividiendo la masa de un mol por la densidad. Reemplazamos con 46,07 g/mol / 0,789 g/cm^3, que da 58,4 cm^3/mol. Entonces las unidades quedan en cm^3/mol, como corresponde." },
-          { paso: "V = n x V_m = 2,00 mol x 58,4 cm^3/mol = 117 cm^3 (0,117 L).", porque: "Usamos que el volumen total es proporcional a la cantidad de sustancia, con V = n x V_m. Reemplazamos con 2,00 mol x 58,4 cm^3/mol, que da 117 cm^3. Entonces el volumen se pasa a litros, y el resultado final es 0,117 L." }
+          { paso: "$$V_{m} = \\frac{M}{d} = \\frac{46{,}07\\ \\text{g/mol}}{0{,}789\\ \\text{g/cm}^{3}} = 58{,}4\\ \\text{cm}^{3}/\\text{mol}$$", porque: "Usamos que el volumen molar de un liquido es el volumen que ocupa un mol, y se obtiene dividiendo la masa de un mol por la densidad. Reemplazamos con $\\frac{46{,}07\\ \\text{g/mol}}{0{,}789\\ \\text{g/cm}^{3}}$, que da $58{,}4\\ \\text{cm}^{3}/\\text{mol}$. Entonces las unidades quedan en $\\text{cm}^{3}/\\text{mol}$, como corresponde." },
+          { paso: "$V = n \\times V_{m} = 2{,}00\\ \\text{mol} \\times 58{,}4\\ \\text{cm}^{3}/\\text{mol} = 117\\ \\text{cm}^{3}$ ($0{,}117\\ \\text{L}$).", porque: "Usamos que el volumen total es proporcional a la cantidad de sustancia, con $V = n \\times V_{m}$. Reemplazamos con $2{,}00\\ \\text{mol} \\times 58{,}4\\ \\text{cm}^{3}/\\text{mol}$, que da $117\\ \\text{cm}^{3}$. Entonces el volumen se pasa a litros, y el resultado final es $0{,}117\\ \\text{L}$." }
         ],
-        resultado: "V_m = 58,4 cm^3/mol; 2,00 mol ocupan 117 cm^3"
+        resultado: "$V_{m} = 58{,}4\\ \\text{cm}^{3}/\\text{mol}$; $2{,}00\\ \\text{mol}$ ocupan $117\\ \\text{cm}^{3}$"
       }
     ],
     errores_tipicos: [
@@ -582,18 +582,18 @@ window.EJERCITACION["magnitudes"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "n = 8,00 g / 32,00 g/mol = 0,250 mol de O2.", porque: "Usamos n = m/M con la masa molar de la molecula O2, que tiene 2 atomos de O. Reemplazamos con 8,00 g / 32,00 g/mol, que da 0,250 mol de O2. Por eso se usa la masa molar de la especie que se pesa, y no la masa de un solo atomo de O." },
-          { paso: "N = 0,250 mol x 6,022 x 10^23 mol^-1 = 1,51 x 10^23 moleculas.", porque: "Usamos N = n x N_A, porque cada mol de moleculas contiene N_A unidades. Reemplazamos con 0,250 mol x 6,022 x 10^23 mol^-1, que da 1,51 x 10^23 moleculas. Entonces el orden de magnitud 10^23 es coherente con una cantidad de sustancia de 0,250 mol." }
+          { paso: "$$n = \\frac{8{,}00\\ \\text{g}}{32{,}00\\ \\text{g/mol}} = 0{,}250\\ \\text{mol}$$ de $\\text{O}_2$.", porque: "Usamos $n = \\frac{m}{M}$ con la masa molar de la molecula $\\text{O}_2$, que tiene 2 atomos de O. Reemplazamos con $\\frac{8{,}00\\ \\text{g}}{32{,}00\\ \\text{g/mol}}$, que da $0{,}250\\ \\text{mol}$ de $\\text{O}_2$. Por eso se usa la masa molar de la especie que se pesa, y no la masa de un solo atomo de O." },
+          { paso: "$N = 0{,}250\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1} = 1{,}51 \\times 10^{23}$ moleculas.", porque: "Usamos $N = n \\times N_{A}$, porque cada mol de moleculas contiene $N_{A}$ unidades. Reemplazamos con $0{,}250\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}$, que da $1{,}51 \\times 10^{23}$ moleculas. Entonces el orden de magnitud $10^{23}$ es coherente con una cantidad de sustancia de $0{,}250\\ \\text{mol}$." }
         ],
-        resultado: "1,51 x 10^23 moleculas de O2"
+        resultado: "$1{,}51 \\times 10^{23}$ moleculas de $\\text{O}_2$"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "n = 3,01 x 10^22 moleculas / 6,022 x 10^23 moleculas/mol = 0,0500 mol.", porque: "Usamos que pasar de particulas a mol se hace dividiendo por N_A, la operacion inversa de N = n x N_A. Reemplazamos con 3,01 x 10^22 moleculas / 6,022 x 10^23 moleculas/mol, que da 0,0500 mol. Por eso el factor de conversion es 6,022 x 10^23 moleculas/mol." },
-          { paso: "m = n x M = 0,0500 mol x 44,01 g/mol = 2,20 g.", porque: "Usamos m = n x M, que convierte mol a gramos con M en g/mol. Reemplazamos con 0,0500 mol x 44,01 g/mol, que da 2,20 g de CO2. Entonces esta es la operacion inversa de n = m/M, y el resultado queda en gramos." }
+          { paso: "$$n = \\frac{3{,}01 \\times 10^{22}}{6{,}022 \\times 10^{23}\\ \\text{moleculas/mol}} = 0{,}0500\\ \\text{mol}$$", porque: "Usamos que pasar de particulas a mol se hace dividiendo por $N_{A}$, la operacion inversa de $N = n \\times N_{A}$. Reemplazamos con $\\frac{3{,}01 \\times 10^{22}\\ \\text{moleculas}}{6{,}022 \\times 10^{23}\\ \\text{moleculas/mol}}$, que da $0{,}0500\\ \\text{mol}$. Por eso el factor de conversion es $6{,}022 \\times 10^{23}\\ \\text{moleculas/mol}$." },
+          { paso: "$m = n \\times M = 0{,}0500\\ \\text{mol} \\times 44{,}01\\ \\text{g/mol} = 2{,}20\\ \\text{g}$.", porque: "Usamos $m = n \\times M$, que convierte mol a gramos con $M$ en $\\text{g/mol}$. Reemplazamos con $0{,}0500\\ \\text{mol} \\times 44{,}01\\ \\text{g/mol}$, que da $2{,}20\\ \\text{g}$ de $\\text{CO}_2$. Entonces esta es la operacion inversa de $n = \\frac{m}{M}$, y el resultado queda en gramos." }
         ],
-        resultado: "2,20 g de CO2"
+        resultado: "$2{,}20\\ \\text{g}$ de $\\text{CO}_2$"
       }
     ],
     errores_tipicos: [
@@ -610,18 +610,18 @@ window.EJERCITACION["magnitudes"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "m = 500 mg = 0,500 g; n = 0,500 g / 180,17 g/mol = 2,78 x 10^-3 mol.", porque: "Usamos n = m/M, pero antes hay que pasar la masa a gramos, porque la masa molar esta en g/mol. Reemplazamos con 500 mg = 0,500 g, y luego 0,500 g / 180,17 g/mol, que da 2,78 x 10^-3 mol. Por eso no conviene dividir los miligramos directamente por la masa molar, porque el resultado saldria demasiado grande." },
-          { paso: "N = 2,78 x 10^-3 mol x 6,022 x 10^23 mol^-1 = 1,67 x 10^21 moleculas.", porque: "Usamos N = n x N_A, porque cada mol de moleculas contiene N_A moleculas. Reemplazamos con 2,78 x 10^-3 mol x 6,022 x 10^23 mol^-1, que da 1,67 x 10^21 moleculas. Entonces el resultado es del orden de 10^21, coherente con una muestra de 0,5 g de sustancia." }
+          { paso: "$m = 500\\ \\text{mg} = 0{,}500\\ \\text{g}$; $$n = \\frac{0{,}500\\ \\text{g}}{180{,}17\\ \\text{g/mol}} = 2{,}78 \\times 10^{-3}\\ \\text{mol}$$.", porque: "Usamos $n = \\frac{m}{M}$, pero antes hay que pasar la masa a gramos, porque la masa molar esta en $\\text{g/mol}$. Reemplazamos con $500\\ \\text{mg} = 0{,}500\\ \\text{g}$, y luego $\\frac{0{,}500\\ \\text{g}}{180{,}17\\ \\text{g/mol}}$, que da $2{,}78 \\times 10^{-3}\\ \\text{mol}$. Por eso no conviene dividir los miligramos directamente por la masa molar, porque el resultado saldria demasiado grande." },
+          { paso: "$$N = 2{,}78 \\times 10^{-3}\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1} = 1{,}67 \\times 10^{21}$$ moleculas.", porque: "Usamos $N = n \\times N_{A}$, porque cada mol de moleculas contiene $N_{A}$ moleculas. Reemplazamos con $2{,}78 \\times 10^{-3}\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}$, que da $1{,}67 \\times 10^{21}$ moleculas. Entonces el resultado es del orden de $10^{21}$, coherente con una muestra de $0{,}5\\ \\text{g}$ de sustancia." }
         ],
-        resultado: "2,78 x 10^-3 mol y 1,67 x 10^21 moleculas"
+        resultado: "$2{,}78 \\times 10^{-3}\\ \\text{mol}$ y $1{,}67 \\times 10^{21}$ moleculas"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Cada molecula tiene 9 atomos de C (subindice 9).", porque: "Usamos que el subindice de un elemento en la formula indica cuantos atomos de ese elemento tiene cada molecula. Como la formula es C9H8O4, el subindice 9 corresponde al carbono. Por eso este 9 es el factor que pasa de moleculas a atomos de C." },
-          { paso: "Atomos de C = 9 x 1,67 x 10^21 = 1,50 x 10^22 atomos.", porque: "Usamos que el total de atomos de C es el numero de moleculas multiplicado por 9, porque cada molecula aporta 9 atomos de C. Reemplazamos con 9 x 1,67 x 10^21, que da 1,50 x 10^22 atomos. Entonces el total resulta 9 veces el numero de moleculas, como se esperaba." }
+          { paso: "Cada molecula tiene 9 atomos de $\\text{C}$ (subindice $9$).", porque: "Usamos que el subindice de un elemento en la formula indica cuantos atomos de ese elemento tiene cada molecula. Como la formula es $\\text{C}_9\\text{H}_8\\text{O}_4$, el subindice $9$ corresponde al carbono. Por eso este $9$ es el factor que pasa de moleculas a atomos de $\\text{C}$." },
+          { paso: "$$\\text{Atomos de C} = 9 \\times 1{,}67 \\times 10^{21} = 1{,}50 \\times 10^{22}$$ atomos.", porque: "Usamos que el total de atomos de C es el numero de moleculas multiplicado por 9, porque cada molecula aporta 9 atomos de C. Reemplazamos con $9 \\times 1{,}67 \\times 10^{21}$, que da $1{,}50 \\times 10^{22}$ atomos. Entonces el total resulta 9 veces el numero de moleculas, como se esperaba." }
         ],
-        resultado: "1,50 x 10^22 atomos de C"
+        resultado: "$1{,}50 \\times 10^{22}$ atomos de $\\text{C}$"
       }
     ],
     errores_tipicos: [
@@ -638,18 +638,18 @@ window.EJERCITACION["magnitudes"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "V = (2,00 cm)^3 = 8,00 cm^3.", porque: "Usamos que el volumen de un cubo es la arista elevada al cubo. Reemplazamos con (2,00 cm)^3, que da 8,00 cm^3. Por eso la unidad tambien se eleva al cubo, y el resultado queda en cm^3 y no en cm^2." },
-          { paso: "m = d x V = 2,70 g/cm^3 x 8,00 cm^3 = 21,6 g.", porque: "Usamos m = d x V, porque la densidad es la masa por unidad de volumen. Reemplazamos con 2,70 g/cm^3 x 8,00 cm^3, que da 21,6 g. Entonces las unidades cm^3 se cancelan y el resultado queda en gramos." }
+          { paso: "$$V = (2{,}00\\ \\text{cm})^{3} = 8{,}00\\ \\text{cm}^{3}$$.", porque: "Usamos que el volumen de un cubo es la arista elevada al cubo. Reemplazamos con $(2{,}00\\ \\text{cm})^{3}$, que da $8{,}00\\ \\text{cm}^{3}$. Por eso la unidad tambien se eleva al cubo, y el resultado queda en $\\text{cm}^{3}$ y no en $\\text{cm}^{2}$." },
+          { paso: "$$m = d \\times V = 2{,}70\\ \\text{g/cm}^{3} \\times 8{,}00\\ \\text{cm}^{3} = 21{,}6\\ \\text{g}$$", porque: "Usamos $m = d \\times V$, porque la densidad es la masa por unidad de volumen. Reemplazamos con $2{,}70\\ \\text{g/cm}^{3} \\times 8{,}00\\ \\text{cm}^{3}$, que da $21{,}6\\ \\text{g}$. Entonces las unidades $\\text{cm}^{3}$ se cancelan y el resultado queda en gramos." }
         ],
-        resultado: "21,6 g"
+        resultado: "$21{,}6\\ \\text{g}$"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "n = 21,6 g / 26,98 g/mol = 0,801 mol.", porque: "Usamos n = m/M, la relacion que conecta la masa de la muestra con la cantidad de sustancia en mol. Reemplazamos con 21,6 g / 26,98 g/mol, que da 0,801 mol de aluminio. Por eso la masa de 21,6 g obtenida antes se convierte directamente en mol." },
-          { paso: "N = 0,801 mol x 6,022 x 10^23 mol^-1 = 4,82 x 10^23 atomos.", porque: "Usamos que el aluminio es monoatomico, asi que cada unidad elemental es un atomo. Reemplazamos con N = 0,801 mol x 6,022 x 10^23 mol^-1, que da 4,82 x 10^23 atomos. Entonces el orden de magnitud 10^23 es coherente con una muestra de aproximadamente un mol." }
+          { paso: "$$n = \\frac{21{,}6\\ \\text{g}}{26{,}98\\ \\text{g/mol}} = 0{,}801\\ \\text{mol}$$.", porque: "Usamos $n = \\frac{m}{M}$, la relacion que conecta la masa de la muestra con la cantidad de sustancia en mol. Reemplazamos con $\\frac{21{,}6\\ \\text{g}}{26{,}98\\ \\text{g/mol}}$, que da $0{,}801\\ \\text{mol}$ de aluminio. Por eso la masa de $21{,}6\\ \\text{g}$ obtenida antes se convierte directamente en mol." },
+          { paso: "$$N = 0{,}801\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1} = 4{,}82 \\times 10^{23}$$ atomos.", porque: "Usamos que el aluminio es monoatomico, asi que cada unidad elemental es un atomo. Reemplazamos con $N = 0{,}801\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}$, que da $4{,}82 \\times 10^{23}$ atomos. Entonces el orden de magnitud $10^{23}$ es coherente con una muestra de aproximadamente un mol." }
         ],
-        resultado: "0,801 mol y 4,82 x 10^23 atomos de Al"
+        resultado: "$0{,}801\\ \\text{mol}$ y $4{,}82 \\times 10^{23}$ atomos de $\\text{Al}$"
       }
     ],
     errores_tipicos: [
@@ -666,12 +666,12 @@ window.EJERCITACION["magnitudes"] = [
       {
         parte: "",
         pasos: [
-          { paso: "M = m / n = 15,0 g / 0,500 mol = 30,0 g/mol.", porque: "Usamos M = m/n, porque la masa molar es la masa de un mol y n se conoce a partir de los datos. Reemplazamos con 15,0 g / 0,500 mol, que da 30,0 g/mol. Como n esta en mol y m en g, M queda en g/mol." },
-          { paso: "m(H) = 15,0 g - 12,0 g = 3,0 g. n(C) = 12,0 g / 12,01 g/mol = 0,999 mol; n(H) = 3,0 g / 1,01 g/mol = 2,97 mol.", porque: "Usamos que la muestra solo tiene C e H, por lo que la masa de H es la total menos la de C. Reemplazamos: 15,0 g - 12,0 g = 3,0 g de H. Luego aplicamos n = m/M a cada elemento, con 12,0 g / 12,01 g/mol para el C y 3,0 g / 1,01 g/mol para el H, lo que da la proporcion entre sus atomos." },
-          { paso: "Relacion C : H = 0,999 : 2,97 = 1 : 3. Formula empirica CH3, con M(CH3) = 15,04 g/mol.", porque: "Usamos que la formula empirica se obtiene dividiendo los moles de cada elemento por el menor y buscando enteros pequenos. Reemplazamos: 0,999 : 2,97 = 1 : 3, porque 2,97 es practicamente 3. Por eso la formula empirica es CH3, con M(CH3) = 15,04 g/mol, y conviene verificar que los cocientes queden cerca de enteros." },
-          { paso: "Formula molecular: M / M(empirica) = 30,0 / 15,04 = 2, entonces C2H6 (etano).", porque: "Usamos que la formula molecular es un multiplo entero de la empirica, y que ese multiplo se obtiene dividiendo M por la masa molar de la empirica. Reemplazamos con 30,0 / 15,04 = 2, lo que indica que hay dos unidades de CH3. Entonces la formula molecular es C2H6, es decir etano. Conviene no usar la masa molar de la empirica como si fuera la molecular." }
+          { paso: "$$M = \\frac{m}{n} = \\frac{15{,}0\\ \\text{g}}{0{,}500\\ \\text{mol}} = 30{,}0\\ \\text{g/mol}$$", porque: "Usamos $M = \\frac{m}{n}$, porque la masa molar es la masa de un mol y $n$ se conoce a partir de los datos. Reemplazamos con $\\frac{15{,}0\\ \\text{g}}{0{,}500\\ \\text{mol}}$, que da $30{,}0\\ \\text{g/mol}$. Como $n$ esta en mol y $m$ en g, $M$ queda en $\\text{g/mol}$." },
+          { paso: "$m(\\text{H}) = 15{,}0\\ \\text{g} - 12{,}0\\ \\text{g} = 3{,}0\\ \\text{g}$. $$n(\\text{C}) = \\frac{12{,}0\\ \\text{g}}{12{,}01\\ \\text{g/mol}} = 0{,}999\\ \\text{mol}$$; $n(\\text{H}) = \\frac{3{,}0\\ \\text{g}}{1{,}01\\ \\text{g/mol}} = 2{,}97\\ \\text{mol}$.", porque: "Usamos que la muestra solo tiene C e H, por lo que la masa de H es la total menos la de C. Reemplazamos: $15{,}0\\ \\text{g} - 12{,}0\\ \\text{g} = 3{,}0\\ \\text{g}$ de H. Luego aplicamos $n = \\frac{m}{M}$ a cada elemento, con $\\frac{12{,}0\\ \\text{g}}{12{,}01\\ \\text{g/mol}}$ para el C y $\\frac{3{,}0\\ \\text{g}}{1{,}01\\ \\text{g/mol}}$ para el H, lo que da la proporcion entre sus atomos." },
+          { paso: "Relacion $\\text{C} : \\text{H} = 0{,}999 : 2{,}97 = 1 : 3$. Formula empirica $\\text{CH}_3$, con $M(\\text{CH}_3) = 15{,}04\\ \\text{g/mol}$.", porque: "Usamos que la formula empirica se obtiene dividiendo los moles de cada elemento por el menor y buscando enteros pequenos. Reemplazamos: $0{,}999 : 2{,}97 = 1 : 3$, porque $2{,}97$ es practicamente $3$. Por eso la formula empirica es $\\text{CH}_3$, con $M(\\text{CH}_3) = 15{,}04\\ \\text{g/mol}$, y conviene verificar que los cocientes queden cerca de enteros." },
+          { paso: "Formula molecular: $$\\frac{M}{M(\\text{empirica})} = \\frac{30{,}0}{15{,}04} = 2$$, entonces $\\text{C}_2\\text{H}_6$ (etano).", porque: "Usamos que la formula molecular es un multiplo entero de la empirica, y que ese multiplo se obtiene dividiendo $M$ por la masa molar de la empirica. Reemplazamos con $\\frac{30{,}0}{15{,}04} = 2$, lo que indica que hay dos unidades de $\\text{CH}_3$. Entonces la formula molecular es $\\text{C}_2\\text{H}_6$, es decir etano. Conviene no usar la masa molar de la empirica como si fuera la molecular." }
         ],
-        resultado: "Formula empirica CH3; formula molecular C2H6"
+        resultado: "Formula empirica $\\text{CH}_3$; formula molecular $\\text{C}_2\\text{H}_6$"
       }
     ],
     errores_tipicos: [
@@ -688,18 +688,18 @@ window.EJERCITACION["magnitudes"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "n = 4,00 x 10^23 moleculas / 6,022 x 10^23 moleculas/mol = 0,664 mol.", porque: "Usamos que pasar de moleculas a mol se hace dividiendo por N_A, la operacion inversa de N = n x N_A. Reemplazamos con 4,00 x 10^23 moleculas / 6,022 x 10^23 moleculas/mol, que da 0,664 mol. Entonces el dato queda en mol, lista para convertirse en gramos." },
-          { paso: "m = 0,664 mol x 180,18 g/mol = 1,20 x 10^2 g.", porque: "Usamos m = n x M, que convierte mol en gramos con M en g/mol. Reemplazamos con 0,664 mol x 180,18 g/mol, que da 1,20 x 10^2 g. Como el dato de partida tiene la misma precision que 4,00 x 10^23 moleculas, el resultado se expresa con esa cantidad de cifras." }
+          { paso: "$$n = \\frac{4{,}00 \\times 10^{23}\\ \\text{moleculas}}{6{,}022 \\times 10^{23}\\ \\text{moleculas/mol}} = 0{,}664\\ \\text{mol}$$", porque: "Usamos que pasar de moleculas a mol se hace dividiendo por $N_{A}$, la operacion inversa de $N = n \\times N_{A}$. Reemplazamos con $\\frac{4{,}00 \\times 10^{23}\\ \\text{moleculas}}{6{,}022 \\times 10^{23}\\ \\text{moleculas/mol}}$, que da $0{,}664\\ \\text{mol}$. Entonces el dato queda en mol, lista para convertirse en gramos." },
+          { paso: "$m = 0{,}664\\ \\text{mol} \\times 180{,}18\\ \\text{g/mol} = 1{,}20 \\times 10^{2}\\ \\text{g}$", porque: "Usamos $m = n \\times M$, que convierte mol en gramos con $M$ en $\\text{g/mol}$. Reemplazamos con $0{,}664\\ \\text{mol} \\times 180{,}18\\ \\text{g/mol}$, que da $1{,}20 \\times 10^{2}\\ \\text{g}$. Como el dato de partida tiene la misma precision que $4{,}00 \\times 10^{23}$ moleculas, el resultado se expresa con esa cantidad de cifras." }
         ],
-        resultado: "1,20 x 10^2 g"
+        resultado: "$1{,}20 \\times 10^{2}\\ \\text{g}$"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Cada molecula tiene 6 atomos de O (subindice 6).", porque: "Usamos que el subindice 6 de la formula C6H12O6 indica cuantos atomos de O hay en cada molecula. Reemplazamos con ese factor de 6 para pasar de moleculas a atomos. Por eso el 6 se multiplica por el numero de moleculas, igual que en el caso del carbono." },
-          { paso: "Atomos de O = 6 x 4,00 x 10^23 = 2,40 x 10^24 atomos.", porque: "Usamos que el total de atomos de O es la cantidad de moleculas multiplicada por 6, porque cada molecula aporta 6 atomos de O. Reemplazamos con 6 x 4,00 x 10^23, que da 2,40 x 10^24 atomos. Entonces el resultado aplica la atomicidad del O al numero de moleculas." }
+          { paso: "Cada molecula tiene 6 atomos de $\\text{O}$ (subindice $6$).", porque: "Usamos que el subindice $6$ de la formula $\\text{C}_6\\text{H}_{12}\\text{O}_6$ indica cuantos atomos de $\\text{O}$ hay en cada molecula. Reemplazamos con ese factor de $6$ para pasar de moleculas a atomos. Por eso el $6$ se multiplica por el numero de moleculas, igual que en el caso del carbono." },
+          { paso: "$$\\text{Atomos de O} = 6 \\times 4{,}00 \\times 10^{23} = 2{,}40 \\times 10^{24}$$ atomos.", porque: "Usamos que el total de atomos de $\\text{O}$ es la cantidad de moleculas multiplicada por $6$, porque cada molecula aporta $6$ atomos de $\\text{O}$. Reemplazamos con $6 \\times 4{,}00 \\times 10^{23}$, que da $2{,}40 \\times 10^{24}$ atomos. Entonces el resultado aplica la atomicidad del $\\text{O}$ al numero de moleculas." }
         ],
-        resultado: "2,40 x 10^24 atomos de O"
+        resultado: "$2{,}40 \\times 10^{24}$ atomos de $\\text{O}$"
       }
     ],
     errores_tipicos: [
@@ -716,26 +716,26 @@ window.EJERCITACION["magnitudes"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "n = 1,50 x 10^24 / 6,022 x 10^23 mol^-1 = 2,49 mol.", porque: "Usamos n = N / N_A para pasar un numero de unidades a mol. Reemplazamos con 1,50 x 10^24 / 6,022 x 10^23 mol^-1, que da 2,49 mol. Recien con los mol y la masa de la muestra se puede calcular la masa molar." },
-          { paso: "M = m / n = 195 g / 2,49 mol = 78,3 g/mol.", porque: "Usamos M = m/n, con la masa de la muestra y los mol que calculamos antes. Reemplazamos con 195 g / 2,49 mol, que da 78,3 g/mol. Como los datos tienen esa precision, el resultado se conserva con el mismo numero de cifras." }
+          { paso: "$$n = \\frac{1{,}50 \\times 10^{24}}{6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}} = 2{,}49\\ \\text{mol}$$", porque: "Usamos $n = \\frac{N}{N_{A}}$ para pasar un numero de unidades a mol. Reemplazamos con $\\frac{1{,}50 \\times 10^{24}}{6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}}$, que da $2{,}49\\ \\text{mol}$. Recien con los mol y la masa de la muestra se puede calcular la masa molar." },
+          { paso: "$$M = \\frac{m}{n} = \\frac{195\\ \\text{g}}{2{,}49\\ \\text{mol}} = 78{,}3\\ \\text{g/mol}$$", porque: "Usamos $M = \\frac{m}{n}$, con la masa de la muestra y los mol que calculamos antes. Reemplazamos con $\\frac{195\\ \\text{g}}{2{,}49\\ \\text{mol}}$, que da $78{,}3\\ \\text{g/mol}$. Como los datos tienen esa precision, el resultado se conserva con el mismo numero de cifras." }
         ],
-        resultado: "2,49 mol; M(EF2) = 78,3 g/mol"
+        resultado: "$2{,}49\\ \\text{mol}$; $M(\\text{EF}_2) = 78{,}3\\ \\text{g/mol}$"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "M(E) = M(EF2) - 2 x M(F) = 78,3 - 2 x 19,00 = 40,3 u.", porque: "Usamos que la masa molar de EF2 es la masa de E mas dos atomos de F. Reemplazamos: M(E) = 78,3 - 2 x 19,00 = 40,3 u. Por eso hay que restar los dos atomos de F, y no solo uno." },
-          { paso: "40,3 u esta mas cerca de Ca (40,08 u) que de Mg (24,31 u) o Sr (87,62 u): E = Ca, y el compuesto es CaF2. La diferencia de 0,2 u viene de redondear.", porque: "Usamos la comparacion de 40,3 u con las masas atomicas de la tabla. Como 40,3 esta mas cerca de Ca (40,08 u) que de Mg (24,31 u) o Sr (87,62 u), E es el calcio. Entonces el compuesto es CaF2, y la diferencia de 0,2 u se atribuye al redondeo." }
+          { paso: "$$M(\\text{E}) = M(\\text{EF}_2) - 2 \\times M(\\text{F}) = 78{,}3 - 2 \\times 19{,}00 = 40{,}3\\ \\text{u}$$", porque: "Usamos que la masa molar de $\\text{EF}_2$ es la masa de $\\text{E}$ mas dos atomos de $\\text{F}$. Reemplazamos: $M(\\text{E}) = 78{,}3 - 2 \\times 19{,}00 = 40{,}3\\ \\text{u}$. Por eso hay que restar los dos atomos de $\\text{F}$, y no solo uno." },
+          { paso: "$40{,}3\\ \\text{u}$ esta mas cerca de $\\text{Ca}$ ($40{,}08\\ \\text{u}$) que de $\\text{Mg}$ ($24{,}31\\ \\text{u}$) o $\\text{Sr}$ ($87{,}62\\ \\text{u}$): $\\text{E} = \\text{Ca}$, y el compuesto es $\\text{CaF}_2$. La diferencia de $0{,}2\\ \\text{u}$ viene de redondear.", porque: "Usamos la comparacion de $40{,}3\\ \\text{u}$ con las masas atomicas de la tabla. Como $40{,}3$ esta mas cerca de $\\text{Ca}$ ($40{,}08\\ \\text{u}$) que de $\\text{Mg}$ ($24{,}31\\ \\text{u}$) o $\\text{Sr}$ ($87{,}62\\ \\text{u}$), E es el calcio. Entonces el compuesto es $\\text{CaF}_2$, y la diferencia de $0{,}2\\ \\text{u}$ se atribuye al redondeo." }
         ],
-        resultado: "M(E) = 40,3 u; E = Ca (compuesto CaF2)"
+        resultado: "$M(\\text{E}) = 40{,}3\\ \\text{u}$; E = Ca (compuesto $\\text{CaF}_2$)"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "n(EF2) en 100 g = 100 g / 78,3 g/mol = 1,28 mol.", porque: "Usamos n = m/M para hallar los mol de EF2 en la muestra de 100 g. Reemplazamos con 100 g / 78,3 g/mol, que da 1,28 mol. Es el paso previo para contar los atomos de F." },
-          { paso: "Atomos de F = 2 x 1,28 mol x 6,022 x 10^23 mol^-1 = 1,54 x 10^24 atomos.", porque: "Usamos que cada formula de EF2 tiene 2 atomos de F, por lo que el total es 2 x n x N_A. Reemplazamos con 2 x 1,28 mol x 6,022 x 10^23 mol^-1, que da 1,54 x 10^24 atomos. Por eso la atomicidad del F se aplica antes de convertir a atomos." }
+          { paso: "$n(\\text{EF}_2)$ en 100 g: $$n = \\frac{100\\ \\text{g}}{78{,}3\\ \\text{g/mol}} = 1{,}28\\ \\text{mol}$$.", porque: "Usamos $n = \\frac{m}{M}$ para hallar los mol de $\\text{EF}_2$ en la muestra de 100 g. Reemplazamos con $\\frac{100\\ \\text{g}}{78{,}3\\ \\text{g/mol}}$, que da $1{,}28\\ \\text{mol}$. Es el paso previo para contar los atomos de $\\text{F}$." },
+          { paso: "$$\\text{Atomos de F} = 2 \\times 1{,}28\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1} = 1{,}54 \\times 10^{24}$$ atomos.", porque: "Usamos que cada formula de $\\text{EF}_2$ tiene $2$ atomos de $\\text{F}$, por lo que el total es $2 \\times n \\times N_{A}$. Reemplazamos con $2 \\times 1{,}28\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}$, que da $1{,}54 \\times 10^{24}$ atomos. Por eso la atomicidad del $\\text{F}$ se aplica antes de convertir a atomos." }
         ],
-        resultado: "1,54 x 10^24 atomos de F"
+        resultado: "$1{,}54 \\times 10^{24}$ atomos de $\\text{F}$"
       }
     ],
     errores_tipicos: [
@@ -752,28 +752,28 @@ window.EJERCITACION["magnitudes"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "M(H2O) = 2 x 1,01 + 16,00 = 18,02 g/mol.", porque: "Usamos que la masa molar se calcula sumando las masas atomicas, multiplicadas por sus subindices: 2 H y 1 O. Reemplazamos con 2 x 1,01 + 16,00, que da 18,02 g/mol. Entonces tenemos la base para pasar de masa a mol de agua." },
-          { paso: "V_m = M / d = 18,02 g/mol / 0,998 g/cm^3 = 18,06 cm^3/mol.", porque: "Usamos V_m = M/d, que da el volumen ocupado por un mol de liquido. Reemplazamos con 18,02 g/mol / 0,998 g/cm^3, que da 18,06 cm^3/mol. Conviene verificar que las unidades de M (g/mol) y d (g/cm^3) den cm^3/mol, como sucede aqui." },
-          { paso: "18,06 cm^3/mol = 0,01806 dm^3/mol, porque 1 dm^3 = 1000 cm^3.", porque: "Usamos que 1 dm^3 = 1000 cm^3, lo que permite cambiar la unidad del volumen molar. Reemplazamos con 18,06 cm^3/mol / 1000, que da 0,01806 dm^3/mol. Por eso conviene hacer este cambio antes de comparar con valores tabulados en L." }
+          { paso: "$$M(\\text{H}_2\\text{O}) = 2 \\times 1{,}01 + 16{,}00 = 18{,}02\\ \\text{g/mol}$$", porque: "Usamos que la masa molar se calcula sumando las masas atomicas, multiplicadas por sus subindices: 2 H y 1 O. Reemplazamos con $2 \\times 1{,}01 + 16{,}00$, que da $18{,}02\\ \\text{g/mol}$. Entonces tenemos la base para pasar de masa a mol de agua." },
+          { paso: "$$V_{m} = \\frac{M}{d} = \\frac{18{,}02\\ \\text{g/mol}}{0{,}998\\ \\text{g/cm}^{3}} = 18{,}06\\ \\text{cm}^{3}/\\text{mol}$$", porque: "Usamos $V_{m} = \\frac{M}{d}$, que da el volumen ocupado por un mol de liquido. Reemplazamos con $\\frac{18{,}02\\ \\text{g/mol}}{0{,}998\\ \\text{g/cm}^{3}}$, que da $18{,}06\\ \\text{cm}^{3}/\\text{mol}$. Conviene verificar que las unidades de $M$ ($\\text{g/mol}$) y $d$ ($\\text{g/cm}^{3}$) den $\\text{cm}^{3}/\\text{mol}$, como sucede aqui." },
+          { paso: "$$18{,}06\\ \\text{cm}^{3}/\\text{mol} = 0{,}01806\\ \\text{dm}^{3}/\\text{mol}$$, porque $1\\ \\text{dm}^{3} = 1000\\ \\text{cm}^{3}$.", porque: "Usamos que $1\\ \\text{dm}^{3} = 1000\\ \\text{cm}^{3}$, lo que permite cambiar la unidad del volumen molar. Reemplazamos con $\\frac{18{,}06\\ \\text{cm}^{3}/\\text{mol}}{1000}$, que da $0{,}01806\\ \\text{dm}^{3}/\\text{mol}$. Por eso conviene hacer este cambio antes de comparar con valores tabulados en L." }
         ],
-        resultado: "V_m = 18,06 cm^3/mol = 0,01806 dm^3/mol"
+        resultado: "$V_{m} = 18{,}06\\ \\text{cm}^{3}/\\text{mol} = 0{,}01806\\ \\text{dm}^{3}/\\text{mol}$"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "m = d x V = 0,998 g/cm^3 x 250 cm^3 = 249,5 g.", porque: "Usamos m = d x V para pasar de volumen a masa, porque 250 mL equivalen a 250 cm^3. Reemplazamos con 0,998 g/cm^3 x 250 cm^3, que da 249,5 g. Conviene no usar el volumen en mL con una densidad expresada en otra unidad." },
-          { paso: "n = 249,5 g / 18,02 g/mol = 13,85 mol; N = 13,85 mol x 6,022 x 10^23 mol^-1 = 8,34 x 10^24 moleculas.", porque: "Usamos n = m/M para obtener la cantidad de agua, y luego N = n x N_A para contar moleculas. Reemplazamos con 249,5 g / 18,02 g/mol, que da 13,85 mol, y 13,85 mol x 6,022 x 10^23 mol^-1 da 8,34 x 10^24 moleculas. Por eso conviene no redondear antes de multiplicar por N_A." },
-          { paso: "Masa de una molecula = M / N_A = 18,02 g/mol / 6,022 x 10^23 mol^-1 = 2,99 x 10^-23 g.", porque: "Usamos que un mol pesa M gramos y contiene N_A moleculas, asi que la masa de una molecula es M/N_A. Reemplazamos con 18,02 g/mol / 6,022 x 10^23 mol^-1, que da 2,99 x 10^-23 g. Entonces es el paso inverso al de contar moleculas en una masa dada." }
+          { paso: "$$m = d \\times V = 0{,}998\\ \\text{g/cm}^{3} \\times 250\\ \\text{cm}^{3} = 249{,}5\\ \\text{g}$$", porque: "Usamos $m = d \\times V$ para pasar de volumen a masa, porque $250\\ \\text{mL}$ equivalen a $250\\ \\text{cm}^{3}$. Reemplazamos con $0{,}998\\ \\text{g/cm}^{3} \\times 250\\ \\text{cm}^{3}$, que da $249{,}5\\ \\text{g}$. Conviene no usar el volumen en mL con una densidad expresada en otra unidad." },
+          { paso: "$n = \\frac{249{,}5\\ \\text{g}}{18{,}02\\ \\text{g/mol}} = 13{,}85\\ \\text{mol}$; $$N = 13{,}85\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1} = 8{,}34 \\times 10^{24}$$ moleculas.", porque: "Usamos $n = \\frac{m}{M}$ para obtener la cantidad de agua, y luego $N = n \\times N_{A}$ para contar moleculas. Reemplazamos con $\\frac{249{,}5\\ \\text{g}}{18{,}02\\ \\text{g/mol}}$, que da $13{,}85\\ \\text{mol}$, y $13{,}85\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}$ da $8{,}34 \\times 10^{24}$ moleculas. Por eso conviene no redondear antes de multiplicar por $N_{A}$." },
+          { paso: "Masa de una molecula: $$\\frac{M}{N_{A}} = \\frac{18{,}02\\ \\text{g/mol}}{6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}} = 2{,}99 \\times 10^{-23}\\ \\text{g}$$", porque: "Usamos que un mol pesa $M$ gramos y contiene $N_{A}$ moleculas, asi que la masa de una molecula es $\\frac{M}{N_{A}}$. Reemplazamos con $\\frac{18{,}02\\ \\text{g/mol}}{6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}}$, que da $2{,}99 \\times 10^{-23}\\ \\text{g}$. Entonces es el paso inverso al de contar moleculas en una masa dada." }
         ],
-        resultado: "8,34 x 10^24 moleculas en 250 mL; 2,99 x 10^-23 g por molecula"
+        resultado: "$8{,}34 \\times 10^{24}$ moleculas en $250\\ \\text{mL}$; $2{,}99 \\times 10^{-23}\\ \\text{g}$ por molecula"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "El valor 22,4 L/mol corresponde a un gas ideal en CNPT (PV = nRT); en un gas las moleculas estan separadas por distancias mucho mayores que su tamano.", porque: "Usamos la ecuacion de gases ideales PV = nRT, de la que sale el valor 22,4 L/mol en condiciones normales. Como ese valor depende de P y de T, solo se aplica a gases. Por eso conviene verificar siempre que la sustancia sea un gas antes de usarlo." },
-          { paso: "En el liquido las moleculas estan casi en contacto, asi que el volumen molar depende del tamano molecular y la densidad, y resulta del orden de cm^3/mol.", porque: "Usamos que un liquido no sigue la ecuacion de gases ideales, porque sus moleculas estan casi en contacto. Reemplazamos el calculo con la masa molar y la densidad del agua: 18,02 g/mol y 0,998 g/cm^3, que dan 18,06 cm^3/mol. Entonces el volumen molar del agua liquida es del orden de cm^3/mol, y no del de 22,4 L/mol." }
+          { paso: "El valor $22{,}4\\ \\text{L/mol}$ corresponde a un gas ideal en CNPT ($PV = nRT$); en un gas las moleculas estan separadas por distancias mucho mayores que su tamano.", porque: "Usamos la ecuacion de gases ideales $PV = nRT$, de la que sale el valor $22{,}4\\ \\text{L/mol}$ en condiciones normales. Como ese valor depende de $P$ y de $T$, solo se aplica a gases. Por eso conviene verificar siempre que la sustancia sea un gas antes de usarlo." },
+          { paso: "En el liquido las moleculas estan casi en contacto, asi que el volumen molar depende del tamano molecular y la densidad, y resulta del orden de $\\text{cm}^{3}/\\text{mol}$.", porque: "Usamos que un liquido no sigue la ecuacion de gases ideales, porque sus moleculas estan casi en contacto. Reemplazamos el calculo con la masa molar y la densidad del agua: $18{,}02\\ \\text{g/mol}$ y $0{,}998\\ \\text{g/cm}^{3}$, que dan $18{,}06\\ \\text{cm}^{3}/\\text{mol}$. Entonces el volumen molar del agua liquida es del orden de $\\text{cm}^{3}/\\text{mol}$, y no del de $22{,}4\\ \\text{L/mol}$." }
         ],
-        resultado: "El agua liquida tiene V_m del orden de 18 cm^3/mol porque sus moleculas estan en contacto; 22,4 L/mol aplica solo a gases"
+        resultado: "El agua liquida tiene $V_{m}$ del orden de $18\\ \\text{cm}^{3}/\\text{mol}$ porque sus moleculas estan en contacto; $22{,}4\\ \\text{L/mol}$ aplica solo a gases"
       }
     ],
     errores_tipicos: [
@@ -791,25 +791,25 @@ window.EJERCITACION["magnitudes"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "m(Cu) = 0,700 x 100,0 g = 70,0 g; m(Zn) = 30,0 g.", porque: "Usamos que los porcentajes en masa se aplican a la masa total de la muestra. Reemplazamos: 0,700 x 100,0 g da 70,0 g de Cu, y el 30,0 % restante da 30,0 g de Zn. Por eso cada masa parcial sirve de base para calcular los moles de cada elemento." },
-          { paso: "n(Cu) = 70,0 g / 63,55 g/mol = 1,10 mol; n(Zn) = 30,0 g / 65,38 g/mol = 0,459 mol.", porque: "Usamos n = m/M para cada elemento, con su masa atomica. Reemplazamos con 70,0 g / 63,55 g/mol, que da 1,10 mol de Cu, y 30,0 g / 65,38 g/mol, que da 0,459 mol de Zn. Entonces cada masa parcial queda convertida en moles de atomos de su elemento." }
+          { paso: "$m(\\text{Cu}) = 0{,}700 \\times 100{,}0\\ \\text{g} = 70{,}0\\ \\text{g}$; $m(\\text{Zn}) = 30{,}0\\ \\text{g}$.", porque: "Usamos que los porcentajes en masa se aplican a la masa total de la muestra. Reemplazamos: $0{,}700 \\times 100{,}0\\ \\text{g}$ da $70{,}0\\ \\text{g}$ de Cu, y el $30{,}0\\ \\%$ restante da $30{,}0\\ \\text{g}$ de Zn. Por eso cada masa parcial sirve de base para calcular los moles de cada elemento." },
+          { paso: "$$n(\\text{Cu}) = \\frac{70{,}0\\ \\text{g}}{63{,}55\\ \\text{g/mol}} = 1{,}10\\ \\text{mol}$$; $n(\\text{Zn}) = \\frac{30{,}0\\ \\text{g}}{65{,}38\\ \\text{g/mol}} = 0{,}459\\ \\text{mol}$.", porque: "Usamos $n = \\frac{m}{M}$ para cada elemento, con su masa atomica. Reemplazamos con $\\frac{70{,}0\\ \\text{g}}{63{,}55\\ \\text{g/mol}}$, que da $1{,}10\\ \\text{mol}$ de Cu, y $\\frac{30{,}0\\ \\text{g}}{65{,}38\\ \\text{g/mol}}$, que da $0{,}459\\ \\text{mol}$ de Zn. Entonces cada masa parcial queda convertida en moles de atomos de su elemento." }
         ],
-        resultado: "1,10 mol de Cu y 0,459 mol de Zn"
+        resultado: "$1{,}10\\ \\text{mol}$ de Cu y $0{,}459\\ \\text{mol}$ de Zn"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "n total = 1,10 + 0,459 = 1,56 mol de atomos.", porque: "Usamos que el total de atomos es la suma de los moles de ambos elementos, porque cada atomo cuenta como una unidad. Reemplazamos con 1,10 + 0,459 = 1,56 mol de atomos. Entonces el total de moles sirve para obtener el numero de atomos en el paso siguiente." },
-          { paso: "N = 1,56 mol x 6,022 x 10^23 mol^-1 = 9,40 x 10^23 atomos.", porque: "Usamos N = n x N_A, aplicado al total de moles de atomos. Reemplazamos con 1,56 mol x 6,022 x 10^23 mol^-1, que da 9,40 x 10^23 atomos. Por eso conviene sumar primero los moles y multiplicar por N_A una sola vez." }
+          { paso: "$n_{\\text{total}} = 1{,}10 + 0{,}459 = 1{,}56\\ \\text{mol}$ de atomos.", porque: "Usamos que el total de atomos es la suma de los moles de ambos elementos, porque cada atomo cuenta como una unidad. Reemplazamos con $1{,}10 + 0{,}459 = 1{,}56\\ \\text{mol}$ de atomos. Entonces el total de moles sirve para obtener el numero de atomos en el paso siguiente." },
+          { paso: "$$N = 1{,}56\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1} = 9{,}40 \\times 10^{23}$$ atomos.", porque: "Usamos $N = n \\times N_{A}$, aplicado al total de moles de atomos. Reemplazamos con $1{,}56\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}$, que da $9{,}40 \\times 10^{23}$ atomos. Por eso conviene sumar primero los moles y multiplicar por $N_{A}$ una sola vez." }
         ],
-        resultado: "9,40 x 10^23 atomos"
+        resultado: "$9{,}40 \\times 10^{23}$ atomos"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "V = m / d = 100,0 g / 8,47 g/cm^3 = 11,8 cm^3.", porque: "Usamos d = m/V, que despejada da V = m/d, el volumen a partir de la masa y la densidad. Reemplazamos con 100,0 g / 8,47 g/cm^3, que da 11,8 cm^3. Como la densidad esta en g/cm^3, el resultado queda directamente en cm^3." }
+          { paso: "$$V = \\frac{m}{d} = \\frac{100{,}0\\ \\text{g}}{8{,}47\\ \\text{g/cm}^{3}} = 11{,}8\\ \\text{cm}^{3}$$", porque: "Usamos $d = \\frac{m}{V}$, que despejada da $V = \\frac{m}{d}$, el volumen a partir de la masa y la densidad. Reemplazamos con $\\frac{100{,}0\\ \\text{g}}{8{,}47\\ \\text{g/cm}^{3}}$, que da $11{,}8\\ \\text{cm}^{3}$. Como la densidad esta en $\\text{g/cm}^{3}$, el resultado queda directamente en $\\text{cm}^{3}$." }
         ],
-        resultado: "11,8 cm^3"
+        resultado: "$11{,}8\\ \\text{cm}^{3}$"
       }
     ],
     errores_tipicos: [
@@ -826,25 +826,25 @@ window.EJERCITACION["magnitudes"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "n(H2) = 2,00 g / 2,02 g/mol = 0,990 mol; n(O2) = 2,00 g / 32,00 g/mol = 0,0625 mol.", porque: "Usamos n = m/M con la masa molar de cada gas: 2,02 g/mol para el H2 y 32,00 g/mol para el O2. Reemplazamos con 2,00 g / 2,02 g/mol, que da 0,990 mol, y 2,00 g / 32,00 g/mol, que da 0,0625 mol. Como las masas son iguales, la comparacion se hace con los moles." },
-          { paso: "Hay mas moleculas en el H2 (0,990 mol frente a 0,0625 mol), porque el numero de moleculas es proporcional a n.", porque: "Usamos N = n x N_A, por lo que el numero de moleculas es proporcional a la cantidad de sustancia. Reemplazamos: 0,990 mol de H2 frente a 0,0625 mol de O2. Por eso la muestra de H2 tiene mas moleculas, aunque la masa sea la misma." }
+          { paso: "$$n(\\text{H}_2) = \\frac{2{,}00\\ \\text{g}}{2{,}02\\ \\text{g/mol}} = 0{,}990\\ \\text{mol}$$; $n(\\text{O}_2) = \\frac{2{,}00\\ \\text{g}}{32{,}00\\ \\text{g/mol}} = 0{,}0625\\ \\text{mol}$.", porque: "Usamos $n = \\frac{m}{M}$ con la masa molar de cada gas: $2{,}02\\ \\text{g/mol}$ para el $\\text{H}_2$ y $32{,}00\\ \\text{g/mol}$ para el $\\text{O}_2$. Reemplazamos con $\\frac{2{,}00\\ \\text{g}}{2{,}02\\ \\text{g/mol}}$, que da $0{,}990\\ \\text{mol}$, y $\\frac{2{,}00\\ \\text{g}}{32{,}00\\ \\text{g/mol}}$, que da $0{,}0625\\ \\text{mol}$. Como las masas son iguales, la comparacion se hace con los moles." },
+          { paso: "Hay mas moleculas en el $\\text{H}_2$ ($0{,}990\\ \\text{mol}$ frente a $0{,}0625\\ \\text{mol}$), porque el numero de moleculas es proporcional a $n$.", porque: "Usamos $N = n \\times N_{A}$, por lo que el numero de moleculas es proporcional a la cantidad de sustancia. Reemplazamos: $0{,}990\\ \\text{mol}$ de $\\text{H}_2$ frente a $0{,}0625\\ \\text{mol}$ de $\\text{O}_2$. Por eso la muestra de $\\text{H}_2$ tiene mas moleculas, aunque la masa sea la misma." }
         ],
-        resultado: "El H2 tiene mas moleculas (0,990 mol contra 0,0625 mol)"
+        resultado: "El $\\text{H}_2$ tiene mas moleculas ($0{,}990\\ \\text{mol}$ contra $0{,}0625\\ \\text{mol}$)"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Atomos de H = 2 x 0,990 mol x 6,022 x 10^23 mol^-1 = 1,19 x 10^24 atomos.", porque: "Usamos que cada molecula de H2 tiene 2 atomos de H, y el total se obtiene multiplicando por la cantidad de moleculas. Reemplazamos con 2 x 0,990 mol x 6,022 x 10^23 mol^-1, que da 1,19 x 10^24 atomos. Por eso el 2 de la atomicidad no puede omitirse." }
+          { paso: "$$\\text{Atomos de H} = 2 \\times 0{,}990\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1} = 1{,}19 \\times 10^{24}$$ atomos.", porque: "Usamos que cada molecula de $\\text{H}_2$ tiene $2$ atomos de $\\text{H}$, y el total se obtiene multiplicando por la cantidad de moleculas. Reemplazamos con $2 \\times 0{,}990\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}$, que da $1{,}19 \\times 10^{24}$ atomos. Por eso el $2$ de la atomicidad no puede omitirse." }
         ],
-        resultado: "1,19 x 10^24 atomos de H"
+        resultado: "$1{,}19 \\times 10^{24}$ atomos de $\\text{H}$"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Para una misma masa, N = m x N_A / M: cuanto menor es M, mayor es el numero de moleculas.", porque: "Usamos la combinacion de N = n x N_A con n = m/M, que da N = m x N_A / M. Para una misma masa, el numerador es fijo, asi que el numero de moleculas depende inversamente de la masa molar. Entonces, cuanto menor es M, mayor es el numero de moleculas en esa masa." },
-          { paso: "Las moleculas de H2 pesan menos que las de O2, asi que la misma masa contiene mas moleculas de H2.", porque: "Usamos que la masa molar del H2 (2,02 g/mol) es mucho menor que la del O2 (32,00 g/mol), por lo que cada molecula de H2 pesa menos. Como la masa total es la misma en ambos recipientes, entran mas moleculas de H2. Por eso este es el criterio que decide la respuesta." }
+          { paso: "Para una misma masa, $N = \\frac{m \\times N_{A}}{M}$: cuanto menor es $M$, mayor es el numero de moleculas.", porque: "Usamos la combinacion de $N = n \\times N_{A}$ con $n = \\frac{m}{M}$, que da $N = \\frac{m \\times N_{A}}{M}$. Para una misma masa, el numerador es fijo, asi que el numero de moleculas depende inversamente de la masa molar. Entonces, cuanto menor es $M$, mayor es el numero de moleculas en esa masa." },
+          { paso: "Las moleculas de $\\text{H}_2$ pesan menos que las de $\\text{O}_2$, asi que la misma masa contiene mas moleculas de $\\text{H}_2$.", porque: "Usamos que la masa molar del $\\text{H}_2$ ($2{,}02\\ \\text{g/mol}$) es mucho menor que la del $\\text{O}_2$ ($32{,}00\\ \\text{g/mol}$), por lo que cada molecula de $\\text{H}_2$ pesa menos. Como la masa total es la misma en ambos recipientes, entran mas moleculas de $\\text{H}_2$. Por eso este es el criterio que decide la respuesta." }
         ],
-        resultado: "A igual masa, menor M implica mas moleculas"
+        resultado: "A igual masa, menor $M$ implica mas moleculas"
       }
     ],
     errores_tipicos: [
@@ -861,27 +861,27 @@ window.EJERCITACION["magnitudes"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "m(O) = 1,60 g - 1,12 g = 0,48 g de O.", porque: "Usamos que la muestra solo tiene Fe y O, por lo que la masa de O es la total menos la de Fe. Reemplazamos con 1,60 g - 1,12 g, que da 0,48 g de O. Entonces esta resta completa la composicion del oxido y permite seguir con los moles." },
-          { paso: "n(Fe) = 1,12 / 55,85 = 0,02005 mol; n(O) = 0,48 / 16,00 = 0,0300 mol.", porque: "Usamos n = m/M para cada elemento, con sus masas atomicas: 55,85 para el Fe y 16,00 para el O. Reemplazamos con 1,12 / 55,85 = 0,02005 mol de Fe, y 0,48 / 16,00 = 0,0300 mol de O. Por eso estos moles son los que se comparan para establecer la relacion entre ambos elementos." },
-          { paso: "Relacion Fe : O = 0,02005 : 0,0300 = 1 : 1,50 = 2 : 3. Formula empirica Fe2O3.", porque: "Usamos que la relacion minima se obtiene dividiendo por el menor numero de moles, que es el del Fe. Reemplazamos: 0,02005 : 0,0300 = 1 : 1,50, y multiplicando por 2 queda 2 : 3. Entonces la formula empirica es Fe2O3, porque el 1,50 no es entero hasta multiplicar por 2." }
+          { paso: "$m(\\text{O}) = 1{,}60\\ \\text{g} - 1{,}12\\ \\text{g} = 0{,}48\\ \\text{g}$ de O.", porque: "Usamos que la muestra solo tiene Fe y O, por lo que la masa de O es la total menos la de Fe. Reemplazamos con $1{,}60\\ \\text{g} - 1{,}12\\ \\text{g}$, que da $0{,}48\\ \\text{g}$ de O. Entonces esta resta completa la composicion del oxido y permite seguir con los moles." },
+          { paso: "$$n(\\text{Fe}) = \\frac{1{,}12}{55{,}85} = 0{,}02005\\ \\text{mol}$$; $n(\\text{O}) = \\frac{0{,}48}{16{,}00} = 0{,}0300\\ \\text{mol}$.", porque: "Usamos $n = \\frac{m}{M}$ para cada elemento, con sus masas atomicas: $55{,}85$ para el Fe y $16{,}00$ para el O. Reemplazamos con $\\frac{1{,}12}{55{,}85} = 0{,}02005\\ \\text{mol}$ de Fe, y $\\frac{0{,}48}{16{,}00} = 0{,}0300\\ \\text{mol}$ de O. Por eso estos moles son los que se comparan para establecer la relacion entre ambos elementos." },
+          { paso: "Relacion $\\text{Fe} : \\text{O} = 0{,}02005 : 0{,}0300 = 1 : 1{,}50 = 2 : 3$. Formula empirica $\\text{Fe}_2\\text{O}_3$.", porque: "Usamos que la relacion minima se obtiene dividiendo por el menor numero de moles, que es el del Fe. Reemplazamos: $0{,}02005 : 0{,}0300 = 1 : 1{,}50$, y multiplicando por $2$ queda $2 : 3$. Entonces la formula empirica es $\\text{Fe}_2\\text{O}_3$, porque el $1{,}50$ no es entero hasta multiplicar por $2$." }
         ],
-        resultado: "Formula empirica Fe2O3"
+        resultado: "Formula empirica $\\text{Fe}_2\\text{O}_3$"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "M(Fe2O3) = 2 x 55,85 + 3 x 16,00 = 159,70 g/mol.", porque: "Usamos que la masa molar se obtiene sumando la masa atomica de cada elemento multiplicada por su subindice. Reemplazamos con 2 x 55,85 + 3 x 16,00, que da 159,70 g/mol. Por eso este valor se compara con la masa molar obtenida de la muestra para verificar la formula molecular." },
-          { paso: "M = m / n = 39,9 g / 0,250 mol = 159,6 g/mol, que coincide con 159,7 g/mol: la formula molecular es Fe2O3.", porque: "Usamos M = m/n con los datos de la muestra: 39,9 g y 0,250 mol. Reemplazamos con 39,9 g / 0,250 mol, que da 159,6 g/mol, valor que coincide con 159,7 g/mol dentro del error de redondeo. Por eso la formula molecular es igual a la empirica, Fe2O3." }
+          { paso: "$$M(\\text{Fe}_2\\text{O}_3) = 2 \\times 55{,}85 + 3 \\times 16{,}00 = 159{,}70\\ \\text{g/mol}$$", porque: "Usamos que la masa molar se obtiene sumando la masa atomica de cada elemento multiplicada por su subindice. Reemplazamos con $2 \\times 55{,}85 + 3 \\times 16{,}00$, que da $159{,}70\\ \\text{g/mol}$. Por eso este valor se compara con la masa molar obtenida de la muestra para verificar la formula molecular." },
+          { paso: "$$M = \\frac{m}{n} = \\frac{39{,}9\\ \\text{g}}{0{,}250\\ \\text{mol}} = 159{,}6\\ \\text{g/mol}$$, que coincide con $159{,}7\\ \\text{g/mol}$: la formula molecular es $\\text{Fe}_2\\text{O}_3$.", porque: "Usamos $M = \\frac{m}{n}$ con los datos de la muestra: $39{,}9\\ \\text{g}$ y $0{,}250\\ \\text{mol}$. Reemplazamos con $\\frac{39{,}9\\ \\text{g}}{0{,}250\\ \\text{mol}}$, que da $159{,}6\\ \\text{g/mol}$, valor que coincide con $159{,}7\\ \\text{g/mol}$ dentro del error de redondeo. Por eso la formula molecular es igual a la empirica, $\\text{Fe}_2\\text{O}_3$." }
         ],
-        resultado: "Formula molecular Fe2O3 (M = 159,7 g/mol verificada)"
+        resultado: "Formula molecular $\\text{Fe}_2\\text{O}_3$ ($M = 159{,}7\\ \\text{g/mol}$ verificada)"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "n(Fe2O3) = 1,60 g / 159,70 g/mol = 0,01002 mol.", porque: "Usamos n = m/M con la masa molar de Fe2O3 calculada antes. Reemplazamos con 1,60 g / 159,70 g/mol, que da 0,01002 mol de unidades formula. Es el paso que lleva de gramos a mol para luego contar los atomos de O." },
-          { paso: "Atomos de O = 3 x 0,01002 mol x 6,022 x 10^23 mol^-1 = 1,81 x 10^22 atomos.", porque: "Usamos que cada formula de Fe2O3 tiene 3 atomos de O, por lo que hay que multiplicar los moles por 3 antes de convertir a atomos. Reemplazamos con 3 x 0,01002 mol x 6,022 x 10^23 mol^-1, que da 1,81 x 10^22 atomos. Entonces la atomicidad se aplica antes de usar N_A." }
+          { paso: "$$n(\\text{Fe}_2\\text{O}_3) = \\frac{1{,}60\\ \\text{g}}{159{,}70\\ \\text{g/mol}} = 0{,}01002\\ \\text{mol}$$", porque: "Usamos $n = \\frac{m}{M}$ con la masa molar de $\\text{Fe}_2\\text{O}_3$ calculada antes. Reemplazamos con $\\frac{1{,}60\\ \\text{g}}{159{,}70\\ \\text{g/mol}}$, que da $0{,}01002\\ \\text{mol}$ de unidades formula. Es el paso que lleva de gramos a mol para luego contar los atomos de $\\text{O}$." },
+          { paso: "$$\\text{Atomos de O} = 3 \\times 0{,}01002\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1} = 1{,}81 \\times 10^{22}$$ atomos.", porque: "Usamos que cada formula de $\\text{Fe}_2\\text{O}_3$ tiene $3$ atomos de $\\text{O}$, por lo que hay que multiplicar los moles por $3$ antes de convertir a atomos. Reemplazamos con $3 \\times 0{,}01002\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}$, que da $1{,}81 \\times 10^{22}$ atomos. Entonces la atomicidad se aplica antes de usar $N_{A}$." }
         ],
-        resultado: "1,81 x 10^22 atomos de O"
+        resultado: "$1{,}81 \\times 10^{22}$ atomos de $\\text{O}$"
       }
     ],
     errores_tipicos: [
@@ -898,34 +898,34 @@ window.EJERCITACION["magnitudes"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "m(O) = 0,500 g - 0,261 g - 0,0658 g = 0,173 g de O.", porque: "Usamos que X solo tiene C, H y O, por lo que la masa de O es el resto de la muestra. Reemplazamos con 0,500 g - 0,261 g - 0,0658 g, que da 0,173 g de O. Es una resta que completa la composicion de X." },
-          { paso: "n(C) = 0,261 / 12,01 = 0,0217 mol; n(H) = 0,0658 / 1,01 = 0,0652 mol; n(O) = 0,173 / 16,00 = 0,0108 mol.", porque: "Usamos n = m/M para cada elemento, dividiendo su masa por la masa atomica correspondiente. Reemplazamos: 0,261 / 12,01 da 0,0217 mol de C; 0,0658 / 1,01 da 0,0652 mol de H; y 0,173 / 16,00 da 0,0108 mol de O. Estos valores son la base para establecer la relacion entre los tres elementos." },
-          { paso: "Relacion C : H : O = 0,0217 : 0,0652 : 0,0108 = 2,0 : 6,0 : 1, aprox. 2 : 6 : 1. Formula empirica C2H6O.", porque: "Usamos que la formula empirica sale de dividir por el menor numero de moles, que es el del O, y redondear a enteros. Reemplazamos: 0,0217 : 0,0652 : 0,0108 da 2,0 : 6,0 : 1, aprox. 2 : 6 : 1. Por eso la formula empirica es C2H6O, y las pequenas desviaciones decimales se atribuyen al error de los datos." }
+          { paso: "$m(\\text{O}) = 0{,}500\\ \\text{g} - 0{,}261\\ \\text{g} - 0{,}0658\\ \\text{g} = 0{,}173\\ \\text{g}$ de O.", porque: "Usamos que X solo tiene C, H y O, por lo que la masa de O es el resto de la muestra. Reemplazamos con $0{,}500\\ \\text{g} - 0{,}261\\ \\text{g} - 0{,}0658\\ \\text{g}$, que da $0{,}173\\ \\text{g}$ de O. Es una resta que completa la composicion de X." },
+          { paso: "$$n(\\text{C}) = \\frac{0{,}261}{12{,}01} = 0{,}0217\\ \\text{mol}$$; $n(\\text{H}) = \\frac{0{,}0658}{1{,}01} = 0{,}0652\\ \\text{mol}$; $n(\\text{O}) = \\frac{0{,}173}{16{,}00} = 0{,}0108\\ \\text{mol}$.", porque: "Usamos $n = \\frac{m}{M}$ para cada elemento, dividiendo su masa por la masa atomica correspondiente. Reemplazamos: $\\frac{0{,}261}{12{,}01}$ da $0{,}0217\\ \\text{mol}$ de C; $\\frac{0{,}0658}{1{,}01}$ da $0{,}0652\\ \\text{mol}$ de H; y $\\frac{0{,}173}{16{,}00}$ da $0{,}0108\\ \\text{mol}$ de O. Estos valores son la base para establecer la relacion entre los tres elementos." },
+          { paso: "Relacion $\\text{C} : \\text{H} : \\text{O} = 0{,}0217 : 0{,}0652 : 0{,}0108 = 2{,}0 : 6{,}0 : 1$, aprox. $2 : 6 : 1$. Formula empirica $\\text{C}_2\\text{H}_6\\text{O}$.", porque: "Usamos que la formula empirica sale de dividir por el menor numero de moles, que es el del O, y redondear a enteros. Reemplazamos: $0{,}0217 : 0{,}0652 : 0{,}0108$ da $2{,}0 : 6{,}0 : 1$, aprox. $2 : 6 : 1$. Por eso la formula empirica es $\\text{C}_2\\text{H}_6\\text{O}$, y las pequenas desviaciones decimales se atribuyen al error de los datos." }
         ],
-        resultado: "Formula empirica C2H6O"
+        resultado: "Formula empirica $\\text{C}_2\\text{H}_6\\text{O}$"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "M = d x V_m = 0,789 g/cm^3 x 58,4 cm^3/mol = 46,1 g/mol.", porque: "Usamos que de V_m = M/d se despeja M = d x V_m, y eso da la masa molar del liquido. Reemplazamos con 0,789 g/cm^3 x 58,4 cm^3/mol, que da 46,1 g/mol. Entonces este valor sirve para comparar con la masa molar de la formula empirica." },
-          { paso: "M(C2H6O) = 2 x 12,01 + 6 x 1,01 + 16,00 = 46,08 g/mol, que coincide con 46,1 g/mol: la formula molecular es C2H6O.", porque: "Usamos que la masa molar de C2H6O se calcula sumando cada masa atomica multiplicada por su subindice. Reemplazamos con 2 x 12,01 + 6 x 1,01 + 16,00, que da 46,08 g/mol. Como coincide con 46,1 g/mol, la formula molecular es igual a la empirica, C2H6O." }
+          { paso: "$$M = d \\times V_{m} = 0{,}789\\ \\text{g/cm}^{3} \\times 58{,}4\\ \\text{cm}^{3}/\\text{mol} = 46{,}1\\ \\text{g/mol}$$", porque: "Usamos que de $V_{m} = \\frac{M}{d}$ se despeja $M = d \\times V_{m}$, y eso da la masa molar del liquido. Reemplazamos con $0{,}789\\ \\text{g/cm}^{3} \\times 58{,}4\\ \\text{cm}^{3}/\\text{mol}$, que da $46{,}1\\ \\text{g/mol}$. Entonces este valor sirve para comparar con la masa molar de la formula empirica." },
+          { paso: "$$M(\\text{C}_2\\text{H}_6\\text{O}) = 2 \\times 12{,}01 + 6 \\times 1{,}01 + 16{,}00 = 46{,}08\\ \\text{g/mol}$$, que coincide con $46{,}1\\ \\text{g/mol}$: la formula molecular es $\\text{C}_2\\text{H}_6\\text{O}$.", porque: "Usamos que la masa molar de $\\text{C}_2\\text{H}_6\\text{O}$ se calcula sumando cada masa atomica multiplicada por su subindice. Reemplazamos con $2 \\times 12{,}01 + 6 \\times 1{,}01 + 16{,}00$, que da $46{,}08\\ \\text{g/mol}$. Como coincide con $46{,}1\\ \\text{g/mol}$, la formula molecular es igual a la empirica, $\\text{C}_2\\text{H}_6\\text{O}$." }
         ],
-        resultado: "M = 46,1 g/mol; formula molecular C2H6O"
+        resultado: "$M = 46{,}1\\ \\text{g/mol}$; formula molecular $\\text{C}_2\\text{H}_6\\text{O}$"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "m(2,00 mL) = 0,789 g/cm^3 x 2,00 cm^3 = 1,578 g; n = 1,578 g / 46,1 g/mol = 0,0342 mol.", porque: "Usamos que la densidad permite pasar el volumen a masa, con m = d x V. Reemplazamos con 0,789 g/cm^3 x 2,00 cm^3, que da 1,578 g. Luego n = m/M con M = 46,1 g/mol da 0,0342 mol." },
-          { paso: "N = 0,0342 mol x 6,022 x 10^23 mol^-1 = 2,06 x 10^22 moleculas.", porque: "Usamos N = n x N_A, porque cada mol de moleculas tiene N_A unidades. Reemplazamos con 0,0342 mol x 6,022 x 10^23 mol^-1, que da 2,06 x 10^22 moleculas. Por eso el orden de magnitud 10^22 es coherente con la cantidad de moles de la muestra." },
-          { paso: "Atomos de H = 6 x 2,06 x 10^22 = 1,24 x 10^23 atomos.", porque: "Usamos que cada molecula de C2H6O tiene 6 atomos de H, asi que el total de H es 6 por el numero de moleculas. Reemplazamos con 6 x 2,06 x 10^22, que da 1,24 x 10^23 atomos de H. Es el mismo criterio de atomicidad aplicado en los pasos anteriores." }
+          { paso: "$$m(2{,}00\\ \\text{mL}) = 0{,}789\\ \\text{g/cm}^{3} \\times 2{,}00\\ \\text{cm}^{3} = 1{,}578\\ \\text{g}$$; $n = \\frac{1{,}578\\ \\text{g}}{46{,}1\\ \\text{g/mol}} = 0{,}0342\\ \\text{mol}$.", porque: "Usamos que la densidad permite pasar el volumen a masa, con $m = d \\times V$. Reemplazamos con $0{,}789\\ \\text{g/cm}^{3} \\times 2{,}00\\ \\text{cm}^{3}$, que da $1{,}578\\ \\text{g}$. Luego $n = \\frac{m}{M}$ con $M = 46{,}1\\ \\text{g/mol}$ da $0{,}0342\\ \\text{mol}$." },
+          { paso: "$$N = 0{,}0342\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1} = 2{,}06 \\times 10^{22}$$ moleculas.", porque: "Usamos $N = n \\times N_{A}$, porque cada mol de moleculas tiene $N_{A}$ unidades. Reemplazamos con $0{,}0342\\ \\text{mol} \\times 6{,}022 \\times 10^{23}\\ \\text{mol}^{-1}$, que da $2{,}06 \\times 10^{22}$ moleculas. Por eso el orden de magnitud $10^{22}$ es coherente con la cantidad de moles de la muestra." },
+          { paso: "$$\\text{Atomos de H} = 6 \\times 2{,}06 \\times 10^{22} = 1{,}24 \\times 10^{23}$$ atomos.", porque: "Usamos que cada molecula de $\\text{C}_2\\text{H}_6\\text{O}$ tiene $6$ atomos de $\\text{H}$, asi que el total de $\\text{H}$ es $6$ por el numero de moleculas. Reemplazamos con $6 \\times 2{,}06 \\times 10^{22}$, que da $1{,}24 \\times 10^{23}$ atomos de $\\text{H}$. Es el mismo criterio de atomicidad aplicado en los pasos anteriores." }
         ],
-        resultado: "2,06 x 10^22 moleculas y 1,24 x 10^23 atomos de H"
+        resultado: "$2{,}06 \\times 10^{22}$ moleculas y $1{,}24 \\times 10^{23}$ atomos de $\\text{H}$"
       },
       {
         parte: "d)",
         pasos: [
-          { paso: "C2H6O admite dos estructuras: etanol, CH3-CH2-OH, y dimetileter, CH3-O-CH3.", porque: "Usamos que la formula molecular indica que atomos hay, pero no como estan unidos. Reemplazamos el caso de C2H6O con sus dos estructuras: etanol, CH3-CH2-OH, y dimetileter, CH3-O-CH3. Por eso distintas uniones entre los mismos atomos dan isomeros, y ese es el caso de C2H6O." },
-          { paso: "Para distinguirlos se necesita un dato adicional: el etanol tiene grupo OH y reacciona con sodio liberando H2; el dimetileter no lo hace.", porque: "Usamos un ensayo quimico o un dato espectroscopico para distinguir ambos isomeros, porque la formula molecular no muestra el grupo funcional. Como el etanol tiene grupo OH, reacciona con sodio liberando H2, y el dimetileter no lo hace. Entonces ese ensayo identifica cual de los dos es X." }
+          { paso: "$\\text{C}_2\\text{H}_6\\text{O}$ admite dos estructuras: etanol, $\\text{CH}_3\\text{-CH}_2\\text{-OH}$, y dimetileter, $\\text{CH}_3\\text{-O-CH}_3$.", porque: "Usamos que la formula molecular indica que atomos hay, pero no como estan unidos. Reemplazamos el caso de $\\text{C}_2\\text{H}_6\\text{O}$ con sus dos estructuras: etanol, $\\text{CH}_3\\text{-CH}_2\\text{-OH}$, y dimetileter, $\\text{CH}_3\\text{-O-CH}_3$. Por eso distintas uniones entre los mismos atomos dan isomeros, y ese es el caso de $\\text{C}_2\\text{H}_6\\text{O}$." },
+          { paso: "Para distinguirlos se necesita un dato adicional: el etanol tiene grupo $\\text{OH}$ y reacciona con sodio liberando $\\text{H}_2$; el dimetileter no lo hace.", porque: "Usamos un ensayo quimico o un dato espectroscopico para distinguir ambos isomeros, porque la formula molecular no muestra el grupo funcional. Como el etanol tiene grupo $\\text{OH}$, reacciona con sodio liberando $\\text{H}_2$, y el dimetileter no lo hace. Entonces ese ensayo identifica cual de los dos es X." }
         ],
         resultado: "La formula molecular no alcanza: son posibles etanol y dimetileter, y hace falta un ensayo adicional"
       }

@@ -161,17 +161,30 @@
   }
 
   // ---------- Parciales ----------
+  // $...$ es LaTeX en línea y $$...$$ es LaTeX en bloque (fracciones a tamaño normal); el resto pasa por pretty()
+  function textoConFormulas(texto) {
+    return String(texto == null ? "" : texto).split(/(\$\$[^$]+\$\$|\$[^$]+\$)/).map(parte => {
+      if (parte.startsWith("$$") && parte.endsWith("$$") && parte.length > 4) {
+        return `<div class="formula-bloque">${renderTex(parte.slice(2, -2), false)}</div>`;
+      }
+      if (parte.length > 2 && parte.startsWith("$") && parte.endsWith("$")) {
+        return renderTex(parte.slice(1, -1), true);
+      }
+      return pretty(parte);
+    }).join("");
+  }
+
   function bloqueResolucion(ej) {
     const partes = (ej.resolucion || []).map(r => `
       <div class="resolucion-parte">
         ${r.parte ? `<strong>${pretty(r.parte)}</strong>` : ""}
         <ol>${(r.pasos || []).map(p => {
           // Un paso puede ser texto simple o { paso, porque }; el "porque" explica la justificación
-          if (typeof p === "string") return `<li>${pretty(p)}</li>`;
-          const porque = p.porque ? `<div class="porque">${pretty(p.porque)}</div>` : "";
-          return `<li>${pretty(p.paso)}${porque}</li>`;
+          if (typeof p === "string") return `<li>${textoConFormulas(p)}</li>`;
+          const porque = p.porque ? `<div class="porque">${textoConFormulas(p.porque)}</div>` : "";
+          return `<li>${textoConFormulas(p.paso)}${porque}</li>`;
         }).join("")}</ol>
-        <div class="resultado">Resultado: ${pretty(r.resultado)}</div>
+        <div class="resultado">Resultado: ${textoConFormulas(r.resultado)}</div>
       </div>`).join("");
     return partes;
   }

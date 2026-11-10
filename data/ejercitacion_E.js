@@ -10,9 +10,9 @@ window.EJERCITACION["soluciones"] = [
       {
         parte: "",
         pasos: [
-          { paso: "n = 8,50 g / 58,5 g/mol = 0,1453 mol de NaCl.", porque: "Se divide la masa de NaCl (8,50 g) por su masa molar (58,5 g/mol) para obtener los moles, porque la concentracion molar trabaja con cantidad de sustancia y no con masa. Recordar que n = m / M y que al dividir g por g/mol las unidades se cancelan y quedan mol." },
-          { paso: "V = 250 mL = 0,250 L.", porque: "Se convierten 250 mL a 0,250 L dividiendo por 1000, ya que la molaridad se define con litros de solucion. Un error frecuente es dividir por 250 directamente; eso daria un valor 1000 veces menor al correcto." },
-          { paso: "M = 0,1453 mol / 0,250 L = 0,581 M.", porque: "Se calcula M como moles de soluto divididos litros de solucion, es decir M = n / V. El volumen del denominador es el de la solucion final (no el del solvente), y el resultado se expresa en mol/L, que es la unidad de M." }
+          { paso: "n = 8,50 g / 58,5 g/mol = 0,1453 mol de NaCl.", porque: "Para pasar de masa a moles dividimos la masa de NaCl por su masa molar, porque la masa molar indica cuántos gramos tiene un mol de esa sustancia y la concentración molar trabaja con cantidad de sustancia. Usamos 8,50 g / 58,5 g/mol, de modo que los gramos se cancelan y quedan 0,1453 mol de NaCl. Ese valor de moles es el dato que se necesita para calcular la molaridad en el paso siguiente." },
+          { paso: "V = 250 mL = 0,250 L.", porque: "Como la molaridad se define con litros de solución, primero convertimos el volumen: 250 mL se pasan a 0,250 L dividiendo por 1000. Por eso esta conversión es necesaria antes de dividir, y no un detalle opcional. Si se dividiera por 250 directamente, el resultado quedaría 1000 veces menor al correcto." },
+          { paso: "M = 0,1453 mol / 0,250 L = 0,581 M.", porque: "Dado que M = n / V, dividimos los moles de NaCl (0,1453 mol) por el volumen de la solución en litros (0,250 L). Usamos el volumen de la solución final y no el del solvente, por eso el resultado es 0,581 M. La unidad mol/L corresponde a la molaridad, así que el valor ya queda listo para responder la pregunta." }
         ],
         resultado: "[NaCl] = 0,581 M"
       }
@@ -31,8 +31,8 @@ window.EJERCITACION["soluciones"] = [
       {
         parte: "",
         pasos: [
-          { paso: "m_solucion = m_soluto + m_solvente = 12,0 g + 188 g = 200 g.", porque: "Se suma la masa del soluto (12,0 g) y la del solvente (188 g) para obtener la masa total de solucion (200 g). Esto responde a la conservacion de la masa: al disolver no se pierde nada, asi que la masa de la mezcla es la suma de sus componentes." },
-          { paso: "% m/m = (12,0 g / 200 g) x 100 = 6,00 %.", porque: "Se calcula cuantos gramos de KBr hay por cada 100 g de solucion, multiplicando la fraccion 12,0 / 200 por 100. Por definicion, el % m/m es la masa de soluto en 100 partes de masa de solucion; conviene verificar que el denominador sea la masa de solucion y no la de agua." }
+          { paso: "m_solucion = m_soluto + m_solvente = 12,0 g + 188 g = 200 g.", porque: "Como el soluto se disuelve en el solvente, sumamos 12,0 g de KBr y 188 g de agua para obtener la masa total de la solución. Esta suma responde a la conservación de la masa: al disolver no se pierde material, así que la mezcla pesa lo mismo que sus componentes. Por eso la masa de solución resulta 200 g, que es el denominador que necesitamos para el porcentaje." },
+          { paso: "% m/m = (12,0 g / 200 g) x 100 = 6,00 %.", porque: "Calculamos el porcentaje como (12,0 g / 200 g) x 100, que indica cuántos gramos de KBr hay en cada 100 g de solución. Por definición, el % m/m usa masa de soluto sobre masa de solución, así que el denominador debe ser 200 g y no los 188 g de agua. Entonces la solución tiene 6,00 % m/m de KBr." }
         ],
         resultado: "6,00 % m/m"
       }
@@ -51,9 +51,9 @@ window.EJERCITACION["soluciones"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Moles de soluto: n = 0,400 mol/L x 0,0250 L = 0,0100 mol de NaOH.", porque: "Se multiplica la molaridad (mol/L) por el volumen en litros (25,0 mL = 0,0250 L) para hallar los moles de soluto de la alicuota, porque M = n / V implica n = M x V. Como al diluir no se agrega ni se quita soluto, esos 0,0100 mol son los mismos que habra en la solucion diluida." },
-          { paso: "Concentracion final: M_d = n / V_final = 0,0100 mol / 0,200 L = 0,0500 M.", porque: "Se divide los moles (0,0100 mol) por el volumen final total (0,200 L), no por el volumen de la alicuota. La molaridad se calcula siempre sobre el volumen total de la solucion donde esta disuelto el soluto; el error mas comun es dividir por 25,0 mL y obtener un valor 8 veces mayor." },
-          { paso: "Control con C_c x V_c = C_d x V_d: 0,400 x 25,0 = C_d x 200, de donde C_d = 0,0500 M.", porque: "La ecuacion C_c x V_c = C_d x V_d expresa que los moles de soluto son iguales antes y despues de diluir (C x V = n). Sirve como control: al despejar C_d = (0,400 x 25,0) / 200 se llega al mismo 0,0500 M, lo que confirma el resultado. Conviene usar las mismas unidades de volumen en ambos miembros." }
+          { paso: "Moles de soluto: n = 0,400 mol/L x 0,0250 L = 0,0100 mol de NaOH.", porque: "Usamos M = n / V despejando n = M x V, porque así obtenemos los moles de soluto a partir de la molaridad y el volumen. Con 0,400 mol/L y 25,0 mL = 0,0250 L se obtiene 0,0100 mol de NaOH. Como al diluir no se agrega ni se quita soluto, esos moles son los mismos que quedarán en la solución diluida." },
+          { paso: "Concentracion final: M_d = n / V_final = 0,0100 mol / 0,200 L = 0,0500 M.", porque: "Calculamos la nueva molaridad con M = n / V, usando los 0,0100 mol y el volumen final total de 0,200 L. Dividimos por 0,200 L y no por los 25,0 mL de la alícuota, porque la concentración se refiere al volumen total donde está disuelto el soluto. Por eso el resultado es 0,0500 M; dividir por 25,0 mL daría un valor 8 veces mayor, así que conviene verificar el denominador." },
+          { paso: "Control con C_c x V_c = C_d x V_d: 0,400 x 25,0 = C_d x 200, de donde C_d = 0,0500 M.", porque: "La ecuación C_c x V_c = C_d x V_d expresa que los moles de soluto se conservan al diluir, porque C x V es igual a n. Como control, reemplazamos 0,400 x 25,0 = C_d x 200 y despejamos C_d = (0,400 x 25,0) / 200. Entonces el resultado coincide con 0,0500 M, lo que confirma el cálculo anterior; usar las mismas unidades de volumen en ambos miembros evita errores." }
         ],
         resultado: "C_d = 0,0500 M"
       }
@@ -72,9 +72,9 @@ window.EJERCITACION["soluciones"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Moles de CaCl2: n = 0,250 mol/L x 0,500 L = 0,125 mol.", porque: "Se multiplica la molaridad (0,250 mol/L) por el volumen en litros (0,500 L) para obtener los moles de CaCl2, aplicando M = n / V despejada como n = M x V. Verificar que los 500 mL se hayan pasado a 0,500 L antes de multiplicar." },
-          { paso: "Disociacion completa: CaCl2 -> Ca^2+ + 2 Cl^-. Por cada mol de CaCl2 se forman 1 mol de Ca^2+ y 2 mol de Cl^-.", porque: "Se escribe la disociacion completa porque el CaCl2 es una sal soluble que se separa totalmente en Ca^2+ y Cl^-. Los subindices fijan la proporcion (1 Ca^2+ y 2 Cl^- por mol de sal), y es el dato clave para no olvidar el factor 2 del cloruro." },
-          { paso: "[Ca^2+] = 0,250 M y [Cl^-] = 2 x 0,250 M = 0,500 M.", porque: "La concentracion de cada ion se calcula como moles de ion sobre litros de solucion, igual que con cualquier soluto. Como todos los iones estan en los mismos 0,500 L, basta multiplicar la molaridad de la sal por el coeficiente de cada ion (1 para Ca^2+ y 2 para Cl^-)." }
+          { paso: "Moles de CaCl2: n = 0,250 mol/L x 0,500 L = 0,125 mol.", porque: "Usamos n = M x V, porque la molaridad relaciona moles con litros de solución. Con 0,250 mol/L y 500 mL = 0,500 L, calculamos 0,250 x 0,500 = 0,125 mol de CaCl2. Como el volumen ya está en litros, el número de moles queda listo para analizar la disociación en el paso siguiente." },
+          { paso: "Disociacion completa: CaCl2 -> Ca^2+ + 2 Cl^-. Por cada mol de CaCl2 se forman 1 mol de Ca^2+ y 2 mol de Cl^-.", porque: "Escribimos la disociación completa de CaCl2 porque es una sal soluble que se separa totalmente en sus iones. Los subíndices fijan la proporción: CaCl2 -> Ca^2+ + 2 Cl^-, así que por cada mol de sal aparecen 1 mol de Ca^2+ y 2 mol de Cl^-. Por eso este paso define el factor 2 que se aplica al cloruro en el cálculo siguiente." },
+          { paso: "[Ca^2+] = 0,250 M y [Cl^-] = 2 x 0,250 M = 0,500 M.", porque: "Calculamos la concentración de cada ión como moles de ión sobre litros, igual que con cualquier soluto, partiendo de la molaridad de la sal. Como todos los iones están en los mismos 0,500 L, multiplicamos 0,250 M por el coeficiente de cada ión: 1 para Ca^2+ y 2 para Cl^-. Entonces la solución tiene 0,250 M de Ca^2+ y 2 x 0,250 = 0,500 M de Cl^-." }
         ],
         resultado: "[Ca^2+] = 0,250 M; [Cl^-] = 0,500 M"
       }
@@ -93,9 +93,9 @@ window.EJERCITACION["soluciones"] = [
       {
         parte: "",
         pasos: [
-          { paso: "% m/V = 5,00 g de soluto cada 100 mL de solucion.", porque: "Se toma la definicion de % m/V: 5,00 g de soluto en 100 mL de solucion. Es la relacion de referencia del problema, y conviene escribirla con sus unidades antes de operar para no mezclar masa con volumen." },
-          { paso: "Factor de escala: 250 mL / 100 mL = 2,50.", porque: "Se divide el volumen pedido (250 mL) por el de referencia (100 mL) para saber cuantas veces entra la referencia en el volumen pedido. Como la concentracion es constante, la masa de soluto se escala con el volumen, y el factor es un cociente de volumenes sin unidades." },
-          { paso: "m = 5,00 g x 2,50 = 12,5 g de glucosa.", porque: "Se multiplica los 5,00 g de la referencia por el factor 2,50 para obtener la masa en 250 mL, porque cada mililitro de la solucion tiene la misma concentracion. Verificar que el resultado tenga sentido: 250 mL es mas que 100 mL, asi que deben disolverse mas de 5,00 g." }
+          { paso: "% m/V = 5,00 g de soluto cada 100 mL de solucion.", porque: "Tomamos la definición de % m/V: 5,00 g de soluto cada 100 mL de solución, que es la relación de referencia del problema. Conviene escribirla con sus unidades antes de operar, porque así no mezclamos masa con volumen. Esa relación nos permite escalar el dato al volumen de 250 mL que pide el enunciado." },
+          { paso: "Factor de escala: 250 mL / 100 mL = 2,50.", porque: "Dividimos el volumen pedido (250 mL) por el de referencia (100 mL) para obtener 2,50, es decir, cuántas veces entra la referencia en el volumen pedido. Como la concentración es constante en toda la solución, la masa de soluto crece en la misma proporción que el volumen. Por eso el factor 2,50 no tiene unidades y se aplica directamente a los 5,00 g." },
+          { paso: "m = 5,00 g x 2,50 = 12,5 g de glucosa.", porque: "Multiplicamos los 5,00 g de la referencia por el factor 2,50, es decir, 5,00 g x 2,50 = 12,5 g de glucosa en 250 mL. Como cada mililitro tiene la misma concentración, la masa escalada es la que corresponde al volumen pedido. El resultado es razonable porque 250 mL es más que 100 mL, así que deben disolverse más de 5,00 g." }
         ],
         resultado: "12,5 g de glucosa"
       }
@@ -114,17 +114,17 @@ window.EJERCITACION["soluciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Base de calculo 1,00 L: m_solucion = 1000 mL x 1,18 g/mL = 1180 g.", porque: "Se calcula la masa de 1,00 L de solucion multiplicando su volumen (1000 mL) por la densidad (1,18 g/mL). La densidad relaciona volumen y masa, y como el % m/m se aplica a masas, hace falta para pasar del volumen de solucion a su masa." },
-          { paso: "m_HCl = 0,350 x 1180 g = 413,0 g; n = 413,0 g / 36,5 g/mol = 11,32 mol.", porque: "Se toma el 35,0 % de la masa de solucion para obtener la masa de HCl, porque el % m/m indica la fraccion de la masa total que corresponde al soluto. Luego se divide esa masa por la masa molar (36,5 g/mol) para pasarla a moles, que es lo que necesita la molaridad." },
-          { paso: "M = 11,32 mol / 1,00 L = 11,3 M.", porque: "Se divide los moles de HCl (11,32 mol) por el volumen de la base de calculo (1,00 L), porque M = n / V. Como la base fue exactamente 1,00 L, el valor numerico de los moles coincide con la molaridad; conviene verificar que la unidad quede en mol/L." }
+          { paso: "Base de calculo 1,00 L: m_solucion = 1000 mL x 1,18 g/mL = 1180 g.", porque: "Calculamos la masa de 1,00 L de solución multiplicando 1000 mL por la densidad 1,18 g/mL, porque la densidad relaciona volumen y masa. Como el % m/m se aplica a masas y el dato es un volumen, necesitamos esta conversión para pasar a gramos. Así obtenemos 1180 g de solución, que será la base para calcular el soluto." },
+          { paso: "m_HCl = 0,350 x 1180 g = 413,0 g; n = 413,0 g / 36,5 g/mol = 11,32 mol.", porque: "Tomamos el 35,0 % de la masa de solución porque el % m/m indica qué fracción de la masa total corresponde al HCl. Con 0,350 x 1180 g obtenemos 413,0 g de HCl. Luego dividimos esa masa por 36,5 g/mol para pasarla a moles: 413,0 g / 36,5 g/mol = 11,32 mol, que es lo que necesita la molaridad." },
+          { paso: "M = 11,32 mol / 1,00 L = 11,3 M.", porque: "Usamos M = n / V, dividiendo los 11,32 mol de HCl por el volumen de la base, 1,00 L. Como la base de cálculo fue exactamente 1,00 L, el valor numérico de los moles coincide con la molaridad, así que 11,3 M es la concentración de la solución comercial. Conviene verificar que la unidad quede en mol/L." }
         ],
         resultado: "11,3 M"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "n(HCl) necesarios = 0,100 mol/L x 0,500 L = 0,0500 mol.", porque: "Se calcula los moles de HCl que debe tener la solucion diluida (0,100 mol/L x 0,500 L). La cantidad de soluto no cambia al preparar la dilucion: el HCl que se toma del concentrado es el mismo que habra en los 500 mL finales." },
-          { paso: "V = n / M_comercial = 0,0500 mol / 11,32 mol/L = 4,42 mL.", porque: "Se despeja el volumen del concentrado como V = n / M, ya que n = M x V: esos 0,0500 mol deben salir de la solucion comercial de 11,32 M. El volumen resultante es pequeno y luego se completa hasta 500 mL con agua; verificar que sea menor que 500 mL." }
+          { paso: "n(HCl) necesarios = 0,100 mol/L x 0,500 L = 0,0500 mol.", porque: "Calculamos los moles de HCl que necesita la solución diluida, con 0,100 mol/L x 0,500 L = 0,0500 mol. Como al preparar la dilución no se agrega ni se quita soluto, esos mismos moles deben salir de la solución comercial. Por eso este valor es el dato que se usa en el paso siguiente para despejar el volumen." },
+          { paso: "V = n / M_comercial = 0,0500 mol / 11,32 mol/L = 4,42 mL.", porque: "Despejamos el volumen del concentrado con V = n / M, porque n = M x V; los 0,0500 mol deben provenir de la solución de 11,32 mol/L. Dividiendo 0,0500 mol / 11,32 mol/L obtenemos 4,42 mL de solución comercial. Este volumen es pequeño y luego se completa hasta 500 mL con agua, por lo que conviene verificar que sea menor que 500 mL." }
         ],
         resultado: "4,42 mL de solucion comercial, completando hasta 500 mL con agua"
       }
@@ -143,17 +143,17 @@ window.EJERCITACION["soluciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "n(NaOH) = 15,0 g / 40,0 g/mol = 0,375 mol.", porque: "Se divide la masa de NaOH (15,0 g) por su masa molar (40,0 g/mol) para obtener los moles de soluto, porque la molalidad trabaja con moles. Convertir la masa primero es obligatorio, y las unidades g / (g/mol) dan mol." },
-          { paso: "Solvente: 250 g = 0,250 kg de agua.", porque: "Se expresa la masa de solvente en kilogramos (250 g = 0,250 kg), porque la molalidad se define por kg de solvente. Es un error frecuente usar la masa de solucion o los litros, ya que la molalidad considera solo el agua en la que se disolvio el soluto." },
-          { paso: "m = 0,375 mol / 0,250 kg = 1,50 mol/kg.", porque: "Se divide los moles de soluto (0,375 mol) por los kilogramos de solvente (0,250 kg), segun la definicion m = n / kg de solvente. La unidad resultante es mol/kg; conviene recordar que la molalidad se escribe con m minuscula para no confundirla con la molaridad M." }
+          { paso: "n(NaOH) = 15,0 g / 40,0 g/mol = 0,375 mol.", porque: "Dividimos la masa de NaOH (15,0 g) por su masa molar (40,0 g/mol) para obtener los moles de soluto, porque la molalidad se expresa en moles por kilogramo. Con 15,0 g / 40,0 g/mol el resultado es 0,375 mol de NaOH. Las unidades g / (g/mol) se cancelan y dejan mol, que es lo que necesitamos para el paso siguiente." },
+          { paso: "Solvente: 250 g = 0,250 kg de agua.", porque: "Expresamos el solvente en kilogramos porque la molalidad se define por kilogramo de solvente y no de solución. Con 250 g = 0,250 kg de agua, el denominador queda en la unidad correcta. Este paso es necesario porque usar la masa de solución o los litros daría una molalidad incorrecta." },
+          { paso: "m = 0,375 mol / 0,250 kg = 1,50 mol/kg.", porque: "Aplicamos m = n / kg de solvente: dividimos los 0,375 mol de NaOH por 0,250 kg de agua, lo que da 1,50 mol/kg. Por eso la molalidad queda expresada en mol/kg, y conviene escribirla con m minúscula para no confundirla con la molaridad M. Este valor responde al apartado a)." }
         ],
         resultado: "1,50 mol/kg"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "m_solucion = 15,0 g + 250 g = 265 g.", porque: "Se suma la masa de soluto (15,0 g) y la de solvente (250 g) para obtener la masa de la solucion. Como en el apartado anterior, la masa total incluye todos los componentes, por conservacion de la masa al disolver." },
-          { paso: "% m/m = 15,0 g / 265 g x 100 = 5,66 %.", porque: "Se divide la masa de NaOH (15,0 g) por la masa total de solucion (265 g) y se multiplica por 100 para expresarlo como porcentaje. Esto corresponde a la definicion de % m/m, donde el denominador es siempre la masa de solucion y no la del solvente." }
+          { paso: "m_solucion = 15,0 g + 250 g = 265 g.", porque: "Sumamos la masa de soluto (15,0 g) y la del solvente (250 g) para obtener la masa total de la solución. Como en el apartado anterior, la masa de solución incluye todos los componentes porque al disolver se conserva la masa. Así obtenemos 265 g, que es el denominador necesario para el % m/m." },
+          { paso: "% m/m = 15,0 g / 265 g x 100 = 5,66 %.", porque: "Calculamos el % m/m dividiendo la masa de NaOH (15,0 g) por la masa total de solución (265 g) y multiplicando por 100. Por definición, el denominador del % m/m es siempre la masa de solución y no la del solvente. Entonces el resultado 5,66 % m/m indica que hay 5,66 g de NaOH por cada 100 g de solución." }
         ],
         resultado: "5,66 % m/m"
       }
@@ -172,17 +172,17 @@ window.EJERCITACION["soluciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Masa maxima disuelta: 31,6 g / 100 g de agua x 200 g de agua = 63,2 g de A.", porque: "Se escala la solubilidad, dada por 100 g de agua, a los 200 g de agua presentes: 31,6 g x (200 / 100) = 63,2 g. La solubilidad es la cantidad maxima de soluto que puede disolverse en una cantidad fija de solvente, asi que hay que proporcionarla a la masa de agua real." },
-          { paso: "Sin disolver: 80,0 g - 63,2 g = 16,8 g.", porque: "Se resta la masa maxima disuelta (63,2 g) de la masa agregada (80,0 g) para hallar el exceso que no se disuelve. Lo que supera la solubilidad no puede permanecer en solucion y queda como solido, por eso se aplica la diferencia." },
-          { paso: "Supuesto: la sal y el agua llegan al equilibrio a 20 C, y el solido no disuelto esta en equilibrio con la solucion saturada.", porque: "Se aclaran los supuestos del calculo: equilibrio a 20 C y presencia de solido en contacto con la solucion saturada. La solubilidad es un valor de equilibrio que solo se alcanza si hay exceso de soluto, asi que estas condiciones justifican el resultado." }
+          { paso: "Masa maxima disuelta: 31,6 g / 100 g de agua x 200 g de agua = 63,2 g de A.", porque: "Escalamos la solubilidad, que está dada por 100 g de agua, a los 200 g de agua presentes: 31,6 g x (200 / 100) = 63,2 g. La solubilidad es la cantidad máxima de soluto que puede disolverse en una cantidad fija de solvente, así que hay que proporcionarla a la masa de agua real. Ese valor de 63,2 g es el máximo que la solución puede retener a 20 C." },
+          { paso: "Sin disolver: 80,0 g - 63,2 g = 16,8 g.", porque: "Restamos la masa máxima disuelta (63,2 g) a la masa agregada (80,0 g) para hallar el exceso que no se disuelve. Como 80,0 g - 63,2 g = 16,8 g, ese sólido no puede permanecer en solución y queda sin disolver. Por eso el resultado del apartado a) es 16,8 g." },
+          { paso: "Supuesto: la sal y el agua llegan al equilibrio a 20 C, y el solido no disuelto esta en equilibrio con la solucion saturada.", porque: "Aclaramos los supuestos del cálculo: equilibrio a 20 C y sólido en contacto con una solución saturada. La solubilidad es un valor de equilibrio y solo se alcanza si hay exceso de soluto, por eso estas condiciones justifican el cálculo. Gracias a ellas, el resultado de 16,8 g sin disolver es válido a 20 C." }
         ],
         resultado: "16,8 g sin disolver"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "m_solucion = 63,2 g de A + 200 g de agua = 263,2 g.", porque: "Se suma la masa de soluto disuelto (63,2 g) y la del agua (200 g) para obtener la masa de solucion. El solido sin disolver (16,8 g) no forma parte de la solucion, asi que no se suma; un error comun es usar 280 g como masa total." },
-          { paso: "% m/m = 63,2 g / 263,2 g x 100 = 24,0 %.", porque: "Se divide la masa de soluto disuelto (63,2 g) por la masa de solucion (263,2 g) y se multiplica por 100. Como la solucion es saturada, tiene la maxima concentracion posible a 20 C, y ese es el valor que corresponde a la pregunta." }
+          { paso: "m_solucion = 63,2 g de A + 200 g de agua = 263,2 g.", porque: "Sumamos la masa de soluto disuelto (63,2 g) y la del agua (200 g) para obtener la masa de solución: 263,2 g. El sólido sin disolver (16,8 g) no forma parte de la solución, así que no se suma. Por eso la masa de solución es 263,2 g y no la suma de todo lo agregado al agua." },
+          { paso: "% m/m = 63,2 g / 263,2 g x 100 = 24,0 %.", porque: "Dividimos la masa de soluto disuelto (63,2 g) por la masa de solución (263,2 g) y multiplicamos por 100: 63,2 / 263,2 x 100 = 24,0 %. Como la solución está saturada a 20 C, tiene la máxima concentración posible a esa temperatura, y ese es el valor que corresponde a la pregunta b)." }
         ],
         resultado: "24,0 % m/m"
       }
@@ -201,16 +201,16 @@ window.EJERCITACION["soluciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "k = S / P = 1,20 x 10^-3 mol/L / 1,00 atm = 1,20 x 10^-3 mol/(L x atm).", porque: "Se calcula la constante de Henry dividiendo la solubilidad (S) por la presion parcial (P): k = S / P. Esto aprovecha que la ley de Henry es una proporcionalidad directa S = k x P; a partir de un dato experimental se obtiene k, que sirve para cualquier otra presion a la misma temperatura." },
-          { paso: "S = k x P = 1,20 x 10^-3 x 3,00 = 3,60 x 10^-3 mol/L.", porque: "Se multiplica la constante k por la nueva presion parcial (3,00 atm) para obtener la nueva solubilidad. Como la relacion es directa, al triplicar la presion la solubilidad tambien se triplica; conviene verificar que la presion este en atm, la misma unidad que tiene k." }
+          { paso: "k = S / P = 1,20 x 10^-3 mol/L / 1,00 atm = 1,20 x 10^-3 mol/(L x atm).", porque: "Calculamos la constante de Henry como k = S / P, porque la ley S = k x P es una proporcionalidad directa. Con S = 1,20 x 10^-3 mol/L y P = 1,00 atm obtenemos k = 1,20 x 10^-3 mol/(L x atm). Una vez conocida k, sirve para calcular la solubilidad a cualquier otra presión, siempre que la temperatura no cambie." },
+          { paso: "S = k x P = 1,20 x 10^-3 x 3,00 = 3,60 x 10^-3 mol/L.", porque: "Multiplicamos la constante k por la nueva presión parcial, usando S = k x P = 1,20 x 10^-3 x 3,00. Entonces obtenemos 3,60 x 10^-3 mol/L. Como la relación es directa, al triplicar la presión la solubilidad también se triplica, y la presión debe expresarse en atm, la misma unidad de k." }
         ],
         resultado: "3,60 x 10^-3 mol/L"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "n = 3,60 x 10^-3 mol/L x 0,500 L = 1,80 x 10^-3 mol.", porque: "Se multiplica la solubilidad (mol/L) por el volumen de solucion (0,500 L) para hallar los moles de gas disueltos. Como la solubilidad expresa moles por litro, multiplicar por litros da moles totales, y no conviene usar directamente la presion ni la constante k." },
-          { paso: "m = 1,80 x 10^-3 mol x 44,0 g/mol = 0,0792 g.", porque: "Se multiplica los moles por la masa molar del gas (44,0 g/mol) para pasar a gramos, usando m = n x M, que es la relacion n = m / M despejada. El resultado es pequeno porque la solubilidad de un gas en agua suele ser baja." }
+          { paso: "n = 3,60 x 10^-3 mol/L x 0,500 L = 1,80 x 10^-3 mol.", porque: "Multiplicamos la solubilidad (3,60 x 10^-3 mol/L) por el volumen de solución (0,500 L) para hallar los moles de gas disueltos. Como la solubilidad expresa moles por litro, al multiplicar por litros se obtienen moles totales. Así llegamos a 1,80 x 10^-3 mol, cantidad que se convierte en masa en el paso siguiente." },
+          { paso: "m = 1,80 x 10^-3 mol x 44,0 g/mol = 0,0792 g.", porque: "Pasamos los moles a gramos usando m = n x M, que es la relación n = m / M despejada. Con 1,80 x 10^-3 mol x 44,0 g/mol obtenemos 0,0792 g de gas. Como la solubilidad de un gas en agua suele ser baja, esta masa tan pequeña es coherente con el resultado anterior." }
         ],
         resultado: "0,0792 g de gas"
       }
@@ -229,17 +229,17 @@ window.EJERCITACION["soluciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Cl^- del NaCl: 0,20 mol/L x 0,100 L = 0,0200 mol (NaCl se disocia 1:1).", porque: "Se calcula primero los moles de NaCl (M x V = 0,20 mol/L x 0,100 L). Como el NaCl se disocia 1:1, esos moles son tambien los de Cl^- aportados por esta fuente; hay que contar los iones que provienen de cada soluto por separado antes de sumarlos." },
-          { paso: "Cl^- del CaCl2: 0,10 mol/L x 0,100 L = 0,0100 mol de CaCl2, que aportan 2 x 0,0100 = 0,0200 mol de Cl^-.", porque: "Se multiplica los moles de CaCl2 (0,0100 mol) por 2, porque cada formula libera 2 iones Cl^-. Es el punto donde mas se suele olvidar el subindice, por eso conviene escribir la disociacion y contar los iones antes de sumar." },
-          { paso: "Volumen final 0,200 L; [Cl^-] = (0,0200 + 0,0200) mol / 0,200 L = 0,200 M.", porque: "Se suma los moles de Cl^- de ambas fuentes (0,0200 + 0,0200 mol) y se divide por el volumen total de la mezcla (0,200 L). Al mezclar, el volumen final es la suma de los volumenes (suponiendo aditividad) y los moles del ion se conservan." }
+          { paso: "Cl^- del NaCl: 0,20 mol/L x 0,100 L = 0,0200 mol (NaCl se disocia 1:1).", porque: "Calculamos primero los moles de NaCl como M x V, con 0,20 mol/L x 0,100 L = 0,0200 mol. Como el NaCl se disocia 1:1, esos moles son también los de Cl^- que aporta esta fuente. Conviene contar los iones de cada soluto por separado antes de sumarlos, para no omitir ninguna fuente." },
+          { paso: "Cl^- del CaCl2: 0,10 mol/L x 0,100 L = 0,0100 mol de CaCl2, que aportan 2 x 0,0100 = 0,0200 mol de Cl^-.", porque: "Multiplicamos los moles de CaCl2 (0,0100 mol) por 2, porque cada fórmula libera 2 iones Cl^-. Así obtenemos 2 x 0,0100 = 0,0200 mol de Cl^- aportados por el CaCl2. Este es el paso donde más se olvida el subíndice, por eso lo calculamos aparte antes de sumar." },
+          { paso: "Volumen final 0,200 L; [Cl^-] = (0,0200 + 0,0200) mol / 0,200 L = 0,200 M.", porque: "Sumamos los moles de Cl^- de ambas fuentes, porque la mezcla contiene los iones de las dos soluciones. Dividimos (0,0200 + 0,0200) mol por el volumen final de 0,200 L, suponiendo aditividad de volúmenes. Por eso la concentración final de cloruro es 0,200 M." }
         ],
         resultado: "[Cl^-] = 0,200 M"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "[Na^+] = 0,0200 mol / 0,200 L = 0,100 M.", porque: "Se divide los moles de Na^+ (0,0200 mol, provenientes solo del NaCl) por el volumen final de 0,200 L. Como el NaCl aporta un Na^+ por formula, no hay que sumar ningun otro aporte de sodio." },
-          { paso: "[Ca^2+] = 0,0100 mol / 0,200 L = 0,0500 M.", porque: "Se divide los moles de Ca^2+ (0,0100 mol, aportados solo por el CaCl2) por el volumen final de 0,200 L. El Ca^2+ se reparte en el volumen total de la mezcla, por eso la concentracion se calcula sobre 200 mL y no sobre 100 mL." }
+          { paso: "[Na^+] = 0,0200 mol / 0,200 L = 0,100 M.", porque: "Dividimos los moles de Na^+ (0,0200 mol) por el volumen final de 0,200 L, porque la concentración se calcula sobre el volumen total de la mezcla. Como el NaCl aporta un Na^+ por fórmula y el CaCl2 no tiene sodio, este valor proviene de una sola fuente. Así se obtiene [Na^+] = 0,100 M." },
+          { paso: "[Ca^2+] = 0,0100 mol / 0,200 L = 0,0500 M.", porque: "Dividimos los moles de Ca^2+ (0,0100 mol, aportados solo por el CaCl2) por el volumen final de 0,200 L. El calcio se reparte en el volumen total de la mezcla, por eso la concentración se calcula sobre 0,200 L y no sobre los 100 mL de cada solución. Así resulta [Ca^2+] = 0,0500 M." }
         ],
         resultado: "[Na^+] = 0,100 M; [Ca^2+] = 0,0500 M"
       }
@@ -258,24 +258,24 @@ window.EJERCITACION["soluciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Base de calculo 1,00 L: m_solucion = 1000 mL x 1,84 g/mL = 1840 g; m_H2SO4 = 0,960 x 1840 g = 1766,4 g.", porque: "Se toma 1,00 L de solucion como base de calculo y se pasa a masa con la densidad (1000 mL x 1,84 g/mL = 1840 g). Como el % m/m se aplica a masas, el volumen debe convertirse primero en masa; luego el 96,0 % da la masa de H2SO4 en esa base." },
-          { paso: "n = 1766,4 g / 98,08 g/mol = 18,0 mol; M = 18,0 mol / 1,00 L = 18,0 M.", porque: "Se divide la masa de H2SO4 (1766,4 g) por su masa molar (98,08 g/mol) para obtener los moles, y luego se divide por 1,00 L para obtener la molaridad. Como la base es 1 L, el numero de moles coincide con M; conviene verificar que se use la masa molar del H2SO4 completo." }
+          { paso: "Base de calculo 1,00 L: m_solucion = 1000 mL x 1,84 g/mL = 1840 g; m_H2SO4 = 0,960 x 1840 g = 1766,4 g.", porque: "Tomamos 1,00 L de solución como base de cálculo y lo pasamos a masa con la densidad: 1000 mL x 1,84 g/mL = 1840 g. Como el % m/m se aplica a masas, el volumen debe convertirse primero en masa; luego el 96,0 % nos da la masa de H2SO4 en esa base. Así obtenemos 1766,4 g de H2SO4, que es la base para calcular los moles." },
+          { paso: "n = 1766,4 g / 98,08 g/mol = 18,0 mol; M = 18,0 mol / 1,00 L = 18,0 M.", porque: "Dividimos la masa de H2SO4 (1766,4 g) por su masa molar (98,08 g/mol) para obtener los moles: 1766,4 g / 98,08 g/mol = 18,0 mol. Luego dividimos por el volumen de la base (1,00 L) según M = n / V, lo que da 18,0 M. Como la base es 1,00 L, el número de moles coincide con la molaridad." }
         ],
         resultado: "18,0 M"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "eq = 1766,4 g / 49,04 g/eq = 36,0 eq; N = 36,0 eq / 1,00 L = 36,0 N.", porque: "Se divide la masa de H2SO4 por su masa equivalente (49,04 g/eq) para obtener los equivalentes. Por definicion, la normalidad cuenta equivalentes, y la masa equivalente es la masa molar dividida por el numero de H^+ que el acido puede ceder (aqui 2, por ser diprotico)." },
-          { paso: "N = 2 x M, porque cada mol de H2SO4 aporta 2 equivalentes en la neutralizacion.", porque: "Se aplica N = 2 x M porque, en la neutralizacion, cada mol de H2SO4 aporta 2 equivalentes (2 mol de H^+). Por eso la normalidad de este acido es el doble de su molaridad; la molaridad, en cambio, cuenta moles de formula sin importar cuantos H^+ libera." }
+          { paso: "eq = 1766,4 g / 49,04 g/eq = 36,0 eq; N = 36,0 eq / 1,00 L = 36,0 N.", porque: "Dividimos la masa de H2SO4 (1766,4 g) por su masa equivalente (49,04 g/eq) para obtener los equivalentes, porque la normalidad cuenta equivalentes y no moles. La masa equivalente es la masa molar dividida por los H^+ que el ácido puede ceder, y en este caso 98,08 / 2 = 49,04 g/eq. Así se obtienen 36,0 eq, que dan N = 36,0 eq / 1,00 L = 36,0 N." },
+          { paso: "N = 2 x M, porque cada mol de H2SO4 aporta 2 equivalentes en la neutralizacion.", porque: "Aplicamos N = 2 x M porque, en la neutralización, cada mol de H2SO4 aporta 2 equivalentes (2 mol de H^+). Usando M = 18,0 M, el doble da 36,0 N, que coincide con el cálculo anterior. Por eso la normalidad de este ácido es el doble de su molaridad, mientras que la molaridad cuenta moles de fórmula sin importar cuántos H^+ libera." }
         ],
         resultado: "36,0 N (el doble de la molaridad)"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "n(H2SO4) necesarios = 0,100 mol/L x 0,250 L = 0,0250 mol.", porque: "Se calcula los moles de H2SO4 necesarios en la solucion diluida (0,100 mol/L x 0,250 L = 0,0250 mol). Se hace primero porque la cantidad de acido se conserva al diluir: lo que se necesita en la solucion final es lo que hay que tomar del concentrado." },
-          { paso: "V = 0,0250 mol / 18,0 mol/L = 1,39 x 10^-3 L = 1,39 mL.", porque: "Se despeja el volumen de concentrado como V = n / M, ya que el acido de 18,0 M debe aportar esos 0,0250 mol. El volumen resultante es muy pequeno (1,39 mL) y se completa hasta 250 mL con agua; conviene verificar que el volumen sea menor que el final y que la conversion de L a mL sea correcta." }
+          { paso: "n(H2SO4) necesarios = 0,100 mol/L x 0,250 L = 0,0250 mol.", porque: "Calculamos los moles de H2SO4 necesarios para la solución diluida con 0,100 mol/L x 0,250 L = 0,0250 mol. Lo hacemos primero porque la cantidad de ácido se conserva al diluir, y esos moles son los que hay que tomar del concentrado. Por eso este valor es el dato que se usa para despejar el volumen." },
+          { paso: "V = 0,0250 mol / 18,0 mol/L = 1,39 x 10^-3 L = 1,39 mL.", porque: "Despejamos el volumen de concentrado como V = n / M, ya que el ácido de 18,0 M debe aportar los 0,0250 mol. Con 0,0250 mol / 18,0 mol/L = 1,39 x 10^-3 L, que equivale a 1,39 mL. Ese volumen es muy pequeño y luego se completa hasta 250 mL con agua, así que conviene verificar que sea menor que 250 mL." }
         ],
         resultado: "1,39 mL de acido concentrado (agregarlo sobre agua, no al reves)"
       }
@@ -295,18 +295,18 @@ window.EJERCITACION["soluciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Disuelta a 40 C: 62,0 g / 100 g de agua x 500 g de agua = 310 g de X.", porque: "Se calcula la masa disuelta a 40 C escalando la solubilidad (62,0 g por 100 g de agua) a los 500 g de agua del enunciado, con el factor 500 / 100 = 5: 62,0 x 5 = 310 g. La solubilidad siempre se refiere a 100 g de solvente, no de solucion." },
-          { paso: "Disuelta a 10 C: 25,0 g / 100 g de agua x 500 g de agua = 125 g de X.", porque: "Se escala la solubilidad a 10 C (25,0 g por 100 g de agua) con los mismos 500 g de agua: 25,0 x 5 = 125 g. Es la cantidad maxima que la solucion fria puede retener, y se usa como referencia para saber cuanto precipita." },
-          { paso: "Cristalizan: 310 g - 125 g = 185 g de X.", porque: "Se resta la masa retenida a 10 C (125 g) de la masa disuelta a 40 C (310 g) para obtener lo que cristaliza. Lo que excede la solubilidad a la temperatura final se separa como solido; es el balance de masa que responde la pregunta a)." },
-          { paso: "Supuesto: no se evapora agua y el solido que cristaliza es X anhidro.", porque: "Se explicitan los supuestos del balance: no se evapora agua y el solido es X anhidro. Sin ellos no se puede cerrar el balance de masa, porque la evaporacion o la presencia de agua de hidratacion cambiarian la masa de solvente o la del solido." }
+          { paso: "Disuelta a 40 C: 62,0 g / 100 g de agua x 500 g de agua = 310 g de X.", porque: "Calculamos la masa disuelta a 40 C escalando la solubilidad (62,0 g por 100 g de agua) a los 500 g de agua del enunciado. Usamos el factor 500 / 100 = 5, así que 62,0 x 5 = 310 g de X. La solubilidad siempre se refiere a 100 g de solvente y no de solución, por eso el escalado se hace con el agua." },
+          { paso: "Disuelta a 10 C: 25,0 g / 100 g de agua x 500 g de agua = 125 g de X.", porque: "Escalamos la solubilidad a 10 C, que es 25,0 g por 100 g de agua, a los mismos 500 g de agua: 25,0 x 5 = 125 g. Este valor es la cantidad máxima que la solución fría puede retener. Por eso lo usamos como referencia para saber cuánto precipita al enfriar." },
+          { paso: "Cristalizan: 310 g - 125 g = 185 g de X.", porque: "Restamos la masa retenida a 10 C (125 g) de la masa disuelta a 40 C (310 g) para obtener lo que cristaliza: 310 g - 125 g = 185 g. Lo que excede la solubilidad a la temperatura final se separa como sólido. Este balance de masa responde directamente al apartado a)." },
+          { paso: "Supuesto: no se evapora agua y el solido que cristaliza es X anhidro.", porque: "Explicitamos los supuestos del balance: no se evapora agua y el sólido que cristaliza es X anhidro. Sin ellos no se puede cerrar el balance de masa, porque una evaporación o la presencia de agua de hidratación cambiaría la masa de solvente o la del sólido. Con estos supuestos, el resultado de 185 g es válido." }
         ],
         resultado: "185 g de X cristalizan"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Al bajar la temperatura disminuye la solubilidad: la solubilidad de X aumenta con la temperatura.", porque: "Se compara las solubilidades a 40 C y 10 C: a mayor temperatura se disuelve mas soluto (310 g frente a 125 g por el mismo solvente). Esa es la base experimental para saber como varia la solubilidad con la temperatura, que es lo que se necesita para clasificar el proceso." },
-          { paso: "Si la solubilidad aumenta con T, el proceso de disolucion absorbe calor: es endotermico (Delta H_disolucion > 0).", porque: "Se aplica el criterio: si la solubilidad sube con la temperatura, la disolucion se favorece al calentar, lo que indica que absorbe calor (endotermica, Delta H > 0). Esto sigue el principio de Le Chatelier; conviene verificar que el signo de Delta H sea coherente con ese criterio." }
+          { paso: "Al bajar la temperatura disminuye la solubilidad: la solubilidad de X aumenta con la temperatura.", porque: "Comparamos las solubilidades: a 40 C la solubilidad es 62,0 g por 100 g de agua y a 10 C es 25,0 g. Como se disuelve más soluto a mayor temperatura, tenemos la base experimental para ver cómo varía la solubilidad con T. Entonces podemos clasificar el proceso de disolución según si absorbe o libera calor." },
+          { paso: "Si la solubilidad aumenta con T, el proceso de disolucion absorbe calor: es endotermico (Delta H_disolucion > 0).", porque: "Aplicamos el criterio de temperatura: si la solubilidad sube al aumentar T, la disolución se favorece al calentar, lo que indica que absorbe calor. Por eso el proceso es endotérmico, con Delta H > 0, y esto sigue el principio de Le Chatelier. Conviene verificar que el signo de Delta H coincida con esa conclusión." }
         ],
         resultado: "Endotermico (Delta H > 0)"
       }
@@ -325,22 +325,22 @@ window.EJERCITACION["soluciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "ppm = mg de soluto por kg de solucion: 2,50 mg/kg x 0,500 kg = 1,25 mg de Fe^3+.", porque: "Se multiplica la concentracion en ppm (2,50 mg/kg) por la masa de muestra en kg (0,500 kg) para obtener los mg de Fe^3+. El ppm es una relacion masa/masa, asi que hay que usar kilogramos y no gramos; con 500 g el resultado seria 1000 veces mayor." }
+          { paso: "ppm = mg de soluto por kg de solucion: 2,50 mg/kg x 0,500 kg = 1,25 mg de Fe^3+.", porque: "Multiplicamos la concentración en ppm (2,50 mg/kg) por la masa de muestra en kilogramos (0,500 kg) para obtener los mg de Fe^3+. Usamos kg porque el ppm es una relación masa/masa, y con 500 g el resultado sería 1000 veces mayor. Por eso 2,50 x 0,500 = 1,25 mg de Fe^3+ en la muestra." }
         ],
         resultado: "1,25 mg de Fe^3+"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Supuesto: densidad 1,00 g/mL; entonces 1 kg de muestra ocupa 1,00 L y 2,50 mg/kg = 2,50 mg/L = 2,50 x 10^-3 g/L.", porque: "Se usa la densidad (1,00 g/mL) para saber que 1 kg de muestra ocupa 1,00 L, y asi pasar de mg/kg a mg/L. En agua diluida la densidad es cercana a 1 g/mL, lo que justifica el supuesto; despues se convierte 2,50 mg/L a g/L dividiendo por 1000." },
-          { paso: "[Fe^3+] = 2,50 x 10^-3 g/L / 55,85 g/mol = 4,48 x 10^-5 M.", porque: "Se divide la concentracion en g/L (2,50 x 10^-3 g/L) por la masa molar del Fe (55,85 g/mol), porque la molaridad es moles por litro. Por eso el paso previo de pasar mg a g es indispensable: con mg/L directamente el valor quedaria 1000 veces mayor." }
+          { paso: "Supuesto: densidad 1,00 g/mL; entonces 1 kg de muestra ocupa 1,00 L y 2,50 mg/kg = 2,50 mg/L = 2,50 x 10^-3 g/L.", porque: "Usamos la densidad (1,00 g/mL) para saber que 1 kg de muestra ocupa 1,00 L, lo que permite pasar de mg/kg a mg/L. Como el agua diluida tiene densidad cercana a 1 g/mL, el supuesto es razonable y hace que 2,50 mg/kg equivalgan a 2,50 mg/L. Luego convertimos 2,50 mg/L a g/L dividiendo por 1000, para que la unidad sea compatible con la masa molar." },
+          { paso: "[Fe^3+] = 2,50 x 10^-3 g/L / 55,85 g/mol = 4,48 x 10^-5 M.", porque: "Dividimos la concentración en g/L (2,50 x 10^-3 g/L) por la masa molar del Fe (55,85 g/mol), porque la molaridad es moles por litro y necesitamos moles. Con esa división obtenemos 4,48 x 10^-5 M de Fe^3+. Por eso el paso previo de pasar mg a g es indispensable: sin esa conversión el valor quedaría 1000 veces mayor." }
         ],
         resultado: "4,48 x 10^-5 M"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "ppm = mg/kg de solucion; mg/L = mg por litro de solucion. Con densidad cercana a 1 g/mL, 1 kg de solucion ocupa aproximadamente 1 L.", porque: "Se comparan las definiciones: ppm equivale a mg/kg de solucion y mg/L mide mg por litro de solucion. Con densidad cercana a 1 g/mL, 1 kg de solucion ocupa aproximadamente 1 L, por lo que ambas unidades coinciden numericamente. Es una aproximacion valida para soluciones diluidas, no para soluciones densas." }
+          { paso: "ppm = mg/kg de solucion; mg/L = mg por litro de solucion. Con densidad cercana a 1 g/mL, 1 kg de solucion ocupa aproximadamente 1 L.", porque: "Comparamos las definiciones: ppm equivale a mg/kg de solución, y mg/L mide mg por litro de solución. Como la densidad es cercana a 1 g/mL, 1 kg de solución ocupa aproximadamente 1 L, por eso ambas unidades coinciden numéricamente. Entonces la igualdad vale en soluciones diluidas y no en soluciones densas." }
         ],
         resultado: "ppm = mg/L en soluciones diluidas porque la densidad es cercana a 1 g/mL"
       }
@@ -359,24 +359,24 @@ window.EJERCITACION["soluciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "n(Na2CO3) = 0,200 mol/L x 0,250 L = 0,0500 mol.", porque: "Se calcula los moles de Na2CO3 a disolver (0,200 mol/L x 0,250 L = 0,0500 mol). La molaridad se refiere al carbonato disuelto, asi que este es el dato base del calculo; el volumen debe estar en litros." },
-          { paso: "m = 0,0500 mol x 286,2 g/mol = 14,3 g de Na2CO3 . 10 H2O.", porque: "Se convierte los moles en masa de hidrato multiplicando por la masa molar del Na2CO3 . 10 H2O (286,2 g/mol). Como la sal se pesa con su agua de cristalizacion, hay que usar la masa molar del hidrato y no la del anhidro; verificar que 14,3 g sea la masa pesada." }
+          { paso: "n(Na2CO3) = 0,200 mol/L x 0,250 L = 0,0500 mol.", porque: "Calculamos los moles de Na2CO3 con n = M x V, porque la molaridad se refiere al carbonato disuelto. Con 0,200 mol/L y 0,250 L obtenemos 0,0500 mol. Este valor es el dato base del cálculo, y el volumen debe estar en litros para que la unidad quede bien." },
+          { paso: "m = 0,0500 mol x 286,2 g/mol = 14,3 g de Na2CO3 . 10 H2O.", porque: "Convertimos los moles en masa multiplicando por la masa molar del Na2CO3 . 10 H2O (286,2 g/mol), porque la sal se pesa con su agua de cristalización. Así 0,0500 mol x 286,2 g/mol = 14,3 g de sal hidratada. Por eso hay que usar la masa molar del hidrato y no la del anhidro, ya que la masa pesada incluye el agua." }
         ],
         resultado: "14,3 g de sal hidratada"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Masa de agua en el hidrato: 10 x 18,02 g/mol = 180,2 g/mol.", porque: "Se multiplica las 10 moleculas de agua por la masa molar del agua (18,02 g/mol) para hallar la masa de agua contenida en la formula del hidrato. Esa agua forma parte de la masa del solido aunque no sea Na2CO3." },
-          { paso: "% m/m de agua = 180,2 / 286,2 x 100 = 63,0 %.", porque: "Se divide la masa de agua (180,2 g/mol) por la masa molar total del hidrato (286,2 g/mol) y se multiplica por 100. Es la fraccion de la masa de la sal hidratada que corresponde al agua, y muestra cuanto del material pesado no es sal anhidra." }
+          { paso: "Masa de agua en el hidrato: 10 x 18,02 g/mol = 180,2 g/mol.", porque: "Multiplicamos las 10 moléculas de agua por la masa molar del agua (18,02 g/mol) para hallar la masa de agua contenida en la fórmula. Como 10 x 18,02 g/mol = 180,2 g/mol, esa masa es parte del sólido pesado aunque no sea Na2CO3. Entonces el agua de cristalización debe considerarse al interpretar la composición de la sal hidratada." },
+          { paso: "% m/m de agua = 180,2 / 286,2 x 100 = 63,0 %.", porque: "Dividimos la masa de agua (180,2 g/mol) por la masa molar total del hidrato (286,2 g/mol) y multiplicamos por 100, porque el % m/m indica qué fracción de la masa de la sal hidratada corresponde al agua. Entonces 180,2 / 286,2 x 100 = 63,0 %. Este valor muestra que más de la mitad del material pesado no es sal anhidra." }
         ],
         resultado: "63,0 % de agua de cristalizacion"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Calculo erroneo: n = 14,3 g / 105,99 g/mol = 0,135 mol; M = 0,135 mol / 0,250 L = 0,540 M.", porque: "Se calcula la molaridad erronea que resultaria si los 14,3 g se tratan como Na2CO3 anhidro (105,99 g/mol): masa dividida masa molar da moles, y luego se divide por el volumen. Este calculo sirve para comparar con el valor correcto y ver que el error proviene de usar una masa molar que no corresponde." },
-          { paso: "La concentracion real es 0,200 M, porque el agua de cristalizacion no aporta Na2CO3 y debe usarse la masa molar del hidrato: 14,3 g / 286,2 g/mol = 0,0500 mol.", porque: "Se usa la masa molar del hidrato (286,2 g/mol) para hallar los moles realmente presentes (14,3 g / 286,2 g/mol = 0,0500 mol) y la molaridad correcta (0,200 M). La masa molar debe ser la del compuesto que se pesa, porque el agua de cristalizacion no aporta Na2CO3 ni debe contarse como soluto." }
+          { paso: "Calculo erroneo: n = 14,3 g / 105,99 g/mol = 0,135 mol; M = 0,135 mol / 0,250 L = 0,540 M.", porque: "Calculamos la molaridad errónea que resultaría si los 14,3 g se tratan como Na2CO3 anhidro (105,99 g/mol): dividimos la masa por la masa molar para obtener moles, y luego por el volumen de 0,250 L. Así obtenemos 14,3 g / 105,99 g/mol = 0,135 mol y 0,540 M. Este resultado sirve de comparación para mostrar que el error proviene de usar una masa molar que no corresponde." },
+          { paso: "La concentracion real es 0,200 M, porque el agua de cristalizacion no aporta Na2CO3 y debe usarse la masa molar del hidrato: 14,3 g / 286,2 g/mol = 0,0500 mol.", porque: "Usamos la masa molar del hidrato (286,2 g/mol) para hallar los moles realmente presentes, porque el agua de cristalización no aporta Na2CO3. Con 14,3 g / 286,2 g/mol = 0,0500 mol, la molaridad correcta es 0,200 M. Por eso la masa molar debe corresponder al compuesto que se pesa y no al anhidro." }
         ],
         resultado: "Se obtendria 0,540 M, un valor 2,7 veces mayor al real (0,200 M): calculo incorrecto"
       }
@@ -395,24 +395,24 @@ window.EJERCITACION["soluciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "m_solucion concentrada = 60,0 mL x 1,08 g/mL = 64,8 g; m_KCl = 0,120 x 64,8 g = 7,78 g.", porque: "Se multiplica el volumen de la solucion concentrada (60,0 mL) por su densidad (1,08 g/mL) para obtener su masa (64,8 g), y luego se aplica el 12,0 % m/m a esa masa. La densidad es indispensable porque el % en masa se refiere a gramos de solucion, no a mililitros." },
-          { paso: "Masa de la mezcla final = 64,8 g + 140 g = 204,8 g; % m/m = 7,776 g / 204,8 g x 100 = 3,80 %.", porque: "Se suma la masa de la solucion concentrada (64,8 g) y la del agua agregada (140 g) para obtener la masa total de la mezcla, y se divide la masa de KCl por ella. El denominador del % m/m final es la masa de toda la mezcla, incluido el agua que se agrego." }
+          { paso: "m_solucion concentrada = 60,0 mL x 1,08 g/mL = 64,8 g; m_KCl = 0,120 x 64,8 g = 7,78 g.", porque: "Multiplicamos el volumen de la solución concentrada (60,0 mL) por su densidad (1,08 g/mL) para obtener su masa: 60,0 mL x 1,08 g/mL = 64,8 g. Luego aplicamos el 12,0 % m/m a esa masa, porque el porcentaje en masa se refiere a gramos de solución. Así obtenemos 7,78 g de KCl, y sin la densidad no sería posible hacer este cálculo." },
+          { paso: "Masa de la mezcla final = 64,8 g + 140 g = 204,8 g; % m/m = 7,776 g / 204,8 g x 100 = 3,80 %.", porque: "Sumamos la masa de la solución concentrada (64,8 g) y la del agua agregada (140 g) para obtener la masa total de la mezcla: 204,8 g. Dividimos la masa de KCl (7,776 g) por ese total y multiplicamos por 100, porque el denominador del % m/m final es toda la mezcla. Por eso el resultado es 3,80 % m/m, que incluye el agua agregada." }
         ],
         resultado: "7,78 g de KCl; 3,80 % m/m"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "n(KCl) = 7,776 g / 74,55 g/mol = 0,1043 mol; V_final = 60,0 mL + 140 mL = 200 mL = 0,200 L.", porque: "Se divide la masa de KCl (7,776 g) por su masa molar (74,55 g/mol) para obtener los moles, y el volumen final se calcula como la suma de 60,0 mL y 140 mL (aditividad supuesta). La molaridad necesita ambos datos: moles de soluto y volumen total de la mezcla." },
-          { paso: "M = 0,1043 mol / 0,200 L = 0,522 M.", porque: "Se divide los moles de KCl (0,1043 mol) por el volumen final en litros (0,200 L). La molaridad se refiere a la mezcla final y no a la solucion concentrada, asi que el volumen del denominador es el de la mezcla completa." }
+          { paso: "n(KCl) = 7,776 g / 74,55 g/mol = 0,1043 mol; V_final = 60,0 mL + 140 mL = 200 mL = 0,200 L.", porque: "Dividimos la masa de KCl (7,776 g) por su masa molar (74,55 g/mol) para obtener los moles, y sumamos 60,0 mL y 140 mL para el volumen final, suponiendo volúmenes aditivos. Con 7,776 g / 74,55 g/mol = 0,1043 mol de KCl y 0,200 L de mezcla. Ambos datos son necesarios porque la molaridad relaciona moles de soluto con el volumen total." },
+          { paso: "M = 0,1043 mol / 0,200 L = 0,522 M.", porque: "Dividimos los moles de KCl (0,1043 mol) por el volumen final en litros (0,200 L), usando M = n / V. Así obtenemos 0,522 M. La molaridad se refiere a la mezcla final y no a la solución concentrada, por eso el volumen del denominador es el de la mezcla completa." }
         ],
         resultado: "0,522 M"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Calculo erroneo: 12,0 % x 60,0 g = 7,20 g de KCl; masa total 60,0 g + 140 g = 200 g; % = 7,20 / 200 x 100 = 3,60 %.", porque: "Se calcula el resultado erroneo a proposito: 12,0 % x 60,0 g = 7,20 g de KCl, usando 60,0 g como masa de la solucion concentrada. Es lo que sale al ignorar la densidad; sirve para comparar y ver por que el % m/m queda subestimado." },
-          { paso: "El error viene de que 60,0 mL de solucion concentrada pesan 64,8 g, no 60,0 g: al ignorar la densidad se subestima la masa de KCl y la masa total.", porque: "Se observa que 60,0 mL de la solucion concentrada pesan 64,8 g y no 60,0 g, lo que subestima tanto la masa de KCl como la masa total. Un % m/m siempre exige masas reales, asi que el volumen debe convertirse a masa con la densidad antes de aplicar el porcentaje." }
+          { paso: "Calculo erroneo: 12,0 % x 60,0 g = 7,20 g de KCl; masa total 60,0 g + 140 g = 200 g; % = 7,20 / 200 x 100 = 3,60 %.", porque: "Calculamos el resultado erróneo a propósito: 12,0 % x 60,0 g = 7,20 g de KCl, tomando 60,0 g como masa de la solución concentrada. Con esa masa total de 200 g, el porcentaje da 3,60 %. Este cálculo sirve para comparar con el valor correcto y ver que, al ignorar la densidad, el % m/m queda subestimado." },
+          { paso: "El error viene de que 60,0 mL de solucion concentrada pesan 64,8 g, no 60,0 g: al ignorar la densidad se subestima la masa de KCl y la masa total.", porque: "Observamos que 60,0 mL de la solución concentrada pesan 64,8 g y no 60,0 g, lo que subestima tanto la masa de KCl como la masa total de la mezcla. Como el % m/m exige masas reales, el volumen debe convertirse a masa con la densidad antes de aplicar el porcentaje. Por eso el valor correcto es 3,80 %." }
         ],
         resultado: "3,60 % (incorrecto); el valor correcto es 3,80 %"
       }
@@ -431,35 +431,35 @@ window.EJERCITACION["soluciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Disociacion: CuSO4 (s) -> Cu^2+ + SO4^2- (disociacion completa).", porque: "Se escribe la disociacion del CuSO4 como sal soluble que se separa completamente en Cu^2+ y SO4^2-. Es el punto de partida para contar iones: con estequiometria 1:1 cada formula libera un Cu^2+ y un SO4^2-." },
-          { paso: "n = 12,50 g / 249,7 g/mol = 0,05006 mol de CuSO4 . 5 H2O; [CuSO4] = [Cu^2+] = [SO4^2-] = 0,05006 mol / 0,500 L = 0,1001 M.", porque: "Se divide la masa del hidrato (12,50 g) por su masa molar (249,7 g/mol) para obtener los moles, y luego por el volumen en litros (0,500 L) para hallar la molaridad. Como cada mol de hidrato aporta un mol de CuSO4 y de cada ion, las tres concentraciones son iguales." },
-          { paso: "[Cu^2+] en mg/L = 0,1001 mol/L x 63,55 g/mol = 6,36 g/L = 6,36 x 10^3 mg/L.", porque: "Se multiplica la molaridad de Cu^2+ (0,1001 mol/L) por la masa molar del Cu (63,55 g/mol) para pasar a g/L, y luego por 1000 para expresar en mg/L. Las concentraciones en mg/L requieren que la masa del ion se exprese en mg y no en g." }
+          { paso: "Disociacion: CuSO4 (s) -> Cu^2+ + SO4^2- (disociacion completa).", porque: "Escribimos la disociación del CuSO4 porque es una sal soluble que se separa completamente en Cu^2+ y SO4^2-. Con estequiometría 1:1, cada fórmula libera un Cu^2+ y un SO4^2-, así que este es el punto de partida para contar los iones. Por eso el paso siguiente puede calcular las concentraciones de cada especie a partir de la misma cantidad de sal." },
+          { paso: "n = 12,50 g / 249,7 g/mol = 0,05006 mol de CuSO4 . 5 H2O; [CuSO4] = [Cu^2+] = [SO4^2-] = 0,05006 mol / 0,500 L = 0,1001 M.", porque: "Dividimos la masa del hidrato (12,50 g) por su masa molar (249,7 g/mol) para obtener los moles, y luego por el volumen en litros (0,500 L) para hallar la molaridad: 0,05006 mol / 0,500 L = 0,1001 M. Como cada mol de hidrato aporta un mol de CuSO4 y de cada ion, las tres concentraciones son iguales. Entonces 0,1001 M es el valor que corresponde a CuSO4, Cu^2+ y SO4^2-." },
+          { paso: "[Cu^2+] en mg/L = 0,1001 mol/L x 63,55 g/mol = 6,36 g/L = 6,36 x 10^3 mg/L.", porque: "Multiplicamos la molaridad de Cu^2+ (0,1001 mol/L) por su masa molar (63,55 g/mol) para pasar a g/L, y luego por 1000 para expresar el resultado en mg/L. Así obtenemos 6,36 g/L = 6,36 x 10^3 mg/L. Por eso la concentración en mg/L requiere que la masa del ion se exprese en mg y no en g." }
         ],
         resultado: "0,1001 M de CuSO4, Cu^2+ y SO4^2-; [Cu^2+] = 6,36 x 10^3 mg/L"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Masa de CuSO4 anhidro = 0,05006 mol x 159,6 g/mol = 7,990 g en 500 mL.", porque: "Se multiplica los moles del hidrato (0,05006 mol) por la masa molar del CuSO4 anhidro (159,6 g/mol) para obtener la masa de sal anhidra. Solo la sal anhidra cuenta como soluto, porque el agua de cristalizacion no se disuelve como CuSO4." },
-          { paso: "% m/V = 7,990 g / 500 mL x 100 = 1,60 %.", porque: "Se divide la masa de CuSO4 (7,990 g) por el volumen en mL (500 mL) y se multiplica por 100, porque el % m/V se refiere a gramos por cada 100 mL de solucion. Asi se obtiene el porcentaje de soluto en la unidad propia de esta medida." },
-          { paso: "Justificacion: el hidrato pesa 249,7 g/mol, de los cuales 5 x 18,02 = 90,10 g/mol son agua; el CuSO4 anhidro es solo 159,6 / 249,7 = 63,9 % de la masa del hidrato.", porque: "Se calcula la masa de agua de cristalizacion (5 x 18,02 = 90,10 g/mol) y la fraccion de CuSO4 anhidro en el hidrato (159,6 / 249,7 = 63,9 %), para mostrar cuanta parte de la masa pesada es sal. Asi se justifica por que la masa del hidrato no coincide con la del soluto." }
+          { paso: "Masa de CuSO4 anhidro = 0,05006 mol x 159,6 g/mol = 7,990 g en 500 mL.", porque: "Multiplicamos los moles del hidrato (0,05006 mol) por la masa molar del CuSO4 anhidro (159,6 g/mol) para obtener la masa de sal anhidra: 7,990 g en 500 mL. Solo la sal anhidra cuenta como soluto, porque el agua de cristalización no se disuelve como CuSO4. Por eso este valor es la masa de soluto que se usa en el porcentaje m/V." },
+          { paso: "% m/V = 7,990 g / 500 mL x 100 = 1,60 %.", porque: "Dividimos la masa de CuSO4 (7,990 g) por el volumen (500 mL) y multiplicamos por 100, porque el % m/V indica gramos de soluto cada 100 mL de solución. Así obtenemos 1,60 % m/V, que expresa el soluto en la unidad propia de esta medida. Entonces 1,60 % m/V es la concentración del CuSO4 anhidro en la solución madre." },
+          { paso: "Justificacion: el hidrato pesa 249,7 g/mol, de los cuales 5 x 18,02 = 90,10 g/mol son agua; el CuSO4 anhidro es solo 159,6 / 249,7 = 63,9 % de la masa del hidrato.", porque: "Calculamos la masa de agua de cristalización (5 x 18,02 = 90,10 g/mol) y la fracción de CuSO4 anhidro en el hidrato (159,6 / 249,7 = 63,9 %). Así mostramos qué parte de la masa pesada es sal y cuál es agua. Por eso la masa del hidrato no coincide con la masa de soluto, y el valor de 63,9 % justifica usar la masa molar del anhidro." }
         ],
         resultado: "1,60 % m/V de CuSO4 anhidro"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Moles en la alicuota: 0,1001 mol/L x 0,0200 L = 2,002 x 10^-3 mol de CuSO4.", porque: "Se multiplica la molaridad de la solucion madre (0,1001 mol/L) por el volumen de la alicuota (0,0200 L) para obtener los moles de CuSO4 tomados. Una alicuota tiene la misma concentracion que la solucion original, asi que basta multiplicar por el volumen que se toma." },
-          { paso: "[CuSO4] final = 2,002 x 10^-3 mol / 0,250 L = 8,01 x 10^-3 M.", porque: "Se divide los moles de la alicuota (2,002 x 10^-3 mol) por el volumen final de la dilucion (0,250 L). Al diluir el soluto se conserva y solo cambia el volumen, por lo que esta relacion da la nueva concentracion molar de CuSO4." },
-          { paso: "mg de Cu^2+ en 20,0 mL = 2,002 x 10^-3 mol x 63,55 g/mol = 0,1272 g = 127 mg.", porque: "Se multiplica los moles de Cu^2+ de la alicuota (2,002 x 10^-3 mol) por la masa molar del Cu (63,55 g/mol) y se pasa el resultado a mg. Los moles de Cu^2+ no cambian al diluir, y la cantidad pedida corresponde a los 20,0 mL originales, que son los que contiene la alicuota." }
+          { paso: "Moles en la alicuota: 0,1001 mol/L x 0,0200 L = 2,002 x 10^-3 mol de CuSO4.", porque: "Multiplicamos la molaridad de la solución madre (0,1001 mol/L) por el volumen de la alícuota (0,0200 L) para obtener los moles de CuSO4 tomados: 2,002 x 10^-3 mol. Una alícuota tiene la misma concentración que la solución original, así que basta multiplicar por el volumen que se toma. Por eso este valor es la cantidad de sal que pasa a la dilución." },
+          { paso: "[CuSO4] final = 2,002 x 10^-3 mol / 0,250 L = 8,01 x 10^-3 M.", porque: "Dividimos los moles de la alícuota (2,002 x 10^-3 mol) por el volumen final de la dilución (0,250 L), usando M = n / V. Al diluir, el soluto se conserva y solo cambia el volumen, así que el resultado da la nueva concentración: 8,01 x 10^-3 M de CuSO4. Este es el valor que pide el apartado c)." },
+          { paso: "mg de Cu^2+ en 20,0 mL = 2,002 x 10^-3 mol x 63,55 g/mol = 0,1272 g = 127 mg.", porque: "Multiplicamos los moles de Cu^2+ de la alícuota (2,002 x 10^-3 mol) por la masa molar del Cu (63,55 g/mol), con lo que obtenemos 0,1272 g y luego 127 mg. Los moles de Cu^2+ no cambian al diluir, y la cantidad pedida corresponde a los 20,0 mL originales que contiene la alícuota. Entonces la cantidad pedida es 127 mg de Cu^2+." }
         ],
         resultado: "8,01 x 10^-3 M de CuSO4 y 127 mg de Cu^2+"
       },
       {
         parte: "d)",
         pasos: [
-          { paso: "Al evaporarse agua, el volumen de solucion disminuye, pero los moles de Cu^2+ no cambian (el agua sale sin llevar soluto).", porque: "Se analiza que al evaporarse agua el solvente sale sin llevar soluto, asi que los moles de Cu^2+ se mantienen constantes mientras el volumen disminuye. La cantidad de sustancia disuelta no depende de cuanto solvente haya; solo cambia si se agrega o quita soluto." },
-          { paso: "Como M = n / V y n no cambia mientras V baja, la molaridad aumenta.", porque: "Se aplica M = n / V: si n no cambia y V disminuye, el cociente aumenta. La molaridad depende inversamente del volumen cuando el numero de moles es constante, por eso la solucion queda mas concentrada; conviene razonar con la relacion y no con la intuicion." }
+          { paso: "Al evaporarse agua, el volumen de solucion disminuye, pero los moles de Cu^2+ no cambian (el agua sale sin llevar soluto).", porque: "Analizamos que al evaporarse agua el solvente sale sin llevar soluto, así que los moles de Cu^2+ se mantienen constantes mientras el volumen disminuye. La cantidad de sustancia disuelta solo cambia si se agrega o quita soluto, no por la pérdida de solvente. Por eso los moles de Cu^2+ no cambian aunque la solución se concentre." },
+          { paso: "Como M = n / V y n no cambia mientras V baja, la molaridad aumenta.", porque: "Aplicamos M = n / V: si n no cambia y V disminuye, el cociente aumenta. La molaridad depende inversamente del volumen cuando el número de moles es constante, por eso la solución queda más concentrada. Entonces la molaridad aumenta, y conviene razonar con esta relación y no con la intuición." }
         ],
         resultado: "La molaridad aumenta; los moles de Cu^2+ no cambian"
       }
@@ -482,10 +482,10 @@ window.EJERCITACION["reacciones"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Cuento los atomos: a la izquierda 1 Al y 2 O; a la derecha 2 Al y 3 O.", porque: "Se cuentan los atomos de cada elemento a ambos lados de la ecuacion para detectar cuales no estan igualados (aqui Al y O). El balanceo se basa en la conservacion de la masa: ningun atomo se crea ni se destruye, asi que la cantidad de cada elemento debe ser la misma antes y despues." },
-          { paso: "Igualo Al: 4 Al a la izquierda y 2 Al2O3 a la derecha (4 Al).", porque: "Se ajusta el coeficiente del Al para igualar sus atomos: como cada formula de Al2O3 tiene 2 Al, se necesitan 2 formulas para tener 4 Al. Se cambian solo coeficientes porque los subindices definen la sustancia; despues conviene volver a contar todos los elementos." },
-          { paso: "Igualo O: 2 Al2O3 tienen 6 O, y 3 O2 aportan 6 O. Ecuacion: 4 Al(s) + 3 O2(g) -> 2 Al2O3(s).", porque: "Se ajusta el coeficiente del O2 para igualar los atomos de oxigeno: 2 Al2O3 tienen 6 O, y cada O2 aporta 2 O, por lo que hacen falta 3 O2. Al final se revisa que todos los elementos tengan la misma cantidad a ambos lados, como exige la conservacion de la masa." },
-          { paso: "Clasificacion: sintesis (dos reactivos dan un solo producto). Tambien es redox: el Al pasa de 0 a +3 y el O de 0 a -2.", porque: "Se identifica el tipo de reaccion: dos reactivos que dan un unico producto son una sintesis. Ademas hay redox, porque cambian los numeros de oxidacion (Al de 0 a +3 y O de 0 a -2), lo que indica transferencia de electrones; conviene revisar ambos criterios por separado." }
+          { paso: "Cuento los atomos: a la izquierda 1 Al y 2 O; a la derecha 2 Al y 3 O.", porque: "Contamos los átomos de cada elemento a ambos lados para detectar cuáles no están igualados: aquí aparecen Al y O. Usamos la conservación de la masa, porque ningún átomo se crea ni se destruye en la reacción, así que la cantidad de cada elemento debe ser igual antes y después. Por eso el balanceo consiste en ajustar coeficientes hasta que ambos lados coincidan." },
+          { paso: "Igualo Al: 4 Al a la izquierda y 2 Al2O3 a la derecha (4 Al).", porque: "Ajustamos el coeficiente del Al para igualar sus átomos: como cada fórmula de Al2O3 tiene 2 Al, necesitamos 2 fórmulas para tener 4 Al. Entonces el lado izquierdo queda con 4 Al. Se cambian solo los coeficientes, porque los subíndices definen la sustancia; conviene volver a contar todos los elementos después de cada ajuste." },
+          { paso: "Igualo O: 2 Al2O3 tienen 6 O, y 3 O2 aportan 6 O. Ecuacion: 4 Al(s) + 3 O2(g) -> 2 Al2O3(s).", porque: "Ajustamos el coeficiente del O2 para igualar el oxígeno: 2 Al2O3 tienen 6 O, y cada O2 aporta 2 O, así que hacen falta 3 O2. Por eso la ecuación queda 4 Al(s) + 3 O2(g) -> 2 Al2O3(s). Al final revisamos que cada elemento tenga la misma cantidad a ambos lados, como exige la conservación de la masa." },
+          { paso: "Clasificacion: sintesis (dos reactivos dan un solo producto). Tambien es redox: el Al pasa de 0 a +3 y el O de 0 a -2.", porque: "Identificamos el tipo de reacción: dos reactivos que dan un único producto corresponden a una síntesis. Además hay redox, porque el Al pasa de 0 a +3 y el O de 0 a -2, lo que indica transferencia de electrones. Por eso la reacción es síntesis y redox, y conviene revisar ambos criterios por separado." }
         ],
         resultado: "4 Al(s) + 3 O2(g) -> 2 Al2O3(s); sintesis y redox"
       }
@@ -504,10 +504,10 @@ window.EJERCITACION["reacciones"] = [
       {
         parte: "",
         pasos: [
-          { paso: "n(C3H8) = 10,0 g / 44,1 g/mol = 0,227 mol.", porque: "Se divide la masa de propano (10,0 g) por su masa molar (44,1 g/mol) para pasar a moles, porque los coeficientes de la ecuacion balanceada indican proporciones de moles y no de gramos. Verificar que la masa molar sea la del C3H8 completo." },
-          { paso: "Relacion molar: 1 mol de C3H8 produce 3 mol de CO2.", porque: "Se lee la relacion molar directamente de los coeficientes: 1 mol de C3H8 produce 3 mol de CO2, porque el coeficiente del CO2 es 3 y el del propano es 1. Esta es la base de la estequiometria: los coeficientes dan proporciones de moles, no de masas." },
-          { paso: "n(CO2) = 3 x 0,227 mol = 0,680 mol.", porque: "Se multiplica los moles de propano (0,227 mol) por la relacion molar 3 para obtener los moles de CO2. Se trabaja sobre el reactivo porque el oxigeno esta en exceso y el propano es el que determina la cantidad de producto." },
-          { paso: "m(CO2) = 0,680 mol x 44,0 g/mol = 29,9 g.", porque: "Se multiplica los moles de CO2 (0,680 mol) por su masa molar (44,0 g/mol) para expresar el resultado en gramos, usando m = n x M. Es el paso inverso de la conversion inicial; conviene verificar que el resultado sea coherente con la masa de propano de partida." }
+          { paso: "n(C3H8) = 10,0 g / 44,1 g/mol = 0,227 mol.", porque: "Dividimos la masa de propano (10,0 g) por su masa molar (44,1 g/mol) para pasar a moles: 10,0 g / 44,1 g/mol = 0,227 mol. Lo hacemos así porque los coeficientes de la ecuación balanceada indican proporciones de moles y no de gramos. Conviene verificar que la masa molar sea la del C3H8 completo." },
+          { paso: "Relacion molar: 1 mol de C3H8 produce 3 mol de CO2.", porque: "Leemos la relación molar directamente de los coeficientes: el CO2 tiene coeficiente 3 y el propano tiene coeficiente 1, así que 1 mol de C3H8 produce 3 mol de CO2. Esta es la base de la estequiometría, porque los coeficientes dan proporciones de moles y no de masas. Entonces el siguiente paso aplica esa proporción a los 0,227 mol de propano." },
+          { paso: "n(CO2) = 3 x 0,227 mol = 0,680 mol.", porque: "Multiplicamos los moles de propano (0,227 mol) por la relación molar 3 para obtener los moles de CO2: n(CO2) = 3 x 0,227 mol = 0,680 mol. Trabajamos sobre el propano porque el oxígeno está en exceso y el propano es el que determina la cantidad de producto. Por eso el resultado depende de la masa de propano y no del O2." },
+          { paso: "m(CO2) = 0,680 mol x 44,0 g/mol = 29,9 g.", porque: "Multiplicamos los moles de CO2 (0,680 mol) por su masa molar (44,0 g/mol) para expresar el resultado en gramos, usando m = n x M. Así obtenemos 29,9 g de CO2. Es el paso inverso de la conversión inicial, y conviene verificar que el resultado sea coherente con la masa de propano de partida." }
         ],
         resultado: "29,9 g de CO2"
       }
@@ -526,9 +526,9 @@ window.EJERCITACION["reacciones"] = [
       {
         parte: "",
         pasos: [
-          { paso: "n(KClO3) = 24,5 g / 122,5 g/mol = 0,200 mol.", porque: "Se divide la masa de KClO3 (24,5 g) por su masa molar (122,5 g/mol) para pasar a moles. La estequiometria trabaja en moles, por eso la masa dada debe convertirse antes de usar los coeficientes." },
-          { paso: "n(O2) = 0,200 mol x 3 / 2 = 0,300 mol de O2.", porque: "Se aplica la relacion molar de la ecuacion balanceada: 2 mol de KClO3 producen 3 mol de O2, asi que los moles de oxigeno son (3 / 2) veces los del clorato. Esto conecta el reactivo con el producto; el error mas comun es usar 1:1 en vez de leer los coeficientes." },
-          { paso: "V(O2) = 0,300 mol x 22,4 L/mol = 6,72 L en CNPT.", porque: "Se pasa los moles de O2 a volumen con el volumen molar de 22,4 L/mol, que vale en CNPT (273 K y 1 atm). Este valor sale de PV = nRT: a 273 K y 1 atm un mol de gas ideal ocupa 22,4 L; verificar que la condicion sea CNPT antes de usarlo." }
+          { paso: "n(KClO3) = 24,5 g / 122,5 g/mol = 0,200 mol.", porque: "Dividimos la masa de KClO3 (24,5 g) por su masa molar (122,5 g/mol) para pasar a moles: 24,5 g / 122,5 g/mol = 0,200 mol. La estequiometría trabaja en moles, por eso la masa dada debe convertirse antes de usar los coeficientes. Entonces ya tenemos el dato base para relacionarlo con el oxígeno." },
+          { paso: "n(O2) = 0,200 mol x 3 / 2 = 0,300 mol de O2.", porque: "Aplicamos la relación molar de la ecuación balanceada: 2 mol de KClO3 producen 3 mol de O2, así que los moles de oxígeno son (3 / 2) veces los del clorato. Con 0,200 mol x 3 / 2 obtenemos 0,300 mol de O2. Este cálculo conecta el reactivo con el producto, y el error más común es usar relación 1:1 en lugar de leer los coeficientes." },
+          { paso: "V(O2) = 0,300 mol x 22,4 L/mol = 6,72 L en CNPT.", porque: "Pasamos los moles de O2 a volumen con el volumen molar de 22,4 L/mol, que vale en CNPT. Con 0,300 mol x 22,4 L/mol obtenemos 6,72 L de O2. Este valor surge de PV = nRT para un gas ideal en CNPT, así que conviene verificar que la condición sea CNPT antes de usarlo." }
         ],
         resultado: "6,72 L de O2 en CNPT"
       }
@@ -547,9 +547,9 @@ window.EJERCITACION["reacciones"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Balanceo: 1 Zn, 1 Cu, 1 S y 4 O a cada lado; la ecuacion ya esta balanceada con coeficientes 1.", porque: "Se verifica que la ecuacion este balanceada contando cada elemento a ambos lados. Conviene asegurar primero la conservacion de la masa, porque los numeros de oxidacion se analizan sobre una ecuacion que ya es correcta." },
-          { paso: "Zn: 0 en el metal -> +2 en ZnSO4 (se oxida, pierde 2 e^-). Cu: +2 en CuSO4 -> 0 en el Cu metalico (se reduce, gana 2 e^-).", porque: "Se comparan los numeros de oxidacion antes y despues: el Zn pasa de 0 a +2 (pierde 2 e^-) y el Cu pasa de +2 a 0 (gana 2 e^-). Si el numero de oxidacion sube hay oxidacion, y si baja hay reduccion; asi se identifica que proceso sufre cada elemento." },
-          { paso: "Agente reductor: Zn (se oxida y cede electrones). Agente oxidante: Cu^2+ del CuSO4 (se reduce y acepta electrones).", porque: "Es una cuestion de definicion: el oxidante acepta electrones (se reduce) y el reductor cede electrones (se oxida). Por eso el agente oxidante es el Cu^2+ del CuSO4 y el reductor es el Zn; conviene verificarlo siempre con la variacion del numero de oxidacion." }
+          { paso: "Balanceo: 1 Zn, 1 Cu, 1 S y 4 O a cada lado; la ecuacion ya esta balanceada con coeficientes 1.", porque: "Verificamos el balanceo contando cada elemento a ambos lados: 1 Zn, 1 Cu, 1 S y 4 O. Como la conservación de la masa exige que los átomos se mantengan, la ecuación ya está balanceada con coeficientes 1. Por eso podemos asignar los números de oxidación sobre una ecuación correcta." },
+          { paso: "Zn: 0 en el metal -> +2 en ZnSO4 (se oxida, pierde 2 e^-). Cu: +2 en CuSO4 -> 0 en el Cu metalico (se reduce, gana 2 e^-).", porque: "Comparamos los números de oxidación antes y después: el Zn pasa de 0 a +2 y el Cu pasa de +2 a 0. Si el número de oxidación sube hay oxidación, y si baja hay reducción, así que el Zn pierde 2 e^- y el Cu gana 2 e^-. Entonces identificamos qué proceso sufre cada elemento." },
+          { paso: "Agente reductor: Zn (se oxida y cede electrones). Agente oxidante: Cu^2+ del CuSO4 (se reduce y acepta electrones).", porque: "Es una cuestión de definición: el oxidante acepta electrones (se reduce) y el reductor cede electrones (se oxida). Por eso el agente oxidante es el Cu^2+ del CuSO4, que pasa de +2 a 0, y el reductor es el Zn, que pasa de 0 a +2. Conviene verificar siempre con la variación del número de oxidación." }
         ],
         resultado: "Zn: reductor (0 -> +2); Cu^2+: oxidante (+2 -> 0)"
       }
@@ -568,9 +568,9 @@ window.EJERCITACION["reacciones"] = [
       {
         parte: "",
         pasos: [
-          { paso: "n(HCl) = 0,200 mol/L x 0,0500 L = 0,0100 mol.", porque: "Se pasa el volumen de 50,0 mL a litros (0,0500 L) y se multiplica por la molaridad del HCl (0,200 mol/L) para obtener los moles, porque M es mol por litro. El volumen en mL debe convertirse antes; el resultado es 0,0100 mol." },
-          { paso: "Relacion 1:1 en la ecuacion: 0,0100 mol de HCl necesitan 0,0100 mol de NaOH y producen 0,0100 mol de NaCl.", porque: "Se usa la relacion 1:1 que dan los coeficientes para saber cuantos moles de NaOH se necesitan y cuantos de NaCl se forman. En una neutralizacion completa, acido y base reaccionan en proporcion estequiometrica, asi que sus moles coinciden." },
-          { paso: "m(NaCl) = 0,0100 mol x 58,5 g/mol = 0,585 g.", porque: "Se multiplica los moles de NaCl (0,0100 mol) por su masa molar (58,5 g/mol) para pasar a gramos. Es la conversion final de moles a masa del producto; conviene verificar que el resultado tenga un orden de magnitud acorde a la cantidad de reactivo." }
+          { paso: "n(HCl) = 0,200 mol/L x 0,0500 L = 0,0100 mol.", porque: "Pasamos el volumen de 50,0 mL a litros (0,0500 L) y lo multiplicamos por la molaridad del HCl: 0,200 mol/L x 0,0500 L = 0,0100 mol. Usamos litros porque M es mol por litro, así que el volumen en mL debe convertirse antes de operar. Por eso el resultado queda en moles de HCl, que es lo que se necesita para la relación estequiométrica." },
+          { paso: "Relacion 1:1 en la ecuacion: 0,0100 mol de HCl necesitan 0,0100 mol de NaOH y producen 0,0100 mol de NaCl.", porque: "Usamos la relación 1:1 de los coeficientes para saber cuántos moles de NaOH se necesitan y cuántos de NaCl se forman. Como 0,0100 mol de HCl reaccionan con 0,0100 mol de NaOH y producen 0,0100 mol de NaCl, la neutralización es completa. Entonces la masa del producto se calcula a partir de esos 0,0100 mol." },
+          { paso: "m(NaCl) = 0,0100 mol x 58,5 g/mol = 0,585 g.", porque: "Multiplicamos los moles de NaCl (0,0100 mol) por su masa molar (58,5 g/mol) para pasar a gramos: 0,0100 mol x 58,5 g/mol = 0,585 g. Es la conversión final de moles a masa del producto. Conviene verificar que el resultado tenga un orden de magnitud acorde a la cantidad de reactivo." }
         ],
         resultado: "0,585 g de NaCl (reaccion de neutralizacion)"
       }
@@ -589,17 +589,17 @@ window.EJERCITACION["reacciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "n(Fe) = 8,00 g / 55,85 g/mol = 0,143 mol; n(S) = 6,00 g / 32,07 g/mol = 0,187 mol.", porque: "Se divide cada masa por su masa molar: Fe (8,00 g / 55,85 g/mol) y S (6,00 g / 32,07 g/mol). La comparacion de reactivos se hace en moles, porque la relacion de la ecuacion es entre moles y no entre gramos." },
-          { paso: "Relacion 1:1: 0,143 mol de Fe necesitan 0,143 mol de S. Hay 0,187 mol de S, asi que el Fe es el limitante y el S esta en exceso.", porque: "Se compara los moles disponibles con la relacion 1:1: el Fe necesita 0,143 mol de S y hay 0,187 mol, por lo que el Fe se agota primero y es el limitante. Las masas de reactivos no se pueden comparar directamente porque cada especie tiene su propia masa molar." },
-          { paso: "Exceso de S = (0,187 - 0,143) mol = 0,0439 mol; m = 0,0439 mol x 32,07 g/mol = 1,41 g.", porque: "Se calcula el exceso de S restando lo consumido (0,143 mol) de lo disponible (0,187 mol) y se pasa a masa con la masa molar del S. El reactivo en exceso es el que sobra al final; el limitante nunca queda en exceso." }
+          { paso: "n(Fe) = 8,00 g / 55,85 g/mol = 0,143 mol; n(S) = 6,00 g / 32,07 g/mol = 0,187 mol.", porque: "Dividimos cada masa por su masa molar para pasar a moles: Fe con 8,00 g / 55,85 g/mol y S con 6,00 g / 32,07 g/mol. Así obtenemos 0,143 mol de Fe y 0,187 mol de S. Comparamos en moles y no en gramos, porque la relación de la ecuación es entre moles y cada especie tiene su propia masa molar." },
+          { paso: "Relacion 1:1: 0,143 mol de Fe necesitan 0,143 mol de S. Hay 0,187 mol de S, asi que el Fe es el limitante y el S esta en exceso.", porque: "Comparamos los moles disponibles con la relación 1:1: el Fe necesita 0,143 mol de S para reaccionar completamente, y hay 0,187 mol. Como el hierro se agota primero, es el reactivo limitante y el S queda en exceso. Dado que el Fe limita la reacción, el resto de los cálculos se hace a partir de sus moles." },
+          { paso: "Exceso de S = (0,187 - 0,143) mol = 0,0439 mol; m = 0,0439 mol x 32,07 g/mol = 1,41 g.", porque: "Calculamos el exceso de S restando lo consumido (0,143 mol) de lo disponible (0,187 mol): 0,187 - 0,143 = 0,0439 mol. Luego lo pasamos a masa con la masa molar del S: 0,0439 mol x 32,07 g/mol = 1,41 g. Por eso queda sin reaccionar 1,41 g de azufre, y el reactivo limitante nunca queda en exceso." }
         ],
         resultado: "Limitante: Fe; exceso de S: 1,41 g"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "n(FeS) teorico = 0,143 mol (segun el Fe); m teorica = 0,143 mol x 87,92 g/mol = 12,6 g.", porque: "Se calcula el producto teorico usando los moles del reactivo limitante (Fe): 0,143 mol de FeS, que luego se multiplican por la masa molar del FeS (87,92 g/mol). El producto teorico siempre sale del limitante, porque es el reactivo que se consume primero." },
-          { paso: "m real = 0,850 x 12,6 g = 10,7 g.", porque: "Se multiplica el valor teorico (12,6 g) por el rendimiento (0,850) para hallar la masa realmente obtenida. El rendimiento es la fraccion del producto teorico que se obtiene en la practica, por eso se aplica sobre el valor calculado en el paso anterior." }
+          { paso: "n(FeS) teorico = 0,143 mol (segun el Fe); m teorica = 0,143 mol x 87,92 g/mol = 12,6 g.", porque: "Calculamos el producto teórico a partir de los moles del reactivo limitante (Fe): 0,143 mol de FeS, que luego se multiplican por la masa molar del FeS (87,92 g/mol). Así obtenemos 12,6 g. El producto teórico siempre sale del limitante, porque es el reactivo que se consume primero." },
+          { paso: "m real = 0,850 x 12,6 g = 10,7 g.", porque: "Multiplicamos el valor teórico (12,6 g) por el rendimiento (0,850) para hallar la masa realmente obtenida: 0,850 x 12,6 g = 10,7 g. El rendimiento es la fracción del producto teórico que se obtiene en la práctica, por eso se aplica sobre el valor del paso anterior. Así se obtiene el FeS que realmente se forma." }
         ],
         resultado: "10,7 g de FeS"
       }
@@ -618,16 +618,16 @@ window.EJERCITACION["reacciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "m(CaCO3) = 0,840 x 12,5 g = 10,5 g.", porque: "Se multiplica la masa de caliza (12,5 g) por la pureza (0,840) para obtener la masa de CaCO3 puro. La pureza indica la fraccion de la muestra que es CaCO3; solo esa parte reacciona y forma CO2, por eso el resto no debe considerarse." },
-          { paso: "n(CaCO3) = 10,5 g / 100,1 g/mol = 0,105 mol.", porque: "Se divide la masa de CaCO3 puro (10,5 g) por su masa molar (100,1 g/mol) para obtener los moles. La estequiometria trabaja en moles, asi que la masa corregida por pureza debe pasarse a moles antes de usar los coeficientes." },
-          { paso: "Relacion 1:1 con el CO2: n(CO2) = 0,105 mol; m(CO2) = 0,105 mol x 44,0 g/mol = 4,62 g.", porque: "Se aplica la relacion 1:1 de la ecuacion (1 mol de CaCO3 produce 1 mol de CO2) y luego se multiplica por la masa molar del CO2 (44,0 g/mol). El HCl esta en exceso y no limita la cantidad de CO2, por eso el calculo sale del carbonato." }
+          { paso: "m(CaCO3) = 0,840 x 12,5 g = 10,5 g.", porque: "Multiplicamos la masa de caliza (12,5 g) por la pureza (0,840) para obtener la masa de CaCO3 puro: 0,840 x 12,5 g = 10,5 g. La pureza indica qué fracción de la muestra es CaCO3, y solo esa parte reacciona y forma CO2. Por eso el resto de la caliza no debe considerarse en el cálculo." },
+          { paso: "n(CaCO3) = 10,5 g / 100,1 g/mol = 0,105 mol.", porque: "Dividimos la masa de CaCO3 puro (10,5 g) por su masa molar (100,1 g/mol) para obtener los moles: 10,5 g / 100,1 g/mol = 0,105 mol. La estequiometría trabaja en moles, así que la masa corregida por pureza debe pasarse a moles antes de usar los coeficientes. Entonces tenemos el dato para la relación con el CO2." },
+          { paso: "Relacion 1:1 con el CO2: n(CO2) = 0,105 mol; m(CO2) = 0,105 mol x 44,0 g/mol = 4,62 g.", porque: "Aplicamos la relación 1:1 de la ecuación, porque 1 mol de CaCO3 produce 1 mol de CO2. Así n(CO2) = 0,105 mol, y multiplicando por la masa molar del CO2 (44,0 g/mol) obtenemos 4,62 g. El HCl está en exceso y no limita la cantidad de CO2, por eso el cálculo sale del carbonato." }
         ],
         resultado: "4,62 g de CO2"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "V = nRT / P = 0,105 mol x 0,0821 L atm/(mol K) x 298 K / 1 atm = 2,57 L.", porque: "Se usa la ecuacion de los gases ideales V = nRT / P con la temperatura en kelvin (298 K). A 25 C el gas no esta en CNPT, por eso el volumen molar de 22,4 L/mol no sirve; hay que verificar que T este en K y no en C." }
+          { paso: "V = nRT / P = 0,105 mol x 0,0821 L atm/(mol K) x 298 K / 1 atm = 2,57 L.", porque: "Usamos la ecuación de gases ideales V = nRT / P con la temperatura en kelvin (298 K), porque el gas no está en CNPT. Con 0,105 mol, 0,0821 L atm/(mol K), 298 K y 1 atm obtenemos 2,57 L de CO2. Por eso el volumen de 22,4 L/mol no sirve a 25 C, y conviene verificar que T esté en K." }
         ],
         resultado: "2,57 L de CO2 a 25 C y 1 atm"
       }
@@ -646,19 +646,19 @@ window.EJERCITACION["reacciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Semirreacciones: MnO4^- -> Mn^2+ (Mn pasa de +7 a +2, gana 5 e^-) y Fe^2+ -> Fe^3+ (pierde 1 e^-).", porque: "Se identifica el cambio de numero de oxidacion en cada semirreaccion: el Mn pasa de +7 a +2 (gana 5 e^-) y el Fe pasa de +2 a +3 (pierde 1 e^-). El metodo ion-electron separa reduccion y oxidacion para poder igualar electrones en cada una, y los numeros de oxidacion indican cuantos electrones participan." },
-          { paso: "Medio acido: MnO4^- + 8 H^+ + 5 e^- -> Mn^2+ + 4 H2O (O igualado con H2O, H igualado con H^+).", porque: "Se iguala el O con H2O y el H con H^+, porque el medio es acido. Despues se suman 5 e^- para igualar las cargas: a la izquierda hay +7 de carga en las especies (-1 + 8) y los 5 e^- la llevan a +2, igual que la derecha. Verificar la carga antes de seguir es la forma de detectar errores." },
-          { paso: "Multiplico la semirreaccion del Fe por 5: 5 Fe^2+ -> 5 Fe^3+ + 5 e^-. Sumo: MnO4^- + 5 Fe^2+ + 8 H^+ -> Mn^2+ + 5 Fe^3+ + 4 H2O.", porque: "Se multiplica la semirreaccion del Fe por 5 para que los 5 electrones perdidos igualen a los 5 ganados, y se cancelen al sumar. La verificacion final es la carga total: -1 + 5 x 2 + 8 = +17 a la izquierda y +2 + 5 x 3 = +17 a la derecha." },
-          { paso: "Agente oxidante: MnO4^- (contiene el Mn que se reduce).", porque: "Se identifica el agente oxidante como la especie que se reduce: el MnO4^- contiene el Mn que pasa de +7 a +2 y acepta electrones. Por definicion, el oxidante es el reactivo que se reduce, mientras que el Fe^2+ es el reductor porque cede electrones." }
+          { paso: "Semirreacciones: MnO4^- -> Mn^2+ (Mn pasa de +7 a +2, gana 5 e^-) y Fe^2+ -> Fe^3+ (pierde 1 e^-).", porque: "Identificamos el cambio de número de oxidación en cada semirreacción: el Mn pasa de +7 a +2 (gana 5 e^-) y el Fe pasa de +2 a +3 (pierde 1 e^-). Como el método ion-electron separa oxidación y reducción, podemos igualar electrones en cada una por separado. Por eso los números de oxidación indican cuántos electrones participan en cada semirreacción." },
+          { paso: "Medio acido: MnO4^- + 8 H^+ + 5 e^- -> Mn^2+ + 4 H2O (O igualado con H2O, H igualado con H^+).", porque: "Igualamos el O con H2O y el H con H^+, porque el enunciado indica medio ácido. Luego sumamos 5 e^- para igualar las cargas: a la izquierda hay -1 + 8 = +7 y los 5 e^- la llevan a +2, igual que la derecha. Verificar la carga antes de seguir es la forma de detectar errores en la semirreacción." },
+          { paso: "Multiplico la semirreaccion del Fe por 5: 5 Fe^2+ -> 5 Fe^3+ + 5 e^-. Sumo: MnO4^- + 5 Fe^2+ + 8 H^+ -> Mn^2+ + 5 Fe^3+ + 4 H2O.", porque: "Multiplicamos la semirreacción del Fe por 5 para que los 5 e^- perdidos igualen a los 5 e^- ganados, y así se cancelen al sumar. Como resultado queda MnO4^- + 5 Fe^2+ + 8 H^+ -> Mn^2+ + 5 Fe^3+ + 4 H2O. Verificamos con la carga total: -1 + 5 x 2 + 8 = +17 a la izquierda y +2 + 5 x 3 = +17 a la derecha." },
+          { paso: "Agente oxidante: MnO4^- (contiene el Mn que se reduce).", porque: "Identificamos el agente oxidante como la especie que se reduce: el MnO4^- contiene el Mn que pasa de +7 a +2 y acepta electrones. Por definición, el oxidante es el reactivo que se reduce, mientras que el Fe^2+ es el reductor porque cede electrones. Entonces el agente oxidante es el MnO4^-." }
         ],
         resultado: "MnO4^- + 5 Fe^2+ + 8 H^+ -> Mn^2+ + 5 Fe^3+ + 4 H2O; oxidante: MnO4^-"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "n(MnO4^-) = 0,0200 mol/L x 0,0250 L = 5,00 x 10^-4 mol.", porque: "Se multiplica la molaridad (0,0200 mol/L) por el volumen en litros (0,0250 L) para obtener los moles de MnO4^-, usando n = M x V. El KMnO4 aporta un MnO4^- por formula, asi que estos moles son los del permanganato que hay que reducir." },
-          { paso: "Relacion 1:5: n(Fe^2+) = 5 x 5,00 x 10^-4 mol = 2,50 x 10^-3 mol.", porque: "Se aplica la relacion molar de la ecuacion balanceada: 1 mol de MnO4^- reacciona con 5 mol de Fe^2+, por eso los moles de permanganato se multiplican por 5. Usar 1:1 seria un error, porque los coeficientes incluyen los 5 electrones intercambiados." },
-          { paso: "m(Fe^2+) = 2,50 x 10^-3 mol x 55,85 g/mol = 0,140 g.", porque: "Se multiplica los moles de Fe^2+ (2,50 x 10^-3 mol) por su masa molar (55,85 g/mol) para pasar a gramos. Es la masa de hierro necesaria para reducir todo el permanganato; conviene verificar el orden de magnitud contra la concentracion de partida." }
+          { paso: "n(MnO4^-) = 0,0200 mol/L x 0,0250 L = 5,00 x 10^-4 mol.", porque: "Multiplicamos la molaridad (0,0200 mol/L) por el volumen en litros (0,0250 L) para obtener los moles de MnO4^-, usando n = M x V. Como el KMnO4 aporta un MnO4^- por fórmula, 5,00 x 10^-4 mol es la cantidad de permanganato que hay que reducir. Esos moles son el dato base para aplicar la relación de la ecuación." },
+          { paso: "Relacion 1:5: n(Fe^2+) = 5 x 5,00 x 10^-4 mol = 2,50 x 10^-3 mol.", porque: "Aplicamos la relación molar de la ecuación balanceada: 1 mol de MnO4^- reacciona con 5 mol de Fe^2+, por eso los moles de permanganato se multiplican por 5. Así n(Fe^2+) = 5 x 5,00 x 10^-4 mol = 2,50 x 10^-3 mol. Usar 1:1 sería un error, porque los coeficientes reflejan los 5 electrones intercambiados." },
+          { paso: "m(Fe^2+) = 2,50 x 10^-3 mol x 55,85 g/mol = 0,140 g.", porque: "Multiplicamos los moles de Fe^2+ (2,50 x 10^-3 mol) por su masa molar (55,85 g/mol) para pasar a gramos, y así obtenemos 0,140 g. Esa es la masa de hierro necesaria para reducir todo el permanganato. Conviene verificar el orden de magnitud contra la concentración de partida." }
         ],
         resultado: "0,140 g de Fe^2+"
       }
@@ -677,17 +677,17 @@ window.EJERCITACION["reacciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Balanceo: H2SO4 + 2 NaOH -> Na2SO4 + 2 H2O.", porque: "Se igualan los atomos del acido y la base: el H2SO4 tiene 2 H que deben neutralizarse con 2 OH^- de la base, asi que el coeficiente del NaOH es 2. Con esto quedan iguales Na, H, S y O a ambos lados; verificar el balanceo contando cada elemento." },
-          { paso: "n(H2SO4) = 0,100 mol/L x 0,0250 L = 2,50 x 10^-3 mol; n(NaOH) = 2 x 2,50 x 10^-3 mol = 5,00 x 10^-3 mol.", porque: "Se calcula los moles de H2SO4 (0,100 mol/L x 0,0250 L) y se multiplica por 2, porque la relacion 1:2 exige 2 mol de NaOH por cada mol de acido. Los moles de base necesarios salen de la estequiometria, no de igualar volumenes." },
-          { paso: "[NaOH] = 5,00 x 10^-3 mol / 0,0400 L = 0,125 M.", porque: "Se divide los moles de NaOH (5,00 x 10^-3 mol) por el volumen de base gastado (0,0400 L), porque M = n / V. El volumen del denominador es el de la base, no el de la muestra de acido." }
+          { paso: "Balanceo: H2SO4 + 2 NaOH -> Na2SO4 + 2 H2O.", porque: "Igualamos los átomos del ácido y de la base: el H2SO4 tiene 2 H que deben neutralizarse con 2 OH^- de la base, por eso el coeficiente del NaOH es 2. Con H2SO4 + 2 NaOH -> Na2SO4 + 2 H2O quedan iguales Na, H, S y O a ambos lados. Verificar el balanceo contando cada elemento es el paso que confirma el coeficiente." },
+          { paso: "n(H2SO4) = 0,100 mol/L x 0,0250 L = 2,50 x 10^-3 mol; n(NaOH) = 2 x 2,50 x 10^-3 mol = 5,00 x 10^-3 mol.", porque: "Calculamos los moles de H2SO4 con 0,100 mol/L x 0,0250 L = 2,50 x 10^-3 mol, y luego los multiplicamos por 2, porque la relación 1:2 exige 2 mol de NaOH por cada mol de ácido. Así n(NaOH) = 2 x 2,50 x 10^-3 mol = 5,00 x 10^-3 mol. Esos moles de base salen de la estequiometría y no de igualar volúmenes." },
+          { paso: "[NaOH] = 5,00 x 10^-3 mol / 0,0400 L = 0,125 M.", porque: "Dividimos los moles de NaOH (5,00 x 10^-3 mol) por el volumen de base gastado (0,0400 L), porque M = n / V. Así obtenemos [NaOH] = 0,125 M. El volumen del denominador es el de la base y no el de la muestra de ácido, por eso se usan los 40,0 mL." }
         ],
         resultado: "[NaOH] = 0,125 M"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "n(Na2SO4) = n(H2SO4) = 2,50 x 10^-3 mol (relacion 1:1).", porque: "Se aplica la relacion 1:1 entre H2SO4 y Na2SO4 que dan los coeficientes de la ecuacion balanceada: cada mol de acido forma un mol de sal. Esto supone que todo el acido se neutraliza, como indica el enunciado." },
-          { paso: "m = 2,50 x 10^-3 mol x 142,0 g/mol = 0,355 g.", porque: "Se multiplica los moles de Na2SO4 (2,50 x 10^-3 mol) por su masa molar (142,0 g/mol) para pasar a gramos. Es la conversion final de moles a masa; conviene verificar que se use la masa molar de la sal completa." }
+          { paso: "n(Na2SO4) = n(H2SO4) = 2,50 x 10^-3 mol (relacion 1:1).", porque: "Aplicamos la relación 1:1 entre H2SO4 y Na2SO4 que dan los coeficientes de la ecuación balanceada: cada mol de ácido forma un mol de sal. Por eso n(Na2SO4) = 2,50 x 10^-3 mol, siempre que todo el ácido se neutralice, como indica el enunciado. Esto permite pasar directamente a la masa de sal." },
+          { paso: "m = 2,50 x 10^-3 mol x 142,0 g/mol = 0,355 g.", porque: "Multiplicamos los moles de Na2SO4 (2,50 x 10^-3 mol) por su masa molar (142,0 g/mol) para pasar a gramos: 0,355 g. Es la conversión final de moles a masa del producto. Conviene verificar que se use la masa molar de la sal completa." }
         ],
         resultado: "0,355 g de Na2SO4"
       }
@@ -706,17 +706,17 @@ window.EJERCITACION["reacciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Balanceo: 2 C4H10 + 13 O2 -> 8 CO2 + 10 H2O (C: 8 = 8; H: 20 = 20; O: 26 = 16 + 10).", porque: "Se igualan primero C e H, que aparecen cada uno en un solo compuesto de cada lado, y al final el O2, porque el oxigeno aparece en CO2 y en H2O. Asi se evita fijar el coeficiente del O2 antes de tiempo. Verificar: C 8 = 8, H 20 = 20, O 16 + 10 = 26." },
-          { paso: "n(C4H10) = 5,80 g / 58,1 g/mol = 0,0998 mol; n(CO2) = 0,0998 mol x 8/2 = 0,399 mol.", porque: "Se calcula los moles de butano (5,80 g / 58,1 g/mol) y se multiplica por 8/2 para hallar los moles de CO2, segun los coeficientes 2 y 8 de la ecuacion balanceada. Se usa el butano como reactivo de referencia porque es el dato del enunciado." },
-          { paso: "m(CO2) = 0,399 mol x 44,0 g/mol = 17,6 g.", porque: "Se multiplica los moles de CO2 (0,399 mol) por su masa molar (44,0 g/mol) para pasar a gramos. Es el mismo criterio de conversion de moles a masa que en los ejercicios anteriores, aplicado al producto." }
+          { paso: "Balanceo: 2 C4H10 + 13 O2 -> 8 CO2 + 10 H2O (C: 8 = 8; H: 20 = 20; O: 26 = 16 + 10).", porque: "Igualamos primero C e H, que aparecen cada uno en un solo compuesto de cada lado, y al final el O2, porque el oxígeno aparece en CO2 y en H2O. Así evitamos fijar el coeficiente del O2 antes de tiempo. Verificamos C 8 = 8, H 20 = 20 y O 16 + 10 = 26, con lo que la ecuación 2 C4H10 + 13 O2 -> 8 CO2 + 10 H2O queda balanceada." },
+          { paso: "n(C4H10) = 5,80 g / 58,1 g/mol = 0,0998 mol; n(CO2) = 0,0998 mol x 8/2 = 0,399 mol.", porque: "Calculamos los moles de butano con 5,80 g / 58,1 g/mol = 0,0998 mol, y luego los multiplicamos por 8/2 según los coeficientes 2 y 8 de la ecuación balanceada. Así obtenemos n(CO2) = 0,399 mol. Usamos el butano como reactivo de referencia porque es el dato del enunciado." },
+          { paso: "m(CO2) = 0,399 mol x 44,0 g/mol = 17,6 g.", porque: "Multiplicamos los moles de CO2 (0,399 mol) por su masa molar (44,0 g/mol) para pasar a gramos: 0,399 mol x 44,0 g/mol = 17,6 g. Es el mismo criterio de conversión de moles a masa que en los ejercicios anteriores, aplicado ahora al producto." }
         ],
         resultado: "17,6 g de CO2"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "n(O2) = 0,0998 mol x 13/2 = 0,649 mol de O2.", porque: "Se multiplica los moles de butano (0,0998 mol) por 13/2 para obtener los moles de O2, porque la ecuacion balanceada indica 13 O2 por cada 2 butanos. Cada mol de butano necesita 6,5 mol de O2 para la combustion completa." },
-          { paso: "V(O2) = 0,649 mol x 22,4 L/mol = 14,5 L en CNPT; V(aire) = 14,5 L / 0,21 = 69,2 L.", porque: "Se calcula el volumen de O2 con 22,4 L/mol (CNPT) y luego se divide por 0,21, porque el O2 es solo el 21 % del aire en volumen. La fraccion volumetrica permite pasar del volumen de oxigeno al volumen de aire; el resultado de aire debe ser mayor que el de O2." }
+          { paso: "n(O2) = 0,0998 mol x 13/2 = 0,649 mol de O2.", porque: "Multiplicamos los moles de butano (0,0998 mol) por 13/2 para obtener los moles de O2, porque la ecuación balanceada indica 13 O2 por cada 2 butanos. Así n(O2) = 0,649 mol. Cada mol de butano necesita 6,5 mol de O2 para la combustión completa." },
+          { paso: "V(O2) = 0,649 mol x 22,4 L/mol = 14,5 L en CNPT; V(aire) = 14,5 L / 0,21 = 69,2 L.", porque: "Calculamos el volumen de O2 con 22,4 L/mol (CNPT) y luego lo dividimos por 0,21, porque el O2 es solo el 21 % del aire en volumen. Así V(O2) = 14,5 L y V(aire) = 69,2 L. La fracción volumétrica permite pasar del volumen de oxígeno al volumen de aire, que siempre debe ser mayor." }
         ],
         resultado: "69,2 L de aire en CNPT"
       }
@@ -735,23 +735,23 @@ window.EJERCITACION["reacciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Balanceo: 2 ZnS + 3 O2 -> 2 ZnO + 2 SO2 (Zn y S: 2 = 2; O: 6 = 2 + 4).", porque: "Se igualan primero Zn y S, que aparecen en un solo reactivo y un solo producto cada uno, y luego el O2, porque el oxigeno aparece en ZnO y en SO2. Verificar: Zn 2 = 2, S 2 = 2 y O 6 = 2 + 4." },
-          { paso: "m(ZnS puro) = 0,850 x 30,0 g = 25,5 g; n(ZnS) = 25,5 g / 97,45 g/mol = 0,2617 mol.", porque: "Se multiplica la masa de mineral (30,0 g) por la pureza (0,850) para hallar la masa de ZnS puro, y luego se pasa a moles con su masa molar (97,45 g/mol). Solo el ZnS reacciona y las impurezas no forman ZnO, por lo que la masa debe corregirse antes de usar la estequiometria." },
-          { paso: "n(ZnO teorico) = n(ZnS) = 0,2617 mol (relacion 2:2); m = 0,2617 mol x 81,38 g/mol = 21,3 g.", porque: "Se aplica la relacion 2:2 (1:1) de la ecuacion para hallar los moles de ZnO teoricos y luego se multiplica por su masa molar (81,38 g/mol). Este valor es el producto teorico, es decir lo que se obtendria con rendimiento de 100 %, y sirve de referencia para el apartado b)." }
+          { paso: "Balanceo: 2 ZnS + 3 O2 -> 2 ZnO + 2 SO2 (Zn y S: 2 = 2; O: 6 = 2 + 4).", porque: "Igualamos primero Zn y S, que aparecen en un solo reactivo y un solo producto cada uno, y luego el O2, porque el oxígeno aparece en ZnO y en SO2. Así la ecuación queda 2 ZnS + 3 O2 -> 2 ZnO + 2 SO2. Verificamos Zn 2 = 2, S 2 = 2 y O 6 = 2 + 4." },
+          { paso: "m(ZnS puro) = 0,850 x 30,0 g = 25,5 g; n(ZnS) = 25,5 g / 97,45 g/mol = 0,2617 mol.", porque: "Multiplicamos la masa de mineral (30,0 g) por la pureza (0,850) para hallar la masa de ZnS puro: 0,850 x 30,0 g = 25,5 g. Luego la pasamos a moles con su masa molar (97,45 g/mol), es decir 0,2617 mol. Solo el ZnS reacciona, así que la masa debe corregirse antes de usar la estequiometría." },
+          { paso: "n(ZnO teorico) = n(ZnS) = 0,2617 mol (relacion 2:2); m = 0,2617 mol x 81,38 g/mol = 21,3 g.", porque: "Aplicamos la relación 2:2 (1:1) de la ecuación para hallar los moles de ZnO teóricos, que son 0,2617 mol. Luego los multiplicamos por su masa molar (81,38 g/mol) y obtenemos 21,3 g. Este valor es el producto teórico, es decir lo que se obtendría con rendimiento de 100 %, y sirve de referencia para el apartado b)." }
         ],
         resultado: "2 ZnS + 3 O2 -> 2 ZnO + 2 SO2; 21,3 g de ZnO teorico"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Rendimiento = 17,5 g / 21,3 g x 100 = 82,2 %.", porque: "Se divide la masa obtenida experimentalmente (17,5 g) por la masa teorica (21,3 g) y se multiplica por 100. El rendimiento compara lo que se obtuvo en la practica con lo que predice la estequiometria, y se expresa en porcentaje." }
+          { paso: "Rendimiento = 17,5 g / 21,3 g x 100 = 82,2 %.", porque: "Dividimos la masa obtenida experimentalmente (17,5 g) por la masa teórica (21,3 g) y multiplicamos por 100, así que 17,5 / 21,3 x 100 = 82,2 %. El rendimiento compara lo que se obtuvo en la práctica con lo que predice la estequiometría. Por eso el valor queda expresado en porcentaje." }
         ],
         resultado: "82,2 %"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Los 30,0 g incluyen 15 % de impurezas que no reaccionan ni forman ZnO; usar esa masa sobrestimaria el producto teorico.", porque: "Se explica que los 30,0 g incluyen un 15 % de impurezas que no reaccionan ni forman ZnO, por lo que usar esa masa sobrestimaria el producto teorico. La estequiometria solo puede aplicarse a la sustancia que reacciona, y por eso el calculo se hace con el ZnS puro." }
+          { paso: "Los 30,0 g incluyen 15 % de impurezas que no reaccionan ni forman ZnO; usar esa masa sobrestimaria el producto teorico.", porque: "Explicamos que los 30,0 g incluyen un 15 % de impurezas que no reaccionan ni forman ZnO. Por eso usar esa masa sobreestimaría el producto teórico, ya que la estequiometría solo puede aplicarse a la sustancia que reacciona. Entonces el cálculo se hace con el ZnS puro, que corresponde a 25,5 g." }
         ],
         resultado: "Por las impurezas (15 %) que no reaccionan"
       }
@@ -770,18 +770,18 @@ window.EJERCITACION["reacciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Semirreacciones: reduccion MnO4^- -> MnO2 (Mn pasa de +7 a +4, gana 3 e^-); oxidacion SO3^2- -> SO4^2- (S pasa de +4 a +6, pierde 2 e^-).", porque: "Se determina el cambio de numero de oxidacion: en la reduccion el Mn pasa de +7 a +4 (gana 3 e^-), y en la oxidacion el S pasa de +4 a +6 (pierde 2 e^-). Los numeros de oxidacion indican cuantos electrones se transfieren en cada semirreaccion y son el punto de partida para igualarlos." },
-          { paso: "Medio basico: reduccion MnO4^- + 2 H2O + 3 e^- -> MnO2 + 4 OH^-; oxidacion SO3^2- + 2 OH^- -> SO4^2- + H2O + 2 e^-.", porque: "Se usa el medio basico: el oxigeno se iguala con H2O y el hidrogeno con OH^-, y no con H^+ como en medio acido. Por eso la reduccion consume 2 H2O y produce 4 OH^-, y la oxidacion consume 2 OH^-; verificar que el medio coincida con el enunciado." },
-          { paso: "Igualo electrones (2 x reduccion + 3 x oxidacion, 6 e^- cada uno) y sumo; simplifico las H2O y los OH^-: 2 MnO4^- + 3 SO3^2- + H2O -> 2 MnO2 + 3 SO4^2- + 2 OH^-.", porque: "Se multiplica la reduccion por 2 y la oxidacion por 3 para que cada una tenga 6 e^-, y luego se suman. Las H2O y los OH^- que aparecen en ambos lados se cancelan, dejando 1 H2O a la izquierda y 2 OH^- a la derecha; los electrones ganados quedan iguales a los perdidos." }
+          { paso: "Semirreacciones: reduccion MnO4^- -> MnO2 (Mn pasa de +7 a +4, gana 3 e^-); oxidacion SO3^2- -> SO4^2- (S pasa de +4 a +6, pierde 2 e^-).", porque: "Determinamos el cambio de número de oxidación: en la reducción el Mn pasa de +7 a +4 (gana 3 e^-), y en la oxidación el S pasa de +4 a +6 (pierde 2 e^-). Estos números indican cuántos electrones se transfieren en cada semirreacción. Por eso son el punto de partida para igualar electrones." },
+          { paso: "Medio basico: reduccion MnO4^- + 2 H2O + 3 e^- -> MnO2 + 4 OH^-; oxidacion SO3^2- + 2 OH^- -> SO4^2- + H2O + 2 e^-.", porque: "Usamos medio básico, así que el oxígeno se iguala con H2O y el hidrógeno con OH^-, y no con H^+ como en medio ácido. En la reducción se consumen 2 H2O y se producen 4 OH^-, mientras que en la oxidación se consumen 2 OH^-. Verificar que el medio coincida con el enunciado evita errores de balanceo." },
+          { paso: "Igualo electrones (2 x reduccion + 3 x oxidacion, 6 e^- cada uno) y sumo; simplifico las H2O y los OH^-: 2 MnO4^- + 3 SO3^2- + H2O -> 2 MnO2 + 3 SO4^2- + 2 OH^-.", porque: "Multiplicamos la reducción por 2 y la oxidación por 3 para que cada una tenga 6 e^-, y luego las sumamos. Las H2O y los OH^- que aparecen en ambos lados se cancelan, dejando 1 H2O a la izquierda y 2 OH^- a la derecha. Así los electrones ganados quedan iguales a los perdidos." }
         ],
         resultado: "2 MnO4^- + 3 SO3^2- + H2O -> 2 MnO2(s) + 3 SO4^2- + 2 OH^-"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "n(SO3^2-) = 0,300 g / 126,0 g/mol = 2,38 x 10^-3 mol.", porque: "Se calcula los moles de SO3^2- dividiendo la masa de Na2SO3 (0,300 g) por su masa molar (126,0 g/mol). Como cada formula de Na2SO3 aporta 1 SO3^2-, esos moles son los del ion sulfito que se oxida." },
-          { paso: "Relacion 2:3: n(MnO4^-) = (2/3) x 2,38 x 10^-3 mol = 1,59 x 10^-3 mol.", porque: "Se aplica la relacion de la ecuacion balanceada: 2 mol de MnO4^- reaccionan con 3 mol de SO3^2-, por lo que los moles de permanganato son (2/3) de los de sulfito. La proporcion sale de los coeficientes y no de una relacion 1:1." },
-          { paso: "V = 1,59 x 10^-3 mol / 0,0200 mol/L = 0,0794 L = 79,4 mL.", porque: "Se despeja el volumen de la solucion como V = n / M, a partir de M = n / V. Se obtiene el volumen que contiene los moles de permanganato necesarios; verificar que el resultado en L se pase correctamente a mL." }
+          { paso: "n(SO3^2-) = 0,300 g / 126,0 g/mol = 2,38 x 10^-3 mol.", porque: "Dividimos la masa de Na2SO3 (0,300 g) por su masa molar (126,0 g/mol) para obtener los moles de SO3^2-: 2,38 x 10^-3 mol. Como cada fórmula de Na2SO3 aporta 1 SO3^2-, esos moles son los del ion sulfito que se oxida. Este es el dato base para la relación con el permanganato." },
+          { paso: "Relacion 2:3: n(MnO4^-) = (2/3) x 2,38 x 10^-3 mol = 1,59 x 10^-3 mol.", porque: "Aplicamos la relación de la ecuación balanceada: 2 mol de MnO4^- reaccionan con 3 mol de SO3^2-, así que los moles de permanganato son (2/3) de los de sulfito. Con (2/3) x 2,38 x 10^-3 mol obtenemos 1,59 x 10^-3 mol. La proporción sale de los coeficientes y no de una relación 1:1." },
+          { paso: "V = 1,59 x 10^-3 mol / 0,0200 mol/L = 0,0794 L = 79,4 mL.", porque: "Despejamos el volumen de la solución como V = n / M, a partir de M = n / V, con n = 1,59 x 10^-3 mol y M = 0,0200 mol/L. Así V = 0,0794 L, que equivale a 79,4 mL de solución de KMnO4. Conviene verificar que el resultado en L se pase correctamente a mL." }
         ],
         resultado: "79,4 mL de KMnO4 0,0200 M"
       }
@@ -800,25 +800,25 @@ window.EJERCITACION["reacciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Balanceo: Na2CO3 + 2 HCl -> 2 NaCl + CO2 + H2O.", porque: "Se iguala primero el sodio: el Na2CO3 aporta 2 Na que pasan a 2 NaCl, lo que fija 2 HCl. El H del acido se reparte en el CO2 y el H2O, y el balanceo se verifica contando C, O, H, Na y Cl a ambos lados." },
-          { paso: "n(Na2CO3) = 0,920 x 15,0 g / 105,99 g/mol = 0,1302 mol; n(HCl) = 1,50 mol/L x 0,200 L = 0,300 mol.", porque: "Se corrige la masa de carbonato por pureza (0,920 x 15,0 g) y se divide por su masa molar (105,99 g/mol). Los moles de HCl se calculan como molaridad por litros (1,50 mol/L x 0,200 L); primero se corrige por pureza porque solo el carbonato puro reacciona." },
-          { paso: "HCl necesario = 2 x 0,1302 mol = 0,2604 mol, menor que 0,300 mol disponibles: el Na2CO3 es el limitante y el HCl queda en exceso = 0,300 - 0,2604 = 0,0396 mol.", porque: "Se calcula el HCl necesario (2 x 0,1302 mol = 0,2604 mol), se compara con los 0,300 mol disponibles y se identifica el limitante: el Na2CO3, porque se agota primero. El exceso de HCl es lo disponible menos lo consumido por el limitante." }
+          { paso: "Balanceo: Na2CO3 + 2 HCl -> 2 NaCl + CO2 + H2O.", porque: "Igualamos primero el sodio: el Na2CO3 aporta 2 Na que pasan a 2 NaCl, lo que fija 2 HCl. El H del ácido se reparte entre el CO2 y el H2O, y por eso la ecuación Na2CO3 + 2 HCl -> 2 NaCl + CO2 + H2O queda balanceada. Verificamos contando C, O, H, Na y Cl a ambos lados." },
+          { paso: "n(Na2CO3) = 0,920 x 15,0 g / 105,99 g/mol = 0,1302 mol; n(HCl) = 1,50 mol/L x 0,200 L = 0,300 mol.", porque: "Corregimos la masa de carbonato por pureza, 0,920 x 15,0 g, y la dividimos por su masa molar (105,99 g/mol), lo que da 0,1302 mol. Los moles de HCl se calculan como molaridad por litros: 1,50 mol/L x 0,200 L = 0,300 mol. Primero corregimos por pureza porque solo el carbonato puro reacciona." },
+          { paso: "HCl necesario = 2 x 0,1302 mol = 0,2604 mol, menor que 0,300 mol disponibles: el Na2CO3 es el limitante y el HCl queda en exceso = 0,300 - 0,2604 = 0,0396 mol.", porque: "Calculamos el HCl necesario, 2 x 0,1302 mol = 0,2604 mol, y lo comparamos con los 0,300 mol disponibles. Como el Na2CO3 se agota primero, es el reactivo limitante. El exceso de HCl es lo disponible menos lo consumido: 0,300 - 0,2604 = 0,0396 mol." }
         ],
         resultado: "Limitante: Na2CO3; HCl en exceso: 0,0396 mol"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "n(CO2) teorico = 0,1302 mol (relacion 1:1 con el Na2CO3); con rendimiento 90,0 %: n = 0,900 x 0,1302 = 0,117 mol.", porque: "Se calcula el CO2 teorico con la relacion 1:1 respecto del Na2CO3 (0,1302 mol) y luego se aplica el rendimiento de 90,0 %: 0,900 x 0,1302 = 0,117 mol. El rendimiento corrige el producto teorico calculado a partir del limitante." },
-          { paso: "V = nRT / P = 0,117 mol x 0,0821 L atm/(mol K) x 298 K / 1 atm = 2,87 L.", porque: "Se usa la ecuacion de los gases ideales V = nRT / P con T en kelvin (298 K), porque a 25 C el volumen no corresponde a CNPT. Se toma P = 1 atm y R = 0,0821 L atm/(mol K); verificar que las unidades de R sean coherentes con la presion en atm y el volumen en L." }
+          { paso: "n(CO2) teorico = 0,1302 mol (relacion 1:1 con el Na2CO3); con rendimiento 90,0 %: n = 0,900 x 0,1302 = 0,117 mol.", porque: "Calculamos el CO2 teórico con la relación 1:1 respecto del Na2CO3 (0,1302 mol). Luego aplicamos el rendimiento de 90,0 %: 0,900 x 0,1302 = 0,117 mol. Así el rendimiento corrige el producto teórico, que se calculó a partir del limitante." },
+          { paso: "V = nRT / P = 0,117 mol x 0,0821 L atm/(mol K) x 298 K / 1 atm = 2,87 L.", porque: "Usamos la ecuación de gases ideales V = nRT / P con T en kelvin (298 K), porque a 25 C el volumen no corresponde a CNPT. Con 0,117 mol, 0,0821 L atm/(mol K), 298 K y 1 atm obtenemos 2,87 L de CO2. Conviene verificar que las unidades de R sean coherentes con la presión en atm y el volumen en L." }
         ],
         resultado: "2,87 L de CO2 a 25 C y 1 atm"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Na^+ total = 2 x 0,1302 mol = 0,2604 mol (cada Na2CO3 aporta 2 Na^+ y todo el sodio pasa a NaCl con rendimiento 100 %).", porque: "Se calcula el Na^+ total multiplicando los moles de Na2CO3 por 2, porque cada formula aporta 2 Na^+ y todo el sodio pasa a NaCl con rendimiento de 100 %. Como no hay perdidas, el sodio se conserva en los productos y su cantidad no cambia." },
-          { paso: "[Na^+] = 0,2604 mol / 0,200 L = 1,30 M.", porque: "Se divide los moles de Na^+ (0,2604 mol) por el volumen final de 0,200 L para obtener la concentracion. La concentracion de ion es moles sobre litros de la solucion final, igual que en los ejemplos anteriores." }
+          { paso: "Na^+ total = 2 x 0,1302 mol = 0,2604 mol (cada Na2CO3 aporta 2 Na^+ y todo el sodio pasa a NaCl con rendimiento 100 %).", porque: "Calculamos el Na^+ total multiplicando los moles de Na2CO3 por 2, porque cada fórmula aporta 2 Na^+. Como el rendimiento es 100 %, todo el sodio pasa a NaCl y no hay pérdidas. Por eso el Na^+ total es 2 x 0,1302 mol = 0,2604 mol, y ese valor se conserva en los productos." },
+          { paso: "[Na^+] = 0,2604 mol / 0,200 L = 1,30 M.", porque: "Dividimos los moles de Na^+ (0,2604 mol) por el volumen final de 0,200 L para obtener la concentración. Como la concentración de un ión es moles sobre litros de la solución final, el resultado es 1,30 M. Esto es igual que en los ejercicios anteriores." }
         ],
         resultado: "[Na^+] = 1,30 M"
       }
@@ -837,17 +837,17 @@ window.EJERCITACION["reacciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Balanceo (ion-electron, medio acido): 3 Cu + 8 HNO3 -> 3 Cu(NO3)2 + 2 NO + 4 H2O.", porque: "Se igualan los electrones: el Cu cede 2 e^- por atomo (0 a +2) y el N gana 3 e^- por atomo (+5 a +2). Con 3 Cu (6 e^- cedidos) y 2 NO (6 e^- ganados) quedan iguales; luego se ajustan H y O con HNO3 y H2O. Verificar contando Cu, N, H y O." },
-          { paso: "n(Cu) = 2,50 g / 63,55 g/mol = 0,0393 mol; n(HNO3) disponible = 6,00 mol/L x 0,0400 L = 0,240 mol.", porque: "Se pasan ambos reactivos a moles: el Cu (2,50 g / 63,55 g/mol) y el HNO3 disponible (6,00 mol/L x 0,0400 L). La relacion de la ecuacion es entre moles, asi que la comparacion solo tiene sentido en esas unidades." },
-          { paso: "HNO3 necesario = (8/3) x 0,0393 mol = 0,105 mol, menor que 0,240 mol: el Cu es el limitante y se consumen 0,105 mol de HNO3.", porque: "Se calcula el HNO3 necesario como (8/3) x 0,0393 mol = 0,105 mol, usando la relacion 3:8 de la ecuacion, y se compara con los 0,240 mol disponibles. El cobre es el limitante, y el HNO3 consumido sale de la misma relacion, no de los moles disponibles." }
+          { paso: "Balanceo (ion-electron, medio acido): 3 Cu + 8 HNO3 -> 3 Cu(NO3)2 + 2 NO + 4 H2O.", porque: "Igualamos los electrones: el Cu cede 2 e^- por átomo (de 0 a +2) y el N gana 3 e^- por átomo (de +5 a +2). Con 3 Cu (6 e^- cedidos) y 2 NO (6 e^- ganados) quedan iguales, y luego se ajustan H y O con HNO3 y H2O. Verificamos contando Cu, N, H y O a ambos lados." },
+          { paso: "n(Cu) = 2,50 g / 63,55 g/mol = 0,0393 mol; n(HNO3) disponible = 6,00 mol/L x 0,0400 L = 0,240 mol.", porque: "Pasamos ambos reactivos a moles: el Cu con 2,50 g / 63,55 g/mol = 0,0393 mol, y el HNO3 disponible con 6,00 mol/L x 0,0400 L = 0,240 mol. Como la relación de la ecuación es entre moles, la comparación solo tiene sentido en esas unidades. Así podemos identificar el limitante en el paso siguiente." },
+          { paso: "HNO3 necesario = (8/3) x 0,0393 mol = 0,105 mol, menor que 0,240 mol: el Cu es el limitante y se consumen 0,105 mol de HNO3.", porque: "Calculamos el HNO3 necesario como (8/3) x 0,0393 mol = 0,105 mol, usando la relación 3:8 de la ecuación balanceada. Lo comparamos con los 0,240 mol disponibles: como 0,105 mol es menor, el Cu es el limitante. Por eso el HNO3 consumido es 0,105 mol, obtenido de la relación y no de los moles disponibles." }
         ],
         resultado: "3 Cu + 8 HNO3 -> 3 Cu(NO3)2 + 2 NO + 4 H2O; limitante: Cu; HNO3 consumido: 0,105 mol"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "n(NO) teorico = (2/3) x 0,0393 mol = 0,0262 mol; V teorico = 0,0262 mol x 22,4 L/mol = 0,587 L en CNPT.", porque: "Se calcula los moles de NO teoricos con la relacion 2:3 respecto del Cu: (2/3) x 0,0393 mol = 0,0262 mol. Luego se multiplica por 22,4 L/mol porque en CNPT un mol de gas ocupa ese volumen; antes conviene confirmar que el gas esta en CNPT." },
-          { paso: "V real = 0,850 x 0,587 L = 0,499 L.", porque: "Se multiplica el volumen teorico (0,587 L) por el rendimiento (0,850) para obtener el volumen realmente producido. El rendimiento se aplica al producto teorico, igual que en los ejercicios anteriores de la seccion." }
+          { paso: "n(NO) teorico = (2/3) x 0,0393 mol = 0,0262 mol; V teorico = 0,0262 mol x 22,4 L/mol = 0,587 L en CNPT.", porque: "Calculamos los moles de NO teóricos con la relación 2:3 respecto del Cu: (2/3) x 0,0393 mol = 0,0262 mol. Luego lo multiplicamos por 22,4 L/mol, porque en CNPT un mol de gas ocupa ese volumen, y obtenemos 0,587 L. Conviene confirmar que el gas esté en CNPT antes de usar ese volumen molar." },
+          { paso: "V real = 0,850 x 0,587 L = 0,499 L.", porque: "Multiplicamos el volumen teórico (0,587 L) por el rendimiento (0,850) para obtener el volumen realmente producido: 0,850 x 0,587 L = 0,499 L. El rendimiento se aplica al producto teórico y no a los reactivos. Por eso el resultado final es 0,499 L de NO en CNPT." }
         ],
         resultado: "0,499 L de NO en CNPT"
       }
@@ -866,25 +866,25 @@ window.EJERCITACION["reacciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "n(AgNO3) = 0,120 mol/L x 0,0500 L = 6,00 x 10^-3 mol; n(NaCl) = 0,0800 mol/L x 0,0800 L = 6,40 x 10^-3 mol.", porque: "Se calcula los moles de AgNO3 (0,120 mol/L x 0,0500 L = 6,00 x 10^-3 mol) y los de NaCl (0,0800 mol/L x 0,0800 L = 6,40 x 10^-3 mol). Se comparan en moles porque cada solucion tiene un volumen distinto y la reaccion es 1:1." },
-          { paso: "Relacion 1:1: el AgNO3 (6,00 x 10^-3 mol) es el limitante; quedan 0,40 x 10^-3 mol de NaCl en exceso.", porque: "Se compara las cantidades con la relacion 1:1: hay 6,00 x 10^-3 mol de Ag^+ y 6,40 x 10^-3 mol de Cl^-, asi que el AgNO3 se agota primero y es el limitante. El NaCl sobrante es la diferencia entre lo disponible y lo consumido (0,40 x 10^-3 mol)." },
-          { paso: "m(AgCl) = 6,00 x 10^-3 mol x 143,3 g/mol = 0,860 g.", porque: "Se multiplica los moles de AgCl (6,00 x 10^-3 mol, dados por el limitante) por su masa molar (143,3 g/mol) para pasar a gramos. El precipitado se calcula con el limitante porque es el que determina la cantidad maxima que puede formarse." }
+          { paso: "n(AgNO3) = 0,120 mol/L x 0,0500 L = 6,00 x 10^-3 mol; n(NaCl) = 0,0800 mol/L x 0,0800 L = 6,40 x 10^-3 mol.", porque: "Calculamos los moles de AgNO3 con 0,120 mol/L x 0,0500 L = 6,00 x 10^-3 mol, y los de NaCl con 0,0800 mol/L x 0,0800 L = 6,40 x 10^-3 mol. Ambas cantidades se comparan en moles porque cada solución tiene un volumen distinto. Como la reacción es 1:1, esos moles son los que reaccionan entre sí." },
+          { paso: "Relacion 1:1: el AgNO3 (6,00 x 10^-3 mol) es el limitante; quedan 0,40 x 10^-3 mol de NaCl en exceso.", porque: "Comparamos las cantidades con la relación 1:1: hay 6,00 x 10^-3 mol de Ag^+ y 6,40 x 10^-3 mol de Cl^-. Como el AgNO3 se agota primero, es el limitante, y el NaCl sobrante es la diferencia: 0,40 x 10^-3 mol. Entonces el exceso de cloruro queda en la solución." },
+          { paso: "m(AgCl) = 6,00 x 10^-3 mol x 143,3 g/mol = 0,860 g.", porque: "Multiplicamos los moles de AgCl (6,00 x 10^-3 mol, dados por el limitante) por su masa molar (143,3 g/mol) para pasar a gramos: 0,860 g. El precipitado se calcula con el limitante porque determina la cantidad máxima que puede formarse. Así se obtiene la masa de AgCl precipitado." }
         ],
         resultado: "0,860 g de AgCl"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "V total = 50,0 mL + 80,0 mL = 130 mL = 0,130 L.", porque: "Se suma los volumenes de las dos soluciones (50,0 mL + 80,0 mL = 130 mL) y se pasa a litros, porque la concentracion final se calcula sobre el volumen total de la mezcla. Se supone volumenes aditivos, como indica el enunciado." },
-          { paso: "[Cl^-] = 0,40 x 10^-3 mol / 0,130 L = 3,08 x 10^-3 M.", porque: "Se divide el NaCl en exceso (0,40 x 10^-3 mol) por el volumen total (0,130 L). El Cl^- que estaba en el AgCl precipitado ya no esta en la solucion, asi que solo cuenta el Cl^- que sobro; despreciar la solubilidad del AgCl es lo que permite este supuesto." }
+          { paso: "V total = 50,0 mL + 80,0 mL = 130 mL = 0,130 L.", porque: "Sumamos los volúmenes de las dos soluciones, 50,0 mL + 80,0 mL = 130 mL, y lo pasamos a litros: 0,130 L. Usamos el volumen total porque la concentración final se calcula sobre la mezcla completa, suponiendo volúmenes aditivos como indica el enunciado. Así el denominador queda listo para el cálculo de Cl^-." },
+          { paso: "[Cl^-] = 0,40 x 10^-3 mol / 0,130 L = 3,08 x 10^-3 M.", porque: "Dividimos el NaCl en exceso (0,40 x 10^-3 mol) por el volumen total (0,130 L): 0,40 x 10^-3 mol / 0,130 L = 3,08 x 10^-3 M. Solo cuenta el Cl^- que sobró, porque el Cl^- que estaba en el AgCl precipitado ya no está en la solución. Despreciar la solubilidad del AgCl permite este supuesto." }
         ],
         resultado: "[Cl^-] = 3,08 x 10^-3 M"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Clasificacion: reaccion de precipitacion (doble desplazamiento) con formacion de un solido insoluble, AgCl.", porque: "Se clasifica la reaccion por su resultado: dos soluciones de solutos solubles dan un solido insoluble (AgCl). Ese es el criterio de una reaccion de precipitacion, que es un caso de doble desplazamiento; no se mira el color ni la presencia de gas." },
-          { paso: "Iones espectadores: Na^+ y NO3^- (aparecen sin cambio en ambos lados de la ecuacion ionica neta).", porque: "Se identifican los iones espectadores como los que aparecen sin cambio en ambos lados de la ecuacion ionica neta: Na^+ y NO3^- no participan en la formacion del solido. Solo Ag^+ y Cl^- forman el AgCl, y los demas iones acompanan la reaccion sin reaccionar." }
+          { paso: "Clasificacion: reaccion de precipitacion (doble desplazamiento) con formacion de un solido insoluble, AgCl.", porque: "Clasificamos la reacción por su resultado: dos soluciones de solutos solubles dan un sólido insoluble, AgCl. Ese es el criterio de una reacción de precipitación, que es un caso de doble desplazamiento. No se mira el color ni la presencia de gas, sino la formación del sólido." },
+          { paso: "Iones espectadores: Na^+ y NO3^- (aparecen sin cambio en ambos lados de la ecuacion ionica neta).", porque: "Identificamos los iones espectadores como los que aparecen sin cambio en ambos lados de la ecuación iónica neta: Na^+ y NO3^- no participan en la formación del sólido. Solo Ag^+ y Cl^- forman el AgCl, y los demás iones acompañan la reacción sin reaccionar. Por eso los espectadores son Na^+ y NO3^-." }
         ],
         resultado: "Precipitacion; espectadores Na^+ y NO3^-"
       }
@@ -903,33 +903,33 @@ window.EJERCITACION["reacciones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Balanceo: 2 NH3(g) + H2SO4(ac) -> (NH4)2SO4(ac). Verificacion: N 2 = 2; H 6 + 2 = 8 = 8 en (NH4)2SO4; S 1 = 1; O 4 = 4.", porque: "Se igualan los atomos: el H2SO4 aporta 2 H^+ que neutralizan 2 NH3, por lo que el coeficiente del NH3 es 2. Verificar el balanceo contando N (2 = 2), H (6 + 2 = 8 en (NH4)2SO4), S (1 = 1) y O (4 = 4)." },
-          { paso: "Clasificacion: reaccion de neutralizacion (acido-base): el H2SO4 transfiere H^+ al NH3, sin gases ni precipitados como productos.", porque: "Se identifica el tipo de reaccion: el H2SO4 cede H^+ al NH3, que actua como base de Bronsted, formando el ion amonio. Es una neutralizacion acido-base; no hay gases ni precipitados entre los productos, y el unico producto es la sal disuelta." }
+          { paso: "Balanceo: 2 NH3(g) + H2SO4(ac) -> (NH4)2SO4(ac). Verificacion: N 2 = 2; H 6 + 2 = 8 = 8 en (NH4)2SO4; S 1 = 1; O 4 = 4.", porque: "Igualamos los átomos: el H2SO4 aporta 2 H^+ que neutralizan 2 NH3, por lo que el coeficiente del NH3 es 2. Así obtenemos 2 NH3(g) + H2SO4(ac) -> (NH4)2SO4(ac). Verificamos el balanceo contando N (2 = 2), H (6 + 2 = 8 en (NH4)2SO4), S (1 = 1) y O (4 = 4)." },
+          { paso: "Clasificacion: reaccion de neutralizacion (acido-base): el H2SO4 transfiere H^+ al NH3, sin gases ni precipitados como productos.", porque: "Identificamos el tipo de reacción: el H2SO4 cede H^+ al NH3, que actúa como base de Bronsted, y se forma el ion amonio. Es una neutralización ácido-base, porque no hay gases ni precipitados entre los productos y el único producto es la sal disuelta. Por eso la clasificación es neutralización." }
         ],
         resultado: "2 NH3(g) + H2SO4(ac) -> (NH4)2SO4(ac); neutralizacion"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "n(NH3) = P V / (R T) = 1,00 atm x 50,0 L / (0,0821 L atm/(mol K) x 298 K) = 2,04 mol.", porque: "Se despeja los moles de NH3 de la ecuacion de los gases ideales, n = PV / (RT), con T = 298 K. El NH3 esta como gas fuera de CNPT, asi que no se puede usar 22,4 L/mol; verificar que el volumen este en L y la temperatura en K." },
-          { paso: "n(H2SO4) = 0,800 mol/L x 0,500 L = 0,400 mol; NH3 necesario = 2 x 0,400 = 0,800 mol.", porque: "Se calcula los moles de H2SO4 (0,800 mol/L x 0,500 L = 0,400 mol) y se multiplica por 2 para hallar el NH3 necesario, usando la relacion 2:1 del balanceo del apartado a). Esto indica cuanto amoniaco se requiere para consumir todo el acido." },
-          { paso: "Como 2,04 mol de NH3 son mas que 0,800 mol necesarios, el H2SO4 es el limitante. NH3 en exceso = 2,04 - 0,800 = 1,24 mol.", porque: "Se compara el NH3 disponible (2,04 mol) con el necesario (0,800 mol) y se identifica el limitante: el H2SO4, porque se agota primero. El NH3 en exceso es lo que sobra tras consumir 0,800 mol, es decir 2,04 - 0,800 = 1,24 mol." }
+          { paso: "n(NH3) = P V / (R T) = 1,00 atm x 50,0 L / (0,0821 L atm/(mol K) x 298 K) = 2,04 mol.", porque: "Despejamos los moles de NH3 de la ecuación de los gases ideales, n = PV / (RT), con T = 298 K. Así n(NH3) = 1,00 atm x 50,0 L / (0,0821 L atm/(mol K) x 298 K) = 2,04 mol. Como el NH3 está como gas fuera de CNPT, no se puede usar 22,4 L/mol; conviene verificar que el volumen esté en L y la temperatura en K." },
+          { paso: "n(H2SO4) = 0,800 mol/L x 0,500 L = 0,400 mol; NH3 necesario = 2 x 0,400 = 0,800 mol.", porque: "Calculamos los moles de H2SO4 con 0,800 mol/L x 0,500 L = 0,400 mol, y los multiplicamos por 2 para hallar el NH3 necesario, usando la relación 2:1 del balanceo del apartado a). Así se obtiene 0,800 mol de NH3. Este valor indica cuánto amoníaco se requiere para consumir todo el ácido." },
+          { paso: "Como 2,04 mol de NH3 son mas que 0,800 mol necesarios, el H2SO4 es el limitante. NH3 en exceso = 2,04 - 0,800 = 1,24 mol.", porque: "Comparamos el NH3 disponible (2,04 mol) con el necesario (0,800 mol) y vemos que hay más NH3 del que se necesita. Por eso el H2SO4 es el limitante, porque se agota primero. El NH3 en exceso es lo que sobra tras consumir 0,800 mol, es decir 2,04 - 0,800 = 1,24 mol." }
         ],
         resultado: "Limitante: H2SO4; NH3 en exceso: 1,24 mol"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "n((NH4)2SO4) teorico = 0,400 mol (relacion 1:1 con el H2SO4); m teorica = 0,400 mol x 132,1 g/mol = 52,8 g.", porque: "Se calcula el producto teorico con los moles de H2SO4 (0,400 mol, relacion 1:1 con la sal) y se multiplica por la masa molar del (NH4)2SO4 (132,1 g/mol). El producto siempre sale del limitante, que aqui es el acido." },
-          { paso: "m real = 0,920 x 52,8 g = 48,6 g.", porque: "Se multiplica la masa teorica (52,8 g) por el rendimiento de 0,920 para obtener la masa real de sal. El rendimiento corrige el producto teorico, no los reactivos en exceso." }
+          { paso: "n((NH4)2SO4) teorico = 0,400 mol (relacion 1:1 con el H2SO4); m teorica = 0,400 mol x 132,1 g/mol = 52,8 g.", porque: "Calculamos el producto teórico con los 0,400 mol de H2SO4, que tienen relación 1:1 con la sal, y lo multiplicamos por la masa molar del (NH4)2SO4 (132,1 g/mol): 0,400 mol x 132,1 g/mol = 52,8 g. El producto siempre sale del limitante, que aquí es el ácido. Entonces 52,8 g es la masa teórica." },
+          { paso: "m real = 0,920 x 52,8 g = 48,6 g.", porque: "Multiplicamos la masa teórica (52,8 g) por el rendimiento de 0,920 para obtener la masa real de sal: 0,920 x 52,8 g = 48,6 g. El rendimiento corrige el producto teórico y no los reactivos en exceso. Por eso el resultado final es 48,6 g de (NH4)2SO4." }
         ],
         resultado: "48,6 g de (NH4)2SO4"
       },
       {
         parte: "d)",
         pasos: [
-          { paso: "El NH4^+ es un acido debil (acido conjugado del NH3, base debil): NH4^+ + H2O <-> NH3 + H3O^+.", porque: "Se analiza el caracter acido-base de los iones de la sal: el NH4^+ es el acido conjugado de una base debil (NH3), por eso reacciona con el agua y libera H3O^+. Los cationes de bases debiles se hidrolizan y bajan el pH; el analisis se hace sobre cada ion por separado." },
-          { paso: "El SO4^2- es una base muy debil y su efecto sobre el pH es despreciable frente al del NH4^+. La solucion es acida (pH < 7).", porque: "Se compara los dos iones: el SO4^2- es una base muy debil y su hidrolisis es despreciable frente a la del NH4^+, por lo que domina el caracter acido. La solucion final es acida, con pH menor que 7; el ion que mas se hidroliza decide el pH de la sal." }
+          { paso: "El NH4^+ es un acido debil (acido conjugado del NH3, base debil): NH4^+ + H2O <-> NH3 + H3O^+.", porque: "Analizamos el carácter ácido-base de los iones de la sal: el NH4^+ es el ácido conjugado de una base débil (NH3), por eso reacciona con el agua y libera H3O^+. Los cationes de bases débiles se hidrolizan y bajan el pH. Esta reacción es el primer criterio para decidir el carácter de la solución." },
+          { paso: "El SO4^2- es una base muy debil y su efecto sobre el pH es despreciable frente al del NH4^+. La solucion es acida (pH < 7).", porque: "Comparamos los dos iones: el SO4^2- es una base muy débil y su hidrólisis es despreciable frente a la del NH4^+, así que domina el carácter ácido. Como resultado, la solución final es ácida, con pH menor que 7. Por eso el ión que más se hidroliza decide el pH de la sal." }
         ],
         resultado: "Solucion acida (pH < 7)"
       }

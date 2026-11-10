@@ -10,10 +10,10 @@ window.EJERCITACION["uniones"] = [
       {
         parte: "",
         pasos: [
-          { paso: "KF: Delta EN = 4,0 - 0,8 = 3,2. HCl: Delta EN = 3,0 - 2,1 = 0,9. Cl2: Delta EN = 3,0 - 3,0 = 0,0.", porque: "Para clasificar una unión se resta la electronegatividad del átomo menos electronegativo a la del más electronegativo, usando la tabla dada. Ese valor (Delta EN) es el único criterio que usa el apunte, así que conviene restar siempre el mayor menos el menor para que dé positivo." },
-          { paso: "KF: Delta EN > 2 y es un metal con un no metal, así que la unión es iónica (transferencia de un electrón del K al F, formando K^+ y F^-).", porque: "Se aplica el criterio del apunte: con Delta EN mayor que 2 la unión es iónica, porque la diferencia es tan grande que el par de electrones queda casi totalmente en el átomo más electronegativo. Conviene confirmar además que la combinación sea metal con no metal, que es el caso típico de la unión iónica." },
-          { paso: "HCl: 0 < Delta EN < 2 entre dos no metales: unión covalente polar, con el par de electrones desplazado hacia el Cl.", porque: "Con Delta EN entre 0 y 2 entre dos no metales, la unión es covalente: se comparte el par, pero no en partes iguales. El Cl, más electronegativo, queda con carga parcial negativa (delta-) y el H con delta+, así que el enlace es polar." },
-          { paso: "Cl2: Delta EN = 0: unión covalente no polar, con el par compartido en partes iguales.", porque: "Como las dos electronegatividades son iguales, la diferencia es cero y el par se comparte de manera simétrica. Por eso no hay cargas parciales ni dipolo, y se la llama covalente no polar; que Delta EN sea cero no significa que el enlace no exista." }
+          { paso: "KF: Delta EN = 4,0 - 0,8 = 3,2. HCl: Delta EN = 3,0 - 2,1 = 0,9. Cl2: Delta EN = 3,0 - 3,0 = 0,0.", porque: "Para clasificar una unión usamos la diferencia de electronegatividad, que es la resta entre el valor del átomo más electronegativo y el del menos electronegativo. Con la tabla dada, KF da 4,0 - 0,8 = 3,2, HCl da 3,0 - 2,1 = 0,9 y Cl2 da 3,0 - 3,0 = 0,0. Ese Delta EN es el criterio que usa el apunte, así que siempre lo calculamos como mayor menos menor para obtener un número positivo." },
+          { paso: "KF: Delta EN > 2 y es un metal con un no metal, así que la unión es iónica (transferencia de un electrón del K al F, formando K^+ y F^-).", porque: "Aplicamos el criterio del apunte: como KF tiene Delta EN = 3,2, mayor que 2, la unión es iónica. Por eso el par de electrones queda casi totalmente en el F, que es el átomo más electronegativo, y se forman iones K^+ y F^-. Conviene confirmar además que se trate de un metal con un no metal, como ocurre con K y F." },
+          { paso: "HCl: 0 < Delta EN < 2 entre dos no metales: unión covalente polar, con el par de electrones desplazado hacia el Cl.", porque: "Como HCl tiene Delta EN = 0,9, que está entre 0 y 2, y el H y el Cl son no metales, la unión es covalente: el par se comparte. Entonces no se reparte en partes iguales, porque el Cl, más electronegativo, queda con carga parcial negativa (delta-) y el H con delta+. Por eso el enlace es covalente polar." },
+          { paso: "Cl2: Delta EN = 0: unión covalente no polar, con el par compartido en partes iguales.", porque: "Con Cl2 la diferencia es 3,0 - 3,0 = 0,0, así que los dos átomos atraen con la misma fuerza al par electrónico. Por eso el par compartido se reparte en partes iguales y no aparecen cargas parciales ni dipolo. El enlace es covalente no polar, y eso confirma que Delta EN = 0 no significa que el enlace no exista." }
         ],
         resultado: "KF: iónico; HCl: covalente polar; Cl2: covalente no polar."
       }
@@ -32,10 +32,10 @@ window.EJERCITACION["uniones"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Electrones de valencia totales: 4 (Si) + 4 x 7 (Cl) = 32 electrones, es decir 16 pares.", porque: "Se suman los electrones de valencia de todos los átomos, multiplicando el aporte de cada elemento por su cantidad de átomos (aquí 4 Cl). Este total es el que se distribuye en la estructura de Lewis, y conviene anotarlo antes de dibujar, porque un error en la cuenta arrastra al resto del dibujo." },
-          { paso: "El Si es el átomo central (es menos electronegativo que el Cl) y se une a cada Cl con un enlace simple: 4 pares enlazantes (8 electrones).", porque: "El átomo central es el menos electronegativo, en este caso el Si, y los Cl son terminales porque solo necesitan un enlace. Cada enlace simple usa 2 electrones, así que los 4 enlaces ocupan 8 de los 32 electrones totales." },
-          { paso: "Los 24 electrones restantes forman 12 pares libres: 3 pares libres en cada Cl (1 enlace + 3 pares = 8 electrones).", porque: "Después de los enlaces, los electrones que sobran se ubican como pares libres en los átomos terminales, hasta completar 8 (octeto) en cada Cl. Los 24 electrones restantes forman 12 pares; conviene verificar que la cuenta total de pares (4 enlazantes y 12 libres) sea 16." },
-          { paso: "Alrededor del Si quedan 4 pares enlazantes y 0 pares libres: el Si tiene 8 electrones.", porque: "Se verifica el octeto del átomo central: el Si comparte sus 4 electrones con los 4 Cl y queda rodeado por 8 electrones. Como ya no le sobran electrones, no se le agregan pares libres; dibujarlos sobre el Si sería un error." }
+          { paso: "Electrones de valencia totales: 4 (Si) + 4 x 7 (Cl) = 32 electrones, es decir 16 pares.", porque: "Para la estructura de Lewis sumamos los electrones de valencia de todos los átomos, multiplicando el aporte del Cl por su cantidad: 4 + 4 x 7 = 32 electrones. Ese total es el que se distribuye en el dibujo, y equivale a 16 pares. Conviene anotarlo antes de colocar enlaces y pares libres, porque un error en esta cuenta arrastra al resto de la estructura." },
+          { paso: "El Si es el átomo central (es menos electronegativo que el Cl) y se une a cada Cl con un enlace simple: 4 pares enlazantes (8 electrones).", porque: "El átomo central es el menos electronegativo, que en este caso es el Si, y los Cl son terminales porque solo necesitan un enlace. Como cada enlace simple usa 2 electrones, los 4 enlaces Si-Cl ocupan 8 electrones del total. Entonces los electrones que sobran son los que se ubican después como pares libres en los Cl." },
+          { paso: "Los 24 electrones restantes forman 12 pares libres: 3 pares libres en cada Cl (1 enlace + 3 pares = 8 electrones).", porque: "Después de los enlaces, los electrones restantes se ubican como pares libres en los Cl, hasta completar el octeto de cada uno. Con 3 pares libres en cada Cl, el enlace más los pares suman 8 electrones por átomo. Por eso conviene verificar que el total de pares libres dé 12, sin dejar electrones sin ubicar." },
+          { paso: "Alrededor del Si quedan 4 pares enlazantes y 0 pares libres: el Si tiene 8 electrones.", porque: "Verificamos el octeto del átomo central, porque es la condición que valida el dibujo. El Si comparte sus 4 electrones con los 4 Cl y queda rodeado por 8 electrones, así que cumple el octeto. Como ya no le sobran electrones, no se agregan pares libres sobre el Si, porque dibujarlos sería un error." }
         ],
         resultado: "16 pares en total (4 enlazantes y 12 libres); alrededor del Si hay 4 pares enlazantes y ningún par libre."
       }
@@ -54,10 +54,10 @@ window.EJERCITACION["uniones"] = [
       {
         parte: "",
         pasos: [
-          { paso: "NH4^+: electrones de valencia = 5 (N) + 4 x 1 (H) - 1 (carga +) = 8 electrones, es decir 4 pares.", porque: "Se cuentan los electrones que aporta cada átomo y después se ajusta por la carga: el N aporta 5, cada H aporta 1, y como la carga es +1 se resta un electrón. Esa resta se hace porque el catión perdió un electrón respecto del átomo neutro, y el total de 8 se reparte en 4 pares." },
-          { paso: "NH4^+: el N está unido a 4 H con enlaces simples: 4 pares enlazantes y 0 pares libres. Se dibuja entre corchetes con carga +.", porque: "Se ubican los 4 pares enlazantes alrededor del N, uno por cada H con enlace simple. Con 4 pares el N completa su octeto sin pares libres, y como la especie tiene carga, el dibujo se escribe entre corchetes con el signo + como superíndice." },
-          { paso: "OH^-: electrones de valencia = 6 (O) + 1 (H) + 1 (carga -) = 8 electrones, es decir 4 pares.", porque: "Se suman los electrones de valencia del O (6), del H (1) y el electrón extra que aporta la carga negativa (1). La carga negativa indica un electrón de más respecto del átomo neutro, así que se suma al total, y el resultado de 8 electrones se reparte en 4 pares." },
-          { paso: "OH^-: 1 par enlazante (O-H) y 3 pares libres sobre el O; el O tiene 8 electrones.", porque: "El enlace O-H usa 2 electrones, y el O necesita 8 en total, así que quedan 6 electrones que forman 3 pares libres sobre el O. Conviene contar el octeto del O después de dibujar el enlace, para comprobar que no quedó ningún electrón sin ubicar." }
+          { paso: "NH4^+: electrones de valencia = 5 (N) + 4 x 1 (H) - 1 (carga +) = 8 electrones, es decir 4 pares.", porque: "Para un ion contamos los electrones de valencia de cada átomo y después ajustamos por la carga. El N aporta 5 y cada H aporta 1, y la carga +1 resta un electrón, porque el catión perdió uno respecto del átomo neutro. Entonces 5 + 4 x 1 - 1 = 8 electrones, que se reparten en 4 pares." },
+          { paso: "NH4^+: el N está unido a 4 H con enlaces simples: 4 pares enlazantes y 0 pares libres. Se dibuja entre corchetes con carga +.", porque: "Como el N queda unido a 4 H con enlaces simples, ubicamos 4 pares enlazantes alrededor del N. Con esos 4 pares el N completa su octeto sin pares libres. Como la especie tiene carga, el dibujo se escribe entre corchetes con el + como superíndice, para indicar que la carga pertenece al ion completo." },
+          { paso: "OH^-: electrones de valencia = 6 (O) + 1 (H) + 1 (carga -) = 8 electrones, es decir 4 pares.", porque: "En el OH^- la carga negativa indica un electrón de más respecto del átomo neutro, así que se suma al total. Calculamos 6 (O) + 1 (H) + 1 (carga -) = 8 electrones, y estos se reparten en 4 pares. Entonces la cuenta queda lista para ubicar el enlace y los pares libres." },
+          { paso: "OH^-: 1 par enlazante (O-H) y 3 pares libres sobre el O; el O tiene 8 electrones.", porque: "El enlace O-H usa 2 electrones, y el O necesita 8 en total para cumplir su octeto. Los electrones que quedan se ubican como 3 pares libres sobre el O, de modo que el O termina con sus 8 electrones. Conviene comprobar ese octeto después de dibujar el enlace, para no dejar electrones sin ubicar." }
         ],
         resultado: "NH4^+: 4 pares enlazantes y 0 libres (N). OH^-: 1 par enlazante y 3 pares libres (O)."
       }
@@ -76,9 +76,9 @@ window.EJERCITACION["uniones"] = [
       {
         parte: "",
         pasos: [
-          { paso: "CS2: cada enlace doble C=S tiene 1 sigma y 1 pi. Total: 2 sigma y 2 pi.", porque: "Un enlace doble se forma con un solapamiento frontal (sigma) y uno lateral (pi), así que cada enlace C=S aporta 1 sigma y 1 pi. Con dos enlaces dobles en la molécula, el total se obtiene multiplicando por 2 y sumando por separado los sigma y los pi." },
-          { paso: "C2H2: los 2 enlaces C-H son simples, sigma. El enlace C-C triple tiene 1 sigma y 2 pi.", porque: "Un enlace simple está formado solo por un sigma, y un enlace triple tiene un sigma y dos pi. Por eso los dos enlaces C-H del acetileno aportan 1 sigma cada uno, y el triple C-C aporta 1 sigma y 2 pi." },
-          { paso: "C2H2 en total: sigma = 2 (C-H) + 1 (C-C) = 3; pi = 2.", porque: "Se cuentan todos los enlaces de la molécula, incluidos los C-H, y se suman los sigma y los pi por separado. Ese es el paso que más se olvida: los enlaces con hidrógeno también son sigma, y el total de sigma es 3." }
+          { paso: "CS2: cada enlace doble C=S tiene 1 sigma y 1 pi. Total: 2 sigma y 2 pi.", porque: "Un enlace doble se forma con un solapamiento frontal (sigma) y otro lateral (pi), por eso cada enlace C=S aporta 1 sigma y 1 pi. Como la molécula tiene 2 enlaces dobles C=S, contamos los sigma y los pi por separado. Entonces el total es 2 sigma y 2 pi." },
+          { paso: "C2H2: los 2 enlaces C-H son simples, sigma. El enlace C-C triple tiene 1 sigma y 2 pi.", porque: "Un enlace simple está formado solo por un sigma, mientras que un triple tiene un sigma y dos pi. Con eso, los 2 enlaces C-H del acetileno aportan 1 sigma cada uno, y el triple C-C aporta 1 sigma y 2 pi. Así identificamos cada enlace según su multiplicidad antes de sumar." },
+          { paso: "C2H2 en total: sigma = 2 (C-H) + 1 (C-C) = 3; pi = 2.", porque: "Contamos todos los enlaces de la molécula, incluidos los C-H, y sumamos los sigma y los pi por separado. Los enlaces con hidrógeno también son sigma, y ese es el paso que más se olvida. Por eso el total queda en 2 (C-H) + 1 (C-C) = 3 sigma, y 2 pi." }
         ],
         resultado: "CS2: 2 sigma y 2 pi. C2H2: 3 sigma y 2 pi."
       }
@@ -97,9 +97,9 @@ window.EJERCITACION["uniones"] = [
       {
         parte: "",
         pasos: [
-          { paso: "C-C: Delta EN = 0,0. C-H: 2,5 - 2,1 = 0,4. C-Cl: 3,0 - 2,5 = 0,5. C-O: 3,5 - 2,5 = 1,0.", porque: "La polaridad de un enlace crece con la diferencia de electronegatividad entre sus átomos, y esa diferencia se obtiene restando los valores de Pauling de la tabla. Conviene hacer todas las restas primero, porque el orden final depende solo de estos números." },
-          { paso: "Orden creciente de polaridad: C-C < C-H < C-Cl < C-O.", porque: "Como la polaridad depende solo de Delta EN, se ordenan los valores de menor a mayor. A mayor diferencia, más se desplaza el par electrónico hacia el átomo más electronegativo, y el enlace resulta más polar." },
-          { paso: "El C-C es covalente no polar (Delta = 0) y el C-O es el más polar de la lista (Delta = 1,0).", porque: "El enlace entre átomos iguales (C-C) no tiene dipolo, así que sirve como referencia de cero, y el de mayor Delta EN es el más polar. Conviene verificar que el C-O, con Delta EN = 1,0, quede al final del orden." }
+          { paso: "C-C: Delta EN = 0,0. C-H: 2,5 - 2,1 = 0,4. C-Cl: 3,0 - 2,5 = 0,5. C-O: 3,5 - 2,5 = 1,0.", porque: "La polaridad de un enlace crece con la diferencia de electronegatividad entre sus átomos, así que usamos Delta EN como medida. Con los valores de Pauling restamos cada par: C-C da 0,0, C-H da 2,5 - 2,1 = 0,4, C-Cl da 3,0 - 2,5 = 0,5 y C-O da 3,5 - 2,5 = 1,0. Conviene hacer todas las restas primero, porque el orden final depende solo de esos números." },
+          { paso: "Orden creciente de polaridad: C-C < C-H < C-Cl < C-O.", porque: "Como la polaridad depende solo de Delta EN, ordenamos los valores de menor a mayor: 0,0, 0,4, 0,5 y 1,0. A mayor diferencia, el par electrónico se desplaza más hacia el átomo más electronegativo. Entonces el C-O resulta el enlace más polar de la lista, y el C-C el menos polar." },
+          { paso: "El C-C es covalente no polar (Delta = 0) y el C-O es el más polar de la lista (Delta = 1,0).", porque: "El enlace C-C conecta átomos iguales, así que no tiene dipolo y sirve como referencia de cero. El C-O tiene Delta EN = 1,0, el mayor de la lista, y por eso es el más polar. Conviene verificar que el C-O quede al final del orden, porque eso confirma la comparación." }
         ],
         resultado: "C-C < C-H < C-Cl < C-O; el enlace C-O es el más polar."
       }
@@ -118,20 +118,20 @@ window.EJERCITACION["uniones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Electrones de valencia: 6 (S) + 2 x 7 (F) = 20 electrones, es decir 10 pares.", porque: "Se suman los electrones de valencia de todos los átomos: 6 del S y 7 de cada uno de los 2 F. Este es el total que hay que distribuir en la estructura, y conviene anotarlo antes de dibujar para no perder pares." },
-          { paso: "El S es el átomo central y forma 2 enlaces simples S-F (2 pares enlazantes). Cada F completa su octeto con 3 pares libres (6 pares). Quedan 2 pares libres sobre el S.", porque: "El S, que es menos electronegativo, va en el centro y se une a los dos F con enlaces simples (2 pares enlazantes). Cada F necesita 8 electrones y con un enlace le faltan 6, que son 3 pares libres; los 2 pares que sobran se colocan sobre el S. Verificá que el total de pares (2 + 6 + 2) sea 10." },
-          { paso: "Alrededor del S hay 4 pares de electrones: 2 enlazantes y 2 libres.", porque: "Para la geometría se cuentan todas las regiones de electrones del átomo central, enlazantes y libres, no solo los enlaces. Esa cuenta define la disposición de TREPEV, y después se descartan los pares libres para describir la forma de la molécula." },
-          { paso: "Con 4 pares la geometría electrónica es tetraédrica (109,5 grados), y la molécular es angular: el ángulo F-S-F es menor que 109,5 grados (aprox. 98 grados) porque los pares libres repelen más y comprimen el ángulo.", porque: "Los 4 pares se ubican como en un tetraedro (109,5 grados), pero los pares libres ocupan más espacio que los enlazantes y empujan a los átomos de F. Por eso el ángulo se cierra por debajo de 109,5 grados, y no conviene usar el valor ideal cuando hay pares libres." }
+          { paso: "Electrones de valencia: 6 (S) + 2 x 7 (F) = 20 electrones, es decir 10 pares.", porque: "Para la estructura de Lewis sumamos los electrones de valencia de todos los átomos: 6 del S y 7 de cada uno de los 2 F. El total es 6 + 2 x 7 = 20 electrones, es decir 10 pares, que hay que distribuir sin perder pares. Por eso conviene anotarlo antes de dibujar la estructura." },
+          { paso: "El S es el átomo central y forma 2 enlaces simples S-F (2 pares enlazantes). Cada F completa su octeto con 3 pares libres (6 pares). Quedan 2 pares libres sobre el S.", porque: "El S, que es menos electronegativo que el F, va en el centro y se une a los dos F con enlaces simples, lo que da 2 pares enlazantes. Cada F necesita completar su octeto, y con un solo enlace le faltan electrones que se cubren con 3 pares libres. Los pares que sobran quedan sobre el S, y se verifica que el total, 2 + 6 + 2, sea 10." },
+          { paso: "Alrededor del S hay 4 pares de electrones: 2 enlazantes y 2 libres.", porque: "Para la geometría se cuentan todas las regiones de electrones del S, enlazantes y libres, no solo los enlaces. Con 2 enlazantes y 2 libres quedan 4 pares alrededor del S. Ese número define la disposición de TREPEV, y después se descartan los pares libres para describir la forma final de la molécula." },
+          { paso: "Con 4 pares la geometría electrónica es tetraédrica (109,5 grados), y la molécular es angular: el ángulo F-S-F es menor que 109,5 grados (aprox. 98 grados) porque los pares libres repelen más y comprimen el ángulo.", porque: "Los 4 pares se ubican como un tetraedro, pero los pares libres ocupan más espacio que los enlazantes y empujan a los átomos de F. Por eso el ángulo se cierra por debajo del valor ideal de 109,5 grados, hasta aprox. 98 grados. Entonces la geometría molecular es angular y no conviene usar el valor ideal." }
         ],
         resultado: "Geometría angular, con 4 pares alrededor del S (2 enlazantes y 2 libres) y ángulo menor que 109,5 grados."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Cada enlace S-F tiene Delta EN = 4,0 - 2,5 = 1,5: es covalente polar, con los dipolos dirigidos hacia el F.", porque: "Se resta la electronegatividad del S a la del F (4,0 - 2,5) para saber si cada enlace tiene dipolo y hacia dónde apunta. Un valor de 1,5 entre no metales da una unión covalente polar, con el dipolo orientado hacia el F, que es el más electronegativo." },
-          { paso: "Como la molécula es angular, los dos dipolos no se cancelan: la suma vectorial es distinta de cero y el SF2 es polar.", porque: "Para saber si la molécula es polar hay que sumar vectorialmente los dipolos de enlace, no alcanza con mirar cada uno por separado. En una molécula angular los dos dipolos forman un ángulo y su suma no es cero, así que queda un dipolo neto." },
-          { paso: "BCl3: 3 pares enlazantes y 0 libres alrededor del B, geometría trigonal plana con ángulos de 120 grados. El B queda con 6 electrones (excepción habitual al octeto). Cada enlace B-Cl tiene Delta EN = 1,0 (polar).", porque: "Con la misma lógica de TREPEV, 3 pares enlazantes y ningún libre dan geometría trigonal plana con ángulos de 120 grados. El B queda con 6 electrones, lo que es una excepción al octeto y no un error; cada enlace B-Cl es polar, con Delta EN = 1,0." },
-          { paso: "Los tres dipolos B-Cl son de igual módulo y se reparten a 120 grados: su suma vectorial es cero y el BCl3 es apolar.", porque: "Los tres dipolos B-Cl tienen igual módulo y forman 120 grados entre sí, así que su suma vectorial es cero: cada dipolo queda compensado por los otros dos. Esto muestra que un compuesto puede tener enlaces polares y ser apolar, y que hay que verificar la simetría." }
+          { paso: "Cada enlace S-F tiene Delta EN = 4,0 - 2,5 = 1,5: es covalente polar, con los dipolos dirigidos hacia el F.", porque: "Se resta la electronegatividad del S a la del F (4,0 - 2,5 = 1,5) para saber si cada enlace tiene dipolo y hacia dónde apunta. Un valor de 1,5 entre no metales indica una unión covalente polar. Como el F es el más electronegativo, el dipolo queda orientado hacia el F." },
+          { paso: "Como la molécula es angular, los dos dipolos no se cancelan: la suma vectorial es distinta de cero y el SF2 es polar.", porque: "Para saber si la molécula es polar hay que sumar vectorialmente los dipolos de los dos enlaces S-F, y no alcanza con mirar cada uno por separado. Como la molécula es angular, los dipolos forman un ángulo y no se anulan entre sí. Por eso la suma es distinta de cero, queda un dipolo neto y el SF2 es polar." },
+          { paso: "BCl3: 3 pares enlazantes y 0 libres alrededor del B, geometría trigonal plana con ángulos de 120 grados. El B queda con 6 electrones (excepción habitual al octeto). Cada enlace B-Cl tiene Delta EN = 1,0 (polar).", porque: "Con 3 pares enlazantes y ningún par libre alrededor del B, TREPEV da geometría trigonal plana con ángulos de 120 grados. El B queda con 6 electrones, lo que es una excepción al octeto y no un error del dibujo. Cada enlace B-Cl es polar porque su diferencia es 3,0 - 2,0 = 1,0." },
+          { paso: "Los tres dipolos B-Cl son de igual módulo y se reparten a 120 grados: su suma vectorial es cero y el BCl3 es apolar.", porque: "Los tres dipolos B-Cl tienen igual módulo y forman 120 grados entre sí, así que cada uno queda compensado por los otros dos. Como la suma vectorial es cero, el BCl3 resulta apolar. Esto muestra que un compuesto puede tener enlaces polares y ser apolar, por eso hay que verificar la simetría." }
         ],
         resultado: "SF2 es polar (geometría angular). BCl3 es apolar porque sus dipolos se cancelan por simetría trigonal plana."
       }
@@ -150,18 +150,18 @@ window.EJERCITACION["uniones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Electrones de valencia: 6 (S) + 3 x 6 (O) + 2 (carga -2) = 26 electrones, es decir 13 pares.", porque: "Se suman los electrones de valencia de todos los átomos, y como la carga es -2 se agregan 2 electrones más al total. Una cuenta que no da un número par de electrones no tiene sentido para formar pares completos, así que es una buena forma de detectar errores." },
-          { paso: "Los 3 enlaces S-O son simples (3 pares enlazantes). El S conserva 1 par libre, y cada O tiene 3 pares libres (9 pares). Total: 3 + 1 + 9 = 13 pares.", porque: "Se verifica el octeto de cada átomo antes de dar por cerrado el dibujo: el S tiene 3 enlaces (6 electrones) más 1 par libre (2), total 8, y cada O tiene 1 enlace y 3 pares libres, también 8. Si alguno no cumple, hay que revisar la distribución de pares o la carga." },
-          { paso: "Alrededor del S hay 4 pares: 3 enlazantes y 1 libre. La geometría electrónica es tetraédrica y la molecular (ion) es piramidal trigonal, con ángulo O-S-O menor que 109,5 grados (aprox. 106 grados).", porque: "Se cuentan los pares del S (3 enlazantes y 1 libre) para la geometría electrónica tetraédrica, y luego se descarta el par libre para describir la forma. El par libre empuja a los O y cierra el ángulo, por eso la forma es piramidal y no tetraédrica." }
+          { paso: "Electrones de valencia: 6 (S) + 3 x 6 (O) + 2 (carga -2) = 26 electrones, es decir 13 pares.", porque: "Sumamos los electrones de valencia de todos los átomos: 6 del S y 6 de cada O. Como la carga es -2, se agregan 2 electrones más al total. Así se obtienen 26 electrones, es decir 13 pares, que es el número que hay que distribuir en el ion." },
+          { paso: "Los 3 enlaces S-O son simples (3 pares enlazantes). El S conserva 1 par libre, y cada O tiene 3 pares libres (9 pares). Total: 3 + 1 + 9 = 13 pares.", porque: "Verificamos el octeto de cada átomo antes de dar por cerrado el dibujo. El S tiene 3 enlaces y 1 par libre, y cada O tiene 1 enlace y 3 pares libres. Si todos cumplen el octeto, la distribución es correcta; si alguno no lo cumple, hay que revisar la distribución de pares o la carga." },
+          { paso: "Alrededor del S hay 4 pares: 3 enlazantes y 1 libre. La geometría electrónica es tetraédrica y la molecular (ion) es piramidal trigonal, con ángulo O-S-O menor que 109,5 grados (aprox. 106 grados).", porque: "Contamos los 4 pares del S, 3 enlazantes y 1 libre, para la geometría electrónica, que es tetraédrica. Después descartamos el par libre para describir la forma del ion, que resulta piramidal trigonal. Ese par libre empuja a los O y cierra el ángulo O-S-O hasta aprox. 106 grados." }
         ],
         resultado: "Geometría piramidal trigonal, con 4 pares alrededor del S (3 enlazantes y 1 libre)."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "CO3^2-: el C central tiene 3 regiones enlazantes (un enlace doble y dos simples cuentan como 3 regiones) y ningún par libre.", porque: "Se cuentan las regiones de electrones alrededor del C: el doble enlace y los dos simples cuentan cada uno como una región, y el C no tiene pares libres. Este conteo define la geometría por TREPEV, y no hace falta distinguir si el enlace es sigma o pi." },
-          { paso: "Sin pares libres, la geometría es trigonal plana con ángulos de 120 grados.", porque: "Con 3 regiones y sin pares libres, la repulsión se minimiza cuando están en un mismo plano separadas 120 grados, lo que da la geometría trigonal plana. Esta geometría corresponde solo a un átomo central sin pares libres, y por eso sirve de comparación con el sulfito." },
-          { paso: "El S del sulfito tiene 1 par libre además de sus 3 enlaces. Al ser 4 pares en total, la geometría deja de ser plana y se vuelve piramidal.", porque: "El S del sulfito tiene 3 enlaces y además 1 par libre, lo que suman 4 regiones de electrones. Como el par libre no se ve en la forma molecular, los O quedan en una pirámide; la clave es el par libre sobre el átomo central, no la cantidad de O."}
+          { paso: "CO3^2-: el C central tiene 3 regiones enlazantes (un enlace doble y dos simples cuentan como 3 regiones) y ningún par libre.", porque: "Contamos las regiones de electrones alrededor del C del carbonato. El doble enlace y los dos simples cuentan cada uno como una región, lo que da 3 regiones enlazantes, y el C no tiene pares libres. Este conteo define la geometría por TREPEV, y para eso no hace falta distinguir si el enlace es sigma o pi." },
+          { paso: "Sin pares libres, la geometría es trigonal plana con ángulos de 120 grados.", porque: "Con 3 regiones de electrones y sin pares libres, los pares se alejan al máximo en un mismo plano, separados 120 grados. Por eso la geometría es trigonal plana, con ángulos de 120 grados. Esta forma corresponde solo a un átomo central sin pares libres, y sirve como comparación con el sulfito." },
+          { paso: "El S del sulfito tiene 1 par libre además de sus 3 enlaces. Al ser 4 pares en total, la geometría deja de ser plana y se vuelve piramidal.", porque: "El S del sulfito tiene 3 enlaces y además 1 par libre, lo que suma 4 pares en total. Como el par libre no se ve en la forma molecular, los O quedan ubicados en una pirámide. Entonces la clave es el par libre sobre el átomo central, y no la cantidad de O."}
         ],
         resultado: "CO3^2- es trigonal plana (120 grados); SO3^2- es piramidal trigonal porque el S tiene un par libre."
       }
@@ -180,17 +180,17 @@ window.EJERCITACION["uniones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Cada C forma 3 enlaces sigma (2 C-H y 1 C-C) y 1 enlace pi. Alrededor de cada C hay 3 regiones de electrones y ningún par libre.", porque: "Se cuentan las regiones de electrones del C: los 2 enlaces C-H y el doble C=C dan 3 regiones y ningún par libre. Esta cuenta define la hibridación, y un doble enlace cuenta como una sola región aunque tenga un sigma y un pi." },
-          { paso: "Con 3 regiones, la hibridación de cada C es sp^2: se forman 3 orbitales híbridos (los sigma) y queda 1 orbital p sin hibridar, que forma el enlace pi.", porque: "Cada región de electrones corresponde a un orbital híbrido: 3 regiones se forman con 1 orbital s y 2 orbitales p, es decir sp^2. Queda un orbital p sin hibridar, perpendicular al plano, y su solapamiento lateral con el del otro C forma el enlace pi." },
-          { paso: "Geometría trigonal plana alrededor de cada C, con ángulo H-C-H aprox. 120 grados.", porque: "Con tres regiones de igual tipo, los orbitales sp^2 se ubican en un plano a 120 grados, y el ángulo H-C-H queda cerca de ese valor. Verificá que la geometría sea plana, porque el enlace pi obliga a los átomos a quedar en el mismo plano." }
+          { paso: "Cada C forma 3 enlaces sigma (2 C-H y 1 C-C) y 1 enlace pi. Alrededor de cada C hay 3 regiones de electrones y ningún par libre.", porque: "Contamos las regiones de electrones alrededor de cada C: los 2 enlaces C-H y el doble C=C dan 3 regiones, y no hay pares libres. Esta cuenta define la hibridación de cada C. El doble enlace cuenta como una sola región aunque tenga un sigma y un pi." },
+          { paso: "Con 3 regiones, la hibridación de cada C es sp^2: se forman 3 orbitales híbridos (los sigma) y queda 1 orbital p sin hibridar, que forma el enlace pi.", porque: "Cada región de electrones corresponde a un orbital híbrido, y 3 regiones se forman con 1 orbital s y 2 orbitales p. Por eso la hibridación es sp^2, y queda 1 orbital p sin hibridar. Ese orbital p, perpendicular al plano, se solapa lateralmente con el del otro C y forma el enlace pi." },
+          { paso: "Geometría trigonal plana alrededor de cada C, con ángulo H-C-H aprox. 120 grados.", porque: "Con tres regiones de igual tipo, los orbitales sp^2 se ubican en un plano formando ángulos cercanos a 120 grados. Entonces el ángulo H-C-H queda aprox. en 120 grados, y la geometría es trigonal plana alrededor de cada C. Conviene verificar la planaridad, porque el enlace pi obliga a los átomos a quedar en el mismo plano." }
         ],
         resultado: "Ambos C son sp^2, con geometría trigonal plana y ángulos de aprox. 120 grados."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Enlaces sigma: 4 C-H + 1 C-C = 5 sigma.", porque: "Todo enlace, simple o múltiple, tiene exactamente un sigma. Por eso se cuentan los 4 C-H y el C-C de la molécula, que dan 5 enlaces sigma en total." },
-          { paso: "Enlaces pi: 1 (el lateral del doble enlace C=C).", porque: "Los enlaces pi se cuentan aparte: solo los dobles y triples los tienen, y el eteno tiene un único doble enlace. Un enlace simple, incluso el C-C, no aporta ningún pi." }
+          { paso: "Enlaces sigma: 4 C-H + 1 C-C = 5 sigma.", porque: "Todo enlace, simple o múltiple, tiene exactamente un sigma. Por eso contamos los 4 C-H y el C-C de la molécula, que suman 5 enlaces sigma. El doble enlace C=C aporta su sigma dentro de ese conteo, y no hace falta separarlo." },
+          { paso: "Enlaces pi: 1 (el lateral del doble enlace C=C).", porque: "Los enlaces pi se cuentan aparte, y solo los dobles y triples los tienen. El eteno tiene un único doble enlace C=C, así que aporta 1 pi. Un enlace simple, incluido el C-C, no aporta ningún pi." }
         ],
         resultado: "5 enlaces sigma y 1 enlace pi."
       }
@@ -209,18 +209,18 @@ window.EJERCITACION["uniones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Electrones de valencia: 6 (S) + 2 x 6 (O) = 18 electrones, es decir 9 pares.", porque: "Se suman los electrones de valencia de todos los átomos: 6 del S y 6 de cada O, en total 18, es decir 9 pares para distribuir. Como el S es el átomo central, conviene tener este total a mano antes de dibujar la estructura." },
-          { paso: "Supuesto: se usa la forma O=S->O. El S central tiene un enlace doble, un enlace dativo (aportado por el S) y 1 par libre; el O unido por enlace dativo tiene 3 pares libres y el O del doble enlace tiene 2 pares libres.", porque: "Se usa la forma O=S->O: el S tiene un doble enlace, un enlace dativo (que aporta el S) y 1 par libre, y con eso cumple el octeto junto con los O. Verificá que la cuenta de electrones alrededor del S dé 8, porque si no hay octeto la forma no sirve." },
-          { paso: "Alrededor del S hay 3 regiones de electrones (doble enlace, enlace dativo y par libre): geometría electrónica trigonal plana. La molécula es angular, con ángulo O-S-O aprox. 119 grados.", porque: "Con 3 regiones (doble enlace, dativo y par libre) la geometría electrónica es trigonal plana, con 120 grados ideales. El par libre repele más que los enlaces y comprime un poco el ángulo O-S-O, por eso el valor real es de aprox. 119 grados y la forma molecular es angular." }
+          { paso: "Electrones de valencia: 6 (S) + 2 x 6 (O) = 18 electrones, es decir 9 pares.", porque: "Sumamos los electrones de valencia de todos los átomos: 6 del S y 6 de cada O, en total 18 electrones, es decir 9 pares. Como el S es el átomo central, conviene tener este total a mano antes de dibujar la estructura. Con esos 9 pares se arma la forma de Lewis." },
+          { paso: "Supuesto: se usa la forma O=S->O. El S central tiene un enlace doble, un enlace dativo (aportado por el S) y 1 par libre; el O unido por enlace dativo tiene 3 pares libres y el O del doble enlace tiene 2 pares libres.", porque: "Se usa la forma O=S->O porque cumple el octeto del S y de los O: el S tiene un doble enlace, un enlace dativo que aporta el S y 1 par libre. Verificamos que la cuenta de electrones alrededor del S dé el octeto, porque si no se cumple la forma no sirve. Por eso el dibujo se toma como válido." },
+          { paso: "Alrededor del S hay 3 regiones de electrones (doble enlace, enlace dativo y par libre): geometría electrónica trigonal plana. La molécula es angular, con ángulo O-S-O aprox. 119 grados.", porque: "Con 3 regiones de electrones (doble enlace, dativo y par libre), la geometría electrónica es trigonal plana. El par libre repele más que los enlaces y comprime el ángulo O-S-O. Por eso el valor real es aprox. 119 grados y la forma molecular resulta angular." }
         ],
         resultado: "Geometría molecular angular, ángulo aprox. 119 grados."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Cada enlace S-O tiene Delta EN = 3,5 - 2,5 = 1,0: son enlaces covalentes polares, con dipolos dirigidos hacia el O.", porque: "Se resta la electronegatividad del S a la del O (3,5 - 2,5 = 1,0), y eso indica que cada enlace S-O es covalente polar. El dipolo apunta hacia el O, que atrae más el par; conviene anotar esa dirección porque después hay que sumar los dipolos." },
-          { paso: "En el CO2 (lineal, simétrico) los dos dipolos C=O son iguales y opuestos y se cancelan: el CO2 es apolar.", porque: "En el CO2, lineal y simétrico, los dos dipolos C=O tienen el mismo módulo y dirección opuesta, así que se cancelan. Aunque los enlaces sean polares, la molécula es apolar porque la suma vectorial es cero." },
-          { paso: "En el SO2 la geometría angular impide que los dipolos S-O se anulen: la suma vectorial es distinta de cero y la molécula es polar.", porque: "En el SO2 la forma angular impide que los dos dipolos S-O se anulen: forman un ángulo de aprox. 119 grados y su suma es distinta de cero. Por eso la molécula tiene un dipolo neto y es polar." }
+          { paso: "Cada enlace S-O tiene Delta EN = 3,5 - 2,5 = 1,0: son enlaces covalentes polares, con dipolos dirigidos hacia el O.", porque: "Se resta la electronegatividad del S a la del O (3,5 - 2,5 = 1,0), y ese resultado indica que cada enlace S-O es covalente polar. El dipolo apunta hacia el O, que atrae con más fuerza el par. Conviene anotar esa dirección, porque después hay que sumar los dipolos." },
+          { paso: "En el CO2 (lineal, simétrico) los dos dipolos C=O son iguales y opuestos y se cancelan: el CO2 es apolar.", porque: "En el CO2 la geometría es lineal y simétrica, así que los dos dipolos C=O tienen el mismo módulo y dirección opuesta. Por eso se cancelan y la suma vectorial es cero. Aunque los enlaces sean polares, la molécula es apolar." },
+          { paso: "En el SO2 la geometría angular impide que los dipolos S-O se anulen: la suma vectorial es distinta de cero y la molécula es polar.", porque: "En el SO2 la forma angular impide que los dos dipolos S-O se anulen, porque no quedan opuestos entre sí. Como forman un ángulo y su suma es distinta de cero, queda un dipolo neto. Por eso el SO2 es polar." }
         ],
         resultado: "El SO2 es polar (geometría angular); el CO2 es apolar (lineal y simétrico)."
       }
@@ -239,19 +239,19 @@ window.EJERCITACION["uniones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Mg: solo hay átomos de metal, así que la unión es metálica; las partículas son átomos de Mg en una red con electrones de valencia deslocalizados.", porque: "Como el Mg es un metal, no hay enlace entre átomos con un par compartido: los electrones de valencia se deslocalizan y se mueven por toda la red. Esa movilidad explica la conductividad y la maleabilidad de los metales, y por eso conviene reconocer el tipo de sustancia antes de mirar Delta EN." },
-          { paso: "MgO: Delta EN = 3,5 - 1,2 = 2,3 > 2, y es metal con no metal: unión iónica. Las partículas son iones Mg^2+ y O^2- en una red, sin moléculas.", porque: "Se calcula Delta EN = 3,5 - 1,2 = 2,3, que es mayor que 2, y como es un metal con un no metal el criterio da unión iónica. Esto significa que se forman iones Mg^2+ y O^2- que se mantienen unidos por atracción electrostática en una red, y no moléculas." },
-          { paso: "Cl2: Delta EN = 0: unión covalente no polar, con partículas que son moléculas Cl2.", porque: "Con dos átomos iguales la diferencia de electronegatividad es cero y el par se comparte por igual, así que el Cl2 forma una molécula discreta con enlace covalente no polar. Por eso las partículas que describen la sustancia son moléculas de Cl2." },
-          { paso: "NH3: Delta EN (N-H) = 3,0 - 2,1 = 0,9: covalente polar, con partículas que son moléculas NH3.", porque: "Entre dos no metales el enlace es covalente, y como Delta EN = 0,9 es distinto de cero, el N atrae un poco más el par que el H y el enlace es polar. Las partículas que forman la sustancia son moléculas de NH3 unidas por enlaces covalentes." }
+          { paso: "Mg: solo hay átomos de metal, así que la unión es metálica; las partículas son átomos de Mg en una red con electrones de valencia deslocalizados.", porque: "Como el Mg es un metal, no hay un par compartido entre dos átomos: los electrones de valencia se deslocalizan y se mueven por toda la red. Esa movilidad explica la conductividad y la maleabilidad de los metales. Por eso conviene reconocer primero el tipo de sustancia, antes de mirar Delta EN." },
+          { paso: "MgO: Delta EN = 3,5 - 1,2 = 2,3 > 2, y es metal con no metal: unión iónica. Las partículas son iones Mg^2+ y O^2- en una red, sin moléculas.", porque: "Calculamos Delta EN = 3,5 - 1,2 = 2,3, que es mayor que 2. Como se trata de un metal con un no metal, el criterio da unión iónica. Entonces se forman iones Mg^2+ y O^2- que se mantienen unidos por atracción electrostática en una red, y no moléculas." },
+          { paso: "Cl2: Delta EN = 0: unión covalente no polar, con partículas que son moléculas Cl2.", porque: "Con dos átomos iguales la diferencia de electronegatividad es cero, así que el par se comparte por igual. Por eso el Cl2 forma una molécula discreta con enlace covalente no polar. Las partículas que describen la sustancia son moléculas de Cl2." },
+          { paso: "NH3: Delta EN (N-H) = 3,0 - 2,1 = 0,9: covalente polar, con partículas que son moléculas NH3.", porque: "Entre dos no metales el enlace es covalente, y como Delta EN = 0,9 es distinto de cero, el N atrae un poco más el par que el H. Por eso el enlace es polar. Las partículas que forman la sustancia son moléculas de NH3, unidas por enlaces covalentes." }
         ],
         resultado: "Mg: metálica (átomos en red); MgO: iónica (iones); Cl2: covalente no polar (moléculas); NH3: covalente polar (moléculas)."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "En el MgO hay que vencer las atracciones electrostáticas entre iones Mg^2+ y O^2- de carga 2, que son muy fuertes, para separar la red.", porque: "En el MgO hay que vencer la atracción electrostática entre Mg^2+ y O^2- para separar la red. Como las cargas son 2+ y 2-, esa atracción es mucho más fuerte que la de iones con carga 1, y esa es la clave de la parte b) que relaciona el tipo de unión con el punto de fusión."},
-          { paso: "En el Cl2 al fundir se separan moléculas; solo hay que vencer fuerzas intermoleculares débiles (de dispersión), sin romper el enlace Cl-Cl.", porque: "Al fundir el Cl2 no se rompen enlaces covalentes, solo se vencen las fuerzas débiles entre moléculas apolares (de dispersión). Por eso su punto de fusión es bajo: se necesita poca energía para separar las moléculas." },
-          { paso: "Por eso el MgO funde a una temperatura mucho más alta que el Cl2.", porque: "La comparación final se basa en la intensidad de las fuerzas que hay que vencer: las iónicas son muy intensas y las intermoleculares del Cl2 son débiles. Conviene que la explicación hable de fuerzas que se rompen y no de enlaces, porque esa distinción es la que más se confunde." }
+          { paso: "En el MgO hay que vencer las atracciones electrostáticas entre iones Mg^2+ y O^2- de carga 2, que son muy fuertes, para separar la red.", porque: "En el MgO hay que vencer la atracción electrostática entre Mg^2+ y O^2- para separar la red. Como las cargas son 2+ y 2-, esa atracción es mucho más intensa que la de iones con carga 1. Esa es la clave para relacionar el tipo de unión con el punto de fusión."},
+          { paso: "En el Cl2 al fundir se separan moléculas; solo hay que vencer fuerzas intermoleculares débiles (de dispersión), sin romper el enlace Cl-Cl.", porque: "Al fundir el Cl2 no se rompen enlaces covalentes, solo se vencen fuerzas débiles entre moléculas apolares, que son de dispersión. Por eso se necesita poca energía para separar las moléculas, y el punto de fusión resulta bajo. El enlace Cl-Cl se mantiene intacto." },
+          { paso: "Por eso el MgO funde a una temperatura mucho más alta que el Cl2.", porque: "La comparación final se basa en la intensidad de las fuerzas que hay que vencer. Las atracciones iónicas del MgO son muy intensas, mientras que las intermoleculares del Cl2 son débiles. Por eso el MgO funde a una temperatura mucho más alta. Conviene hablar de fuerzas que se rompen y no de enlaces." }
         ],
         resultado: "El MgO tiene fuerzas electrostáticas intensas en la red iónica; el Cl2 tiene fuerzas intermoleculares débiles."
       }
@@ -270,18 +270,18 @@ window.EJERCITACION["uniones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Pasar el momento dipolar a unidades SI: mu = 1,08 D x 3,34 x 10^-30 C.m/D = 3,61 x 10^-30 C.m.", porque: "La fórmula mu = q x d usa unidades SI (C.m), y el dato viene en debye. Hay que convertirlo con 1 D = 3,34 x 10^-30 C.m antes de dividir, porque si no el resultado queda en una unidad incoherente." },
-          { paso: "Despejar la carga: q = mu / d = 3,61 x 10^-30 C.m / 1,27 x 10^-10 m = 2,84 x 10^-20 C.", porque: "Se despeja q dividiendo mu por la distancia del enlace, expresada en metros. Un dipolo son dos cargas iguales y opuestas separadas por la distancia d, y la relación mu = q x d es la que permite obtener la carga parcial a partir del momento dipolar." },
-          { paso: "Expresar en unidades de e: 2,84 x 10^-20 C / 1,60 x 10^-19 C = 0,178 e.", porque: "Se divide la carga obtenida por la carga del electrón para expresarla como fracción de e, que es la unidad habitual para cargas parciales en moléculas. Un valor de 0,178 e indica que el H tiene una carga parcial mucho menor que la de un electrón completo." }
+          { paso: "Pasar el momento dipolar a unidades SI: mu = 1,08 D x 3,34 x 10^-30 C.m/D = 3,61 x 10^-30 C.m.", porque: "La fórmula mu = q x d usa unidades SI, y el dato viene en debye, así que hay que convertirlo primero. Usamos 1 D = 3,34 x 10^-30 C.m para pasar 1,08 D a 3,61 x 10^-30 C.m. Hacerlo antes de dividir evita llegar a un resultado en una unidad incoherente." },
+          { paso: "Despejar la carga: q = mu / d = 3,61 x 10^-30 C.m / 1,27 x 10^-10 m = 2,84 x 10^-20 C.", porque: "Despejamos q de la relación mu = q x d, dividiendo mu por la distancia del enlace expresada en metros. Con 3,61 x 10^-30 C.m dividido por 1,27 x 10^-10 m obtenemos 2,84 x 10^-20 C. Un dipolo son dos cargas iguales y opuestas separadas por d, y por eso esta relación da la carga parcial." },
+          { paso: "Expresar en unidades de e: 2,84 x 10^-20 C / 1,60 x 10^-19 C = 0,178 e.", porque: "Dividimos la carga obtenida por la carga del electrón para expresarla como fracción de e, que es la unidad habitual en cargas parciales. Con 2,84 x 10^-20 C dividido por 1,60 x 10^-19 C resulta 0,178 e. Ese valor indica que el H tiene una carga parcial bastante menor que la de un electrón completo." }
         ],
         resultado: "q = 2,84 x 10^-20 C, es decir 0,178 e (carga parcial sobre el H)."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "El Cl (Delta EN = 0,9) es más electronegativo: atrae el par hacia sí y queda con carga parcial negativa (delta-); el H queda con delta+.", porque: "Se comparan las electronegatividades de los dos átomos del enlace: el Cl (3,0) es más electronegativo que el H (2,1). Por eso el Cl atrae con más fuerza la densidad electrónica y queda con carga parcial negativa, mientras que el H queda con carga parcial positiva." },
-          { paso: "En el H2O los dos dipolos O-H están inclinados en una geometría angular y su suma vectorial es distinta de cero: mu = 1,85 D.", porque: "En el H2O los dos dipolos O-H forman un ángulo por la geometría angular, y su suma vectorial no es cero. Por eso la molécula tiene un momento dipolar neto de 1,85 D, que es el dato que se usa para confirmar la polaridad." },
-          { paso: "En el CO2 los dos dipolos C=O son iguales, de sentido opuesto y forman una molécula lineal: se cancelan y mu = 0.", porque: "En el CO2 los dipolos C=O son iguales, forman 180 grados entre sí y se cancelan, así que mu = 0. Este caso muestra que un enlace polar no alcanza para que la molécula sea polar: hay que mirar si la suma de dipolos se anula." }
+          { paso: "El Cl (Delta EN = 0,9) es más electronegativo: atrae el par hacia sí y queda con carga parcial negativa (delta-); el H queda con delta+.", porque: "Comparamos las electronegatividades de los dos átomos del enlace: el Cl (3,0) es más electronegativo que el H (2,1). Por eso el Cl atrae con más fuerza la densidad electrónica y queda con carga parcial negativa. El H queda con carga parcial positiva (delta+)." },
+          { paso: "En el H2O los dos dipolos O-H están inclinados en una geometría angular y su suma vectorial es distinta de cero: mu = 1,85 D.", porque: "En el H2O los dos dipolos O-H forman un ángulo por la geometría angular, y su suma vectorial no es cero. Con mu = 1,85 D, la molécula tiene un momento dipolar neto. Ese dato confirma que el agua es polar." },
+          { paso: "En el CO2 los dos dipolos C=O son iguales, de sentido opuesto y forman una molécula lineal: se cancelan y mu = 0.", porque: "En el CO2 los dipolos C=O son iguales y de sentido opuesto, y la molécula es una línea recta. Por eso se cancelan y mu = 0. Este caso muestra que un enlace polar no alcanza para que la molécula sea polar, y hay que mirar si la suma de dipolos se anula." }
         ],
         resultado: "El Cl tiene la carga parcial negativa. El H2O es polar por su geometría angular, y el CO2 es apolar porque sus dipolos se cancelan."
       }
@@ -300,25 +300,25 @@ window.EJERCITACION["uniones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "CCl4: el C tiene 4 pares enlazantes y ningún par libre: geometría tetraédrica (109,5 grados). Los 4 dipolos C-Cl son iguales y se dirigen a los vértices de un tetraedro: su suma es cero. El CCl4 es apolar.", porque: "Con 4 pares enlazantes y ningún par libre la geometría es tetraédrica, y los 4 dipolos C-Cl tienen el mismo módulo. Como apuntan a los vértices de un tetraedro, su suma vectorial es cero, y por eso el CCl4 es apolar." },
-          { paso: "CHCl3: el C sigue siendo tetraédrico, pero ahora uno de los enlaces es C-H y los otros 3 son C-Cl. La simetría se rompe y la suma de dipolos es distinta de cero: el CHCl3 es polar.", porque: "Al reemplazar un Cl por un H, los enlaces ya no son iguales: el C-H tiene una Delta EN distinta (0,4 frente a 0,5) y los dipolos dejan de compensarse. La suma queda distinta de cero, y el CHCl3 resulta polar." },
-          { paso: "CH3Cl: tetraédrica y asimétrica (un solo Cl): el dipolo C-Cl no se cancela. El CH3Cl es polar.", porque: "En el CH3Cl el enlace C-Cl domina el dipolo de la molécula, y los tres C-H no están dispuestos para anularlo. La geometría es asimétrica y la suma de dipolos no es cero, por lo que el CH3Cl es polar." }
+          { paso: "CCl4: el C tiene 4 pares enlazantes y ningún par libre: geometría tetraédrica (109,5 grados). Los 4 dipolos C-Cl son iguales y se dirigen a los vértices de un tetraedro: su suma es cero. El CCl4 es apolar.", porque: "Con 4 pares enlazantes y ningún par libre la geometría es tetraédrica, y los 4 dipolos C-Cl tienen igual módulo. Como apuntan a los vértices de un tetraedro, su suma vectorial es cero. Por eso el CCl4 es apolar." },
+          { paso: "CHCl3: el C sigue siendo tetraédrico, pero ahora uno de los enlaces es C-H y los otros 3 son C-Cl. La simetría se rompe y la suma de dipolos es distinta de cero: el CHCl3 es polar.", porque: "Al reemplazar un Cl por un H, los enlaces dejan de ser iguales. El C-H y el C-Cl no tienen la misma diferencia de electronegatividad, así que los dipolos ya no se compensan. Por eso la suma es distinta de cero y el CHCl3 resulta polar." },
+          { paso: "CH3Cl: tetraédrica y asimétrica (un solo Cl): el dipolo C-Cl no se cancela. El CH3Cl es polar.", porque: "En el CH3Cl el enlace C-Cl domina el dipolo de la molécula, porque los C-H restantes no están dispuestos para anularlo. La geometría es asimétrica, y por eso la suma de dipolos no es cero. Entonces el CH3Cl es polar." }
         ],
         resultado: "CCl4 apolar; CHCl3 y CH3Cl polares."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "El argumento es incorrecto: que un enlace sea polar no hace polar a la molécula.", porque: "La polaridad de una molécula se define por la suma vectorial de todos sus dipolos de enlace, no por uno solo. Por eso el argumento del estudiante mezcla dos conceptos distintos, y conviene separarlos para discutirlo." },
-          { paso: "En el CCl4 los 4 dipolos C-Cl forman una resultante nula por la geometría tetraédrica simétrica.", porque: "En el CCl4 los cuatro dipolos C-Cl, de igual módulo y apuntando a los vértices del tetraedro, se suman vectorialmente y dan cero. Esa es la prueba de que la geometría decide la polaridad, y no solo la presencia de enlaces polares." }
+          { paso: "El argumento es incorrecto: que un enlace sea polar no hace polar a la molécula.", porque: "La polaridad de una molécula se define por la suma vectorial de todos sus dipolos de enlace, y no por uno solo. Por eso el argumento del estudiante mezcla dos conceptos distintos: la polaridad del enlace y la de la molécula. Conviene separarlos para discutir si el razonamiento es correcto." },
+          { paso: "En el CCl4 los 4 dipolos C-Cl forman una resultante nula por la geometría tetraédrica simétrica.", porque: "En el CCl4 los 4 dipolos C-Cl tienen igual módulo y apuntan a los vértices del tetraedro, así que se suman y dan cero. Esa es la prueba de que la geometría decide la polaridad. Por eso el CCl4 es apolar, aunque tenga 4 enlaces polares." }
         ],
         resultado: "El CCl4 es apolar aunque tenga 4 enlaces polares."
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Delta EN (C-Cl) = 3,0 - 2,5 = 0,5. Delta EN (C-H) = 2,5 - 2,1 = 0,4.", porque: "Se resta la electronegatividad del C a la del Cl (3,0 - 2,5 = 0,5) y a la del H (2,5 - 2,1 = 0,4). Este Delta EN mide la polaridad de cada enlace, y conviene anotarlo con el átomo más electronegativo como referencia." },
-          { paso: "Orden de polaridad creciente: C-H (0,4) < C-Cl (0,5).", porque: "Como la polaridad crece con Delta EN, el enlace C-Cl (0,5) es algo más polar que el C-H (0,4). La diferencia es chica, pero alcanza para ordenarlos, y ambos son enlaces covalentes polares." }
+          { paso: "Delta EN (C-Cl) = 3,0 - 2,5 = 0,5. Delta EN (C-H) = 2,5 - 2,1 = 0,4.", porque: "Restamos las electronegatividades de cada enlace: 3,0 - 2,5 = 0,5 para el C-Cl y 2,5 - 2,1 = 0,4 para el C-H. Con esos valores medimos la polaridad de cada enlace por separado. Conviene tomar el átomo más electronegativo como referencia, para que las diferencias queden positivas." },
+          { paso: "Orden de polaridad creciente: C-H (0,4) < C-Cl (0,5).", porque: "Como la polaridad crece con Delta EN, el enlace C-Cl (0,5) es algo más polar que el C-H (0,4). La diferencia es chica, pero alcanza para ordenarlos. Ambos son enlaces covalentes polares, así que el orden se decide solo por el valor numérico." }
         ],
         resultado: "El enlace C-Cl es algo más polar que el C-H (0,5 frente a 0,4)."
       }
@@ -337,24 +337,24 @@ window.EJERCITACION["uniones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "KCl: Delta EN = 3,0 - 0,8 = 2,2 > 2: unión iónica. Cl2: Delta EN = 0: covalente no polar.", porque: "Se aplica el criterio del apunte: Delta EN = 2,2 es mayor que 2, así que el KCl es iónico. Para el Cl2 la diferencia es cero, por lo que es covalente no polar; conviene comparar cada valor con los límites 0 y 2 para no equivocarse." },
-          { paso: "AlCl3: Delta EN = 3,0 - 1,5 = 1,5 < 2, así que por el criterio sería covalente. Advertencia: el Al es un metal y el enlace tiene carácter iónico parcial; el criterio es una aproximación y la unión real es un continuo.", porque: "El AlCl3 tiene Delta EN = 1,5, menor que 2, así que el criterio lo dejaría como covalente. Pero el Al es un metal y su catión pequeño y muy cargado (Al^3+) polariza mucho la nube electrónica del Cl^-; el criterio es solo una aproximación y el enlace tiene un carácter iónico parcial importante." }
+          { paso: "KCl: Delta EN = 3,0 - 0,8 = 2,2 > 2: unión iónica. Cl2: Delta EN = 0: covalente no polar.", porque: "Aplicamos el criterio del apunte: Delta EN = 3,0 - 0,8 = 2,2 es mayor que 2, así que el KCl es iónico. Para el Cl2 la diferencia es cero, y eso lo ubica como covalente no polar. Conviene comparar cada valor con los límites 0 y 2 para no equivocarse." },
+          { paso: "AlCl3: Delta EN = 3,0 - 1,5 = 1,5 < 2, así que por el criterio sería covalente. Advertencia: el Al es un metal y el enlace tiene carácter iónico parcial; el criterio es una aproximación y la unión real es un continuo.", porque: "El AlCl3 tiene Delta EN = 1,5, que es menor que 2, así que el criterio lo dejaría como covalente. Sin embargo, el Al es un metal y su catión Al^3+ es pequeño y muy cargado, lo que polariza mucho la nube electrónica del Cl^-. Por eso el criterio es solo una aproximación y el enlace tiene un carácter iónico parcial importante." }
         ],
         resultado: "KCl iónico; Cl2 covalente no polar; AlCl3 covalente según el criterio, con carácter iónico parcial importante."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Delta EN: AlCl3 = 1,5; MgCl2 = 3,0 - 1,2 = 1,8; KCl = 2,2.", porque: "Se calcula Delta EN de cada compuesto con la misma tabla: AlCl3 da 1,5, MgCl2 da 1,8 y KCl da 2,2. Estos valores sirven para comparar el carácter iónico sin necesidad de mirar la fórmula ni el tamaño de los iones." },
-          { paso: "Orden creciente de carácter iónico: AlCl3 < MgCl2 < KCl.", porque: "Con los valores ya calculados se ordena de menor a mayor carácter iónico: AlCl3 (1,5) < MgCl2 (1,8) < KCl (2,2). Conviene verificar que el orden siga el valor numérico de Delta EN y no el tamaño del catión o la masa molar." }
+          { paso: "Delta EN: AlCl3 = 1,5; MgCl2 = 3,0 - 1,2 = 1,8; KCl = 2,2.", porque: "Calculamos Delta EN con la misma tabla: AlCl3 da 1,5, MgCl2 da 3,0 - 1,2 = 1,8 y KCl da 2,2. Estos valores permiten comparar el carácter iónico sin mirar la fórmula ni el tamaño de los iones. Por eso alcanza con ordenar los números." },
+          { paso: "Orden creciente de carácter iónico: AlCl3 < MgCl2 < KCl.", porque: "Con los valores ya calculados ordenamos de menor a mayor carácter iónico. Entonces AlCl3 (1,5) queda primero, después MgCl2 (1,8) y por último KCl (2,2). Conviene verificar que el orden siga el valor de Delta EN y no el tamaño del catión o la masa molar." }
         ],
         resultado: "AlCl3 < MgCl2 < KCl (de menor a mayor carácter iónico)."
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Cuando Delta EN es grande, el átomo más electronegativo atrae con mucha más fuerza el electrón, y la transferencia de carga entre átomos se acerca a un electrón completo.", porque: "La electronegatividad mide cuánto atrae un átomo el par de electrones de un enlace. Si la diferencia es grande, el par se desplaza casi por completo hacia el átomo más electronegativo, y la transferencia se acerca a la de un electrón completo." },
-          { paso: "Los iones resultantes (catión y anión) se mantienen unidos por atracción electrostática, que es el carácter iónico del enlace.", porque: "Cuando la transferencia es casi total, el enlace se describe como una atracción electrostática entre un catión y un anión. Por eso el carácter iónico aumenta con Delta EN: a mayor transferencia, mayor carga iónica y más fuerte la atracción." }
+          { paso: "Cuando Delta EN es grande, el átomo más electronegativo atrae con mucha más fuerza el electrón, y la transferencia de carga entre átomos se acerca a un electrón completo.", porque: "La electronegatividad mide cuánto atrae un átomo el par de electrones de un enlace. Cuando Delta EN es grande, el par se desplaza casi por completo hacia el átomo más electronegativo. Así la transferencia de carga se acerca a la de un electrón completo." },
+          { paso: "Los iones resultantes (catión y anión) se mantienen unidos por atracción electrostática, que es el carácter iónico del enlace.", porque: "Cuando la transferencia es casi total, el enlace se describe como una atracción electrostática entre un catión y un anión. A mayor Delta EN, mayor transferencia de carga y más fuerte la atracción entre los iones. Por eso el carácter iónico aumenta al crecer Delta EN." }
         ],
         resultado: "Al aumentar Delta EN, el par se desplaza más hasta transferirse por completo, y el enlace se vuelve más iónico."
       }
@@ -373,24 +373,24 @@ window.EJERCITACION["uniones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "H2O: O con 2 enlazantes y 2 libres (4 pares): geometría electrónica tetraédrica, molecular angular.", porque: "Para cada especie se cuentan los pares del átomo central: los enlazantes se ven en la fórmula y los libres se calculan con los electrones de valencia. En el H2O el O tiene 4 pares en total, y todos definen la geometría electrónica tetraédrica." },
-          { paso: "NH3: N con 3 enlazantes y 1 libre (4 pares): tetraédrica electrónica, molecular piramidal trigonal.", porque: "En el NH3 el N tiene 3 enlazantes y 1 libre, es decir 4 pares, con geometría electrónica tetraédrica. Como el par libre no se ve en la forma molecular, la geometría molecular pasa a ser piramidal trigonal." },
-          { paso: "CH4 y NH4^+: 4 enlazantes y 0 libres: tetraédrica tanto electrónica como molecular.", porque: "En el CH4 y el NH4^+ el átomo central tiene 4 enlazantes y ningún par libre. Por eso la geometría electrónica y la molecular coinciden en tetraedro, y el ángulo ideal es de 109,5 grados." }
+          { paso: "H2O: O con 2 enlazantes y 2 libres (4 pares): geometría electrónica tetraédrica, molecular angular.", porque: "Para cada especie contamos los pares del átomo central: los enlazantes se ven en la fórmula y los libres se calculan con los electrones de valencia. En el H2O el O tiene 2 enlazantes y 2 libres, es decir 4 pares. Esos 4 pares definen una geometría electrónica tetraédrica, aunque la molecular sea angular." },
+          { paso: "NH3: N con 3 enlazantes y 1 libre (4 pares): tetraédrica electrónica, molecular piramidal trigonal.", porque: "En el NH3 el N tiene 3 enlazantes y 1 libre, es decir 4 pares, así que la geometría electrónica es tetraédrica. Como el par libre no se ve en la forma molecular, la geometría molecular pasa a ser piramidal trigonal. Conviene distinguir ambas geometrías en cada caso." },
+          { paso: "CH4 y NH4^+: 4 enlazantes y 0 libres: tetraédrica tanto electrónica como molecular.", porque: "En el CH4 y el NH4^+ el átomo central tiene 4 enlazantes y ningún par libre. Por eso la geometría electrónica y la molecular coinciden en tetraedro. Como no hay pares libres que modifiquen el ángulo, ambas especies tienen la misma forma." }
         ],
         resultado: "H2O: 2 libres, angular. NH3: 1 libre, piramidal. CH4 y NH4^+: 0 libres, tetraédricos."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Los pares libres repelen más que los enlazantes. El H2O tiene 2 pares libres y el NH3 tiene 1: el ángulo del H2O se comprime más, hasta aprox. 104,5 grados (frente a aprox. 107 grados del NH3).", porque: "Los pares libres ocupan más espacio que los enlazantes y repelen con más fuerza, así que comprimen más el ángulo H-X-H. Los ángulos se ordenan según la cantidad de pares libres: con 2 libres el ángulo es el más chico, luego con 1 libre y, sin libres, 109,5 grados." }
+          { paso: "Los pares libres repelen más que los enlazantes. El H2O tiene 2 pares libres y el NH3 tiene 1: el ángulo del H2O se comprime más, hasta aprox. 104,5 grados (frente a aprox. 107 grados del NH3).", porque: "Los pares libres ocupan más espacio que los enlazantes y repelen con más fuerza, así que comprimen más el ángulo H-X-H. El H2O tiene 2 pares libres y el NH3 tiene 1, por lo que el ángulo del agua queda más cerrado, en aprox. 104,5 grados. Entonces el NH3, con aprox. 107 grados, tiene un ángulo mayor." }
         ],
         resultado: "El H2O tiene un ángulo menor (aprox. 104,5 grados) que el NH3 (aprox. 107 grados) por tener un par libre más."
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Ambos tienen 4 pares enlazantes y 0 pares libres alrededor del átomo central.", porque: "Se cuenta la distribución de pares alrededor del átomo central: 4 enlazantes y ningún libre en ambas especies. Sin pares libres la repulsión es igual entre los cuatro enlaces, y los pares se ubican como en un tetraedro regular." },
-          { paso: "Por eso ambos tienen ángulo de 109,5 grados.", porque: "Como la geometría es tetraédrica regular en los dos casos, el ángulo H-X-H es el ideal de 109,5 grados. El NH4^+ tiene la misma forma que el CH4 porque el N tiene 4 enlaces y ningún par libre, no por tener carga." }
+          { paso: "Ambos tienen 4 pares enlazantes y 0 pares libres alrededor del átomo central.", porque: "Contamos la distribución de pares alrededor del átomo central, que da 4 enlazantes y ningún libre en ambas especies. Sin pares libres la repulsión es igual entre los cuatro enlaces. Por eso los pares se ubican como en un tetraedro regular en los dos casos." },
+          { paso: "Por eso ambos tienen ángulo de 109,5 grados.", porque: "Como la geometría es tetraédrica regular en ambos casos, el ángulo H-X-H es el mismo: 109,5 grados. El NH4^+ tiene la misma forma que el CH4 porque el N tiene 4 enlaces y ningún par libre. La carga no cambia la geometría, sino la distribución de pares." }
         ],
         resultado: "El CH4 y el NH4^+ tienen ángulo de 109,5 grados."
       }
@@ -409,26 +409,26 @@ window.EJERCITACION["uniones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Electrones de valencia: 3 x 6 = 18 electrones, es decir 9 pares. En cada forma el O central tiene un par libre, y los enlaces se reparten entre un enlace doble y uno dativo.", porque: "Se cuentan los electrones de valencia del O3 (3 x 6 = 18, es decir 9 pares), y en cada forma el O central tiene un par libre. Con esos 9 pares se completa el octeto de los tres átomos en las dos formas, y eso hace válidas ambas representaciones." },
-          { paso: "Ambas formas contribuyen a la molécula real: la verdadera estructura es un híbrido de resonancia en el que los dos enlaces O-O son equivalentes.", porque: "Ninguna de las dos formas describe por sí sola la molécula real: la estructura verdadera es un híbrido de resonancia, un promedio de todas las formas posibles. Por eso los dos enlaces O-O son equivalentes, aunque en una forma aparezca un doble y en la otra un dativo." },
-          { paso: "Las formas no son moléculas distintas que se alternan en el tiempo: son representaciones de una única molécula con electrones deslocalizados.", porque: "Las formas resonantes no son moléculas distintas que se alternan en el tiempo: son representaciones de una única molécula con electrones deslocalizados. Este concepto evita la idea errónea de que el O3 cambia de una forma a otra." }
+          { paso: "Electrones de valencia: 3 x 6 = 18 electrones, es decir 9 pares. En cada forma el O central tiene un par libre, y los enlaces se reparten entre un enlace doble y uno dativo.", porque: "Sumamos los electrones de valencia del O3: 3 x 6 = 18, es decir 9 pares. En cada forma el O central tiene un par libre, y los enlaces se reparten entre un doble y un dativo. Con esos 9 pares se completa el octeto de los tres átomos en ambas formas, lo que hace válidas las dos representaciones." },
+          { paso: "Ambas formas contribuyen a la molécula real: la verdadera estructura es un híbrido de resonancia en el que los dos enlaces O-O son equivalentes.", porque: "Ninguna de las dos formas describe por sí sola la molécula real. La estructura verdadera es un híbrido de resonancia, un promedio de todas las formas posibles. Por eso los dos enlaces O-O son equivalentes, aunque en una forma aparezca un doble y en la otra un dativo." },
+          { paso: "Las formas no son moléculas distintas que se alternan en el tiempo: son representaciones de una única molécula con electrones deslocalizados.", porque: "Conviene no interpretar las formas como especies distintas: ambas representan una única molécula con electrones deslocalizados. Por eso el O3 no cambia de una forma a otra, sino que tiene una sola estructura real. Este concepto evita esa idea errónea." }
         ],
         resultado: "Las dos formas resonantes describen una única molécula híbrida, con los dos enlaces O-O equivalentes."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Alrededor del O central hay 3 regiones de electrones: el doble enlace, el enlace dativo (o simple) y el par libre.", porque: "Alrededor del O central se cuentan las regiones de electrones: el doble enlace, el dativo (o simple) y el par libre, un total de 3. Cada enlace múltiple cuenta como una sola región en TREPEV, y el par libre cuenta también." },
-          { paso: "Con 3 regiones la geometría electrónica es trigonal plana y la molecular es angular, con ángulo aprox. 117 grados.", porque: "Con 3 regiones la geometría electrónica es trigonal plana, con 120 grados ideales. El par libre repele más que los enlaces y comprime el ángulo, por eso la forma molecular es angular y el valor real ronda los 117 grados." },
-          { paso: "Enlaces: 2 sigma (uno por cada O-O) y 1 pi deslocalizado entre los dos enlaces O-O.", porque: "Se separan los sigma y los pi: cada enlace O-O tiene un sigma, lo que da 2 sigma en total, y la parte pi se reparte entre los dos enlaces por la resonancia. Así el pi no es un enlace fijo sino una densidad electrónica deslocalizada." }
+          { paso: "Alrededor del O central hay 3 regiones de electrones: el doble enlace, el enlace dativo (o simple) y el par libre.", porque: "Alrededor del O central se cuentan las regiones de electrones: el doble enlace, el dativo (o simple) y el par libre, en total 3. Cada enlace múltiple cuenta como una sola región en TREPEV, y el par libre cuenta igual que un enlace. Por eso el conteo da 3 regiones y define la geometría electrónica." },
+          { paso: "Con 3 regiones la geometría electrónica es trigonal plana y la molecular es angular, con ángulo aprox. 117 grados.", porque: "Con 3 regiones la geometría electrónica es trigonal plana. El par libre repele más que los enlaces y comprime el ángulo, por eso la forma molecular es angular. Como resultado, el valor real ronda los 117 grados, algo menor que el ángulo ideal de la trigonal plana." },
+          { paso: "Enlaces: 2 sigma (uno por cada O-O) y 1 pi deslocalizado entre los dos enlaces O-O.", porque: "Cada enlace O-O tiene un sigma, así que hay 2 sigma en total. La parte pi se reparte entre los dos enlaces porque la resonancia la deslocaliza, y no queda fija en un enlace determinado. Por eso el pi es una densidad electrónica compartida." }
         ],
         resultado: "Geometría angular (aprox. 117 grados), con 2 sigma y una parte pi deslocalizada."
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Delta EN (O-O) = 3,5 - 3,5 = 0: los enlaces O-O son covalentes no polares, sin dipolos de enlace.", porque: "Como los dos átomos son O, la diferencia de electronegatividad es cero y cada enlace O-O es covalente no polar. Con Delta EN = 0 no hay dipolo de enlace, y ese es el punto de partida para analizar la polaridad de la molécula." },
-          { paso: "Con dipolos de enlace nulos, por el modelo del apunte la suma vectorial es cero. Supuesto: esto no coincide del todo con el dato experimental, ya que el O3 tiene un pequeño momento dipolar debido a la distribución de cargas de sus formas resonantes, que el apunte no cubre.", porque: "Con el modelo de Delta EN la suma de dipolos da cero, pero el dato experimental muestra un pequeño momento dipolar en el O3. Ese efecto se asocia a la distribución de cargas de las formas resonantes, algo que el modelo no cubre, así que el resultado debe tomarse con cautela." }
+          { paso: "Delta EN (O-O) = 3,5 - 3,5 = 0: los enlaces O-O son covalentes no polares, sin dipolos de enlace.", porque: "Como los dos átomos son O, la diferencia de electronegatividad es cero, así que cada enlace O-O es covalente no polar. Calculamos 3,5 - 3,5 = 0 con los valores del enunciado. Con Delta EN = 0 no hay dipolo de enlace, y ese es el punto de partida para analizar la polaridad de la molécula." },
+          { paso: "Con dipolos de enlace nulos, por el modelo del apunte la suma vectorial es cero. Supuesto: esto no coincide del todo con el dato experimental, ya que el O3 tiene un pequeño momento dipolar debido a la distribución de cargas de sus formas resonantes, que el apunte no cubre.", porque: "Con dipolos de enlace nulos, el modelo del apunte da suma vectorial cero. Sin embargo, el dato experimental muestra un pequeño momento dipolar en el O3, y eso no coincide del todo con el modelo. El efecto se asocia a la distribución de cargas de las formas resonantes, algo que el apunte no cubre, así que el resultado debe tomarse con cautela." }
         ],
         resultado: "Según el modelo de Delta EN, los enlaces O-O son no polares; el O3 real tiene un pequeño momento dipolar que el apunte no explica."
       }
@@ -447,33 +447,33 @@ window.EJERCITACION["uniones"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "CO2: 4 + 2 x 6 = 16 electrones (8 pares). Estructura O=C=O: 2 enlaces dobles, sin pares libres en el C y 2 pares libres en cada O.", porque: "Se cuentan los electrones del CO2 (4 + 2 x 6 = 16, es decir 8 pares) y se distribuyen con el C central y dos dobles enlaces. El C, menos electronegativo que el O, cumple su octeto con 4 pares compartidos, y cada O conserva 2 pares libres." },
-          { paso: "CS2: 4 + 2 x 6 = 16 electrones. Estructura S=C=S, con la misma forma que el CO2 y 2 pares libres en cada S.", porque: "El S también tiene 6 electrones de valencia, así que el CS2 se dibuja igual que el CO2: dobles enlaces y 2 pares libres en cada S. La geometría depende del número de regiones de electrones, por eso la forma lineal se repite." },
-          { paso: "Delta EN (C=O) = 3,5 - 2,5 = 1,0: enlace covalente polar. Delta EN (C=S) = 2,5 - 2,5 = 0,0: enlace covalente no polar.", porque: "Se resta la electronegatividad de los átomos de cada enlace: C=O da 3,5 - 2,5 = 1,0 (covalente polar) y C=S da 2,5 - 2,5 = 0,0 (covalente no polar). Como el C y el S tienen la misma electronegatividad, su enlace no tiene dipolo." }
+          { paso: "CO2: 4 + 2 x 6 = 16 electrones (8 pares). Estructura O=C=O: 2 enlaces dobles, sin pares libres en el C y 2 pares libres en cada O.", porque: "Contamos los electrones del CO2 (4 + 2 x 6 = 16, es decir 8 pares) y los distribuimos con el C central y dos dobles enlaces. El C, menos electronegativo que el O, cumple su octeto con 4 pares compartidos. Cada O conserva 2 pares libres, y así queda completa la estructura." },
+          { paso: "CS2: 4 + 2 x 6 = 16 electrones. Estructura S=C=S, con la misma forma que el CO2 y 2 pares libres en cada S.", porque: "El S también tiene 6 electrones de valencia, así que el CS2 se dibuja igual que el CO2: dobles enlaces y 2 pares libres en cada S. Por eso ambas moléculas tienen 16 electrones en total. La geometría depende del número de regiones de electrones, y de ahí se repite la forma lineal." },
+          { paso: "Delta EN (C=O) = 3,5 - 2,5 = 1,0: enlace covalente polar. Delta EN (C=S) = 2,5 - 2,5 = 0,0: enlace covalente no polar.", porque: "Restamos la electronegatividad de los átomos de cada enlace: C=O da 3,5 - 2,5 = 1,0 (covalente polar) y C=S da 2,5 - 2,5 = 0,0 (covalente no polar). Como el C y el S tienen la misma electronegatividad, su enlace no tiene dipolo. Por eso el CS2 no tiene dipolos en sus enlaces." }
         ],
         resultado: "CO2: enlaces C=O covalentes polares. CS2: enlaces C=S covalentes no polares (Delta EN = 0)."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "SO2: 6 + 2 x 6 = 18 electrones (9 pares). Estructura O=S->O, con enlace doble, enlace dativo y 1 par libre sobre el S.", porque: "Se cuentan los electrones de valencia del SO2 (6 + 2 x 6 = 18, es decir 9 pares) y se dibuja la forma O=S->O, que es la que cumple el octeto del S y de los O. Verificar esa cuenta evita dibujar una estructura sin pares suficientes." },
-          { paso: "Alrededor del S hay 3 regiones de electrones (doble enlace, dativo y par libre): geometría electrónica trigonal plana y molecular angular, con ángulo aprox. 119 grados.", porque: "Con 3 regiones alrededor del S (doble enlace, dativo y par libre) la geometría electrónica es trigonal plana. El par libre repele más y comprime el ángulo, dando una forma molecular angular de aprox. 119 grados." }
+          { paso: "SO2: 6 + 2 x 6 = 18 electrones (9 pares). Estructura O=S->O, con enlace doble, enlace dativo y 1 par libre sobre el S.", porque: "Se cuentan los electrones de valencia del SO2 (6 + 2 x 6 = 18, es decir 9 pares) y se dibuja la forma O=S->O, que es la que cumple el octeto del S y de los O. Verificar esa cuenta evita dibujar una estructura con pares insuficientes. Por eso el total de 9 pares es el punto de partida." },
+          { paso: "Alrededor del S hay 3 regiones de electrones (doble enlace, dativo y par libre): geometría electrónica trigonal plana y molecular angular, con ángulo aprox. 119 grados.", porque: "Con 3 regiones alrededor del S (doble enlace, dativo y par libre), la geometría electrónica es trigonal plana. El par libre repele más y comprime el ángulo, dando una forma molecular angular de aprox. 119 grados. Por eso el SO2 no es lineal." }
         ],
         resultado: "Geometría angular, ángulo aprox. 119 grados."
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "CO2: lineal y simétrico. Sus dipolos C=O son iguales y opuestos: la suma es cero y el CO2 es apolar.", porque: "En el CO2 la geometría lineal hace que los dos dipolos C=O tengan el mismo módulo y dirección opuesta. Por eso se cancelan y la molécula es apolar, aunque sus enlaces sean polares." },
-          { paso: "SO2: enlaces S=O polares (Delta EN = 1,0) con geometría angular, sin cancelación: el SO2 es polar.", porque: "En el SO2 los dipolos S-O no están alineados por la forma angular, y su suma no es cero. Eso hace que la molécula tenga un momento dipolar neto, así que es polar." }
+          { paso: "CO2: lineal y simétrico. Sus dipolos C=O son iguales y opuestos: la suma es cero y el CO2 es apolar.", porque: "En el CO2 la geometría lineal hace que los dos dipolos C=O tengan el mismo módulo y dirección opuesta. Por eso se cancelan, y la suma vectorial es cero. La molécula es apolar, aunque sus enlaces sean polares." },
+          { paso: "SO2: enlaces S=O polares (Delta EN = 1,0) con geometría angular, sin cancelación: el SO2 es polar.", porque: "En el SO2 los dipolos S-O no están alineados por la forma angular, y su suma no es cero. Eso hace que la molécula tenga un momento dipolar neto. Por eso el SO2 es polar, a diferencia del CO2." }
         ],
         resultado: "El CO2 es apolar; el SO2 es polar."
       },
       {
         parte: "d)",
         pasos: [
-          { paso: "Regla semejante disuelve semejante: el agua es polar, por lo que disuelve mejor a sustancias polares como el SO2 que al CO2 apolar.", porque: "Se aplica la regla 'semejante disuelve semejante': el agua es polar y disuelve mejor a moléculas polares. Por eso se compara la polaridad de cada gas con la del solvente, porque las interacciones dipolo-dipolo favorecen la solubilidad." },
-          { paso: "Además, el SO2 reacciona parcialmente con el agua formando H2SO3, lo que aumenta su solubilidad aparente.", porque: "Además de la polaridad, el SO2 reacciona en parte con el agua para formar H2SO3, y esa reacción consume gas disuelto y desplaza el equilibrio hacia la disolución. Este efecto no ocurre con el CO2, que es apolar y prácticamente no reacciona con el agua." }
+          { paso: "Regla semejante disuelve semejante: el agua es polar, por lo que disuelve mejor a sustancias polares como el SO2 que al CO2 apolar.", porque: "Se aplica la regla 'semejante disuelve semejante': el agua es polar y disuelve mejor a moléculas polares. Por eso comparamos la polaridad de cada gas con la del solvente. Las interacciones dipolo-dipolo favorecen la solubilidad del SO2 y no la del CO2." },
+          { paso: "Además, el SO2 reacciona parcialmente con el agua formando H2SO3, lo que aumenta su solubilidad aparente.", porque: "Además de la polaridad, el SO2 reacciona en parte con el agua para formar H2SO3, y esa reacción consume gas disuelto y desplaza el equilibrio hacia la disolución. Este efecto no ocurre con el CO2, que es apolar y prácticamente no reacciona con el agua. Por eso el SO2 resulta más soluble." }
         ],
         resultado: "El SO2 se disuelve más en agua que el CO2 porque es polar y reacciona con el agua."
       }
@@ -495,10 +495,10 @@ window.EJERCITACION["nomenclatura"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Los metales alcalinos (K, Na) tienen nº de oxidación +1; el O suele ser -2 y el H suele ser +1.", porque: "Antes de calcular, se fijan los nº de oxidación de los elementos conocidos: los metales alcalinos son +1, el O suele ser -2 y el H suele ser +1. Estos valores de referencia son los que se usan para despejar el elemento que se pide." },
-          { paso: "KMnO4: 0 = (+1) + Mn + 4 x (-2) -> Mn = +7.", porque: "Se plantea que la suma de los nº de oxidación de todos los átomos de una especie neutra es 0, multiplicando cada uno por su subíndice. Con esa ecuación se despeja el Mn, que es la incógnita, y el resultado +7 es el que se pide." },
-          { paso: "H2SO4: 0 = 2 x (+1) + S + 4 x (-2) -> S = +6.", porque: "Se aplica la misma suma, con 2 H (+1 cada uno) y 4 O (-2 cada uno), y se despeja el S. Hay que multiplicar cada nº por su subíndice, y olvidar hacerlo es el error más común en esta cuenta." },
-          { paso: "Na2S: 0 = 2 x (+1) + S -> S = -2 (el S es el anión sulfuro).", porque: "En Na2S la especie es neutra, así que 2 x (+1) más el S debe dar 0, y el S queda en -2. Como el Na es más electropositivo, el S actúa como anión y lleva el nº negativo." }
+          { paso: "Los metales alcalinos (K, Na) tienen nº de oxidación +1; el O suele ser -2 y el H suele ser +1.", porque: "Antes de calcular fijamos los nº de oxidación de los elementos conocidos: K y Na como metales alcalinos tienen +1, el O suele ser -2 y el H suele ser +1. Estos valores de referencia son los que usamos para despejar el elemento que se pide. Sin ellos la ecuación tendría más incógnitas." },
+          { paso: "KMnO4: 0 = (+1) + Mn + 4 x (-2) -> Mn = +7.", porque: "Planteamos que la suma de los nº de oxidación de una especie neutra es 0, multiplicando cada uno por su subíndice. Con (+1) para el K, 4 x (-2) para los O y Mn como incógnita, despejamos el Mn. El resultado es +7, que es el nº de oxidación del Mn en KMnO4." },
+          { paso: "H2SO4: 0 = 2 x (+1) + S + 4 x (-2) -> S = +6.", porque: "Aplicamos la misma suma: 2 x (+1) para los H, 4 x (-2) para los O y S como incógnita, y el total debe dar 0. Despejamos el S y obtenemos +6. Hay que multiplicar cada nº por su subíndice, porque olvidar esa multiplicación es el error más común en esta cuenta." },
+          { paso: "Na2S: 0 = 2 x (+1) + S -> S = -2 (el S es el anión sulfuro).", porque: "En Na2S la especie es neutra, así que 2 x (+1) más el S debe dar 0. Por eso el S queda en -2, porque el Na es más electropositivo y el S actúa como anión sulfuro. Entonces el mismo elemento cambia de nº según la especie en la que está." }
         ],
         resultado: "Mn = +7 en KMnO4; S = +6 en H2SO4; S = -2 en Na2S."
       }
@@ -517,10 +517,10 @@ window.EJERCITACION["nomenclatura"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Óxido de cloro(VII): Cl con nº +7 y O con -2. Se cruzan los valores: 2 Cl (+7) y 7 O (-2) -> Cl2O7.", porque: "En un compuesto neutro los subíndices se obtienen cruzando los nº de oxidación: el Cl (+7) se escribe con subíndice 2 y el O (-2) con subíndice 7. Así la suma de cargas da 0 (2 x 7 = 14 = 7 x 2)." },
-          { paso: "Óxido de calcio: Ca con +2 y O con -2 -> CaO.", porque: "Con Ca +2 y O -2 los valores absolutos son iguales, así que cada elemento lleva subíndice 1 y la suma da 0. Por eso la fórmula es CaO, sin subíndices adicionales." },
-          { paso: "Cl2O7 en IUPAC sistemática: heptóxido de dicloro. Equivale a óxido de cloro(VII) en Stock.", porque: "En la nomenclatura IUPAC sistemática los prefijos numerales (di = 2, hepta = 7) indican la cantidad de átomos, mientras que la de Stock usa el nº de oxidación en número romano. Ambos nombres describen el mismo compuesto y son válidos." },
-          { paso: "CaO: óxido de calcio, sin número romano.", porque: "En la nomenclatura de Stock el número romano solo se escribe cuando el elemento puede tener más de un nº de oxidación. El calcio tiene solo +2, así que no hace falta aclararlo." }
+          { paso: "Óxido de cloro(VII): Cl con nº +7 y O con -2. Se cruzan los valores: 2 Cl (+7) y 7 O (-2) -> Cl2O7.", porque: "En un compuesto neutro los subíndices se obtienen cruzando los nº de oxidación: el Cl (+7) pasa a tener subíndice 2 y el O (-2) pasa a tener subíndice 7. Así la carga positiva total del Cl iguala a la negativa del O, y la suma da 0. Por eso la fórmula es Cl2O7." },
+          { paso: "Óxido de calcio: Ca con +2 y O con -2 -> CaO.", porque: "Con Ca +2 y O -2 los valores absolutos son iguales, así que cada elemento lleva subíndice 1. La suma de cargas da 0 sin necesidad de cruzar números. Por eso la fórmula es CaO, sin subíndices adicionales." },
+          { paso: "Cl2O7 en IUPAC sistemática: heptóxido de dicloro. Equivale a óxido de cloro(VII) en Stock.", porque: "En la IUPAC sistemática los prefijos numerales indican la cantidad de átomos: di para los 2 Cl y hepta para los 7 O. En cambio, Stock usa el nº de oxidación del Cl en número romano, (VII). Ambos nombres describen el mismo compuesto y son válidos." },
+          { paso: "CaO: óxido de calcio, sin número romano.", porque: "En la nomenclatura de Stock el número romano solo se escribe cuando el elemento puede tener más de un nº de oxidación. El Ca tiene únicamente +2, así que no hace falta aclararlo. Por eso el nombre queda óxido de calcio." }
         ],
         resultado: "a) Cl2O7 = heptóxido de dicloro (óxido de cloro(VII)); b) CaO = óxido de calcio."
       }
@@ -539,10 +539,10 @@ window.EJERCITACION["nomenclatura"] = [
       {
         parte: "",
         pasos: [
-          { paso: "HBr gaseoso: es un hidrácido en estado gaseoso, se nombra bromuro de hidrógeno (uro de hidrógeno).", porque: "Como el HBr está en estado gaseoso, es una sustancia pura que todavía no se disolvió en agua y se nombra como compuesto binario: bromuro de hidrógeno. El prefijo 'ácido' queda reservado para la solución acuosa." },
-          { paso: "HBr disuelto en agua: ácido bromhídrico.", porque: "Al disolverse en agua el HBr se ioniza, y en solución el compuesto se nombra como hidrácido con la terminación 'hídrico'. Es el mismo compuesto que en el paso anterior; lo que cambia es el estado de agregación." },
-          { paso: "NaH: hidruro de sodio. El H tiene nº -1 porque el metal es más electropositivo.", porque: "En los hidruros metálicos el metal es el catión y el H actúa como anión hidruro con nº -1, porque el metal es más electropositivo. Por eso el nombre es hidruro de sodio y no un ácido." },
-          { paso: "NH3: amoníaco (nombre tradicional, el que usa la guía) o trihidruro de nitrógeno (IUPAC). Ambos son válidos.", porque: "La IUPAC nombra el NH3 con prefijos numerales (tri = 3 H) y la tradicional mantiene el nombre histórico 'amoníaco'. Conviene saber que ambos son válidos, porque en un examen se puede aceptar cualquiera de los dos." }
+          { paso: "HBr gaseoso: es un hidrácido en estado gaseoso, se nombra bromuro de hidrógeno (uro de hidrógeno).", porque: "El HBr en estado gaseoso es una sustancia pura que todavía no se disolvió en agua. Por eso se nombra como compuesto binario, bromuro de hidrógeno. El prefijo 'ácido' queda reservado para la solución acuosa." },
+          { paso: "HBr disuelto en agua: ácido bromhídrico.", porque: "Al disolverse en agua el HBr se ioniza, y en solución se nombra como hidrácido con la terminación 'hídrico'. Es el mismo compuesto que en el paso anterior, y lo que cambia es el estado de agregación. Por eso el nombre pasa a ser ácido bromhídrico." },
+          { paso: "NaH: hidruro de sodio. El H tiene nº -1 porque el metal es más electropositivo.", porque: "En los hidruros metálicos el metal es el catión y el H actúa como anión hidruro con nº -1. Esto ocurre porque el metal es más electropositivo que el H. Por eso el compuesto se nombra hidruro de sodio y no como ácido." },
+          { paso: "NH3: amoníaco (nombre tradicional, el que usa la guía) o trihidruro de nitrógeno (IUPAC). Ambos son válidos.", porque: "La IUPAC nombra el NH3 con prefijos numerales (tri = 3 H), y la nomenclatura tradicional mantiene el nombre histórico 'amoníaco'. Ambos nombres son válidos, así que en un examen se puede aceptar cualquiera de los dos. Conviene saber los dos para no perder puntos." }
         ],
         resultado: "a) bromuro de hidrógeno; b) ácido bromhídrico; c) hidruro de sodio; d) amoníaco (trihidruro de nitrógeno)."
       }
@@ -561,10 +561,10 @@ window.EJERCITACION["nomenclatura"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Ácido nitroso (N +3): H (+1) + N (+3) + 2 x O (-2) = 0 -> HNO2.", porque: "Se suma H (+1), N (+3) y 2 O (-2 cada uno), y el total debe dar 0 porque el ácido es neutro. El sufijo 'oso' corresponde al menor nº de oxidación de la serie, en este caso +3." },
-          { paso: "Ácido nítrico (N +5): H (+1) + N (+5) + 3 x O (-2) = 0 -> HNO3.", porque: "Se suma H (+1), N (+5) y 3 O (-2 cada uno), y el total de 0 confirma la fórmula HNO3. El sufijo 'ico' corresponde al mayor nº de oxidación de la serie, por eso se agregan más O que en el nitroso." },
-          { paso: "Ácido hipocloroso (Cl +1): H (+1) + Cl (+1) + O (-2) = 0 -> HClO.", porque: "En HClO, H (+1) más Cl (+1) más O (-2) da 0, así que el Cl tiene nº +1. El prefijo 'hipo' y el sufijo 'oso' indican el nº más bajo de la serie de oxoácidos del cloro." },
-          { paso: "Ácido clórico (Cl +5): H (+1) + Cl (+5) + 3 x O (-2) = 0 -> HClO3.", porque: "Se suma H (+1), Cl (+5) y 3 O (-2 cada uno), y el total de 0 confirma HClO3. El 'ico' corresponde al nº +5, que es el que tiene el cloro en la serie de cloratos." }
+          { paso: "Ácido nitroso (N +3): H (+1) + N (+3) + 2 x O (-2) = 0 -> HNO2.", porque: "Sumamos H (+1), N (+3) y 2 O (-2 cada uno), y el total debe dar 0 porque el ácido es neutro. Con esa cuenta confirmamos que la fórmula es HNO2. El sufijo 'oso' corresponde al menor nº de oxidación de la serie, en este caso +3." },
+          { paso: "Ácido nítrico (N +5): H (+1) + N (+5) + 3 x O (-2) = 0 -> HNO3.", porque: "Sumamos H (+1), N (+5) y 3 O (-2 cada uno), y el total de 0 confirma la fórmula HNO3. El sufijo 'ico' corresponde al mayor nº de oxidación de la serie. Por eso el ácido nítrico lleva más O que el nitroso." },
+          { paso: "Ácido hipocloroso (Cl +1): H (+1) + Cl (+1) + O (-2) = 0 -> HClO.", porque: "En HClO sumamos H (+1), Cl (+1) y O (-2), y el total da 0. Así el Cl queda con nº +1. El prefijo 'hipo' y el sufijo 'oso' indican el nº más bajo de la serie de oxoácidos del cloro." },
+          { paso: "Ácido clórico (Cl +5): H (+1) + Cl (+5) + 3 x O (-2) = 0 -> HClO3.", porque: "Sumamos H (+1), Cl (+5) y 3 O (-2 cada uno), y el total de 0 confirma HClO3. El 'ico' corresponde al nº +5 del cloro, que es el que tiene en esta serie. Con eso queda identificado el ácido clórico." }
         ],
         resultado: "a) HNO2; b) HNO3; c) HClO; d) HClO3."
       }
@@ -583,9 +583,9 @@ window.EJERCITACION["nomenclatura"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Sulfato de aluminio: el catión es Al^3+ y el anión es SO4^2-. Para neutralidad: 2 Al^3+ (6+) y 3 SO4^2- (6-) -> Al2(SO4)3.", porque: "Para formar la sal hay que igualar las cargas: el Al^3+ aporta 3 cargas positivas y el SO4^2- aporta 2 negativas. El mínimo común múltiplo de 3 y 2 es 6, por eso hacen falta 2 Al^3+ y 3 SO4^2-." },
-          { paso: "Fosfato de calcio: Ca^2+ y PO4^3-. Para neutralidad: 3 Ca^2+ (6+) y 2 PO4^3- (6-) -> Ca3(PO4)2.", porque: "Se usa el mismo criterio con Ca^2+ (2 cargas) y PO4^3- (3 cargas): el mínimo común múltiplo es 6, así que 3 Ca^2+ y 2 PO4^3- suman 6+ y 6-. Cada subíndice indica cuántos iones del otro tipo hacen falta para neutralizar." },
-          { paso: "Mg(NO3)2: el catión Mg^2+ tiene un único nº de oxidación y el anión nitrato es NO3^- -> nitrato de magnesio.", porque: "El Mg^2+ tiene un único nº de oxidación posible, por eso no lleva número romano. El subíndice 2 del NO3 se justifica porque sus dos cargas 1- neutralizan el Mg^2+, y el nombre es nitrato de magnesio." }
+          { paso: "Sulfato de aluminio: el catión es Al^3+ y el anión es SO4^2-. Para neutralidad: 2 Al^3+ (6+) y 3 SO4^2- (6-) -> Al2(SO4)3.", porque: "Para formar la sal igualamos las cargas: el Al^3+ aporta 3 cargas positivas y el SO4^2- aporta 2 negativas. El mínimo común múltiplo de 3 y 2 es 6. Por eso hacen falta 2 Al^3+ y 3 SO4^2-, que dan 6+ y 6-." },
+          { paso: "Fosfato de calcio: Ca^2+ y PO4^3-. Para neutralidad: 3 Ca^2+ (6+) y 2 PO4^3- (6-) -> Ca3(PO4)2.", porque: "Usamos el mismo criterio con Ca^2+ (2 cargas) y PO4^3- (3 cargas). El mínimo común múltiplo es 6, así que 3 Ca^2+ y 2 PO4^3- suman 6+ y 6-. Cada subíndice indica cuántos iones del otro tipo hacen falta para neutralizar la carga." },
+          { paso: "Mg(NO3)2: el catión Mg^2+ tiene un único nº de oxidación y el anión nitrato es NO3^- -> nitrato de magnesio.", porque: "El Mg^2+ tiene un único nº de oxidación posible, por eso no lleva número romano. Como cada NO3^- aporta una carga negativa, hacen falta 2 para neutralizar el Mg^2+. Por eso el nombre queda nitrato de magnesio." }
         ],
         resultado: "Al2(SO4)3; Ca3(PO4)2; Mg(NO3)2 = nitrato de magnesio."
       }
@@ -604,16 +604,16 @@ window.EJERCITACION["nomenclatura"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Sulfato de hierro(III): Fe^3+ y SO4^2-. Para neutralidad: 2 Fe^3+ (6+) y 3 SO4^2- (6-) -> Fe2(SO4)3.", porque: "El número romano (III) indica que el hierro tiene carga 3+, así que el catión es Fe^3+. Para igualarlo con SO4^2- se usa el mínimo común múltiplo 6, que da 2 Fe y 3 SO4, es decir Fe2(SO4)3." },
-          { paso: "Hidrogenosulfato de sodio: anión HSO4^- (sulfato con un H) y catión Na^+ -> NaHSO4.", porque: "El anión HSO4^- conserva 1 H de los 2 del ácido sulfúrico. Como el Na^+ y el HSO4^- tienen carga de módulo 1, se combinan 1 a 1 y no hace falta cambiar subíndices; el H se escribe delante del SO4 porque es parte del anión." }
+          { paso: "Sulfato de hierro(III): Fe^3+ y SO4^2-. Para neutralidad: 2 Fe^3+ (6+) y 3 SO4^2- (6-) -> Fe2(SO4)3.", porque: "El número romano (III) indica que el hierro tiene carga 3+, así que el catión es Fe^3+. Para igualarlo con SO4^2- usamos el mínimo común múltiplo 6. Así se obtienen 2 Fe y 3 SO4, es decir Fe2(SO4)3." },
+          { paso: "Hidrogenosulfato de sodio: anión HSO4^- (sulfato con un H) y catión Na^+ -> NaHSO4.", porque: "El anión HSO4^- conserva 1 H de los 2 que tiene el ácido sulfúrico. Como Na^+ y HSO4^- se combinan 1 a 1, no hace falta cambiar subíndices. El H se escribe delante del SO4 porque forma parte del anión." }
         ],
         resultado: "Fe2(SO4)3 y NaHSO4."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Ca(ClO)2: catión Ca^2+ y anión ClO^- (Cl con nº +1, hipoclorito). Se necesitan 2 ClO^- por cada Ca^2+ -> hipoclorito de calcio.", porque: "El Ca^2+ tiene carga 2+ y el anión ClO^- tiene carga 1-, así que se necesitan 2 aniones para neutralizar el catión. Por eso la fórmula es Ca(ClO)2, y el nombre es hipoclorito de calcio con el Cl en +1." },
-          { paso: "KHCO3: catión K^+ y anión HCO3^- (hidrogenocarbonato). Nombre válido: hidrogenocarbonato de potasio; nombre tradicional: bicarbonato de potasio.", porque: "El HCO3^- es el anión de una sal ácida: la IUPAC lo nombra con el prefijo 'hidrogeno' y la tradicional con 'bi', porque tiene un H extra. El K^+ tiene 1+, igual que el anión tiene 1-, así que la fórmula KHCO3 no lleva subíndices." }
+          { paso: "Ca(ClO)2: catión Ca^2+ y anión ClO^- (Cl con nº +1, hipoclorito). Se necesitan 2 ClO^- por cada Ca^2+ -> hipoclorito de calcio.", porque: "El Ca^2+ tiene carga 2+ y el ClO^- tiene carga 1-, así que se necesitan 2 aniones para neutralizar el catión. Por eso la fórmula es Ca(ClO)2. El nombre es hipoclorito de calcio, con el Cl en +1." },
+          { paso: "KHCO3: catión K^+ y anión HCO3^- (hidrogenocarbonato). Nombre válido: hidrogenocarbonato de potasio; nombre tradicional: bicarbonato de potasio.", porque: "El HCO3^- es el anión de una sal ácida, porque conserva un H extra. La IUPAC lo nombra con el prefijo 'hidrogeno' y la tradicional con 'bi'. El K^+ tiene 1+ y el anión 1-, así que la fórmula KHCO3 no lleva subíndices." }
         ],
         resultado: "Ca(ClO)2 = hipoclorito de calcio; KHCO3 = hidrogenocarbonato de potasio (bicarbonato de potasio)."
       }
@@ -632,25 +632,25 @@ window.EJERCITACION["nomenclatura"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "N2O5: el N tiene nº +5, porque 2 x (+5) = 10 = 5 x 2 (O).", porque: "Se verifica el nº de oxidación del N cruzando los subíndices: 2 x (+5) = 10 = 5 x 2 (O). Es la comprobación inversa a la que se usa para calcular un nº desconocido, y confirma que el N tiene +5." },
-          { paso: "IUPAC: pentóxido de dinitrógeno. Stock: óxido de nitrógeno(V).", porque: "Un mismo compuesto puede tener dos nombres válidos. La IUPAC usa prefijos (penta = 5, di = 2), y Stock indica el nº de oxidación del N con el número romano (V); ambos nombres señalan el mismo óxido." },
-          { paso: "Como es un no metal con oxígeno, es un óxido ácido.", porque: "Los no metales forman óxidos ácidos, porque al reaccionar con agua dan oxoácidos. Como el N es un no metal, el N2O5 se clasifica como óxido ácido y no como básico." }
+          { paso: "N2O5: el N tiene nº +5, porque 2 x (+5) = 10 = 5 x 2 (O).", porque: "Verificamos el nº de oxidación del N cruzando los subíndices: 2 x (+5) = 10 = 5 x 2 (O). Esta comprobación es la inversa del cálculo de un nº desconocido. Confirma que el N tiene +5 en el N2O5." },
+          { paso: "IUPAC: pentóxido de dinitrógeno. Stock: óxido de nitrógeno(V).", porque: "Un mismo compuesto puede tener dos nombres válidos. La IUPAC usa prefijos (penta = 5, di = 2), y Stock indica el nº de oxidación del N con el número romano (V). Ambos nombres señalan el mismo óxido." },
+          { paso: "Como es un no metal con oxígeno, es un óxido ácido.", porque: "Los no metales forman óxidos ácidos, porque al reaccionar con agua dan oxoácidos. Como el N es un no metal, el N2O5 se clasifica como óxido ácido. Por eso no se lo considera básico." }
         ],
         resultado: "N2O5 = pentóxido de dinitrógeno (óxido de nitrógeno(V)), óxido ácido."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "N2O5 + H2O -> 2 HNO3. Balance: N 2 = 2; H 2 = 2; O 5 + 1 = 6 = 2 x 3.", porque: "Un óxido ácido reacciona con agua para dar el oxoácido correspondiente: N2O5 + H2O da HNO3. Como hay 2 N en el reactivo se necesitan 2 HNO3, y el balance de O (5 + 1 = 6 = 2 x 3) confirma los coeficientes." },
-          { paso: "El producto es ácido nítrico.", porque: "El ácido formado tiene N con nº +5 y terminación 'ico', así que es ácido nítrico. Conviene recordar que la terminación depende del nº de oxidación del elemento, no de la cantidad de átomos de O." }
+          { paso: "N2O5 + H2O -> 2 HNO3. Balance: N 2 = 2; H 2 = 2; O 5 + 1 = 6 = 2 x 3.", porque: "Un óxido ácido reacciona con agua para dar el oxoácido correspondiente, y el N2O5 da HNO3. Como hay 2 N en el reactivo, se necesitan 2 HNO3. El balance de O (5 + 1 = 6 = 2 x 3) confirma los coeficientes." },
+          { paso: "El producto es ácido nítrico.", porque: "El ácido formado tiene N con nº +5 y terminación 'ico', así que es ácido nítrico. La terminación depende del nº de oxidación del elemento, y no de la cantidad de átomos de O. Por eso el nombre sale de la serie del nitrógeno +5." }
         ],
         resultado: "N2O5 + H2O -> 2 HNO3 (ácido nítrico)."
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "HNO3 + NaOH -> NaNO3 + H2O.", porque: "El ácido nítrico tiene 1 H, así que reacciona con 1 NaOH para neutralizarlo, dando la sal NaNO3 y agua. La neutralización es la reacción de un ácido con una base que produce sal y agua, y el balance de Na y H confirma la relación 1 a 1." },
-          { paso: "NaNO3: nitrato de sodio (anión NO3^-, nítrico).", porque: "El anión NO3^- proviene del ácido nítrico ('ico') y su sal se llama nitrato. El nitrito (NO2^-) se formaría a partir del ácido nitroso, así que no debe confundirse con el producto de este paso." }
+          { paso: "HNO3 + NaOH -> NaNO3 + H2O.", porque: "El ácido nítrico tiene 1 H, así que reacciona con 1 NaOH para neutralizarlo. Se forman la sal NaNO3 y agua. El balance de Na y H confirma la relación 1 a 1 entre el ácido y la base." },
+          { paso: "NaNO3: nitrato de sodio (anión NO3^-, nítrico).", porque: "El anión NO3^- proviene del ácido nítrico, por eso su sal se llama nitrato. El nitrito (NO2^-) se formaría a partir del ácido nitroso, así que no debe confundirse con el producto de este paso. Entonces el NaNO3 es nitrato de sodio." }
         ],
         resultado: "HNO3 + NaOH -> NaNO3 + H2O; la sal es nitrato de sodio."
       }
@@ -669,17 +669,17 @@ window.EJERCITACION["nomenclatura"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "La cadena continua más larga tiene 6 carbonos: el nombre base es hexano. El CH3 ramificado es el sustituyente metilo.", porque: "Se identifica la cadena continua más larga, que tiene 6 C, y se la nombra como hexano. El CH3 ramificado no forma parte de la cadena principal: es un sustituyente metilo." },
-          { paso: "Numerando desde la izquierda, el metilo queda en C3; desde la derecha, quedaría en C4. Se elige el localizador más bajo: C3.", porque: "Se numera desde ambos extremos y se mide el localizador del metilo: desde la izquierda queda en C3 y desde la derecha en C4. La regla IUPAC elige el localizador más bajo, que es 3." },
-          { paso: "Nombre: 3-metilhexano.", porque: "En el nombre se escriben el localizador, el prefijo del sustituyente y el nombre base: 3-metil + hexano. El guion separa el número del nombre, y el prefijo 'metil' va delante del alcano." }
+          { paso: "La cadena continua más larga tiene 6 carbonos: el nombre base es hexano. El CH3 ramificado es el sustituyente metilo.", porque: "Se identifica la cadena continua más larga, que tiene 6 C, y se la nombra como hexano. El CH3 ramificado no forma parte de la cadena principal, sino que es un sustituyente metilo. Por eso el nombre base sale de los 6 C de la cadena." },
+          { paso: "Numerando desde la izquierda, el metilo queda en C3; desde la derecha, quedaría en C4. Se elige el localizador más bajo: C3.", porque: "Se numera desde ambos extremos y se mide el localizador del metilo: desde la izquierda queda en C3 y desde la derecha en C4. La regla IUPAC elige el localizador más bajo. Por eso el metilo se nombra en C3." },
+          { paso: "Nombre: 3-metilhexano.", porque: "En el nombre se escriben el localizador, el prefijo del sustituyente y el nombre base. Así combinamos 3-metil con hexano. El guion separa el número del nombre, y el resultado es 3-metilhexano." }
         ],
         resultado: "3-metilhexano."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Butano (4 C) como base, con 2 metilos sobre el C2: CH3-C(CH3)2-CH2-CH3.", porque: "Se parte del butano (4 C) y se agregan 2 metilos sobre el C2, con el prefijo 'dimetil' y el localizador 2,2. Así el C2 queda con 4 enlaces, dos de ellos hacia metilos." },
-          { paso: "Contar carbonos: 4 de la cadena + 2 metilos = 6 C. Hidrógenos: 3 + 6 + 2 + 3 = 14. Fórmula molecular C6H14.", porque: "Se cuentan los carbonos (4 de la cadena y 2 metilos, total 6) y los hidrógenos de la fórmula desarrollada (3 + 6 + 2 + 3 = 14). La fórmula C6H14 cumple CnH2n+2, ya que 2 x 6 + 2 = 14." }
+          { paso: "Butano (4 C) como base, con 2 metilos sobre el C2: CH3-C(CH3)2-CH2-CH3.", porque: "Partimos del butano, de 4 C, y agregamos 2 metilos sobre el C2. El prefijo 'dimetil' con el localizador 2,2 indica esa ubicación. Así el C2 queda con 4 enlaces, dos de ellos hacia los metilos." },
+          { paso: "Contar carbonos: 4 de la cadena + 2 metilos = 6 C. Hidrógenos: 3 + 6 + 2 + 3 = 14. Fórmula molecular C6H14.", porque: "Contamos los carbonos: 4 de la cadena más 2 metilos, total 6. Sumamos los hidrógenos de la fórmula desarrollada: 3 + 6 + 2 + 3 = 14. Así la fórmula molecular es C6H14, que corresponde a un alcano." }
         ],
         resultado: "CH3-C(CH3)2-CH2-CH3, fórmula molecular C6H14."
       }
@@ -698,17 +698,17 @@ window.EJERCITACION["nomenclatura"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "El grupo COOH (ácido) tiene prioridad sobre el OH: el C del COOH es el C1. La cadena tiene 4 C: C1 (COOH), C2 (CH2), C3 (CH con OH), C4 (CH3).", porque: "El COOH tiene prioridad sobre el OH, así que su carbono es el C1 y define el sufijo 'oico'. La cadena se cuenta desde ese C, lo que da 4 C en total: C1, C2, C3 (con el OH) y C4." },
-          { paso: "El OH está en C3: prefijo 3-hidroxi.", porque: "Como el grupo principal es el ácido, el OH no puede ser sufijo y se nombra como prefijo 'hidroxi'. Su posición es C3, que es el carbono de la cadena al que está unido el OH." },
-          { paso: "Nombre: ácido 3-hidroxibutanoico.", porque: "Se combina el prefijo (3-hidroxi) con la base de 4 C (but) y el sufijo del ácido carboxílico (-anoico). Así se arma el nombre final: ácido 3-hidroxibutanoico." }
+          { paso: "El grupo COOH (ácido) tiene prioridad sobre el OH: el C del COOH es el C1. La cadena tiene 4 C: C1 (COOH), C2 (CH2), C3 (CH con OH), C4 (CH3).", porque: "El COOH tiene prioridad sobre el OH, así que su carbono es el C1 y define el sufijo del ácido. La cadena se cuenta desde ese C, lo que da 4 C en total. Por eso el OH queda ubicado en el C3, dentro de esa numeración." },
+          { paso: "El OH está en C3: prefijo 3-hidroxi.", porque: "Como el grupo principal es el ácido, el OH no puede ser sufijo y se nombra como prefijo 'hidroxi'. El OH está unido al C3 de la cadena. Por eso el prefijo es 3-hidroxi." },
+          { paso: "Nombre: ácido 3-hidroxibutanoico.", porque: "Combinamos el prefijo 3-hidroxi con la base de 4 C, but, y el sufijo del ácido carboxílico, anoico. Así se arma el nombre final: ácido 3-hidroxibutanoico. Conviene verificar que el localizador coincida con la numeración desde el COOH." }
         ],
         resultado: "Ácido 3-hidroxibutanoico."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "CH2=CH-CHO: el CHO es un aldehído (C1), la cadena tiene 3 C y el doble enlace está entre C2 y C3. Nombre: prop-2-enal (2-propenal). Nombre trivial: acroleína.", porque: "El CHO es un aldehído y tiene prioridad sobre el doble enlace, así que su C es el C1. La cadena tiene 3 C y el doble enlace va entre C2 y C3, por eso el nombre lleva el localizador 2 para el 'en'." },
-          { paso: "Etanoato de etilo: parte ácida 'etanoato' (de ácido etanoico, acético) y parte alcohólica 'de etilo' (de etanol). Fórmula: CH3-COO-CH2-CH3.", porque: "Un éster se nombra con la parte del ácido ('-oato') seguida del radical del alcohol ('de -ilo'). El etanoato de etilo viene del ácido acético (2 C) y del etanol (2 C), y la fórmula CH3-COO-CH2-CH3 une ambas partes por el enlace éster." }
+          { paso: "CH2=CH-CHO: el CHO es un aldehído (C1), la cadena tiene 3 C y el doble enlace está entre C2 y C3. Nombre: prop-2-enal (2-propenal). Nombre trivial: acroleína.", porque: "El CHO es un aldehído y tiene prioridad sobre el doble enlace, así que su C es el C1. La cadena tiene 3 C, y el doble enlace va entre C2 y C3. Por eso el nombre lleva el localizador 2 para el 'en'." },
+          { paso: "Etanoato de etilo: parte ácida 'etanoato' (de ácido etanoico, acético) y parte alcohólica 'de etilo' (de etanol). Fórmula: CH3-COO-CH2-CH3.", porque: "Un éster se nombra con la parte del ácido ('-oato') seguida del radical del alcohol ('de -ilo'). El etanoato de etilo viene del ácido etanoico, también llamado acético, y del etanol. Por eso la fórmula CH3-COO-CH2-CH3 une ambas partes por el enlace éster." }
         ],
         resultado: "CH2=CH-CHO = prop-2-enal (2-propenal); etanoato de etilo = CH3-COO-CH2-CH3."
       }
@@ -727,17 +727,17 @@ window.EJERCITACION["nomenclatura"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "El OH unido al anillo define un fenol: el C con OH es el C1 del anillo.", porque: "En los derivados del benceno el grupo principal se toma como C1 del anillo, y desde allí se numeran los demás sustituyentes. Por eso el carbono unido al OH es el 1, y el compuesto es un fenol." },
-          { paso: "El CH3 está en posición vecina (orto) al OH, es decir en C2: 2-metilfenol.", porque: "Orto indica posición vecina, es decir C2 respecto del C1. Con dos sustituyentes se puede usar 'o-' o el localizador numérico, y como el CH3 está en C2 el nombre es 2-metilfenol." },
-          { paso: "Nombre tradicional válido: o-cresol (orto-metilfenol).", porque: "El nombre tradicional 'o-cresol' se usa para los metilfenoles, con el prefijo 'orto' que indica la posición relativa entre los dos sustituyentes. Ambos nombres describen el mismo compuesto y son válidos." }
+          { paso: "El OH unido al anillo define un fenol: el C con OH es el C1 del anillo.", porque: "En los derivados del benceno el grupo principal se toma como C1 del anillo, y desde allí se numeran los demás sustituyentes. El OH unido al anillo define un fenol. Por eso el carbono unido al OH es el C1." },
+          { paso: "El CH3 está en posición vecina (orto) al OH, es decir en C2: 2-metilfenol.", porque: "Orto indica posición vecina, es decir C2 respecto del C1. Con dos sustituyentes se puede usar 'o-' o el localizador numérico. Como el CH3 está en C2, el nombre queda 2-metilfenol." },
+          { paso: "Nombre tradicional válido: o-cresol (orto-metilfenol).", porque: "El nombre tradicional 'o-cresol' se usa para los metilfenoles, y su prefijo 'orto' indica la posición relativa entre los dos sustituyentes. Ambos nombres describen el mismo compuesto. Por eso los dos son válidos." }
         ],
         resultado: "2-metilfenol (o-cresol)."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Ácido benzoico: el COOH va unido al C1 del anillo. El Cl va en C3, que es meta respecto del COOH.", porque: "El grupo COOH define el nombre base 'benzoico' y su carbono es el C1 del anillo. El Cl va en C3, que es posición meta, es decir 1,3 respecto del C1." },
-          { paso: "Fórmula: HOOC-C6H4-Cl, con C6H4 (el anillo con 2 sustituyentes), Cl en C3 y COOH en C1. Fórmula molecular C7H5ClO2.", porque: "El benceno (C6H6) pierde 2 H al unirse al COOH y al Cl, así que el anillo queda como C6H4 con 2 sustituyentes. Al sumar el C del COOH, la fórmula molecular resulta C7H5ClO2." }
+          { paso: "Ácido benzoico: el COOH va unido al C1 del anillo. El Cl va en C3, que es meta respecto del COOH.", porque: "El grupo COOH define el nombre base 'benzoico' y su carbono es el C1 del anillo. El Cl va en C3, que es la posición meta respecto del C1. Por eso el cloro queda en meta respecto del COOH." },
+          { paso: "Fórmula: HOOC-C6H4-Cl, con C6H4 (el anillo con 2 sustituyentes), Cl en C3 y COOH en C1. Fórmula molecular C7H5ClO2.", porque: "El anillo de benceno pierde 2 H al unirse al COOH y al Cl, así que queda como C6H4 con 2 sustituyentes. Al sumar el C del COOH, la fórmula molecular resulta C7H5ClO2. Entonces HOOC-C6H4-Cl describe el compuesto completo." }
         ],
         resultado: "HOOC-C6H4-Cl con Cl en meta (C7H5ClO2)."
       }
@@ -756,9 +756,9 @@ window.EJERCITACION["nomenclatura"] = [
       {
         parte: "",
         pasos: [
-          { paso: "H2O2: 2 x (+1) + 2 x O = 0 -> O = -1. El O tiene -1 en peróxidos porque forma un enlace O-O.", porque: "Los 2 O del H2O2 están unidos entre sí, y el enlace O-O se reparte igual entre ambos, así que no se asigna el -2 habitual de los óxidos. Por eso con 2 H (+1) el total da 0 y cada O queda en -1, que es el nº de los peróxidos." },
-          { paso: "OF2: el F (EN 4,0) es más electronegativo que el O (EN 3,5), así que el F tiene nº -1: 2 x (-1) + O = 0 -> O = +2.", porque: "Los nº se asignan por electronegatividad: el F (4,0) es más electronegativo que el O (3,5), así que el F tiene -1. Con 2 F (-1 cada uno), el O queda en +2 para que la molécula sea neutra." },
-          { paso: "K2Cr2O7: 2 x (+1) + 2 x Cr + 7 x (-2) = 0 -> 2 Cr = +12 -> Cr = +6.", porque: "Se cruzan los nº: 2 K (+1 cada uno), 2 Cr, y 7 O (-2 cada uno) deben sumar 0, lo que da 2 Cr = +12. Como hay 2 Cr, el total de +12 se reparte entre los dos y el Cr queda en +6." }
+          { paso: "H2O2: 2 x (+1) + 2 x O = 0 -> O = -1. El O tiene -1 en peróxidos porque forma un enlace O-O.", porque: "Los 2 O del H2O2 están unidos entre sí, y el enlace O-O se reparte igual entre ambos, así que no se les asigna el nº habitual de los óxidos. Con 2 H (+1 cada uno), el total debe dar 0. Por eso cada O queda en -1, que es el nº característico de los peróxidos." },
+          { paso: "OF2: el F (EN 4,0) es más electronegativo que el O (EN 3,5), así que el F tiene nº -1: 2 x (-1) + O = 0 -> O = +2.", porque: "Los nº se asignan según la electronegatividad: el F (4,0) es más electronegativo que el O (3,5), así que el F queda con -1. Con 2 F (-1 cada uno), el O debe quedar en +2 para que la molécula sea neutra. Por eso el O del OF2 tiene nº positivo." },
+          { paso: "K2Cr2O7: 2 x (+1) + 2 x Cr + 7 x (-2) = 0 -> 2 Cr = +12 -> Cr = +6.", porque: "Sumamos 2 K (+1 cada uno), 2 Cr y 7 O (-2 cada uno), y el total debe dar 0. Así obtenemos 2 Cr = +12. Como hay 2 Cr, el total de +12 se reparte entre ambos, y el Cr queda en +6." }
         ],
         resultado: "O en H2O2 = -1; O en OF2 = +2; Cr en K2Cr2O7 = +6."
       }
@@ -777,25 +777,25 @@ window.EJERCITACION["nomenclatura"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Cloruro de hierro(II): Fe^2+ y Cl^- -> FeCl2.", porque: "El Fe^2+ tiene carga 2+ y el Cl^- tiene 1-, así que hacen falta 2 Cl^- por cada Fe^2+ para neutralizar la carga. El subíndice 2 del Cl viene de igualar las cargas, no de otro criterio." },
-          { paso: "Cloruro férrico (= cloruro de hierro(III)): Fe^3+ y Cl^- -> FeCl3.", porque: "En la nomenclatura tradicional el sufijo 'férrico' indica el catión de mayor carga, Fe^3+. Como cada Cl^- aporta 1-, hacen falta 3 aniones, y la fórmula es FeCl3." },
-          { paso: "Sulfuro de hierro(III): Fe^3+ y S^2- -> Fe2S3 (2 x 3+ = 6+ y 3 x 2- = 6-).", porque: "Con Fe^3+ y S^2- hay que igualar la carga total: el mínimo común múltiplo de 3 y 2 es 6, así que 2 Fe^3+ (6+) y 3 S^2- (6-) son neutros. Por eso la fórmula es Fe2S3." }
+          { paso: "Cloruro de hierro(II): Fe^2+ y Cl^- -> FeCl2.", porque: "El Fe^2+ tiene carga 2+ y el Cl^- tiene 1-, así que hacen falta 2 Cl^- por cada Fe^2+ para neutralizar la carga. El subíndice 2 del Cl se obtiene al igualar las cargas. Por eso la fórmula queda FeCl2." },
+          { paso: "Cloruro férrico (= cloruro de hierro(III)): Fe^3+ y Cl^- -> FeCl3.", porque: "En la nomenclatura tradicional el sufijo 'férrico' indica el catión de mayor carga, Fe^3+. Como cada Cl^- aporta 1-, hacen falta 3 aniones. Entonces la fórmula es FeCl3." },
+          { paso: "Sulfuro de hierro(III): Fe^3+ y S^2- -> Fe2S3 (2 x 3+ = 6+ y 3 x 2- = 6-).", porque: "Con Fe^3+ y S^2- hay que igualar la carga total, y el mínimo común múltiplo de 3 y 2 es 6. Así 2 Fe^3+ (6+) y 3 S^2- (6-) quedan neutros. Por eso la fórmula es Fe2S3." }
         ],
         resultado: "FeCl2, FeCl3 y Fe2S3."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "El romano (II) o 'férrico' indica el nº de oxidación del Fe: +2 en el cloruro ferroso y +3 en el férrico y en el sulfuro de hierro(III).", porque: "En la nomenclatura de Stock el número romano indica el nº de oxidación del catión: (II) para Fe^2+ y (III) para Fe^3+. El 'ferroso' y el 'férrico' de la tradicional expresan lo mismo, y el nº se lee directamente del nombre." }
+          { paso: "El romano (II) o 'férrico' indica el nº de oxidación del Fe: +2 en el cloruro ferroso y +3 en el férrico y en el sulfuro de hierro(III).", porque: "En la nomenclatura de Stock el número romano indica el nº de oxidación del catión: (II) para Fe^2+ y (III) para Fe^3+. El 'ferroso' y el 'férrico' de la tradicional expresan lo mismo. Por eso el nº de oxidación se lee directamente del nombre." }
         ],
         resultado: "Fe +2 en FeCl2; Fe +3 en FeCl3 y Fe2S3."
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "M(FeCl3) = 55,85 + 3 x 35,45 = 162,20 g/mol.", porque: "La masa molar se calcula sumando las masas atómicas de cada átomo de la fórmula: 1 Fe y 3 Cl. Conviene usar todos los decimales en esta etapa para no acumular error de redondeo, y ajustar el resultado recién al final." },
-          { paso: "m = n x M = 0,500 mol x 162,20 g/mol = 81,10 g.", porque: "Se aplica la relación m = n x M: se multiplica la cantidad de sustancia (0,500 mol) por la masa molar. Esa relación convierte moles en gramos, que es la unidad que pide el problema." },
-          { paso: "Cifras significativas: el dato 0,500 mol tiene 3 cifras, así que el resultado es 81,1 g.", porque: "Para informar el resultado se usa la cantidad de cifras significativas del dato menos preciso. Como 0,500 tiene 3 cifras, el resultado se redondea a 3 cifras: 81,1 g." }
+          { paso: "M(FeCl3) = 55,85 + 3 x 35,45 = 162,20 g/mol.", porque: "La masa molar se calcula sumando las masas atómicas de cada átomo de la fórmula: 1 Fe y 3 Cl. Con 55,85 para el Fe y 35,45 para cada Cl, obtenemos 162,20 g/mol. Conviene usar todos los decimales en esta etapa para no acumular error de redondeo." },
+          { paso: "m = n x M = 0,500 mol x 162,20 g/mol = 81,10 g.", porque: "Usamos m = n x M, multiplicando los 0,500 mol por la masa molar de 162,20 g/mol. Así pasamos de moles a gramos, que es la unidad que pide el problema. Con eso obtenemos 81,10 g." },
+          { paso: "Cifras significativas: el dato 0,500 mol tiene 3 cifras, así que el resultado es 81,1 g.", porque: "Para informar el resultado usamos la cantidad de cifras significativas del dato menos preciso. El dato 0,500 mol tiene 3 cifras, así que el resultado se redondea a 81,1 g. Entonces la masa de FeCl3 queda con 3 cifras significativas." }
         ],
         resultado: "m = 81,1 g de FeCl3."
       }
@@ -814,23 +814,23 @@ window.EJERCITACION["nomenclatura"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "ClO2^-: x + 2 x (-2) = -1 -> x = +3. ClO3^-: x + 3 x (-2) = -1 -> x = +5. ClO4^-: x + 4 x (-2) = -1 -> x = +7.", porque: "Para un ion, la suma de los nº de oxidación de sus átomos es igual a su carga, no a 0. Con esa ecuación se despeja el Cl en cada anión; por ejemplo, en ClO2^- resulta x + 2 x (-2) = -1, de donde x = +3." }
+          { paso: "ClO2^-: x + 2 x (-2) = -1 -> x = +3. ClO3^-: x + 3 x (-2) = -1 -> x = +5. ClO4^-: x + 4 x (-2) = -1 -> x = +7.", porque: "Para un ion, la suma de los nº de oxidación de sus átomos es igual a su carga, y no a 0. Con x + 2 x (-2) = -1 despejamos el Cl en ClO2^-, y obtenemos x = +3. El mismo criterio se aplica a ClO3^- y ClO4^-, con sus respectivos subíndices de O." }
         ],
         resultado: "Cl: +3 en ClO2^-, +5 en ClO3^-, +7 en ClO4^-."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "HClO2 (Cl +3): ácido cloroso (tradicional); IUPAC: clorato(III) de hidrógeno.", porque: "El sufijo 'oso' corresponde al menor nº de oxidación de la serie (+3). En IUPAC ese mismo nº se escribe con número romano dentro del nombre del anión, por eso el HClO2 también se nombra clorato(III) de hidrógeno." },
-          { paso: "HClO3 (Cl +5): ácido clórico; IUPAC: clorato(V) de hidrógeno.", porque: "El sufijo 'ico' corresponde al nº +5 de la serie, por eso el HClO3 es ácido clórico. En IUPAC el mismo nº se escribe como (V), y el nombre resulta clorato(V) de hidrógeno." },
-          { paso: "HClO4 (Cl +7): ácido perclórico (el prefijo 'per-' indica el nº mayor); IUPAC: clorato(VII) de hidrógeno.", porque: "El prefijo 'per-' con el sufijo 'ico' indica un nº de oxidación mayor que el del clórico: +7 en lugar de +5. En IUPAC ese nº se escribe como (VII), por eso el nombre sistemático es clorato(VII) de hidrógeno." }
+          { paso: "HClO2 (Cl +3): ácido cloroso (tradicional); IUPAC: clorato(III) de hidrógeno.", porque: "El sufijo 'oso' corresponde al menor nº de oxidación de la serie, que en este caso es +3. En IUPAC ese mismo nº se escribe con número romano dentro del nombre del anión. Por eso el HClO2 también se nombra clorato(III) de hidrógeno." },
+          { paso: "HClO3 (Cl +5): ácido clórico; IUPAC: clorato(V) de hidrógeno.", porque: "El sufijo 'ico' corresponde al nº +5 de la serie, así que el HClO3 es ácido clórico. En la nomenclatura IUPAC el mismo nº se escribe como (V). Entonces el nombre sistemático resulta clorato(V) de hidrógeno." },
+          { paso: "HClO4 (Cl +7): ácido perclórico (el prefijo 'per-' indica el nº mayor); IUPAC: clorato(VII) de hidrógeno.", porque: "El prefijo 'per' con el sufijo 'ico' indica un nº de oxidación mayor que el del clórico. Aquí el Cl tiene +7, y en IUPAC se escribe como (VII). Por eso el nombre sistemático es clorato(VII) de hidrógeno." }
         ],
         resultado: "HClO2: ácido cloroso / clorato(III) de hidrógeno; HClO3: ácido clórico / clorato(V) de hidrógeno; HClO4: ácido perclórico / clorato(VII) de hidrógeno."
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "NaClO2: clorito de sodio (IUPAC: clorato(III) de sodio). NaClO3: clorato de sodio (IUPAC: clorato(V) de sodio). NaClO4: perclorato de sodio (IUPAC: clorato(VII) de sodio).", porque: "El catión Na^+ se combina con cada anión monovalente (ClO2^-, ClO3^- o ClO4^-), por lo que cada fórmula lleva 1 Na. El nombre sigue la serie del ácido correspondiente: clorito para +3, clorato para +5 y perclorato para +7." }
+          { paso: "NaClO2: clorito de sodio (IUPAC: clorato(III) de sodio). NaClO3: clorato de sodio (IUPAC: clorato(V) de sodio). NaClO4: perclorato de sodio (IUPAC: clorato(VII) de sodio).", porque: "El catión Na^+ se combina con cada anión monovalente (ClO2^-, ClO3^- o ClO4^-), por lo que cada fórmula lleva 1 Na. El nombre sigue la serie del ácido correspondiente: clorito para el de menor nº, clorato para el intermedio y perclorato para el de mayor nº. Así cada sal queda nombrada según su anión." }
         ],
         resultado: "NaClO2 (clorito de sodio), NaClO3 (clorato de sodio), NaClO4 (perclorato de sodio)."
       }
@@ -849,17 +849,17 @@ window.EJERCITACION["nomenclatura"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "El ácido carboxílico (COOH) tiene prioridad: el C del COOH es el C1 de una cadena de 5 C.", porque: "El COOH es el grupo de mayor prioridad, así que su carbono se numera como C1 y la cadena de 5 C se cuenta desde allí. Los demás grupos se ubican después, siguiendo esa referencia." },
-          { paso: "La cetona (C=O) está en C4, y el C5 es un CH3: HOOC-CH2-CH2-CO-CH3.", porque: "La cadena se escribe con el C=O en C4 y el metilo final en C5: C1 (COOH), C2 y C3 son CH2, C4 es el C=O y C5 es CH3. Eso da la fórmula HOOC-CH2-CH2-CO-CH3, con 5 C y 8 H." },
-          { paso: "Grupos funcionales: ácido carboxílico (principal) y cetona (secundaria, nombrada como prefijo 'oxo').", porque: "El ácido carboxílico es el grupo principal, así que la cetona no puede usar el sufijo y se nombra como prefijo 'oxo'. Identificar ambos grupos es necesario tanto para nombrar el compuesto como para predecir su comportamiento." }
+          { paso: "El ácido carboxílico (COOH) tiene prioridad: el C del COOH es el C1 de una cadena de 5 C.", porque: "El COOH es el grupo de mayor prioridad, así que su carbono se numera como C1 y la cadena de 5 C se cuenta desde allí. Los demás grupos se ubican después, siguiendo esa referencia. Por eso la cadena queda numerada desde el ácido." },
+          { paso: "La cetona (C=O) está en C4, y el C5 es un CH3: HOOC-CH2-CH2-CO-CH3.", porque: "El C=O queda en C4 y el metilo final en C5. Con C1 (COOH), C2 y C3 como CH2, C4 como C=O y C5 como CH3, se arma la cadena. Así se obtiene HOOC-CH2-CH2-CO-CH3." },
+          { paso: "Grupos funcionales: ácido carboxílico (principal) y cetona (secundaria, nombrada como prefijo 'oxo').", porque: "El ácido carboxílico es el grupo principal, así que la cetona no puede usar el sufijo y se nombra como prefijo 'oxo'. Identificar ambos grupos es necesario para nombrar el compuesto y para predecir su comportamiento. Por eso se indican los dos grupos funcionales." }
         ],
         resultado: "HOOC-CH2-CH2-CO-CH3 (C5H8O3); grupos ácido carboxílico y cetona."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "CH3-CO-NH-CH3 tiene el grupo CO-NH-: es una amida. La parte acilo es CH3-CO-, de 2 C (acetamida).", porque: "El grupo CO-NH es el característico de las amidas. El C del carbonilo cuenta en la cadena base, y la parte acilo CH3-CO- tiene 2 C, lo que da el nombre base etanamida (acetamida)." },
-          { paso: "El metilo unido al N se indica con el localizador N-: N-metiletanamida (o N-metilacetamida).", porque: "El metilo unido al N no recibe un localizador de carbono, sino el localizador N-. Por eso se escribe N-metil delante del nombre base, dando N-metiletanamida." }
+          { paso: "CH3-CO-NH-CH3 tiene el grupo CO-NH-: es una amida. La parte acilo es CH3-CO-, de 2 C (acetamida).", porque: "El grupo CO-NH es el característico de las amidas, así que la función se identifica a partir de ese grupo. El C del carbonilo cuenta en la cadena base, y la parte acilo CH3-CO- tiene 2 C. Por eso el nombre base es etanamida, también llamada acetamida." },
+          { paso: "El metilo unido al N se indica con el localizador N-: N-metiletanamida (o N-metilacetamida).", porque: "El metilo unido al N no recibe un localizador de carbono, sino el localizador N-. Por eso se escribe N-metil delante del nombre base. El resultado es N-metiletanamida, también llamada N-metilacetamida." }
         ],
         resultado: "N-metiletanamida (N-metilacetamida), grupo funcional amida."
       }
@@ -878,17 +878,17 @@ window.EJERCITACION["nomenclatura"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Cadena de 5 C con un doble enlace y un triple enlace. La numeración posible da locantes {1,4} en ambos sentidos: el doble en 1 y el triple en 4 (pent-1-en-4-ino) o el triple en 1 y el doble en 4 (pent-4-en-1-ino).", porque: "La cadena tiene 5 C con un doble y un triple enlace, y la numeración posible da los localizadores {1,4} en ambos sentidos. Por eso hay que comparar los dos sentidos antes de decidir cuál usar." },
-          { paso: "Se elige el sentido que da el localizador más bajo al doble enlace (ene), porque cuando hay empate en el conjunto de locantes el doble enlace tiene prioridad sobre el triple.", porque: "Cuando el conjunto de localizadores es igual, el doble enlace ('en') recibe el número más bajo porque tiene prioridad sobre el triple ('ino'). Esa regla es la que lleva al nombre pent-1-en-4-ino y no al otro." },
-          { paso: "Nombre: pent-1-en-4-ino.", porque: "Se escriben los localizadores de cada insaturación: 1-en para el doble y 4-ino para el triple, con 'pent' por los 5 C. Conviene verificar que el sufijo 'en' vaya antes que 'ino' en el nombre." }
+          { paso: "Cadena de 5 C con un doble enlace y un triple enlace. La numeración posible da locantes {1,4} en ambos sentidos: el doble en 1 y el triple en 4 (pent-1-en-4-ino) o el triple en 1 y el doble en 4 (pent-4-en-1-ino).", porque: "La cadena tiene 5 C con un doble y un triple enlace. Los localizadores posibles dan {1,4} en ambos sentidos, así que la numeración por sí sola no decide. Por eso comparamos los dos sentidos antes de elegir: el doble en 1 y el triple en 4, o al revés." },
+          { paso: "Se elige el sentido que da el localizador más bajo al doble enlace (ene), porque cuando hay empate en el conjunto de locantes el doble enlace tiene prioridad sobre el triple.", porque: "Cuando el conjunto de localizadores es igual, el doble enlace recibe el número más bajo, porque tiene prioridad sobre el triple. Esa regla lleva al nombre pent-1-en-4-ino y no al otro. Así se resuelve el empate entre los dos sentidos." },
+          { paso: "Nombre: pent-1-en-4-ino.", porque: "Escribimos los localizadores de cada insaturación: 1-en para el doble y 4-ino para el triple, con 'pent' por los 5 C. Conviene verificar que 'en' vaya antes que 'ino' en el nombre. Por eso el resultado final es pent-1-en-4-ino." }
         ],
         resultado: "pent-1-en-4-ino (no pent-4-en-1-ino)."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Ciclopenteno: anillo de 5 C con un doble enlace (C5H8). Al reemplazar un H por CH3 en el C1 se agrega un CH2.", porque: "El ciclopenteno tiene 5 C en el anillo y un doble enlace, con fórmula C5H8. Un metilo reemplaza un H del anillo y suma un CH2, así que la fórmula cambia en ese CH2." },
-          { paso: "Fórmula molecular: C6H10.", porque: "Se suma el CH2 agregado al C5H8 del ciclopenteno, y se obtiene C6H10. Como comprobación, el grado de insaturación es 2 (un anillo y un doble enlace), y eso coincide con C6H10." }
+          { paso: "Ciclopenteno: anillo de 5 C con un doble enlace (C5H8). Al reemplazar un H por CH3 en el C1 se agrega un CH2.", porque: "El ciclopenteno tiene 5 C en el anillo y un doble enlace, con fórmula C5H8. Al reemplazar un H del anillo por un CH3 se suma un carbono, porque el metilo agrega un C y el reemplazo quita un H. Por eso la fórmula cambia en ese carbono adicional." },
+          { paso: "Fórmula molecular: C6H10.", porque: "Se suma el CH2 agregado al C5H8 del ciclopenteno, y así se obtiene C6H10. Como comprobación, la estructura tiene un anillo y un doble enlace, que es lo que corresponde a esa fórmula. Por eso el 1-metilciclopenteno es C6H10." }
         ],
         resultado: "1-metilciclopenteno = C6H10."
       }
@@ -907,34 +907,34 @@ window.EJERCITACION["nomenclatura"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Ácido sulfuroso: H2SO3. Con H +1 y O -2: 2 x (+1) + S + 3 x (-2) = 0 -> S = +4.", porque: "En el H2SO3 cada H aporta +1 y cada O aporta -2; para que la suma sea 0, el S debe tener +4. El nombre 'sulfuroso' ('oso') corresponde al menor nº del azufre en los oxoácidos, y el cálculo lo confirma." },
-          { paso: "Sulfito de sodio: Na2SO3. Con Na +1: 2 x (+1) + S + 3 x (-2) = 0 -> S = +4.", porque: "El sulfito SO3^2- conserva el mismo nº de oxidación del S que el ácido, porque en la sal solo cambian los cationes. Con 2 Na (+1 cada uno), 2 + S - 6 = 0 da S = +4." },
-          { paso: "Sulfato de cinc: ZnSO4. Con Zn +2: +2 + S + 4 x (-2) = 0 -> S = +6.", porque: "En el ZnSO4 el Zn^2+ aporta +2 y los 4 O aportan -8, así que el S debe ser +6. Es el nº del azufre en el sulfato ('ico' del ácido sulfúrico), y no debe confundirse con el del sulfuroso." }
+          { paso: "Ácido sulfuroso: H2SO3. Con H +1 y O -2: 2 x (+1) + S + 3 x (-2) = 0 -> S = +4.", porque: "En el H2SO3 cada H aporta +1 y cada O aporta -2. Para que la suma sea 0, el S debe tener +4. El nombre 'sulfuroso' corresponde al menor nº del azufre en los oxoácidos, y el cálculo lo confirma." },
+          { paso: "Sulfito de sodio: Na2SO3. Con Na +1: 2 x (+1) + S + 3 x (-2) = 0 -> S = +4.", porque: "El sulfito conserva el mismo nº de oxidación del S que el ácido, porque en la sal solo cambian los cationes. Con 2 Na (+1 cada uno) y 3 O (-2 cada uno), el S resulta +4. Así el azufre mantiene su nº en ambas especies." },
+          { paso: "Sulfato de cinc: ZnSO4. Con Zn +2: +2 + S + 4 x (-2) = 0 -> S = +6.", porque: "En el ZnSO4 el Zn^2+ aporta +2 y los 4 O aportan su carga negativa, así que el S debe ser +6. Es el nº del azufre en el sulfato, que corresponde al ácido sulfúrico ('ico'). Por eso no debe confundirse con el del sulfuroso." }
         ],
         resultado: "H2SO3 (S +4), Na2SO3 (S +4), ZnSO4 (S +6)."
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Fe(NO3)3: cada anión NO3^- tiene carga -1, y hay 3 -> total -3. Para neutralidad, Fe^3+ -> Fe con nº +3.", porque: "En Fe(NO3)3 hay 3 nitratos de carga -1, lo que da -3 en total. Para que la sal sea neutra el hierro debe tener +3, y ese es el nº de oxidación que se pide." },
-          { paso: "Nombre: nitrato de hierro(III) (o nitrato férrico).", porque: "El nombre de Stock incluye el número romano (III) para el nº de oxidación del hierro, y la tradicional usa 'férrico'. Ambos nombres describen el mismo compuesto y son válidos." }
+          { paso: "Fe(NO3)3: cada anión NO3^- tiene carga -1, y hay 3 -> total -3. Para neutralidad, Fe^3+ -> Fe con nº +3.", porque: "En Fe(NO3)3 hay 3 nitratos, cada uno con carga -1, lo que da -3 en total. Para que la sal sea neutra el hierro debe tener +3. Por eso el nº de oxidación del Fe es +3." },
+          { paso: "Nombre: nitrato de hierro(III) (o nitrato férrico).", porque: "El nombre de Stock incluye el número romano (III) para el nº de oxidación del hierro, mientras que la tradicional usa 'férrico'. Ambos nombres describen el mismo compuesto. Por eso nitrato de hierro(III) y nitrato férrico son válidos." }
         ],
         resultado: "Fe(NO3)3 = nitrato de hierro(III); Fe con nº +3."
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "H2SO3 + 2 NaOH -> Na2SO3 + 2 H2O.", porque: "El ácido sulfuroso es diprótico: tiene 2 H que se neutralizan con 2 OH^-. Por eso se necesitan 2 NaOH y se forman 2 H2O, y el balance de S, Na, H y O (1, 2, 4 y 5 átomos) confirma los coeficientes." },
-          { paso: "La sal formada es el sulfito de sodio.", porque: "El anión sulfito (SO3^2-) proviene del ácido sulfuroso, cuyo sufijo es 'oso'. Como el catión es el Na^+ del NaOH, la sal se nombra sulfito de sodio." }
+          { paso: "H2SO3 + 2 NaOH -> Na2SO3 + 2 H2O.", porque: "El ácido sulfuroso es diprótico: tiene 2 H que se neutralizan con 2 OH^-. Por eso se necesitan 2 NaOH y se forman 2 H2O. El balance de 1 S, 2 Na, 4 H y 5 O confirma los coeficientes, porque cada elemento queda igual a ambos lados." },
+          { paso: "La sal formada es el sulfito de sodio.", porque: "El anión sulfito (SO3^2-) proviene del ácido sulfuroso, cuyo sufijo es 'oso'. Como el catión es el Na^+ del NaOH, la sal se nombra sulfito de sodio. Por eso el producto de la reacción es Na2SO3." }
         ],
         resultado: "H2SO3 + 2 NaOH -> Na2SO3 + 2 H2O; sal = sulfito de sodio."
       },
       {
         parte: "d)",
         pasos: [
-          { paso: "M(Na2SO3) = 2 x 22,99 + 32,06 + 3 x 16,00 = 126,04 g/mol.", porque: "La masa molar se obtiene sumando las masas atómicas de todos los átomos de la fórmula: 2 Na, 1 S y 3 O. Usar los valores con decimales asegura un resultado preciso en el paso siguiente." },
-          { paso: "Por la reacción 1:1 entre H2SO3 y Na2SO3, n (Na2SO3) = n (H2SO3) = 0,0250 mol.", porque: "En la reacción los coeficientes son 1:1 entre H2SO3 y Na2SO3, así que la misma cantidad de moles de reactivo produce la misma cantidad de sal. Con rendimiento del 100% la cantidad de producto es igual a la del reactivo." },
-          { paso: "m = 0,0250 mol x 126,04 g/mol = 3,151 g, es decir 3,15 g (3 cifras, como el dato 0,0250 mol).", porque: "Se calcula m = n x M, multiplicando 0,0250 mol por 126,04 g/mol. El resultado 3,151 g se redondea a 3,15 g porque el dato de moles tiene 3 cifras significativas." }
+          { paso: "M(Na2SO3) = 2 x 22,99 + 32,06 + 3 x 16,00 = 126,04 g/mol.", porque: "Sumamos las masas atómicas de todos los átomos de la fórmula: 2 Na, 1 S y 3 O. Con 22,99, 32,06 y 16,00, obtenemos 126,04 g/mol. Usar los valores con decimales asegura un resultado preciso en el paso siguiente." },
+          { paso: "Por la reacción 1:1 entre H2SO3 y Na2SO3, n (Na2SO3) = n (H2SO3) = 0,0250 mol.", porque: "En la reacción los coeficientes son 1:1 entre H2SO3 y Na2SO3, así que la misma cantidad de moles de reactivo produce la misma cantidad de sal. Con 0,0250 mol de H2SO3 se obtienen 0,0250 mol de Na2SO3. Como el rendimiento es del 100%, no se pierde producto en el proceso." },
+          { paso: "m = 0,0250 mol x 126,04 g/mol = 3,151 g, es decir 3,15 g (3 cifras, como el dato 0,0250 mol).", porque: "Calculamos m = n x M, multiplicando 0,0250 mol por 126,04 g/mol. El resultado 3,151 g se redondea a 3,15 g, porque el dato de moles tiene 3 cifras significativas. Por eso la masa obtenida es 3,15 g." }
         ],
         resultado: "m(Na2SO3) = 3,15 g."
       }

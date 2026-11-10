@@ -10,9 +10,9 @@ window.EJERCITACION["termodinamica"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Datos: m = 200,0 g; T_inicial = 20,0 C; T_final = 75,0 C. Delta T = 75,0 - 20,0 = 55,0 K.", porque: "Primero se identifican los datos y se calcula Delta T = T_final - T_inicial = 75,0 - 20,0. Un intervalo de 1 C equivale a un intervalo de 1 K, así que el Delta T se puede usar directamente en kelvin dentro de la fórmula del calor. Conviene anotar las masas en g y las temperaturas antes de operar, para no mezclar unidades." },
-          { paso: "q = m x c x Delta T = 200,0 g x 4,18 J/(g x K) x 55,0 K = 4,60 x 10^4 J.", porque: "Se reemplazan m, c y Delta T en la ecuación del calor sensible, q = m x c x Delta T, que corresponde a un cambio de temperatura sin cambio de fase. El calor específico indica cuántos J hacen falta para elevar 1 g de sustancia 1 K, así que el producto de los tres factores da energía en J. Verificá que g y K se cancelen dejando sólo J." },
-          { paso: "Como q > 0, el agua gana calor del calentador.", porque: "Se interpreta el signo de q con la convención termodinámica: q es positivo cuando el calor entra al sistema, y aquí el sistema es el agua. Como el calentador le entrega energía al agua, el signo positivo es coherente con lo que ocurre físicamente." }
+          { paso: "Datos: m = 200,0 g; T_inicial = 20,0 C; T_final = 75,0 C. Delta T = 75,0 - 20,0 = 55,0 K.", porque: "Primero identificamos los datos y calculamos Delta T como T_final - T_inicial, porque la variación de temperatura es lo que determina el calor sensible. Usamos 75,0 - 20,0 = 55,0 K, y como un intervalo de 1 C equivale a 1 K, ese Delta T se puede usar directamente en la fórmula. Por eso conviene dejar anotadas las masas en g antes de operar, para no mezclar unidades." },
+          { paso: "q = m x c x Delta T = 200,0 g x 4,18 J/(g x K) x 55,0 K = 4,60 x 10^4 J.", porque: "Usamos la ecuación del calor sensible, q = m x c x Delta T, porque el agua cambia de temperatura sin cambiar de fase. Reemplazamos m = 200,0 g, c = 4,18 J/(g x K) y Delta T = 55,0 K, y el producto da 4,60 x 10^4 J. Como el calor específico indica cuántos J hacen falta por gramo y por kelvin, al multiplicar las unidades de g y K se cancelan y queda sólo J." },
+          { paso: "Como q > 0, el agua gana calor del calentador.", porque: "Usamos la convención termodinámica, en la que q es positivo cuando el calor entra al sistema, y en este caso el sistema es el agua. Como q es positivo, el agua recibe energía del calentador. Por eso el signo positivo es coherente con lo que ocurre físicamente, y el calor se informa como absorbido por el agua." }
         ],
         resultado: "q = 4,60 x 10^4 J (46,0 kJ) absorbidos por el agua"
       }
@@ -31,9 +31,9 @@ window.EJERCITACION["termodinamica"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Supuesto: 25 C y 1 atm (condiciones estándar). El O2(g) es un elemento en su forma más estable, así que su Delta Hf = 0.", porque: "Se identifican las sustancias que aportan a la suma: los elementos en su forma estándar, como el O2(g), tienen Delta Hf = 0 por definición, así que no contribuyen. Esto se debe a que la entalpía de formación toma como referencia cero a los elementos en su estado más estable. Hay que recordar que el cero vale sólo para el elemento en su forma estándar." },
-          { paso: "Delta Hc = [1 x (-393,5) + 2 x (-285,8)] - [1 x (-74,8) + 2 x 0] = -965,1 + 74,8 = -890,3 kJ.", porque: "Se aplica la fórmula de Delta Hr: se suman los Delta Hf de los productos multiplicados por sus coeficientes y se resta la misma suma para los reactivos. Los coeficientes son los de la ecuación balanceada, por eso el H2O aparece multiplicada por 2. Un error frecuente es invertir la resta, lo que cambia el signo del resultado." },
-          { paso: "La ecuación está escrita para 1 mol de CH4, así que el valor corresponde a 1 mol de combustible.", porque: "Se interpreta el valor obtenido en relación con la reacción escrita: la entalpía de combustión corresponde al mol de combustible que tiene coeficiente 1 en la ecuación. Si la ecuación se multiplicara por 2, el Delta H también se multiplicaría por 2, así que el valor depende de cómo está escrita la reacción. El signo negativo indica que la combustión libera calor." }
+          { paso: "Supuesto: 25 C y 1 atm (condiciones estándar). El O2(g) es un elemento en su forma más estable, así que su Delta Hf = 0.", porque: "Con el supuesto de 25 C y 1 atm, usamos la definición de entalpía de formación, que toma como referencia cero a los elementos en su forma más estable. Por eso el O2(g) aporta Delta Hf = 0 a la suma y no cambia el resultado. Como el cero vale sólo para el elemento en su forma estándar, conviene verificar en cada caso que la sustancia esté en ese estado antes de anularla." },
+          { paso: "Delta Hc = [1 x (-393,5) + 2 x (-285,8)] - [1 x (-74,8) + 2 x 0] = -965,1 + 74,8 = -890,3 kJ.", porque: "Aplicamos la fórmula de Delta Hr con valores de Delta Hf: sumamos los productos multiplicados por sus coeficientes y restamos los reactivos con los suyos. Reemplazamos CO2 con -393,5 kJ/mol, 2 H2O con -285,8 kJ/mol y CH4 con -74,8 kJ/mol, lo que da -965,1 + 74,8 = -890,3 kJ. Como el resultado es negativo, la combustión libera energía, y si se invierte la resta cambia ese signo." },
+          { paso: "La ecuación está escrita para 1 mol de CH4, así que el valor corresponde a 1 mol de combustible.", porque: "Usamos la ecuación balanceada como referencia, porque el Delta H depende de la cantidad de sustancia que aparece escrita en ella. Como el CH4 tiene coeficiente 1, el valor obtenido corresponde a 1 mol de combustible. Por eso, si la ecuación se multiplicara por 2, el Delta H también se duplicaría, y hay que tenerlo en cuenta al comparar entalpías." }
         ],
         resultado: "Delta Hc = -890,3 kJ por mol de CH4 (reacción exotérmica)"
       }
@@ -52,10 +52,10 @@ window.EJERCITACION["termodinamica"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Delta V = 9,00 L - 2,00 L = 7,00 L.", porque: "Se calcula el cambio de volumen del gas como V_final - V_inicial, que es el dato que determina el trabajo contra el entorno. En una expansión el volumen aumenta, así que Delta V resulta positivo. Conviene verificar el orden de la resta, porque al revés cambiaría el signo del trabajo." },
-          { paso: "W = -P_ext x Delta V = -1,00 atm x 7,00 L = -7,00 atm x L.", porque: "Se aplica la expresión del trabajo de expansión contra presión externa constante, W = -P_ext x Delta V, con la convención del sistema (el trabajo que recibe el sistema es positivo). Como el gas se expande, Delta V > 0 y el signo menos hace que W sea negativo. La presión que se usa es la externa, no la presión interna del gas." },
-          { paso: "Pasamos a J: W = -7,00 x 101,3 J = -709 J = -7,09 x 10^2 J.", porque: "Se convierte el resultado de atm x L a J con la equivalencia 1 atm x L = 101,3 J, porque el enunciado pide el trabajo en J. Es un factor de conversión: el valor en atm x L se multiplica por 101,3 J para expresar la misma energía en otra unidad. Verificá que la unidad atm x L se cancele y quede sólo J." },
-          { paso: "Como W < 0, el sistema realiza trabajo sobre el entorno (cede energía).", porque: "Se interpreta el signo de W según la convención del sistema: W negativo significa que el sistema entrega energía al entorno. En la expansión el gas empuja al pistón y realiza trabajo sobre el entorno, por eso W < 0." }
+          { paso: "Delta V = 9,00 L - 2,00 L = 7,00 L.", porque: "Calculamos el cambio de volumen como V_final - V_inicial, porque es la magnitud que determina el trabajo contra el entorno. Con 9,00 L de volumen final y 2,00 L de inicial, la resta da 7,00 L. Como Delta V es positivo, el gas se expande, y el orden de la resta importa porque al invertirlo cambiaría el signo del trabajo." },
+          { paso: "W = -P_ext x Delta V = -1,00 atm x 7,00 L = -7,00 atm x L.", porque: "Usamos la expresión del trabajo de expansión contra presión externa constante, W = -P_ext x Delta V, con la convención del sistema. Reemplazamos P_ext = 1,00 atm y Delta V = 7,00 L, y obtenemos -7,00 atm x L. Como el gas se expande, Delta V es positivo y el signo menos hace que W sea negativo; además, la presión que se usa es la externa y no la interna del gas." },
+          { paso: "Pasamos a J: W = -7,00 x 101,3 J = -709 J = -7,09 x 10^2 J.", porque: "Como el enunciado pide el trabajo en J, convertimos la unidad con la equivalencia 1 atm x L = 101,3 J. Multiplicamos -7,00 atm x L por 101,3 J, lo que da -709 J, es decir -7,09 x 10^2 J. Verificá que la unidad atm x L se cancele, así queda sólo J y el signo negativo se mantiene." },
+          { paso: "Como W < 0, el sistema realiza trabajo sobre el entorno (cede energía).", porque: "Usamos la convención del sistema, en la que W negativo significa que el sistema entrega energía al entorno. Como W es negativo, el gas empuja al pistón y realiza trabajo sobre el entorno. Por eso el signo negativo es coherente con la expansión que describimos antes." }
         ],
         resultado: "W = -7,09 x 10^2 J; el sistema realiza trabajo sobre el entorno"
       }
@@ -74,8 +74,8 @@ window.EJERCITACION["termodinamica"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Q = +350 J (el calor entra al sistema) y W = +120 J (el entorno trabaja sobre el sistema).", porque: "Se identifican Q y W con sus signos según la convención del sistema: Q es positivo porque el calor entra al sistema, y W es positivo porque en una compresión el entorno trabaja sobre el sistema. Asignar bien el signo de cada término es el paso donde más se suele equivocar. Lo que importa es el sentido del intercambio, no sólo el valor numérico." },
-          { paso: "Delta U = Q + W = 350 J + 120 J = 470 J = 4,70 x 10^2 J.", porque: "Se aplica el primer principio de la termodinámica, Delta U = Q + W, sumando calor y trabajo ya con sus signos. Esta ecuación expresa la conservación de la energía: la variación de energía interna es igual a toda la energía que cruza la frontera del sistema. Verificá que la suma use los signos asignados en el paso anterior." }
+          { paso: "Q = +350 J (el calor entra al sistema) y W = +120 J (el entorno trabaja sobre el sistema).", porque: "Asignamos los signos a Q y W según la convención del sistema, porque el resultado depende del sentido en que se intercambia la energía. Q es positivo porque el calor entra al sistema, con un valor de 350 J, y W es positivo porque el entorno trabaja sobre el sistema, con 120 J. Por eso conviene revisar cada signo antes de sumar, ya que es el paso donde más se suele equivocar." },
+          { paso: "Delta U = Q + W = 350 J + 120 J = 470 J = 4,70 x 10^2 J.", porque: "Aplicamos el primer principio de la termodinámica, Delta U = Q + W, que expresa la conservación de la energía. Reemplazamos Q = 350 J y W = 120 J, con sus signos ya asignados, y la suma da 470 J. Como Delta U es positivo, la energía interna del sistema aumenta, porque entra más energía de la que sale." }
         ],
         resultado: "Delta U = +4,70 x 10^2 J"
       }
@@ -94,9 +94,9 @@ window.EJERCITACION["termodinamica"] = [
       {
         parte: "",
         pasos: [
-          { paso: "n = 25,0 g / 18,0 g/mol = 1,389 mol de H2O.", porque: "Se convierte la masa de hielo a cantidad de sustancia con n = m / M. Como la entalpía de fusión está dada en kJ por mol, hay que trabajar en moles para que las unidades coincidan. Un error frecuente es multiplicar gramos directamente por kJ/mol." },
-          { paso: "q = n x Delta Hfus = 1,389 mol x 6,01 kJ/mol = 8,35 kJ.", porque: "Se calcula el calor de fusión como q = n x Delta Hfus. La fusión ocurre a 0 C y presión constante, sin cambio de temperatura, así que el calor es latente y se toma la entalpía molar. Por eso no corresponde usar m c Delta T en este caso." },
-          { paso: "Como la fusión absorbe energía, q > 0 (el hielo gana calor del entorno).", porque: "Se determina el signo del calor a partir del tipo de proceso: fundir requiere vencer las fuerzas que mantienen unidas las moléculas del sólido, y esa energía la aporta el entorno. Por eso el proceso es endotérmico y q es positivo desde el punto de vista del hielo." }
+          { paso: "n = 25,0 g / 18,0 g/mol = 1,389 mol de H2O.", porque: "Convertimos la masa en moles dividiéndola por la masa molar, porque la masa molar indica cuántos gramos tiene un mol de esa sustancia. Con 25,0 g de hielo y 18,0 g/mol, obtenemos 1,389 mol de H2O. Como la entalpía de fusión está dada en kJ por mol, trabajamos en moles para que las unidades coincidan." },
+          { paso: "q = n x Delta Hfus = 1,389 mol x 6,01 kJ/mol = 8,35 kJ.", porque: "Usamos q = n x Delta Hfus, porque la fusión ocurre a 0 C y presión constante sin cambio de temperatura, y por eso el calor es latente. Reemplazamos n = 1,389 mol y Delta Hfus = 6,01 kJ/mol, y obtenemos 8,35 kJ. Como este calor se toma de la entalpía molar, no corresponde usar m x c x Delta T en este caso." },
+          { paso: "Como la fusión absorbe energía, q > 0 (el hielo gana calor del entorno).", porque: "Determinamos el signo de q según el tipo de proceso, porque fundir requiere vencer las fuerzas que mantienen unidas las moléculas del sólido. Como la fusión absorbe energía, esa energía la aporta el entorno, y el proceso es endotérmico. Por eso q es positivo desde el punto de vista del hielo, lo que es coherente con el valor calculado en el paso anterior." }
         ],
         resultado: "q = 8,35 kJ absorbidos para fundir el hielo"
       }
@@ -115,10 +115,10 @@ window.EJERCITACION["termodinamica"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Supuesto: el hielo se funde por completo y la temperatura final es mayor que 0 C. Se verifica al final.", porque: "Se formula una hipótesis sobre el estado final, porque el enunciado no dice si todo el hielo se funde. Se compara la energía que el agua caliente puede ceder al enfriarse hasta 0 C con la energía necesaria para fundir todo el hielo. Si la energía disponible es mayor, la suposición es razonable, pero debe confirmarse con el resultado final." },
-          { paso: "Calor para fundir el hielo: n = 50,0/18,0 = 2,778 mol; q_fus = 2,778 x 6,01 = +16,69 kJ.", porque: "Se calcula la cantidad de hielo, n = 50,0 g / 18,0 g/mol, y luego el calor para fundirlo con q = n x Delta Hfus. Como la fusión a presión constante no cambia la temperatura, este calor es latente y se toma directamente de la entalpía molar. Es el primer aporte de energía que el agua caliente debe proveer." },
-          { paso: "Balance del calorímetro adiabático: q_fus + 50,0 x 4,18 x (Tf - 0) + 200,0 x 4,18 x (Tf - 25,0) = 0.", porque: "Se plantea el balance de energía del calorímetro adiabático: no hay intercambio con el exterior, así que la suma de los calores de todas las partes debe ser cero. Los términos son el calor de fusión del hielo, el calentamiento del agua fundida de 0 C a Tf y el enfriamiento del agua caliente de 25,0 C a Tf. Cada Delta T se escribe como T_final - T_inicial, y así su signo indica si la parte gana o cede calor." },
-          { paso: "Desarrollando (en J): 16 694 + 209 Tf + 836 Tf - 20 900 = 0, es decir 1045 Tf = 4206, y Tf = 4,02 C.", porque: "Se agrupan los términos que contienen Tf, se pasan los constantes al otro lado de la igualdad y se divide por el coeficiente total para despejar Tf. Conviene verificar cada multiplicación antes de sumar, porque los números son grandes y un error de signo cambia el resultado. Como los intervalos de temperatura son iguales en C y en K, el resultado puede darse en C." }
+          { paso: "Supuesto: el hielo se funde por completo y la temperatura final es mayor que 0 C. Se verifica al final.", porque: "Planteamos una hipótesis sobre el estado final, porque el enunciado no dice si todo el hielo se funde. Comparamos la energía que el agua caliente puede ceder al enfriarse hasta 0 C con la que se necesita para fundir todo el hielo. Si la energía disponible es mayor, la suposición es razonable, pero recién se confirma al terminar el cálculo." },
+          { paso: "Calor para fundir el hielo: n = 50,0/18,0 = 2,778 mol; q_fus = 2,778 x 6,01 = +16,69 kJ.", porque: "Calculamos la cantidad de hielo como n = m / M, y luego el calor de fusión con q = n x Delta Hfus. Con 50,0 g y 18,0 g/mol obtenemos 2,778 mol, y al multiplicar por 6,01 kJ/mol da +16,69 kJ. Como la fusión no cambia la temperatura, este calor es latente y representa el primer aporte de energía que el agua caliente debe proveer." },
+          { paso: "Balance del calorímetro adiabático: q_fus + 50,0 x 4,18 x (Tf - 0) + 200,0 x 4,18 x (Tf - 25,0) = 0.", porque: "Planteamos el balance de energía del calorímetro adiabático, porque no hay intercambio con el exterior y la suma de los calores de todas las partes debe ser cero. Los términos son el calor de fusión, el calentamiento del agua fundida de 0 a Tf y el enfriamiento del agua caliente de 25,0 C a Tf, con masas de 50,0 g y 200,0 g. Como cada Delta T se escribe como T_final - T_inicial, el signo de cada término indica si esa parte gana o cede calor." },
+          { paso: "Desarrollando (en J): 16 694 + 209 Tf + 836 Tf - 20 900 = 0, es decir 1045 Tf = 4206, y Tf = 4,02 C.", porque: "Agrupamos los términos que contienen Tf, pasamos los constantes al otro lado de la igualdad y dividimos por el coeficiente total, porque así se despeja la temperatura final. Con 1045 Tf = 4206, despejamos Tf = 4,02 C. Como los intervalos de temperatura son iguales en C y en K, el resultado puede expresarse en C." }
         ],
         resultado: "Tf = 4,02 C (agua líquida, 1 atm)"
       }
@@ -138,9 +138,9 @@ window.EJERCITACION["termodinamica"] = [
       {
         parte: "",
         pasos: [
-          { paso: "Ecuación de formación: 2 C(grafito) + 3 H2(g) + 1/2 O2(g) -> C2H5OH(l).", porque: "Se escribe la reacción de formación del etanol, que parte de los elementos en su forma estándar (C grafito, H2 y O2 gaseosos) y produce 1 mol de C2H5OH(l). El Delta H de esta reacción es justamente la entalpía de formación que se quiere calcular. Conviene verificar que el balance de C, H y O coincida antes de seguir." },
-          { paso: "Combinamos: 2 x (1) + 3 x (2) - (3). La ecuación (3) se invierte, por lo que su Delta H cambia de signo: +1367,0 kJ.", porque: "Se combinan las ecuaciones dadas con coeficientes elegidos para que, al sumarlas, desaparezcan CO2 y H2O y quede la formación del etanol. Por la ley de Hess, como la entalpía es función de estado, las ecuaciones se pueden sumar como expresiones algebraicas. Al invertir la ecuación (3), su Delta H cambia de signo, porque la reacción inversa absorbe la energía que la directa libera." },
-          { paso: "Delta Hf = 2 x (-393,5) + 3 x (-285,8) - (-1367,0) = -787,0 - 857,4 + 1367,0 = -277,4 kJ/mol.", porque: "Se calcula el Delta Hf sumando cada Delta H multiplicado por el coeficiente con el que se usó su ecuación. Los términos de CO2 y H2O se cancelan en la combinación, por eso el resultado sólo depende de los datos de combustión dados. Verificá que el signo de cada término corresponda a lo que hiciste en el paso anterior." }
+          { paso: "Ecuación de formación: 2 C(grafito) + 3 H2(g) + 1/2 O2(g) -> C2H5OH(l).", porque: "Escribimos la reacción de formación del etanol, porque su Delta H es justamente la entalpía de formación que queremos calcular. Partimos de los elementos en su forma estándar, C grafito, H2 y O2 gaseosos, y obtenemos 1 mol de C2H5OH(l). Conviene verificar que el balance de C, H y O coincida antes de seguir con las combinaciones." },
+          { paso: "Combinamos: 2 x (1) + 3 x (2) - (3). La ecuación (3) se invierte, por lo que su Delta H cambia de signo: +1367,0 kJ.", porque: "Combinamos las ecuaciones dadas con los coeficientes que hacen desaparecer CO2 y H2O, porque así queda la formación del etanol. Como la entalpía es función de estado, las ecuaciones se pueden sumar algebraicamente, y al invertir la ecuación (3) su Delta H cambia de signo y queda +1367,0 kJ. La reacción inversa absorbe la energía que la directa libera, por eso el signo cambia." },
+          { paso: "Delta Hf = 2 x (-393,5) + 3 x (-285,8) - (-1367,0) = -787,0 - 857,4 + 1367,0 = -277,4 kJ/mol.", porque: "Calculamos Delta Hf sumando cada Delta H multiplicado por el coeficiente con el que se usó su ecuación, porque así se obtiene la formación del etanol. Reemplazamos 2 x (-393,5), 3 x (-285,8) y -(-1367,0), y el resultado es -277,4 kJ/mol. Como CO2 y H2O desaparecen al combinar las ecuaciones, el resultado depende sólo de los datos de combustión dados." }
         ],
         resultado: "Delta Hf(C2H5OH, l) = -277,4 kJ/mol"
       }
@@ -159,16 +159,16 @@ window.EJERCITACION["termodinamica"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Delta H = 2 x (-393,5) - [2 x (-110,5) + 1 x 0] = -787,0 + 221,0.", porque: "Se aplica la fórmula de Delta Hr con Delta Hf: productos menos reactivos, cada uno multiplicado por su coeficiente. Aquí hay 2 mol de CO2 en productos y 2 mol de CO más 1 mol de O2 en reactivos. El O2(g) es elemento estándar, así que su término es cero." },
-          { paso: "Delta H = -566,0 kJ para la reacción tal como está escrita (2 mol de CO).", porque: "Se interpreta el resultado en relación con la reacción tal como está escrita: -566,0 kJ corresponde a 2 mol de CO, no a 1 mol. Si se quisiera el valor por mol de CO habría que dividir por 2. Cambiar la escala de la reacción sin ajustar el Delta H es un error común." }
+          { paso: "Delta H = 2 x (-393,5) - [2 x (-110,5) + 1 x 0] = -787,0 + 221,0.", porque: "Aplicamos la fórmula de Delta Hr con Delta Hf, restando los reactivos a los productos, cada uno multiplicado por su coeficiente. Reemplazamos 2 x (-393,5) para el CO2 de productos y 2 x (-110,5) para el CO de reactivos, mientras que el O2(g) aporta 0. Por eso la suma se resuelve en el paso siguiente." },
+          { paso: "Delta H = -566,0 kJ para la reacción tal como está escrita (2 mol de CO).", porque: "Interpretamos el resultado en relación con la reacción tal como está escrita, porque el Delta H depende de la escala de los coeficientes. Como la ecuación tiene 2 mol de CO, el valor -566,0 kJ corresponde a esos 2 mol y no a uno solo. Por eso, si se quisiera el valor por mol de CO, habría que dividir por 2, y cambiar la escala sin ajustar el Delta H es un error común." }
         ],
         resultado: "Delta H = -566,0 kJ"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Delta n(gas) = moles de gas en productos - moles de gas en reactivos = 2 - (2 + 1) = -1.", porque: "Se calcula Delta n(gas) como moles de gas en productos menos moles de gas en reactivos, usando los coeficientes. Como todas las especies de esta reacción son gases, todas se cuentan: 2 mol de CO2 frente a 2 mol de CO más 1 mol de O2. Un Delta n negativo indica que el sistema disminuye la cantidad de gas." },
-          { paso: "Delta U = Delta H - Delta n x R x T = -566,0 kJ - (-1)(8,314 x 10^-3 kJ/(mol x K))(298 K) = -566,0 + 2,48 = -563,5 kJ.", porque: "Se despeja Delta U de la relación entre entalpía y energía interna para gases ideales, Delta H = Delta U + Delta n R T, quedando Delta U = Delta H - Delta n R T. La constante R debe usarse en kJ/(mol x K) para que coincida con las unidades de Delta H. Al despejar, el término Delta n R T se resta, no se suma." }
+          { paso: "Delta n(gas) = moles de gas en productos - moles de gas en reactivos = 2 - (2 + 1) = -1.", porque: "Calculamos Delta n(gas) como moles de gas en productos menos moles de gas en reactivos, usando los coeficientes, porque sólo interesan las especies gaseosas. Como todas las especies de esta reacción son gases, contamos 2 mol de CO2 frente a 2 mol de CO más 1 mol de O2. Por eso el resultado es -1, lo que indica que el sistema disminuye la cantidad de gas." },
+          { paso: "Delta U = Delta H - Delta n x R x T = -566,0 kJ - (-1)(8,314 x 10^-3 kJ/(mol x K))(298 K) = -566,0 + 2,48 = -563,5 kJ.", porque: "Despejamos Delta U de la relación Delta H = Delta U + Delta n x R x T, que vale para gases ideales, porque queremos la energía interna. Reemplazamos Delta H = -566,0 kJ, Delta n = -1, R = 8,314 x 10^-3 kJ/(mol x K) y T = 298 K, lo que da -563,5 kJ. Como R está en kJ/(mol x K), coincide con las unidades de Delta H, y el término Delta n x R x T se resta al despejar." }
         ],
         resultado: "Delta U = -563,5 kJ a 25 C"
       }
@@ -187,16 +187,16 @@ window.EJERCITACION["termodinamica"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Delta Hc = [4 x (-393,5) + 5 x (-285,8)] - [1 x (-126,2) + 13/2 x 0].", porque: "Se aplica la fórmula de Delta Hr con Delta Hf, combinando productos (4 CO2 y 5 H2O) y reactivos (1 C4H10 y 13/2 O2) con sus coeficientes. El O2(g) tiene Delta Hf = 0, así que su término se anula. Contá los átomos de C y H para comprobar que los coeficientes sean los del balance." },
-          { paso: "Delta Hc = -1574,0 - 1429,0 + 126,2 = -2876,8 kJ por mol de butano.", porque: "Se suman los términos ya multiplicados por sus coeficientes, respetando el signo de cada Delta Hf. Al restar el término del butano, el signo negativo de su Delta Hf se convierte en suma. El resultado negativo indica que la combustión es exotérmica, y Delta Hc corresponde a 1 mol de butano según la reacción escrita." }
+          { paso: "Delta Hc = [4 x (-393,5) + 5 x (-285,8)] - [1 x (-126,2) + 13/2 x 0].", porque: "Aplicamos la fórmula de Delta Hr con Delta Hf, combinando productos y reactivos con sus coeficientes, porque la combustión completa del butano sigue ese esquema. Reemplazamos 4 x (-393,5) para el CO2, 5 x (-285,8) para el H2O y 1 x (-126,2) para el C4H10, mientras el O2 aporta cero. Conviene contar los átomos de C y H para comprobar que los coeficientes son los del balance." },
+          { paso: "Delta Hc = -1574,0 - 1429,0 + 126,2 = -2876,8 kJ por mol de butano.", porque: "Sumamos los términos con sus coeficientes, respetando el signo de cada Delta Hf, porque así se obtiene la entalpía de combustión. Al restar el término del butano, su signo negativo se vuelve suma. El resultado -2876,8 kJ indica que la combustión es exotérmica, y corresponde a 1 mol de butano según la ecuación escrita." }
         ],
         resultado: "Delta Hc = -2876,8 kJ/mol de C4H10"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "n = 1000 g / 58,1 g/mol = 17,21 mol de butano en 1 kg.", porque: "Se pasa la masa de 1 kg de butano a moles con la masa molar, n = 1000 g / 58,1 g/mol. Como Delta Hc está dado por mol, la energía total depende de cuántos moles hay en la muestra. Es una conversión de masa a cantidad de sustancia." },
-          { paso: "Energía liberada = 17,21 mol x 2876,8 kJ/mol = 4,95 x 10^4 kJ por kg.", porque: "Se multiplica el número de moles por la energía liberada por mol de butano. Se usa el módulo de Delta Hc porque la pregunta pide la energía liberada, que se expresa como cantidad positiva. Un error común es dividir, lo que daría un valor absurdamente pequeño. Verificá que la unidad final sea kJ/kg." }
+          { paso: "n = 1000 g / 58,1 g/mol = 17,21 mol de butano en 1 kg.", porque: "Convertimos la masa a moles dividiendo por la masa molar, porque Delta Hc está expresado por mol de butano. Con 1000 g de butano y 58,1 g/mol, obtenemos 17,21 mol en 1 kg. Como la energía total depende de cuántos moles hay en la muestra, este paso conecta la masa con la energía liberada." },
+          { paso: "Energía liberada = 17,21 mol x 2876,8 kJ/mol = 4,95 x 10^4 kJ por kg.", porque: "Multiplicamos la cantidad de moles por la energía liberada por mol, porque la energía total es moles por kJ/mol. Usamos el módulo de Delta Hc, ya que la pregunta pide la energía liberada como cantidad positiva. Con 17,21 mol y 2876,8 kJ/mol obtenemos 4,95 x 10^4 kJ por kg, y verificamos que la unidad final sea kJ/kg." }
         ],
         resultado: "4,95 x 10^4 kJ por kg de butano (con agua líquida como producto)"
       }
@@ -215,17 +215,17 @@ window.EJERCITACION["termodinamica"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Etapa 1 (calentamiento): q1 = 30,0 g x 4,18 J/(g x K) x 80,0 K = 1,00 x 10^4 J = 10,0 kJ.", porque: "Se calcula el calor sensible del agua líquida desde 20,0 C hasta 100,0 C con q1 = m c Delta T, donde Delta T = 100,0 - 20,0 = 80,0 K. Este tramo es sólo calentamiento sin cambio de fase, así que se usa el calor específico del agua líquida. Es la primera de las dos etapas que componen el proceso." },
-          { paso: "Etapa 2 (vaporización): n = 30,0/18,0 = 1,667 mol; q2 = 1,667 x 40,7 = 67,8 kJ.", porque: "Se calcula el calor latente de vaporización con q2 = n x Delta Hvap, donde n = m / M. A 100 C y presión constante el cambio de fase ocurre sin variar la temperatura, por lo que el calor es latente y se usa el valor molar. Es el tramo que suele olvidarse cuando sólo se piensa en calentar el agua." },
-          { paso: "q total = 10,0 kJ + 67,8 kJ = 77,9 kJ.", porque: "Se suman los calores de las etapas sucesivas: como la entalpía es función de estado y el proceso es a presión constante, el calor total es la suma de calentamiento y vaporización. Verificá que ambas etapas estén incluidas y que las unidades sean iguales (kJ con kJ) antes de sumar." }
+          { paso: "Etapa 1 (calentamiento): q1 = 30,0 g x 4,18 J/(g x K) x 80,0 K = 1,00 x 10^4 J = 10,0 kJ.", porque: "Calculamos el calor sensible del agua líquida con q1 = m x c x Delta T, porque en este tramo sólo cambia la temperatura. Como Delta T vale 80,0 K, reemplazamos m = 30,0 g y c = 4,18 J/(g x K), y obtenemos 1,00 x 10^4 J, es decir 10,0 kJ. Esta es la primera etapa del proceso, y se usa el calor específico del agua líquida." },
+          { paso: "Etapa 2 (vaporización): n = 30,0/18,0 = 1,667 mol; q2 = 1,667 x 40,7 = 67,8 kJ.", porque: "Usamos q2 = n x Delta Hvap, porque la vaporización ocurre a temperatura constante, y por eso el calor es latente. Convertimos los 30,0 g a moles con n = m / M, y al multiplicar 1,667 mol por 40,7 kJ/mol obtenemos 67,8 kJ. Este tramo es el que suele olvidarse cuando sólo se piensa en calentar el agua." },
+          { paso: "q total = 10,0 kJ + 67,8 kJ = 77,9 kJ.", porque: "Sumamos los calores de las dos etapas, porque la entalpía es función de estado y el calor total es la suma de calentamiento y vaporización. Con 10,0 kJ y 67,8 kJ obtenemos 77,9 kJ. Verificá que ambas etapas estén incluidas y que las unidades coincidan en kJ antes de dar el resultado final." }
         ],
         resultado: "q total = 77,9 kJ"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Supuesto: el volumen del líquido es despreciable, así que Delta V = V(vapor) = nRT/P. W = -P Delta V = -Delta n RT = -(1 mol)(8,314 x 10^-3 kJ/(mol x K))(373 K) = -3,10 kJ.", porque: "Se calcula el trabajo W = -P_ext Delta V, con Delta V igual al volumen del vapor, obtenido de la ecuación de gas ideal (V = nRT/P). Como P Delta V = Delta n R T para un gas ideal, el trabajo se puede escribir como -Delta n R T. El signo negativo corresponde a la convención del sistema, que para una expansión da W < 0." },
-          { paso: "Delta H = q_p = +40,7 kJ/mol. Delta U = Delta H - P Delta V = 40,7 - 3,10 = 37,6 kJ/mol.", porque: "A presión constante el calor intercambiado es igual a la variación de entalpía, Delta H = q_p, así que se toma directamente el valor molar de vaporización. Luego se despeja Delta U con Delta U = Delta H - P Delta V, que relaciona entalpía y energía interna. Parte de Delta H se emplea en el trabajo de expansión contra la atmósfera y el resto aumenta la energía interna, por eso Delta U es menor que Delta H." }
+          { paso: "Supuesto: el volumen del líquido es despreciable, así que Delta V = V(vapor) = nRT/P. W = -P Delta V = -Delta n RT = -(1 mol)(8,314 x 10^-3 kJ/(mol x K))(373 K) = -3,10 kJ.", porque: "Usamos W = -P_ext x Delta V, con Delta V igual al volumen del vapor obtenido de V = nRT/P, porque el líquido ocupa un volumen despreciable. Para un gas ideal P x Delta V = Delta n x R x T, así que el trabajo se escribe como -Delta n x R x T. Con Delta n = 1 mol, R = 8,314 x 10^-3 kJ/(mol x K) y T = 373 K, obtenemos W = -3,10 kJ, con signo negativo porque es una expansión." },
+          { paso: "Delta H = q_p = +40,7 kJ/mol. Delta U = Delta H - P Delta V = 40,7 - 3,10 = 37,6 kJ/mol.", porque: "A presión constante el calor es igual a la variación de entalpía, Delta H = q_p, así que tomamos directamente 40,7 kJ/mol. Luego despejamos Delta U con Delta U = Delta H - P x Delta V, porque parte de la energía se usa en el trabajo de expansión. Con 40,7 kJ/mol y 3,10 kJ restamos ese trabajo, y el resultado 37,6 kJ/mol queda menor que Delta H." }
         ],
         resultado: "W = -3,10 kJ (el sistema realiza trabajo); Delta U = +37,6 kJ/mol"
       }
@@ -244,23 +244,23 @@ window.EJERCITACION["termodinamica"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Q = 0,85 kcal x 4184 J/kcal = 3,6 x 10^3 J (2 cifras significativas). Q > 0 porque el calor entra al sistema.", porque: "Se convierte el calor de kcal a J para que coincida con las unidades del trabajo y del primer principio. Se usa 1 kcal = 1000 cal y 1 cal = 4,184 J, según el dato del enunciado. El signo es positivo porque el calor entra al sistema." },
-          { paso: "Delta V = 6,0 L - 2,0 L = 4,0 L. W = -P_ext Delta V = -1,00 atm x 4,0 L = -4,0 atm x L = -4,0 x 10^2 J.", porque: "Se calcula el trabajo de expansión a presión externa constante, W = -P_ext Delta V, con Delta V = V_final - V_inicial. El resultado se expresa en atm x L y luego se pasa a J con 1 atm x L = 101,3 J. El signo negativo corresponde a una expansión, porque Delta V > 0 y el gas entrega energía al entorno." }
+          { paso: "Q = 0,85 kcal x 4184 J/kcal = 3,6 x 10^3 J (2 cifras significativas). Q > 0 porque el calor entra al sistema.", porque: "Convertimos el calor de kcal a J, porque el trabajo y el primer principio se expresan en J. Con 0,85 kcal y 4184 J/kcal obtenemos 3,6 x 10^3 J, manteniendo 2 cifras significativas. Como el calor entra al sistema, el signo es positivo, y ese valor se usa después en Delta U = Q + W." },
+          { paso: "Delta V = 6,0 L - 2,0 L = 4,0 L. W = -P_ext Delta V = -1,00 atm x 4,0 L = -4,0 atm x L = -4,0 x 10^2 J.", porque: "Calculamos el trabajo de expansión a presión externa constante, W = -P_ext x Delta V, con Delta V = V_final - V_inicial. Con 6,0 L y 2,0 L obtenemos Delta V = 4,0 L, y con P_ext = 1,00 atm el resultado es -4,0 atm x L, que se pasa a -4,0 x 10^2 J. Como Delta V es positivo, el gas se expande y entrega energía al entorno, por eso W es negativo." }
         ],
         resultado: "Q = +3,6 x 10^3 J; W = -4,0 x 10^2 J"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Delta U = Q + W = 3,6 x 10^3 J + (-4,0 x 10^2 J) = 3,2 x 10^3 J.", porque: "Se aplica el primer principio, Delta U = Q + W, con Q y W ya expresados en J y con sus signos. Así se obtiene la variación de energía interna del gas: parte del calor se transforma en trabajo de expansión y el resto queda en el gas. Verificá que W sea negativo, porque el sistema se expande." }
+          { paso: "Delta U = Q + W = 3,6 x 10^3 J + (-4,0 x 10^2 J) = 3,2 x 10^3 J.", porque: "Aplicamos el primer principio, Delta U = Q + W, con Q y W ya expresados en J y con sus signos. Reemplazamos Q = 3,6 x 10^3 J y W = -4,0 x 10^2 J, y la suma da 3,2 x 10^3 J. Como parte del calor se transforma en trabajo de expansión y el resto queda en el gas, el aumento de energía interna es menor que Q." }
         ],
         resultado: "Delta U = +3,2 x 10^3 J"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Como el proceso es a presión constante, Delta H = Q_p = +3,6 x 10^3 J.", porque: "A presión constante el calor intercambiado es igual a la variación de entalpía, Q_p = Delta H. Por eso el Delta H se obtiene directamente del calor medido en a), sin cálculo adicional. Es una relación útil para interpretar qué representa la entalpía en procesos a presión constante." },
-          { paso: "Verificación: Delta H = Delta U + P Delta V = 3,2 x 10^3 J + 4,0 x 10^2 J = 3,6 x 10^3 J.", porque: "Se verifica el resultado calculando Delta U + P Delta V con los valores obtenidos, lo que debe coincidir con Delta H. Esta comprobación usa H = U + PV, y en un proceso a presión constante queda Delta H = Delta U + P Delta V. Si no coincide, revisá los signos de Q y W, que son la fuente típica de error." }
+          { paso: "Como el proceso es a presión constante, Delta H = Q_p = +3,6 x 10^3 J.", porque: "A presión constante el calor intercambiado es igual a la variación de entalpía, Q_p = Delta H, porque la entalpía se define en esas condiciones. Por eso tomamos directamente el calor calculado en el paso anterior, 3,6 x 10^3 J, sin cálculo adicional. Como Delta H es positivo, el proceso absorbe calor." },
+          { paso: "Verificación: Delta H = Delta U + P Delta V = 3,2 x 10^3 J + 4,0 x 10^2 J = 3,6 x 10^3 J.", porque: "Verificamos el resultado con H = U + PV, que en un proceso a presión constante da Delta H = Delta U + P x Delta V. Reemplazamos Delta U = 3,2 x 10^3 J y P x Delta V = 4,0 x 10^2 J, y la suma da 3,6 x 10^3 J, igual al Delta H del paso anterior. Si no coincidiera, la revisión debe empezar por los signos de Q y W, que son la fuente típica de error." }
         ],
         resultado: "Delta H = +3,6 x 10^3 J = Q_p; es mayor que Delta U en el trabajo de expansión"
       }
@@ -279,24 +279,24 @@ window.EJERCITACION["termodinamica"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "(i): Delta H = [-393,5 + 2 x (-285,8)] - [-74,8 + 0] = -890,3 kJ.", porque: "Se aplica la fórmula de Delta Hr con Delta Hf usando H2O(l) como producto: se suman los productos con sus coeficientes (1 CO2 y 2 H2O) y se resta el CH4 con su coeficiente. El O2 tiene Delta Hf = 0 por ser elemento estándar." },
-          { paso: "(ii): Delta H = [-393,5 + 2 x (-241,8)] - [-74,8 + 0] = -802,3 kJ.", porque: "Se repite el mismo cálculo cambiando sólo el estado del agua a vapor, con su Delta Hf propia, que es menos negativa que la del líquido. La diferencia entre ambos resultados muestra cómo el estado de agregación del producto modifica el Delta H de la reacción. Comparar los dos valores sirve para verificar que el cálculo quedó bien." }
+          { paso: "(i): Delta H = [-393,5 + 2 x (-285,8)] - [-74,8 + 0] = -890,3 kJ.", porque: "Aplicamos la fórmula de Delta Hr con Delta Hf, usando H2O(l) como producto porque la reacción (i) forma agua líquida. Sumamos 1 x (-393,5) del CO2 y 2 x (-285,8) del H2O, y restamos -74,8 del CH4. El resultado es -890,3 kJ, y el O2 aporta cero porque es un elemento estándar." },
+          { paso: "(ii): Delta H = [-393,5 + 2 x (-241,8)] - [-74,8 + 0] = -802,3 kJ.", porque: "Repetimos el mismo cálculo cambiando sólo el estado del agua a vapor, porque la reacción (ii) forma H2O(g) con otra Delta Hf. Con 2 x (-241,8) en lugar de 2 x (-285,8), el resultado es -802,3 kJ. Como este valor es menos negativo, el estado de agregación del producto modifica el Delta H, y comparar ambos sirve para verificar el cálculo." }
         ],
         resultado: "(i) Delta H = -890,3 kJ; (ii) Delta H = -802,3 kJ"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "(i): Delta n(gas) = 1 - (1 + 2) = -2 (el agua líquida no cuenta). Delta U = Delta H - Delta n RT = -890,3 - (-2)(8,314 x 10^-3)(298) = -890,3 + 4,96 = -885,3 kJ.", porque: "Se calcula Delta n(gas) contando sólo especies gaseosas: en (i) hay 3 mol de gas en reactivos (CH4 y 2 O2) y 1 mol de CO2 en productos. Con ese valor se aplica Delta U = Delta H - Delta n R T. Como Delta n es negativo, Delta U resulta menos negativo que Delta H." },
-          { paso: "(ii): Delta n(gas) = (1 + 2) - (1 + 2) = 0, así que Delta U = Delta H = -802,3 kJ.", porque: "En (ii) el número de moles de gas no cambia (3 mol en reactivos y 3 mol en productos), así que el término Delta n R T es cero y Delta U = Delta H. Es un caso especial útil para verificar el cálculo: si Delta n es cero, no hace falta corregir." }
+          { paso: "(i): Delta n(gas) = 1 - (1 + 2) = -2 (el agua líquida no cuenta). Delta U = Delta H - Delta n RT = -890,3 - (-2)(8,314 x 10^-3)(298) = -890,3 + 4,96 = -885,3 kJ.", porque: "Calculamos Delta n(gas) contando sólo las especies gaseosas, porque el agua líquida no interviene en el término Delta n x R x T. En (i) hay 1 + 2 mol de gas en reactivos (CH4 y O2) y 1 mol de CO2 en productos, así que Delta n = -2. Reemplazamos en Delta U = Delta H - Delta n x R x T, con Delta H = -890,3 kJ, y obtenemos -885,3 kJ. Como Delta n es negativo, Delta U resulta menos negativo que Delta H." },
+          { paso: "(ii): Delta n(gas) = (1 + 2) - (1 + 2) = 0, así que Delta U = Delta H = -802,3 kJ.", porque: "Calculamos Delta n(gas) contando los gases de cada lado, porque el término Delta n x R x T sólo aparece cuando cambia el número de moles gaseosos. En (ii) hay 3 mol de gas en reactivos y 3 mol en productos, así que Delta n = 0. Por eso Delta U = Delta H = -802,3 kJ, y este caso sirve como verificación: si Delta n es cero, no hace falta corregir." }
         ],
         resultado: "(i) Delta U = -885,3 kJ; (ii) Delta U = -802,3 kJ"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "La reacción (i) tiene mayor módulo: |-890,3| > |-802,3|. La diferencia es 88,0 kJ = 2 x 44,0 kJ.", porque: "Se comparan los módulos de los Delta H y se calcula su diferencia. Según la ley de Hess, la diferencia entre (i) y (ii) es la entalpía de condensación de los 2 mol de H2O que pasan de vapor a líquido en (i)." },
-          { paso: "En (ii) esa energía no aparece en la reacción porque el agua sale como vapor y no libera el calor de condensación.", porque: "Se explica dónde queda la energía que no aparece en (ii): el agua sale como vapor y el calor de condensación no se libera dentro de la reacción. Ese calor sólo se libera si el vapor condensa, algo que no ocurre dentro de la reacción química. Por eso la reacción (i) libera más energía." }
+          { paso: "La reacción (i) tiene mayor módulo: |-890,3| > |-802,3|. La diferencia es 88,0 kJ = 2 x 44,0 kJ.", porque: "Comparamos los módulos de ambos Delta H y calculamos su diferencia, porque la pregunta se responde con esa diferencia. Como |-890,3| - |-802,3| = 88,0 kJ, la reacción (i) libera más energía. Según la ley de Hess, esa diferencia coincide con el calor de condensación de los 2 mol de H2O que pasan de vapor a líquido en (i)." },
+          { paso: "En (ii) esa energía no aparece en la reacción porque el agua sale como vapor y no libera el calor de condensación.", porque: "Explicamos dónde queda la energía que no aparece en (ii), porque el agua sale como vapor en esa reacción. Como el calor de condensación sólo se libera si el vapor condensa, y eso no ocurre dentro de la reacción química, esa energía no se libera allí. Por eso la reacción (i) libera más energía que (ii), con la diferencia calculada antes." }
         ],
         resultado: "Mayor |Delta H|: reacción (i); los 88,0 kJ de diferencia corresponden a la condensación del agua"
       }
@@ -315,25 +315,25 @@ window.EJERCITACION["termodinamica"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Supuesto: no hay pérdidas al exterior, y toda la energía liberada queda en el calorímetro. q_cal = C x Delta T = 8,15 kJ/K x 5,88 K = 47,9 kJ.", porque: "Se calcula el calor absorbido por el calorímetro con q_cal = C x Delta T, donde C es la capacidad calorífica total y Delta T = 30,88 - 25,00 = 5,88 K. Se supone que no hay pérdidas, así que todo el calor liberado por la combustión queda en el calorímetro. Es el calor de la reacción pero con signo opuesto." },
-          { paso: "n = 1,00 g / 114,2 g/mol = 8,76 x 10^-3 mol de octano.", porque: "Se pasa la masa de octano a moles con la masa molar, porque el resultado se pide por mol de sustancia. Con 1,00 g y M = 114,2 g/mol se obtiene la cantidad de octano quemada en la bomba." },
-          { paso: "Delta U = -q_cal / n = -47,9 kJ / 8,76 x 10^-3 mol = -5,47 x 10^3 kJ/mol.", porque: "Se obtiene Delta U con q_reacción = -q_cal y se divide por la cantidad de moles para pasarlo a valor molar. Como el recipiente es de volumen constante, el calor medido es Delta U, porque no hay trabajo de expansión. El signo negativo corresponde a una reacción exotérmica." }
+          { paso: "Supuesto: no hay pérdidas al exterior, y toda la energía liberada queda en el calorímetro. q_cal = C x Delta T = 8,15 kJ/K x 5,88 K = 47,9 kJ.", porque: "Calculamos el calor absorbido por el calorímetro con q_cal = C x Delta T, porque la capacidad calorífica total relaciona el calor con el aumento de temperatura. Con C = 8,15 kJ/K y Delta T = 5,88 K obtenemos 47,9 kJ. Como se supone que no hay pérdidas, ese calor es el que liberó la combustión, aunque con signo opuesto." },
+          { paso: "n = 1,00 g / 114,2 g/mol = 8,76 x 10^-3 mol de octano.", porque: "Convertimos la masa de octano a moles dividiéndola por la masa molar, porque el resultado de la bomba se expresa por mol de sustancia. Con 1,00 g y 114,2 g/mol obtenemos 8,76 x 10^-3 mol, que es la cantidad de octano quemada. Este valor es el que se usa después para pasar el calor medido a un valor por mol." },
+          { paso: "Delta U = -q_cal / n = -47,9 kJ / 8,76 x 10^-3 mol = -5,47 x 10^3 kJ/mol.", porque: "Calculamos Delta U como -q_cal / n, porque el calor de la reacción es el opuesto del que absorbió el calorímetro. Con -47,9 kJ y 8,76 x 10^-3 mol, el cociente da -5,47 x 10^3 kJ/mol. Como el recipiente es rígido y de volumen constante, el calor medido es Delta U, y el signo negativo indica una reacción exotérmica." }
         ],
         resultado: "Delta U = -5,47 x 10^3 kJ/mol de octano"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Delta n(gas) = 8 - 25/2 = 8 - 12,5 = -4,5. El H2O es líquida y no se cuenta.", porque: "Se calcula Delta n(gas) para la combustión por mol de octano, contando sólo gases: 8 mol de CO2 en productos frente a 12,5 mol de O2 en reactivos. El H2O es líquida y no entra en el cálculo. Un Delta n negativo indica que disminuye la cantidad de gas durante la reacción." },
-          { paso: "Delta H = Delta U + Delta n RT = -5,47 x 10^3 kJ/mol + (-4,5)(8,314 x 10^-3 kJ/(mol x K))(298 K) = -5,47 x 10^3 - 11 kJ = -5,48 x 10^3 kJ/mol.", porque: "Se usa la relación entre entalpía y energía interna para gases ideales, Delta H = Delta U + Delta n R T, con R en kJ/(mol x K) y T = 298 K. Se sustituyen el Delta U de a) y el Delta n calculado. La corrección es pequeña frente a Delta U, pero es la que permite comparar con tablas a presión constante." }
+          { paso: "Delta n(gas) = 8 - 25/2 = 8 - 12,5 = -4,5. El H2O es líquida y no se cuenta.", porque: "Calculamos Delta n(gas) por mol de octano contando sólo los gases, porque el H2O es líquida y no entra en el término Delta n x R x T. Con 8 mol de CO2 en productos y 12,5 mol de O2 en reactivos, obtenemos 8 - 12,5 = -4,5. Como Delta n es negativo, la reacción disminuye la cantidad de gas, y este valor se usa en el paso siguiente para corregir Delta U." },
+          { paso: "Delta H = Delta U + Delta n RT = -5,47 x 10^3 kJ/mol + (-4,5)(8,314 x 10^-3 kJ/(mol x K))(298 K) = -5,47 x 10^3 - 11 kJ = -5,48 x 10^3 kJ/mol.", porque: "Usamos la relación Delta H = Delta U + Delta n x R x T para gases ideales, porque las tablas dan valores a presión constante. Reemplazamos Delta U = -5,47 x 10^3 kJ/mol, Delta n = -4,5, R = 8,314 x 10^-3 kJ/(mol x K) y T = 298 K, y obtenemos -5,48 x 10^3 kJ/mol. La corrección es pequeña frente a Delta U, pero es la que permite comparar con datos a presión constante." }
         ],
         resultado: "Delta H = -5,48 x 10^3 kJ/mol de octano"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "En la bomba el volumen es constante: Delta V = 0, así que W = 0 (sin trabajo de expansión) y q_V = Delta U por el primer principio.", porque: "Se analiza el caso de la bomba a volumen constante: Delta V = 0, así que el trabajo de expansión W = -P Delta V es cero. Con el primer principio, Delta U = q + W = q_V, por lo que el calor medido es Delta U. Verificá que el recipiente sea realmente cerrado y rígido, condición necesaria para este razonamiento." },
-          { paso: "Delta H = Delta U + Delta n RT, por lo que Delta H sólo se obtiene corrigiendo Delta U. Esa corrección aquí es de unos 11 kJ/mol.", porque: "Se contrasta con Delta H, que es el calor a presión constante y se relaciona con Delta U por Delta H = Delta U + Delta n R T. Como las tablas dan valores a presión constante, para comparar hay que aplicar esta corrección. En este caso la diferencia es de unos 11 kJ/mol, pequeña pero no despreciable en cálculos precisos." }
+          { paso: "En la bomba el volumen es constante: Delta V = 0, así que W = 0 (sin trabajo de expansión) y q_V = Delta U por el primer principio.", porque: "Analizamos la bomba como un sistema de volumen constante, porque el recipiente es cerrado y rígido. Con Delta V = 0, el trabajo de expansión W = -P x Delta V es cero, y el primer principio da Delta U = q + W = q_V. Por eso el calor medido en la bomba es directamente Delta U, sin corrección adicional, siempre que el recipiente sea realmente rígido." },
+          { paso: "Delta H = Delta U + Delta n RT, por lo que Delta H sólo se obtiene corrigiendo Delta U. Esa corrección aquí es de unos 11 kJ/mol.", porque: "Relacionamos Delta H con Delta U mediante Delta H = Delta U + Delta n x R x T, porque el calor a presión constante es el que corresponde a Delta H. Como las tablas dan valores a presión constante, para comparar con ellas hay que aplicar la corrección. Con -5,47 x 10^3 kJ/mol y -5,48 x 10^3 kJ/mol la diferencia es de unos 11 kJ/mol, pequeña pero no despreciable en cálculos precisos." }
         ],
         resultado: "q_V = Delta U; Delta H difiere de Delta U en Delta n RT (aprox. -11 kJ/mol)"
       }
@@ -352,22 +352,22 @@ window.EJERCITACION["termodinamica"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Delta Hc = -530,6 kcal/mol x 4,184 kJ/kcal = -2220 kJ/mol.", porque: "Se convierte el calor de combustión de kcal/mol a kJ/mol multiplicando por 4,184 kJ/kcal. Esta conversión es necesaria porque las Delta Hf del enunciado están en kJ/mol y todo el cálculo debe usar la misma unidad. Así se evita mezclar magnitudes en escalas distintas." }
+          { paso: "Delta Hc = -530,6 kcal/mol x 4,184 kJ/kcal = -2220 kJ/mol.", porque: "Convertimos el calor de combustión de kcal/mol a kJ/mol, para trabajar todo el problema en la misma unidad. Con -530,6 kcal/mol y 4,184 kJ/kcal obtenemos -2220 kJ/mol. Así evitamos mezclar magnitudes en escalas distintas en las partes siguientes del cálculo." }
         ],
         resultado: "Delta Hc = -2220 kJ/mol"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Delta Hc = [3 x (-393,5) + 4 x (-285,8)] - [Delta Hf(C3H8) + 5 x 0], luego Delta Hf(C3H8) = [3 x (-393,5) + 4 x (-285,8)] - Delta Hc = -2323,7 + 2220 = -103,7 kJ/mol.", porque: "Se despeja Delta Hf del propano de la fórmula de Delta Hr: Delta Hf(C3H8) = suma de productos - Delta Hc. La suma de productos (3 CO2 y 4 H2O) es -2323,7 kJ, y el O2 tiene Delta Hf = 0. Hay que cuidar el signo al despejar, porque la incógnita está del lado de los reactivos." }
+          { paso: "Delta Hc = [3 x (-393,5) + 4 x (-285,8)] - [Delta Hf(C3H8) + 5 x 0], luego Delta Hf(C3H8) = [3 x (-393,5) + 4 x (-285,8)] - Delta Hc = -2323,7 + 2220 = -103,7 kJ/mol.", porque: "Despejamos Delta Hf del propano de la fórmula de Delta Hr, porque la incógnita está entre los reactivos. Como la suma de productos es 3 x (-393,5) + 4 x (-285,8) = -2323,7 kJ, y el O2 tiene Delta Hf = 0, restamos el Delta Hc: -2323,7 - (-2220) = -103,7 kJ/mol. Hay que cuidar el signo al despejar, porque ese cambio de lado es donde suele aparecer el error." }
         ],
         resultado: "Delta Hf(C3H8, g) = -103,7 kJ/mol"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "n = 10,0 g / 44,1 g/mol = 0,2268 mol. Energía = 0,2268 mol x 2220 kJ/mol = 503 kJ = 503/4,184 = 1,20 x 10^2 kcal.", porque: "Se pasa la masa de propano a moles, n = 10,0 g / 44,1 g/mol, y luego se multiplica por el Delta Hc molar en kJ. El resultado se convierte a kcal dividiendo por 4,184. Conviene hacer las conversiones de unidades por separado para no confundir kJ con kcal." },
-          { paso: "Con agua gaseosa, Delta Hc = -2220 + 4 x 44,0 = -2044 kJ/mol (la energía liberada es menor).", porque: "Se recalcula Delta Hc con agua gaseosa: como el agua queda como vapor, no se libera la energía de condensación de las 4 mol de H2O, unos 44,0 kJ por mol. Por eso el valor resulta menos exotérmico y se libera menos energía. La diferencia entre ambos valores es ese calor de condensación." }
+          { paso: "n = 10,0 g / 44,1 g/mol = 0,2268 mol. Energía = 0,2268 mol x 2220 kJ/mol = 503 kJ = 503/4,184 = 1,20 x 10^2 kcal.", porque: "Convertimos la masa de propano a moles dividiéndola por la masa molar, porque el Delta Hc está dado por mol. Con 10,0 g y 44,1 g/mol obtenemos 0,2268 mol, y al multiplicar por 2220 kJ/mol da 503 kJ. Dividimos por 4,184 para pasar a kcal, y obtenemos 1,20 x 10^2 kcal; conviene hacer las conversiones por separado para no confundir kJ con kcal." },
+          { paso: "Con agua gaseosa, Delta Hc = -2220 + 4 x 44,0 = -2044 kJ/mol (la energía liberada es menor).", porque: "Recalculamos Delta Hc con agua gaseosa, porque el agua queda como vapor y no libera su calor de condensación. Con 4 mol de H2O y 44,0 kJ por mol, el término suma 4 x 44,0 kJ, y el cálculo da -2220 + 4 x 44,0 = -2044 kJ/mol. Por eso el valor resulta menos exotérmico, y la energía liberada es menor que en el caso con agua líquida." }
         ],
         resultado: "Energía = 1,20 x 10^2 kcal; con H2O(g), Delta Hc = -2044 kJ/mol"
       }
@@ -387,24 +387,24 @@ window.EJERCITACION["termodinamica"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Delta H = [-635,1 + (-393,5)] - [-1206,9] = -1028,6 + 1206,9 = +178,3 kJ.", porque: "Se aplica la fórmula de Delta Hr con Delta Hf: se suman los productos CaO y CO2, y se resta el CaCO3 de reactivo, con coeficientes 1. Los sólidos y el gas tienen Delta Hf tabuladas, así que todas las especies entran en el cálculo. Cuidá los signos: restar un valor negativo lo vuelve positivo." },
-          { paso: "Como Delta H > 0, el proceso absorbe calor (endotérmico).", porque: "Se interpreta el signo de Delta H para clasificar el proceso: un Delta H positivo significa que la reacción absorbe calor del entorno, es decir que es endotérmica. Esto es coherente con la descomposición térmica del carbonato, que necesita aporte de energía. Verificá el signo final antes de responder." }
+          { paso: "Delta H = [-635,1 + (-393,5)] - [-1206,9] = -1028,6 + 1206,9 = +178,3 kJ.", porque: "Aplicamos la fórmula de Delta Hr con Delta Hf, porque la descomposición del CaCO3 produce CaO y CO2 a partir de un único reactivo. Sumamos los productos -635,1 + (-393,5) y restamos el CaCO3 con -1206,9, lo que da +178,3 kJ. Como restar un valor negativo lo vuelve positivo, hay que cuidar los signos en esta resta." },
+          { paso: "Como Delta H > 0, el proceso absorbe calor (endotérmico).", porque: "Interpretamos el signo de Delta H para clasificar el proceso, porque el signo indica si la reacción absorbe o libera calor. Como Delta H = +178,3 kJ es positivo, la reacción toma calor del entorno y es endotérmica. Esto es coherente con la descomposición térmica del carbonato, que necesita aporte de energía para ocurrir." }
         ],
         resultado: "Delta H = +178,3 kJ/mol (endotérmica)"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Delta n(gas) = 1 (CO2) - 0 = +1, porque los sólidos no cuentan.", porque: "Se calcula Delta n(gas) contando sólo gases: el CO2 es el único gas, con 1 mol en productos y 0 en reactivos. Los sólidos no cuentan para Delta n. Con este dato se aplica la relación Delta U = Delta H - Delta n R T." },
-          { paso: "Delta U = Delta H - Delta n RT = 178,3 - (1)(8,314 x 10^-3)(298) = 178,3 - 2,48 = 175,8 kJ/mol.", porque: "Se despeja Delta U de Delta H = Delta U + Delta n R T, usando R en kJ/(mol x K) y T = 298 K. Como Delta n es positivo, Delta U resulta algo menor que Delta H. La corrección es pequeña porque sólo hay 1 mol de gas." }
+          { paso: "Delta n(gas) = 1 (CO2) - 0 = +1, porque los sólidos no cuentan.", porque: "Calculamos Delta n(gas) contando sólo especies gaseosas, porque los sólidos no entran en el término Delta n x R x T. El CO2 es el único gas, con 1 mol en productos y 0 en reactivos, así que Delta n = +1. Ese valor se usa en el paso siguiente para corregir Delta H y obtener Delta U." },
+          { paso: "Delta U = Delta H - Delta n RT = 178,3 - (1)(8,314 x 10^-3)(298) = 178,3 - 2,48 = 175,8 kJ/mol.", porque: "Despejamos Delta U de Delta H = Delta U + Delta n x R x T, usando R en kJ/(mol x K) y T = 298 K. Reemplazamos Delta H = 178,3 kJ/mol y Delta n = 1, y el término 8,314 x 10^-3 x 298 da 2,48, por lo que Delta U = 175,8 kJ/mol. Como Delta n es positivo, Delta U resulta algo menor que Delta H, y la corrección es pequeña porque sólo hay 1 mol de gas." }
         ],
         resultado: "Delta U = +175,8 kJ/mol"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "n = 5,00 x 10^3 g / 100,1 g/mol = 49,95 mol de CaCO3.", porque: "Se convierte la masa de CaCO3 a moles con la masa molar, porque Delta H está tabulado por mol de reacción. Con 5,00 kg = 5,00 x 10^3 g y M = 100,1 g/mol se obtiene la cantidad de reactivo. Este paso evita usar un valor por mol con una masa en kg." },
-          { paso: "q (a presión constante) = n x Delta H = 49,95 mol x 178,3 kJ/mol = 8,91 x 10^3 kJ.", porque: "Se calcula el calor a presión constante como q_p = n x Delta H, con n la cantidad de moles de CaCO3 que reaccionan. Como el proceso es endotérmico, el calor es positivo: hay que suministrarlo desde el exterior. Esta relación vale porque el proceso ocurre a presión atmosférica constante." }
+          { paso: "n = 5,00 x 10^3 g / 100,1 g/mol = 49,95 mol de CaCO3.", porque: "Convertimos la masa a moles dividiéndola por la masa molar, porque Delta H está tabulado por mol de reacción. Con 5,00 x 10^3 g de CaCO3 y 100,1 g/mol obtenemos 49,95 mol, es decir la cantidad de reactivo que se descompone. Este paso evita usar un valor por mol con una masa expresada en otra unidad." },
+          { paso: "q (a presión constante) = n x Delta H = 49,95 mol x 178,3 kJ/mol = 8,91 x 10^3 kJ.", porque: "Calculamos el calor a presión constante como q_p = n x Delta H, con n la cantidad de moles de CaCO3 que reaccionan. Reemplazamos 49,95 mol y 178,3 kJ/mol, y obtenemos 8,91 x 10^3 kJ. Como el proceso es endotérmico, el calor es positivo: hay que suministrarlo desde el exterior, y esto vale porque el proceso ocurre a presión constante." }
         ],
         resultado: "q = 8,91 x 10^3 kJ (a 25 C, reacción completa)"
       }
@@ -424,35 +424,35 @@ window.EJERCITACION["termodinamica"] = [
       {
         parte: "a)",
         pasos: [
-          { paso: "Ecuación: CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(l). Es la combustión completa del metano con agua líquida como producto.", porque: "Se escribe la ecuación de combustión completa del metano con agua líquida, que coincide con la del enunciado. Antes de calcular conviene verificar que esté balanceada: 1 C, 4 H y 4 O en ambos lados de la flecha." },
-          { paso: "Delta Hc = [-393,5 + 2 x (-285,8)] - [-74,8 + 2 x 0] = -965,1 + 74,8 = -890,3 kJ/mol.", porque: "Se aplica Delta Hr = suma de n Delta Hf(productos) - suma de n Delta Hf(reactivos), con los datos de CO2 y H2O(l). El O2 tiene Delta Hf = 0. Este Delta Hc es el que luego relaciona la masa de metano con la energía liberada." }
+          { paso: "Ecuación: CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(l). Es la combustión completa del metano con agua líquida como producto.", porque: "Escribimos la ecuación de combustión completa del metano con agua líquida, porque la entalpía de combustión se define sobre una ecuación balanceada. Antes de calcular conviene verificar el balance: hay 1 C, 4 H y 4 O en ambos lados de la flecha. Un balance correcto garantiza que los coeficientes que usemos después en Delta Hr sean los que corresponden." },
+          { paso: "Delta Hc = [-393,5 + 2 x (-285,8)] - [-74,8 + 2 x 0] = -965,1 + 74,8 = -890,3 kJ/mol.", porque: "Aplicamos Delta Hr = suma de n x Delta Hf de los productos menos la de los reactivos, porque así se obtiene la entalpía de combustión. Con CO2 en -393,5 kJ/mol, 2 H2O(l) en -285,8 kJ/mol, CH4 en -74,8 kJ/mol y O2 en cero, el resultado es -890,3 kJ/mol. Este valor es el que después relaciona la masa de metano con la energía liberada." }
         ],
         resultado: "Delta Hc = -890,3 kJ/mol de CH4 (H2O líquida)"
       },
       {
         parte: "b)",
         pasos: [
-          { paso: "Masa de agua: 150 L = 1,50 x 10^5 cm^3; m = 1,50 x 10^5 cm^3 x 1,00 g/cm^3 = 1,50 x 10^5 g.", porque: "Se pasa el volumen de agua a masa usando la densidad: 1 cm^3 pesa 1,00 g y 1 L = 1000 cm^3. Con 150 L se obtiene m = 1,50 x 10^5 g. Verificá que la masa tenga sentido para ese volumen de agua." },
-          { paso: "Calor útil: Q_util = m c Delta T = 1,50 x 10^5 g x 4,18 J/(g x K) x 30,0 K = 1,88 x 10^7 J = 18 810 kJ.", porque: "Se calcula el calor que el agua necesita, Q_util = m c Delta T, con Delta T = 45,0 - 15,0 = 30,0 K. Como el agua sólo cambia de temperatura sin cambio de fase, se usa el calor sensible. Es la energía útil que debe llegar al agua, no la que debe liberar la combustión." },
-          { paso: "Calor de combustión necesario: Q_comb = Q_util / 0,65 = 28 940 kJ.", porque: "Se aplica la definición de rendimiento térmico: rendimiento = Q_util / Q_combustión, de donde Q_combustión = Q_util / 0,65. Como el termotanque no aprovecha toda la energía, la combustión debe generar más calor que el útil. Aquí el error típico es multiplicar por 0,65 en lugar de dividir." },
-          { paso: "n(CH4) = 28 940 kJ / 890,3 kJ/mol = 32,50 mol; m = 32,50 mol x 16,0 g/mol = 520 g de CH4.", porque: "Se calcula la cantidad de metano como n = Q_combustión / |Delta Hc|, usando el valor con agua líquida de a), y luego m = n x M con M = 16,0 g/mol. La relación se basa en que cada mol de CH4 libera 890,3 kJ durante la combustión completa." }
+          { paso: "Masa de agua: 150 L = 1,50 x 10^5 cm^3; m = 1,50 x 10^5 cm^3 x 1,00 g/cm^3 = 1,50 x 10^5 g.", porque: "Pasamos el volumen a masa con la densidad, porque el calor depende de la masa de agua y no del volumen. Como 150 L equivalen a 1,50 x 10^5 cm^3 y la densidad es 1,00 g/cm^3, la masa es 1,50 x 10^5 g. Verificá que el valor tenga sentido para esa cantidad de agua, porque el paso siguiente usa esta masa." },
+          { paso: "Calor útil: Q_util = m c Delta T = 1,50 x 10^5 g x 4,18 J/(g x K) x 30,0 K = 1,88 x 10^7 J = 18 810 kJ.", porque: "Calculamos el calor útil con Q_util = m x c x Delta T, porque el agua sólo cambia de temperatura sin cambio de fase. Reemplazamos m = 1,50 x 10^5 g, c = 4,18 J/(g x K) y Delta T = 30,0 K, y obtenemos 1,88 x 10^7 J, es decir 18 810 kJ. Este valor es la energía que debe llegar al agua, no la que libera la combustión." },
+          { paso: "Calor de combustión necesario: Q_comb = Q_util / 0,65 = 28 940 kJ.", porque: "Aplicamos la definición de rendimiento térmico, rendimiento = Q_util / Q_combustión, porque el equipo no aprovecha toda la energía quemada. Despejamos Q_combustión = Q_util / 0,65, con 18 810 kJ y 0,65, lo que da 28 940 kJ. Como el rendimiento es menor que 1, la combustión debe generar más calor que el útil, y el error típico es multiplicar por 0,65 en vez de dividir." },
+          { paso: "n(CH4) = 28 940 kJ / 890,3 kJ/mol = 32,50 mol; m = 32,50 mol x 16,0 g/mol = 520 g de CH4.", porque: "Calculamos la cantidad de metano como n = Q_combustión / |Delta Hc|, porque cada mol de CH4 libera 890,3 kJ en la combustión completa. Con 28 940 kJ y 890,3 kJ/mol obtenemos 32,50 mol, y luego m = n x M con 16,0 g/mol da 520 g de CH4. Usamos el valor con agua líquida, que es el que corresponde a la ecuación balanceada." }
         ],
         resultado: "m(CH4) = 520 g (0,52 kg) de metano"
       },
       {
         parte: "c)",
         pasos: [
-          { paso: "Por la relación 1:1 de la ecuación, n(CO2) = n(CH4) = 32,50 mol.", porque: "Se usa la estequiometría de la ecuación: 1 mol de CH4 produce 1 mol de CO2, así que la cantidad de CO2 es igual a la de CH4. Son los coeficientes los que fijan la proporción molar, no las masas." },
-          { paso: "V = nRT/P = 32,50 mol x 0,0821 L x atm/(mol x K) x 273 K / 1 atm = 728 L.", porque: "Se aplica la ecuación de gases ideales en CNPT, V = nRT/P, con T = 273 K y P = 1 atm, usando R = 0,0821 L x atm/(mol x K). Se verifica que atm y K se cancelen y que el resultado quede en L. Es una aproximación que equivale a unos 22,4 L por mol en CNPT." }
+          { paso: "Por la relación 1:1 de la ecuación, n(CO2) = n(CH4) = 32,50 mol.", porque: "Usamos la estequiometría de la ecuación, porque los coeficientes fijan la proporción entre moles de CO2 y CH4. Como 1 mol de CH4 produce 1 mol de CO2, la cantidad de CO2 es igual a la de CH4, es decir 32,50 mol. Son los coeficientes, y no las masas, los que definen esta relación." },
+          { paso: "V = nRT/P = 32,50 mol x 0,0821 L x atm/(mol x K) x 273 K / 1 atm = 728 L.", porque: "Aplicamos la ecuación de gases ideales V = nRT/P, porque el CO2 se trata como gas a 273 K y 1 atm. Reemplazamos n = 32,50 mol, R = 0,0821 L x atm/(mol x K), T = 273 K y P = 1 atm, y obtenemos 728 L. Verificamos que atm y K se cancelen y que el resultado quede en L." }
         ],
         resultado: "V(CO2) = 728 L en CNPT"
       },
       {
         parte: "d)",
         pasos: [
-          { paso: "Supuesto: el agua de los humos queda como vapor (no condensa). Delta Hc = [-393,5 + 2 x (-241,8)] - [-74,8] = -802,3 kJ/mol.", porque: "Se recalcula Delta Hc con H2O(g) como producto, que corresponde al poder calorífico inferior (PCI). El procedimiento es el mismo de Delta Hr, cambiando sólo el valor del agua. La diferencia respecto del valor con agua líquida es el calor de condensación, que aquí no se aprovecha." },
-          { paso: "Energía útil con PCI: 0,65 x 32,50 mol x 802,3 kJ/mol = 16 950 kJ, frente a los 18 810 kJ necesarios.", porque: "Se compara la energía útil que llega al agua (0,65 x energía de combustión con PCI) con la energía necesaria de 18 810 kJ. Es la forma correcta de verificar si el equipo alcanza, porque se compara energía disponible con energía requerida. Calcular sólo la energía teórica no alcanza para responder." },
-          { paso: "Como 16 950 < 18 810, no alcanza: falta cerca del 10 %.", porque: "Se interpreta la diferencia entre 16 950 kJ disponibles y 18 810 kJ necesarios: hay un déficit de alrededor del 10 %. Para dimensionar el equipo hay que usar el valor de combustión que corresponde a las condiciones reales de los humos. Si el agua condensa en el equipo se aprovecha el PCS, pero con vapor en los humos no." }
+          { paso: "Supuesto: el agua de los humos queda como vapor (no condensa). Delta Hc = [-393,5 + 2 x (-241,8)] - [-74,8] = -802,3 kJ/mol.", porque: "Recalculamos Delta Hc con H2O(g) como producto, porque el agua de los humos no condensa y se usa el poder calorífico inferior. El procedimiento es el mismo de Delta Hr, cambiando sólo el dato del agua: con 2 x (-241,8), el resultado es -802,3 kJ/mol. La diferencia con el valor del agua líquida es el calor de condensación, que aquí no se aprovecha." },
+          { paso: "Energía útil con PCI: 0,65 x 32,50 mol x 802,3 kJ/mol = 16 950 kJ, frente a los 18 810 kJ necesarios.", porque: "Comparamos la energía útil que llega al agua con la energía necesaria, porque así sabemos si el equipo alcanza. Con 0,65 x 32,50 mol x 802,3 kJ/mol obtenemos 16 950 kJ, y eso se compara con los 18 810 kJ necesarios. Calcular sólo la energía teórica no alcanza para responder, porque lo que decide es la energía disponible frente a la requerida." },
+          { paso: "Como 16 950 < 18 810, no alcanza: falta cerca del 10 %.", porque: "Interpretamos la diferencia entre 16 950 kJ disponibles y 18 810 kJ necesarios, porque de ella depende la conclusión sobre el equipo. Como hay un déficit de alrededor del 10 %, el equipo no alcanza para calentar el agua en esas condiciones. Para dimensionarlo conviene usar el valor de combustión que corresponde a los humos reales: si el agua condensa se aprovecha el PCS, pero con vapor en los humos no." }
         ],
         resultado: "No alcanza: con PCI se aportan unos 16 950 kJ frente a 18 810 kJ necesarios"
       }

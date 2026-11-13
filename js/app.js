@@ -77,7 +77,7 @@
 
     const tarjetas = temas.map(t => {
       const conceptos = (t.conceptos || []).map(c =>
-        `<p><strong>${esc(c.titulo)}:</strong> ${esc(c.texto)}</p>`
+        `<div class="parrafo"><strong>${esc(c.titulo)}:</strong> ${textoConFormulas(c.texto)}</div>`
       ).join("");
       const formulas = (t.formulas || []).map((f, i) => {
         const tex = (window.FORMULAS_TEX || {})[`${t.id}#${i}`];
@@ -86,7 +86,7 @@
           : `<code class="formula">${esc(f)}</code>`;
       }).join("");
       const errores = (t.errores_tipicos || []).map(e =>
-        `<div class="error-tipico"><strong>Error típico:</strong> ${pretty(e.error)}<div class="como"><strong>Cómo evitarlo:</strong> ${pretty(e.como_evitar)}</div></div>`
+        `<div class="error-tipico"><strong>Error típico:</strong> ${textoConFormulas(e.error)}<div class="como"><strong>Cómo evitarlo:</strong> ${textoConFormulas(e.como_evitar)}</div></div>`
       ).join("");
       const relacionados = ejerciciosDeTema(t.id).length;
       const codigoGuia = GUIA_POR_TEMA[t.id];
@@ -106,7 +106,7 @@
         <section class="tarjeta" id="${esc(t.id)}">
           <h3>${esc(t.titulo)}</h3>
           <div>${fuentes}${guia}</div>
-          <p>${esc(t.resumen)}</p>
+          <div class="parrafo">${textoConFormulas(t.resumen)}</div>
           ${conceptos}
           ${formulas ? `<h4>Fórmulas clave</h4>${formulas}` : ""}
           ${errores ? `<h4>Errores típicos</h4>${errores}` : ""}

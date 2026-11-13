@@ -371,6 +371,9 @@ button.toggle:hover { background: #2f5488; color: #fff; }
 .nivel-avanzado { background: #fde3e0; color: #9b2c22; }
 .nivel-parcial { background: #1f3a5f; color: #fff; }
 
+/* Párrafos de teoría: pueden incluir fórmulas en línea o centradas */
+.parrafo { margin: 8px 0; line-height: 1.65; }
+
 /* Ecuaciones centradas dentro de un paso de la resolución */
 .formula-bloque { margin: 10px 0; overflow-x: auto; text-align: center; }
 

@@ -64,7 +64,7 @@ window.FORMULAS_TEX = {
   "reacciones#2": String.raw`\%\ \text{pureza} = \dfrac{m_{\text{puro}}}{m_{\text{muestra}}}\cdot 100`,
   "reacciones#3": String.raw`R\% = \dfrac{\text{cantidad real}}{\text{cantidad teórica}}\cdot 100`,
   "reacciones#4": String.raw`\text{Reactivo limitante: el de menor cociente} \;\dfrac{\text{moles disponibles}}{\text{coeficiente estequiométrico}}`,
-  "reacciones#5": String.raw`\text{Combustión completa: } C_xH_y + O_2 \rightarrow CO_2 + H_2O \quad \text{(balanceada)}`,
+  "reacciones#5": String.raw`\text{Combustión completa: } C_xH_y + O_2 \rightarrow CO_2 + H_2O \quad \text{(sin balancear: ajustar los coeficientes antes de usarla)}`,
 
   "equilibrio#0": String.raw`aA + bB \rightleftharpoons cC + dD \;;\quad K_c = \dfrac{[C]^c\,[D]^d}{[A]^a\,[B]^b} \quad (\text{mol/L})`,
   "equilibrio#1": String.raw`K_p = K_c\,(R\,T)^{\Delta n} \;;\; \Delta n = n_{\text{gas prod}} - n_{\text{gas react}} \;;\; R = 0{,}082\ \text{L·atm/(mol·K)}`,
@@ -83,5 +83,5 @@ window.FORMULAS_TEX = {
   "termodinamica#3": String.raw`\Delta H^\circ_r = \sum n\,\Delta H^\circ_f(\text{productos}) - \sum n\,\Delta H^\circ_f(\text{reactivos})`,
   "termodinamica#4": String.raw`\Delta H^\circ_r = \sum \Delta H^\circ_c(\text{reactivos}) - \sum \Delta H^\circ_c(\text{productos})`,
   "termodinamica#5": String.raw`\Delta H^\circ_c(\text{C}_2\text{H}_6) \approx -1560\ \text{kJ/mol} \quad \text{(la guía pone } -1553{,}3\text{; con las } \Delta H^\circ_f \text{ de la tabla da } -1559{,}8\text{)}`,
-  "termodinamica#6": String.raw`\text{PCS} = \text{PCI} + n_{\text{H}_2\text{O}}\cdot\Delta H_{\text{cond}} \quad (\Delta H_{\text{cond}} = -44\ \text{kJ/mol de H}_2\text{O})`
+  "termodinamica#6": String.raw`\text{PCS} = \text{PCI} - n_{\text{H}_2\text{O}}\cdot\Delta H_{\text{cond}} \quad (\Delta H_{\text{cond}} = -44\ \text{kJ/mol de H}_2\text{O})`
 };

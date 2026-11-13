@@ -296,6 +296,17 @@
       ${ejs.map(ej => tarjetaEjercitacion(ej, tema)).join("")}`;
   }
 
+  // ---------- Ejercicios tipo parcial ----------
+  // Ejercicios de estilo parcial (varias partes encadenadas). Datos en window.TIPO_PARCIAL (data/tipo_parcial.js)
+  function vistaTipoParcial() {
+    const ejs = window.TIPO_PARCIAL || [];
+    if (!ejs.length) return `<h2>Ejercicios tipo parcial</h2><p class="vacio">Todavía no hay ejercicios cargados.</p>`;
+    return `
+      <h2>Ejercicios tipo parcial</h2>
+      <div class="aviso">Ejercicios de estilo parcial, con varias partes encadenadas: primero balanceá, después calculá y justificá. Intentá resolverlos antes de abrir la resolución.</div>
+      ${ejs.map(ej => tarjetaEjercitacion(ej, "tp")).join("")}`;
+  }
+
   // ---------- Material oficial ----------
   // Lista de PDFs copiados a web/material/ (guías y teoría de la cátedra)
   const MATERIAL = {
@@ -372,6 +383,8 @@
       app.innerHTML = vistaParciales(sub || "");
       // Al filtrar por tema, subir al inicio del listado; si no, el scroll queda donde estaba y parece que no pasó nada
       if (sub) window.scrollTo({ top: 0, behavior: "smooth" });
+    } else if (vista === "tipo-parcial") {
+      app.innerHTML = vistaTipoParcial();
     } else if (vista === "ejercitacion") {
       app.innerHTML = vistaEjercitacion(sub || "");
       if (sub) window.scrollTo({ top: 0, behavior: "smooth" });

@@ -111,7 +111,7 @@
           ${formulas ? `<h4>Fórmulas clave</h4>${formulas}` : ""}
           ${errores ? `<h4>Errores típicos</h4>${errores}` : ""}
           <p><a href="#parciales/${esc(t.id)}">Ver ejercicios de parciales de este tema (${relacionados})</a></p>
-          ${ejercitacionDeTema(t.id).length ? `<p><a href="#ejercitacion/${esc(t.id)}">Practicar este tema (${ejercitacionDeTema(t.id).length} ejercicios)</a></p>` : ""}
+          ${repasoDeTema(t.id).length ? `<p><a href="#repaso-recu">Practicar este tema en Repaso último recu (${repasoDeTema(t.id).length} ejercicios)</a></p>` : (ejercitacionDeTema(t.id).length ? `<p><a href="#ejercitacion/${esc(t.id)}">Practicar este tema (${ejercitacionDeTema(t.id).length} ejercicios)</a></p>` : "")}
         </section>`;
     }).join("");
 
@@ -252,6 +252,13 @@
     return (window.EJERCITACION || {})[temaId] || [];
   }
 
+  // Termodinámica y equilibrio viven en "Repaso último recu" (datos en window.REPASO_RECU), no en Ejercitación
+  const REPASO_TEMAS = ["termodinamica", "equilibrio"];
+
+  function repasoDeTema(temaId) {
+    return (window.REPASO_RECU || {})[temaId] || [];
+  }
+
   function tarjetaEjercitacion(ej, tema) {
     const anchor = `eje-${tema}-${ej.num}`;
     const idRes = `res-${anchor}`;
@@ -276,7 +283,7 @@
   function vistaEjercitacion(tema) {
     if (!tema) {
       const lista = TEMAS_ORDEN
-        .filter(t => ejercitacionDeTema(t).length)
+        .filter(t => ejercitacionDeTema(t).length && !REPASO_TEMAS.includes(t))
         .map(t => `<li><a href="#ejercitacion/${esc(t)}">${esc(nombreTema(t))}</a> <span class="vacio">· ${ejercitacionDeTema(t).length} ejercicios</span></li>`)
         .join("");
       return `
@@ -285,6 +292,9 @@
         <div class="tarjeta">${lista ? `<ol>${lista}</ol>` : '<p class="vacio">Todavía no hay ejercitación cargada.</p>'}</div>`;
     }
 
+    if (REPASO_TEMAS.includes(tema)) {
+      return `<h2>${esc(nombreTema(tema))}</h2><p>Estos ejercicios están en <a href="#repaso-recu">Repaso último recu</a>.</p>`;
+    }
     const ejs = ejercitacionDeTema(tema);
     if (!ejs.length) {
       return `<h2>${esc(nombreTema(tema))}</h2><p class="vacio">Todavía no hay ejercicios para este tema.</p>`;
@@ -294,6 +304,22 @@
       <p><a href="#ejercitacion">← Todos los temas</a> · <a href="#teoria/${esc(tema)}">Ver teoría de este tema</a></p>
       <div class="aviso">Intentá resolver cada ejercicio antes de abrir la resolución. El 16 está pensado como un parcial completo.</div>
       ${ejs.map(ej => tarjetaEjercitacion(ej, tema)).join("")}`;
+  }
+
+  // ---------- Repaso último recu ----------
+  // Termodinámica y equilibrio, 20 ejercicios cada uno (datos en window.REPASO_RECU)
+  function vistaRepasoRecu() {
+    const bloques = REPASO_TEMAS.map(t => {
+      const ejs = repasoDeTema(t);
+      if (!ejs.length) return "";
+      return `
+        <h2>${esc(nombreTema(t))}</h2>
+        ${ejs.map(ej => tarjetaEjercitacion(ej, t)).join("")}`;
+    }).join("");
+    return `
+      <h2>Repaso último recu</h2>
+      <div class="aviso">Ejercicios de termodinámica y equilibrio, de básico a avanzado. Intentá resolverlos antes de abrir la resolución.</div>
+      ${bloques || '<p class="vacio">Todavía no hay ejercicios cargados.</p>'}`;
   }
 
   // ---------- Material oficial ----------
@@ -372,6 +398,8 @@
       app.innerHTML = vistaParciales(sub || "");
       // Al filtrar por tema, subir al inicio del listado; si no, el scroll queda donde estaba y parece que no pasó nada
       if (sub) window.scrollTo({ top: 0, behavior: "smooth" });
+    } else if (vista === "repaso-recu") {
+      app.innerHTML = vistaRepasoRecu();
     } else if (vista === "ejercitacion") {
       app.innerHTML = vistaEjercitacion(sub || "");
       if (sub) window.scrollTo({ top: 0, behavior: "smooth" });

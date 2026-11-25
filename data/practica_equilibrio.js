@@ -1,7 +1,7 @@
-window.EJERCITACION = window.EJERCITACION || {};
+window.REPASO_RECU = window.REPASO_RECU || {};
 
 // Práctica de equilibrio químico: 20 ejercicios de dificultad creciente.
-window.EJERCITACION["equilibrio"] = [
+window.REPASO_RECU["equilibrio"] = [
   {
     num: 1,
     nivel: "Básico",

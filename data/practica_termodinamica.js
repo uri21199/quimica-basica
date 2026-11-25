@@ -1,7 +1,7 @@
-window.EJERCITACION = window.EJERCITACION || {};
+window.REPASO_RECU = window.REPASO_RECU || {};
 
 // Práctica de termodinámica: 20 ejercicios de dificultad creciente.
-window.EJERCITACION["termodinamica"] = [
+window.REPASO_RECU["termodinamica"] = [
   {
     num: 1,
     nivel: "Básico",
